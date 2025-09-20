@@ -29,6 +29,7 @@
 
     <h2>③ Emotion（表情）</h2>
     <select id="selEmotion"></select>
+    <div id="emotionPrompt" class="prompt-box"></div>
 
     <h2>④ Extra Elements（付随要素・複数可）</h2>
     <select id="selExtra" multiple></select>
@@ -47,6 +48,8 @@
         return data.map(r => ({label: r['ジャンル'], prompt: r['Header Prompt']}));
       } else if(kind === 'intensity'){
         return data.map(r => ({label: r['label'], prompt: r['Template Prompt']}));
+      } else if(kind === 'emotion'){
+        return data.map(r => ({label: r['label'], prompt: r['Prompt']}));
       } else {
         return data.map(r => ({label: r.label || r.label_ja || r.tag || '', prompt: r.prompt || r['keyword_en'] || r['Template Prompt'] || ''})).filter(o=>o.label);
       }
@@ -57,7 +60,7 @@
     const urls={
       header:"https://ihmn18603-max.github.io/OD-Image-Generator/Main_Header_v1.0.0.json",
       intensity:"https://ihmn18603-max.github.io/OD-Image-Generator/Intensity_v1.0.0.json",
-      emotion:"https://ihmn18603-max.github.io/OD-Image-Generator/Emotion_v1.0.3.json",
+      emotion:"https://ihmn18603-max.github.io/OD-Image-Generator/Emotion_v1.0.4.json",
       extra:"https://ihmn18603-max.github.io/OD-Image-Generator/Extra_elements_v1.0.0.json"
     };
 
@@ -83,7 +86,7 @@
     async function init(){
       state.header=toOptions(await loadJSON(urls.header),'header');
       state.intensity=toOptions(await loadJSON(urls.intensity),'intensity');
-      state.emotion=toOptions(await loadJSON(urls.emotion));
+      state.emotion=toOptions(await loadJSON(urls.emotion),'emotion');
       state.extra=toOptions(await loadJSON(urls.extra));
 
       fill($('#selHeader'),state.header);
@@ -102,7 +105,11 @@
       $('#intensityPrompt').textContent= state.sel.intensity? state.sel.intensity.prompt : '';
       build();
     });
-    $('#selEmotion').addEventListener('change',e=>{state.sel.emotion=state.emotion[e.target.value];build();});
+    $('#selEmotion').addEventListener('change',e=>{
+      state.sel.emotion=state.emotion[e.target.value];
+      $('#emotionPrompt').textContent= state.sel.emotion? state.sel.emotion.prompt : '';
+      build();
+    });
     $('#selExtra').addEventListener('change',e=>{state.sel.extra=Array.from(e.target.selectedOptions).map(o=>state.extra[o.value]);build();});
 
     $('#btnCopy').addEventListener('click',async()=>{
