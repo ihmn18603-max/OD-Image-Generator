@@ -1,89 +1,191 @@
 [
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "1\tblank_stare\t虚ろな視線\tneutral\tblank stare"
+    "eid": 1,
+    "tag": "blank_stare",
+    "label": "虚ろな視線",
+    "category": "neutral",
+    "Prompt": "blank stare"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "2\tdazed\tぼんやりした表情\tneutral\tdazed"
+    "eid": 2,
+    "tag": "dazed",
+    "label": "ぼんやりした表情",
+    "category": "neutral",
+    "Prompt": "dazed"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "3\ttrance\tトランス状態\tneutral\ttrance"
+    "eid": 3,
+    "tag": "trance",
+    "label": "トランス状態",
+    "category": "neutral",
+    "Prompt": "trance"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "4\tshy_smile\t恥じらいの笑み\tshyness\tshy smile"
+    "eid": 4,
+    "tag": "shy_smile",
+    "label": "恥じらいの笑み",
+    "category": "shyness",
+    "Prompt": "shy smile"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "5\tsheepish\t気まずい表情\tshyness\tsheepish"
+    "eid": 5,
+    "tag": "sheepish",
+    "label": "気まずい表情",
+    "category": "shyness",
+    "Prompt": "sheepish"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "6\tblushing_cheeks\t頬を赤らめている\tshyness\tblushing cheeks"
+    "eid": 6,
+    "tag": "blushing_cheeks",
+    "label": "頬を赤らめている",
+    "category": "shyness",
+    "Prompt": "blushing cheeks"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "7\tslight_smile\t微笑\tjoy\tslight smile"
+    "eid": 7,
+    "tag": "slight_smile",
+    "label": "微笑",
+    "category": "joy",
+    "Prompt": "slight smile"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "8\tlight_smile\t軽い笑み\tjoy\tlight smile"
+    "eid": 8,
+    "tag": "light_smile",
+    "label": "軽い笑み",
+    "category": "joy",
+    "Prompt": "light smile"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "9\tplayful_smile\t茶目っ気の笑み\tjoy\tplayful smile"
+    "eid": 9,
+    "tag": "playful_smile",
+    "label": "茶目っ気の笑み",
+    "category": "joy",
+    "Prompt": "playful smile"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "10\thappy_tears\t嬉し涙\tjoy\thappy tears"
+    "eid": 10,
+    "tag": "happy_tears",
+    "label": "嬉し涙",
+    "category": "joy",
+    "Prompt": "happy tears"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "11\ttroubled_eyebrows\t困った眉\tsadness\ttroubled eyebrows"
+    "eid": 11,
+    "tag": "troubled_eyebrows",
+    "label": "困った眉",
+    "category": "sadness",
+    "Prompt": "troubled eyebrows"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "12\tteary\t涙目\tsadness\tteary"
+    "eid": 12,
+    "tag": "teary",
+    "label": "涙目",
+    "category": "sadness",
+    "Prompt": "teary"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "13\tagonized\t苦悶の表情\tpain\tagonized face"
+    "eid": 13,
+    "tag": "agonized",
+    "label": "苦悶の表情",
+    "category": "pain",
+    "Prompt": "agonized face"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "14\tpained\t痛みに歪む顔\tpain\tpained expression"
+    "eid": 14,
+    "tag": "pained",
+    "label": "痛みに歪む顔",
+    "category": "pain",
+    "Prompt": "pained expression"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "15\tsuffering\t苦しげな顔\tpain\tsuffering"
+    "eid": 15,
+    "tag": "suffering",
+    "label": "苦しげな顔",
+    "category": "pain",
+    "Prompt": "suffering"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "16\tdistressed\t困惑と苦悶の表情\tpain\tdistressed"
+    "eid": 16,
+    "tag": "distressed",
+    "label": "困惑と苦悶の表情",
+    "category": "pain",
+    "Prompt": "distressed"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "17\tenduring\t耐えている表情\tpain\tenduring"
+    "eid": 17,
+    "tag": "enduring",
+    "label": "耐えている表情",
+    "category": "pain",
+    "Prompt": "enduring"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "18\tstoic\t無表情で耐える\tpain\tstoic"
+    "eid": 18,
+    "tag": "stoic",
+    "label": "無表情で耐える",
+    "category": "pain",
+    "Prompt": "stoic"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "100\tflushed_smirk\t火照った笑み\tsexual\tflushed smirk"
+    "eid": 100,
+    "tag": "flushed_smirk",
+    "label": "火照った笑み",
+    "category": "sexual",
+    "Prompt": "flushed smirk"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "101\taroused\t興奮した表情\tsexual\taroused"
+    "eid": 101,
+    "tag": "aroused",
+    "label": "興奮した表情",
+    "category": "sexual",
+    "Prompt": "aroused"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "102\tsensual\t官能的な表情\tsexual\tsensual"
+    "eid": 102,
+    "tag": "sensual",
+    "label": "官能的な表情",
+    "category": "sexual",
+    "Prompt": "sensual"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "103\tseductive_smile\t誘惑の笑み\tsexual\tseductive smile"
+    "eid": 103,
+    "tag": "seductive_smile",
+    "label": "誘惑の笑み",
+    "category": "sexual",
+    "Prompt": "seductive smile"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "104\tsuggestive\t示唆的な表情\tsexual\tsuggestive"
+    "eid": 104,
+    "tag": "suggestive",
+    "label": "示唆的な表情",
+    "category": "sexual",
+    "Prompt": "suggestive"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "105\torgasm_face\t絶頂の表情\tsexual\torgasm face"
+    "eid": 105,
+    "tag": "orgasm_face",
+    "label": "絶頂の表情",
+    "category": "sexual",
+    "Prompt": "orgasm face"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "106\tecstasy_pain\t快楽と苦痛の混在\tsexual\tecstasy mixed with pain"
+    "eid": 106,
+    "tag": "ecstasy_pain",
+    "label": "快楽と苦痛の混在",
+    "category": "sexual",
+    "Prompt": "ecstasy mixed with pain"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "107\tmasochistic_smile\t被虐的な笑み\tsexual\tmasochistic smile"
+    "eid": 107,
+    "tag": "masochistic_smile",
+    "label": "被虐的な笑み",
+    "category": "sexual",
+    "Prompt": "masochistic smile"
   },
   {
-    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "108\tahegao\tヘ顔（快楽と苦痛が混じった強烈な表情）\tsexual\tahegao",
-    "null": [
-      " eyes rolled back",
-      " tongue out",
-      " drooling",
-      " mouth wide open"
-    ]
+    "eid": 108,
+    "tag": "ahegao",
+    "label": "アヘ顔（快楽と苦痛が混じった強烈な表情）",
+    "category": "sexual",
+    "Prompt": "ahegao, eyes rolled back, tongue out, drooling, mouth wide open"
   }
 ]
