@@ -3,61 +3,58 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>OurDream Prompt Generator</title>
+  <title>OD_Image_Generator</title>
   <style>
     body { margin:0; font-family: system-ui, sans-serif; background:#0f1520; color:#eee; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 20px; display: flex; gap: 20px; }
-    .steps { flex: 1; }
-    .output { flex: 1; position: sticky; top: 20px; align-self: flex-start; background:#121822; padding:20px; border-radius:12px; }
-    h1 { margin:0 0 20px; }
+    .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+    h1 { margin:0 0 20px; text-align:center; }
     h2 { font-size:16px; margin:20px 0 8px; }
     select { width: 100%; padding:10px; border-radius:8px; border:1px solid #333; background:#0f1520; color:#eee; }
-    select[multiple] { height:150px; }
-    textarea { width:100%; min-height:200px; margin-top:10px; border-radius:8px; border:1px solid #333; padding:10px; background:#0f1520; color:#eee; }
-    button { padding:10px 16px; margin-top:10px; border:none; border-radius:8px; cursor:pointer; }
-    .primary { background:#1f7bf2; color:white; }
+    textarea { width:100%; min-height:150px; margin-top:10px; border-radius:8px; border:1px solid #333; padding:10px; background:#0f1520; color:#eee; }
+    button { padding:10px 16px; margin-top:10px; border:none; border-radius:8px; cursor:pointer; background:#1f7bf2; color:white; }
+    #headerPrompt { margin-top:8px; font-size:13px; color:#9ecbff; background:#121822; padding:8px; border-radius:6px; white-space:pre-wrap; }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="steps">
-      <h1>OurDream Prompt Generator</h1>
-      <h2>① Main Header（アニメ / リアル）</h2>
-      <select id="selHeader"></select>
+    <h1>OD_Image_Generator</h1>
 
-      <h2>② Intensity（シチュエーション）</h2>
-      <select id="selIntensity"></select>
+    <h2>① Main Header（アニメ / リアル）</h2>
+    <select id="selHeader"></select>
+    <div id="headerPrompt"></div>
 
-      <h2>③ Emotion（表情）</h2>
-      <select id="selEmotion"></select>
+    <h2>② Intensity（シチュエーション）</h2>
+    <select id="selIntensity"></select>
 
-      <h2>④ Extra Elements（付随要素・複数可）</h2>
-      <select id="selExtra" multiple></select>
-    </div>
+    <h2>③ Emotion（表情）</h2>
+    <select id="selEmotion"></select>
 
-    <div class="output">
-      <h2>結合プロンプト</h2>
-      <textarea id="out" readonly placeholder="ここに結合プロンプトが出力されます"></textarea>
-      <button class="primary" id="btnCopy">コピー</button>
-      <span id="status"></span>
-    </div>
+    <h2>④ Extra Elements（付随要素・複数可）</h2>
+    <select id="selExtra" multiple></select>
+
+    <h2>結合プロンプト</h2>
+    <textarea id="out" readonly placeholder="ここに結合プロンプトが出力されます"></textarea>
+    <button id="btnCopy">コピー</button>
+    <span id="status"></span>
   </div>
 
   <script>
     const $ = s=>document.querySelector(s);
+
     function pickLabel(row){
-      for (const k of ['label','label_ja','ジャンル','tag']) if (row[k]) return row[k];
-      return Object.values(row).find(v=>typeof v==='string')||'(no label)';
+      // MainHeader専用: リアル系/アニメ系だけ表示
+      if (row.label && (row.label.includes('リアル') || row.label.includes('アニメ'))) return row.label;
+      if (row['ジャンル']) return row['ジャンル'];
+      return null;
     }
     function pickPrompt(row){
-      const keys=['prompt','Template Prompt','Header Prompt','keyword_en','Front Prompt','Back Prompt'];
-      return keys.map(k=>row[k]).filter(Boolean).join(', ');
+      return row['Header Prompt'] || row['prompt'] || row['keyword_en'] || '';
     }
-    function toOptions(data){ return data.map((r,i)=>({label:pickLabel(r),prompt:pickPrompt(r)})); }
+    function toOptions(data,isHeader=false){
+      return data.map(r=>({label: isHeader? pickLabel(r): (r.label||r.label_ja||r.tag||''), prompt: pickPrompt(r), raw:r})).filter(o=>o.label);
+    }
 
-    async function loadJSON(url){
-      const res=await fetch(url); return res.json();
-    }
+    async function loadJSON(url){ const res=await fetch(url); return res.json(); }
 
     const urls={
       header:"https://ihmn18603-max.github.io/OD-Image-Generator/Main_Header_v1.0.0.json",
@@ -86,17 +83,23 @@
     }
 
     async function init(){
-      state.header=toOptions(await loadJSON(urls.header));
+      const rawHeader=await loadJSON(urls.header);
+      state.header=toOptions(rawHeader,true);
       state.intensity=toOptions(await loadJSON(urls.intensity));
       state.emotion=toOptions(await loadJSON(urls.emotion));
       state.extra=toOptions(await loadJSON(urls.extra));
+
       fill($('#selHeader'),state.header);
       fill($('#selIntensity'),state.intensity);
       fill($('#selEmotion'),state.emotion);
       fill($('#selExtra'),state.extra,true);
     }
 
-    $('#selHeader').addEventListener('change',e=>{state.sel.header=state.header[e.target.value];build();});
+    $('#selHeader').addEventListener('change',e=>{
+      state.sel.header=state.header[e.target.value];
+      $('#headerPrompt').textContent= state.sel.header? state.sel.header.prompt : '';
+      build();
+    });
     $('#selIntensity').addEventListener('change',e=>{state.sel.intensity=state.intensity[e.target.value];build();});
     $('#selEmotion').addEventListener('change',e=>{state.sel.emotion=state.emotion[e.target.value];build();});
     $('#selExtra').addEventListener('change',e=>{state.sel.extra=Array.from(e.target.selectedOptions).map(o=>state.extra[o.value]);build();});
