@@ -5,319 +5,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>OurDream Prompt Generator</title>
   <style>
-    :root {
-      --bg: #0b0f14; --panel: #121822; --sub: #1b2230; --txt: #e8eef8; --muted:#97a3b6; --accent:#5aa9ff; --ok:#47d18c; --warn:#ffd166;
-      --radius: 14px; --shadow: 0 8px 30px rgba(0,0,0,.35);
-    }
-    * { box-sizing: border-box; }
-    html, body { height: 100%; }
-    body { margin: 0; background: linear-gradient(180deg, #0b0f14 0%, #0f1520 100%); color: var(--txt); font: 14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif; }
-    a { color: var(--accent); text-decoration: none; }
-    .container { max-width: 1100px; margin: 32px auto 80px; padding: 0 16px; }
-
-    .header { display:flex; align-items:center; gap:16px; margin-bottom: 18px; }
-    .logo { width:42px; height:42px; border-radius: 12px; background: linear-gradient(135deg, #1f7bf2, #12c2e9); box-shadow: var(--shadow); }
-    .title { font-size: 20px; font-weight: 700; letter-spacing: .2px; }
-    .subtitle { color: var(--muted); font-size: 12px; }
-
-    .grid { display:grid; grid-template-columns: repeat(12, 1fr); gap:16px; }
-    .card { grid-column: span 12; background: linear-gradient(180deg, var(--panel), var(--sub)); border: 1px solid #1c2636; border-radius: var(--radius); box-shadow: var(--shadow); padding: 16px; }
-    @media (min-width: 900px){ .card.span-6 { grid-column: span 6; } }
-
-    .card h2 { margin: 2px 0 10px; font-size: 14px; font-weight: 700; letter-spacing: .2px; }
-    .row { display:flex; gap:10px; align-items: center; flex-wrap: wrap; }
-    .row + .row { margin-top: 10px; }
-
-    label { font-size: 12px; color: var(--muted); }
-    select, input[type="text"] { width: 100%; padding: 10px 12px; background: #0f1520; color: var(--txt); border: 1px solid #203047; border-radius: 10px; outline: none; }
-    select[multiple] { height: 160px; }
-    .inline { display:grid; grid-template-columns: 170px minmax(0,1fr); gap:10px; align-items:center; }
-
-    .btn { appearance:none; border:1px solid #2b3a53; background:#0e1622; color:var(--txt); padding:10px 14px; border-radius: 10px; cursor:pointer; transition:.2s transform, .2s background; }
-    .btn:hover { background:#0b1220; transform: translateY(-1px); }
-    .btn.primary { border-color: #2a64a8; background: linear-gradient(180deg, #174074, #112d54); }
-    .btn.good { border-color: #2f725b; background: linear-gradient(180deg, #1a4a3d, #143a2f); }
-    .btn.warn { border-color: #6c5a19; background: linear-gradient(180deg, #3a310f, #2b230b); }
-
-    textarea { width: 100%; min-height: 160px; padding: 12px; resize: vertical; background:#0f1520; color:var(--txt); border: 1px solid #203047; border-radius: 10px; }
-
-    .chips { display:flex; gap:8px; flex-wrap: wrap; }
-    .chip { background:#0d1420; border:1px solid #24344d; padding:6px 10px; border-radius:999px; font-size:12px; color:var(--muted); }
-
-    .hint { color: var(--muted); font-size: 12px; }
-    .footer { margin-top:16px; display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
-
-    .badge { font-size: 11px; padding: 4px 8px; border-radius: 999px; border:1px solid #27364e; background:#0e1522; color: var(--muted); }
-    .small { font-size: 12px; color: var(--muted); }
+    body { margin:0; font-family: system-ui, sans-serif; background:#0f1520; color:#eee; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 20px; display: flex; gap: 20px; }
+    .steps { flex: 1; }
+    .output { flex: 1; position: sticky; top: 20px; align-self: flex-start; background:#121822; padding:20px; border-radius:12px; }
+    h1 { margin:0 0 20px; }
+    h2 { font-size:16px; margin:20px 0 8px; }
+    select { width: 100%; padding:10px; border-radius:8px; border:1px solid #333; background:#0f1520; color:#eee; }
+    select[multiple] { height:150px; }
+    textarea { width:100%; min-height:200px; margin-top:10px; border-radius:8px; border:1px solid #333; padding:10px; background:#0f1520; color:#eee; }
+    button { padding:10px 16px; margin-top:10px; border:none; border-radius:8px; cursor:pointer; }
+    .primary { background:#1f7bf2; color:white; }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">
-      <div class="logo" aria-hidden="true"></div>
-      <div>
-        <div class="title">OurDream Prompt Generator</div>
-        <div class="subtitle">① Main Header / ② Intensity / ③ Emotion / ④ Extra elements を選んでプロンプトを自動結合</div>
-      </div>
+    <div class="steps">
+      <h1>OurDream Prompt Generator</h1>
+      <h2>① Main Header（アニメ / リアル）</h2>
+      <select id="selHeader"></select>
+
+      <h2>② Intensity（シチュエーション）</h2>
+      <select id="selIntensity"></select>
+
+      <h2>③ Emotion（表情）</h2>
+      <select id="selEmotion"></select>
+
+      <h2>④ Extra Elements（付随要素・複数可）</h2>
+      <select id="selExtra" multiple></select>
     </div>
 
-    <!-- Data Sources Panel -->
-    <div class="grid">
-      <div class="card span-6">
-        <h2>データ読み込み（GitHub/ローカル対応）</h2>
-        <div class="row inline"><label>① Main Header JSON URL</label><input id="srcHeader" type="text" placeholder="./Main_Header_v1.0.0.json" /></div>
-        <div class="row inline"><label>② Intensity JSON URL</label><input id="srcIntensity" type="text" placeholder="./Intensity_v1.0.0.json" /></div>
-        <div class="row inline"><label>③ Emotion JSON URL</label><input id="srcEmotion" type="text" placeholder="./Emotion_v1.0.3.json" /></div>
-        <div class="row inline"><label>④ Extra Elements JSON URL</label><input id="srcExtra" type="text" placeholder="./Extra_elements_v1.0.0.json" /></div>
-        <div class="footer">
-          <button class="btn primary" id="btnLoad">URLから読み込む</button>
-          <span class="small">※ GitHub Pages等に同じフォルダで配置する場合はプレースホルダーのままでOK。</span>
-        </div>
-      </div>
-
-      <div class="card span-6">
-        <h2>またはローカルファイルを選択</h2>
-        <div class="row inline"><label>① Main Header</label><input id="fileHeader" type="file" accept="application/json" /></div>
-        <div class="row inline"><label>② Intensity</label><input id="fileIntensity" type="file" accept="application/json" /></div>
-        <div class="row inline"><label>③ Emotion</label><input id="fileEmotion" type="file" accept="application/json" /></div>
-        <div class="row inline"><label>④ Extra Elements</label><input id="fileExtra" type="file" accept="application/json" /></div>
-        <div class="footer"><span class="badge">ローカル優先</span><span class="small">※ ファイルが選択されている場合はURLよりローカルを優先して読み込みます。</span></div>
-      </div>
-
-      <!-- Selectors -->
-      <div class="card span-6">
-        <h2>① Main Header（アニメ / リアル）</h2>
-        <div class="row inline"><label>選択</label><select id="selHeader"></select></div>
-        <div class="chips" id="metaHeader"></div>
-        <div class="hint">推定キー: <code>label / ジャンル</code> を表示、<code>prompt / Header Prompt / keyword_en</code> を結合に使用</div>
-      </div>
-
-      <div class="card span-6">
-        <h2>② Intensity（シチュエーション）</h2>
-        <div class="row inline"><label>選択</label><select id="selIntensity"></select></div>
-        <div class="chips" id="metaIntensity"></div>
-        <div class="hint">推定キー: <code>label / ラベル</code> を表示、<code>Template Prompt / prompt / Front Prompt / Back Prompt</code> を結合に使用</div>
-      </div>
-
-      <div class="card span-6">
-        <h2>③ Emotion（表情）</h2>
-        <div class="row inline"><label>選択</label><select id="selEmotion"></select></div>
-        <div class="chips" id="metaEmotion"></div>
-        <div class="hint">推定キー: <code>label_ja / tag</code> を表示、<code>keyword_en / prompt</code> を結合に使用</div>
-      </div>
-
-      <div class="card span-6">
-        <h2>④ Extra Elements（付随要素・複数可）</h2>
-        <div class="row inline"><label>選択</label><select id="selExtra" multiple></select></div>
-        <div class="chips" id="metaExtra"></div>
-        <div class="hint">Ctrl / ⌘ + クリックで複数選択。推定キー: <code>label / label_ja / tag</code> 表示、<code>prompt / keyword_en</code> を結合に使用</div>
-      </div>
-
-      <!-- Output -->
-      <div class="card">
-        <h2>結合プロンプト</h2>
-        <textarea id="out" readonly placeholder="ここに結合プロンプトが出力されます"></textarea>
-        <div class="footer">
-          <button class="btn good" id="btnCopy">コピー</button>
-          <button class="btn" id="btnClear">クリア</button>
-          <span id="status" class="small"></span>
-        </div>
-      </div>
-
-      <!-- Diagnostics -->
-      <div class="card">
-        <h2>読み込みログ</h2>
-        <pre id="log" class="small" style="white-space:pre-wrap; margin:0; color:#a7b3c8"></pre>
-      </div>
+    <div class="output">
+      <h2>結合プロンプト</h2>
+      <textarea id="out" readonly placeholder="ここに結合プロンプトが出力されます"></textarea>
+      <button class="primary" id="btnCopy">コピー</button>
+      <span id="status"></span>
     </div>
   </div>
 
   <script>
-    // --- Helpers -----------------------------------------------------------
-    const $ = sel => document.querySelector(sel);
-    const log = (...args) => {
-      const msg = args.map(a => typeof a === 'string' ? a : JSON.stringify(a)).join(' ');
-      const el = $('#log'); el.textContent += `\n${new Date().toLocaleTimeString()}  ${msg}`;
-    };
-
-    // Try to pick a human-readable label and a prompt-ish value from an object.
+    const $ = s=>document.querySelector(s);
     function pickLabel(row){
-      const labelKeys = ['label', 'label_ja', 'ジャンル', 'tag', 'uid', 'id', 'eid', 'exid'];
-      for (const k of labelKeys){ if (k in row && row[k]) return String(row[k]); }
-      // Fallback: first string field
-      for (const [k,v] of Object.entries(row)){ if (typeof v === 'string' && v && v.length < 60) return v; }
-      return '(no label)';
+      for (const k of ['label','label_ja','ジャンル','tag']) if (row[k]) return row[k];
+      return Object.values(row).find(v=>typeof v==='string')||'(no label)';
     }
     function pickPrompt(row){
-      const promptKeys = [
-        'prompt', 'Template Prompt', 'Header Prompt', 'keyword_en',
-        'Front Prompt', 'Back Prompt', 'front_prompt', 'back_prompt'
-      ];
-      const parts = [];
-      for (const k of promptKeys){ if (k in row && row[k]) parts.push(String(row[k])); }
-      // Some datasets store arrays under "null" or similar – flatten strings
-      if ('null' in row && Array.isArray(row.null)){
-        const add = row.null.filter(x => typeof x === 'string').join(', ').trim();
-        if (add) parts.push(add);
-      }
-      return parts.filter(Boolean).join(', ');
+      const keys=['prompt','Template Prompt','Header Prompt','keyword_en','Front Prompt','Back Prompt'];
+      return keys.map(k=>row[k]).filter(Boolean).join(', ');
+    }
+    function toOptions(data){ return data.map((r,i)=>({label:pickLabel(r),prompt:pickPrompt(r)})); }
+
+    async function loadJSON(url){
+      const res=await fetch(url); return res.json();
     }
 
-    function toOptions(data){
-      return data.map((row, idx) => ({ idx, label: pickLabel(row), prompt: pickPrompt(row), raw: row }));
-    }
-
-    function fillSelect(sel, options, multi=false){
-      sel.innerHTML = '';
-      if (!multi){
-        const opt0 = document.createElement('option');
-        opt0.value = ''; opt0.textContent = '— 未選択 —';
-        sel.appendChild(opt0);
-      }
-      options.forEach(o => {
-        const opt = document.createElement('option');
-        opt.value = String(o.idx);
-        opt.textContent = o.label || `(item ${o.idx+1})`;
-        sel.appendChild(opt);
-      });
-    }
-
-    function setChips(el, items){
-      el.innerHTML = '';
-      items.slice(0,6).forEach(x => {
-        const d = document.createElement('div');
-        d.className = 'chip';
-        d.textContent = x;
-        el.appendChild(d);
-      });
-    }
-
-    function buildPrompt(){
-      const parts = [];
-      if (state.header.sel) parts.push(state.header.sel.prompt);
-      if (state.intensity.sel) parts.push(state.intensity.sel.prompt);
-      if (state.emotion.sel) parts.push(state.emotion.sel.prompt);
-      if (state.extra.sels.length){ parts.push(state.extra.sels.map(s=>s.prompt).join(', ')); }
-      $('#out').value = parts.filter(Boolean).join(', ').replace(/\s+,/g, ',');
-    }
-
-    function showStatus(text, ok=false){
-      const el = $('#status');
-      el.textContent = text;
-      el.style.color = ok ? 'var(--ok)' : 'var(--muted)';
-      if (text) setTimeout(()=>{ el.textContent=''; }, 3000);
-    }
-
-    async function readLocalJSON(file){
-      const text = await file.text();
-      try { return JSON.parse(text); }
-      catch(err){ throw new Error('JSON parse error: '+err.message); }
-    }
-
-    async function fetchJSON(url){
-      const res = await fetch(url, { cache: 'no-store' });
-      if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
-      return res.json();
-    }
-
-    async function loadDataset(kind){
-      try {
-        let data;
-        const fileEl = {
-          header: $('#fileHeader'), intensity: $('#fileIntensity'), emotion: $('#fileEmotion'), extra: $('#fileExtra')
-        }[kind];
-        const urlEl = {
-          header: $('#srcHeader'), intensity: $('#srcIntensity'), emotion: $('#srcEmotion'), extra: $('#srcExtra')
-        }[kind];
-
-        if (fileEl && fileEl.files && fileEl.files[0]){
-          data = await readLocalJSON(fileEl.files[0]);
-          log(`✔ ${kind}: ローカルJSON読込OK (${fileEl.files[0].name})`);
-        } else {
-          const defaultUrl = {
-            header: './Main_Header_v1.0.0.json',
-            intensity: './Intensity_v1.0.0.json',
-            emotion: './Emotion_v1.0.3.json',
-            extra: './Extra_elements_v1.0.0.json',
-          }[kind];
-          const url = (urlEl.value || defaultUrl).trim();
-          data = await fetchJSON(url);
-          log(`✔ ${kind}: URL読込OK (${url})`);
-        }
-
-        if (!Array.isArray(data)){
-          // Some exports may be an object with a top-level key
-          const firstArray = Object.values(data).find(v => Array.isArray(v));
-          if (firstArray) data = firstArray; else throw new Error('配列形式のJSONが見つかりません');
-        }
-
-        state[kind].data = toOptions(data);
-        return true;
-      } catch (err){
-        log(`✖ ${kind}: 読み込みエラー → ${err.message}`);
-        state[kind].data = [];
-        return false;
-      }
-    }
-
-    function refreshSelectors(){
-      fillSelect($('#selHeader'), state.header.data);
-      fillSelect($('#selIntensity'), state.intensity.data);
-      fillSelect($('#selEmotion'), state.emotion.data);
-      fillSelect($('#selExtra'), state.extra.data, true);
-
-      setChips($('#metaHeader'), state.header.data.slice(0,4).map(o=>o.label));
-      setChips($('#metaIntensity'), state.intensity.data.slice(0,4).map(o=>o.label));
-      setChips($('#metaEmotion'), state.emotion.data.slice(0,4).map(o=>o.label));
-      setChips($('#metaExtra'), state.extra.data.slice(0,6).map(o=>o.label));
-    }
-
-    const state = {
-      header: { data: [], sel: null },
-      intensity: { data: [], sel: null },
-      emotion: { data: [], sel: null },
-      extra: { data: [], sels: [] },
+    const urls={
+      header:"https://ihmn18603-max.github.io/OD-Image-Generator/Main_Header_v1.0.0.json",
+      intensity:"https://ihmn18603-max.github.io/OD-Image-Generator/Intensity_v1.0.0.json",
+      emotion:"https://ihmn18603-max.github.io/OD-Image-Generator/Emotion_v1.0.3.json",
+      extra:"https://ihmn18603-max.github.io/OD-Image-Generator/Extra_elements_v1.0.0.json"
     };
 
-    async function loadAll(){
-      const ok1 = await loadDataset('header');
-      const ok2 = await loadDataset('intensity');
-      const ok3 = await loadDataset('emotion');
-      const ok4 = await loadDataset('extra');
-      refreshSelectors();
-      showStatus(ok1 && ok2 && ok3 && ok4 ? 'データ読み込み完了' : '一部データの読み込みに失敗しました', ok1&&ok2&&ok3&&ok4);
-      buildPrompt();
+    const state={header:[],intensity:[],emotion:[],extra:[],sel:{}};
+
+    function fill(sel,opts,multi=false){
+      sel.innerHTML=multi?"":'<option value="">— 未選択 —</option>';
+      opts.forEach((o,i)=>{
+        const op=document.createElement('option');
+        op.value=i; op.textContent=o.label; sel.appendChild(op);
+      });
     }
 
-    // --- Events ------------------------------------------------------------
-    $('#btnLoad').addEventListener('click', loadAll);
-    $('#btnClear').addEventListener('click', () => {
-      ['selHeader','selIntensity','selEmotion','selExtra'].forEach(id=>{ const el = $('#'+id); for (const o of el.options) o.selected=false; });
-      state.header.sel = state.intensity.sel = state.emotion.sel = null; state.extra.sels = []; buildPrompt();
-    });
-    $('#btnCopy').addEventListener('click', async () => {
-      const txt = $('#out').value.trim();
-      if (!txt) return showStatus('出力が空です');
-      try { await navigator.clipboard.writeText(txt); showStatus('コピーしました', true); }
-      catch { showStatus('クリップボードにコピーできません'); }
+    function build(){
+      const parts=[];
+      if(state.sel.header) parts.push(state.sel.header.prompt);
+      if(state.sel.intensity) parts.push(state.sel.intensity.prompt);
+      if(state.sel.emotion) parts.push(state.sel.emotion.prompt);
+      if(state.sel.extra&&state.sel.extra.length) parts.push(state.sel.extra.map(x=>x.prompt).join(", "));
+      $('#out').value=parts.filter(Boolean).join(', ');
+    }
+
+    async function init(){
+      state.header=toOptions(await loadJSON(urls.header));
+      state.intensity=toOptions(await loadJSON(urls.intensity));
+      state.emotion=toOptions(await loadJSON(urls.emotion));
+      state.extra=toOptions(await loadJSON(urls.extra));
+      fill($('#selHeader'),state.header);
+      fill($('#selIntensity'),state.intensity);
+      fill($('#selEmotion'),state.emotion);
+      fill($('#selExtra'),state.extra,true);
+    }
+
+    $('#selHeader').addEventListener('change',e=>{state.sel.header=state.header[e.target.value];build();});
+    $('#selIntensity').addEventListener('change',e=>{state.sel.intensity=state.intensity[e.target.value];build();});
+    $('#selEmotion').addEventListener('change',e=>{state.sel.emotion=state.emotion[e.target.value];build();});
+    $('#selExtra').addEventListener('change',e=>{state.sel.extra=Array.from(e.target.selectedOptions).map(o=>state.extra[o.value]);build();});
+
+    $('#btnCopy').addEventListener('click',async()=>{
+      try{await navigator.clipboard.writeText($('#out').value);$('#status').textContent='コピーしました！';}catch{ $('#status').textContent='コピー失敗'; }
     });
 
-    $('#selHeader').addEventListener('change', e => {
-      const idx = e.target.value; state.header.sel = idx === '' ? null : state.header.data[Number(idx)]; buildPrompt();
-    });
-    $('#selIntensity').addEventListener('change', e => {
-      const idx = e.target.value; state.intensity.sel = idx === '' ? null : state.intensity.data[Number(idx)]; buildPrompt();
-    });
-    $('#selEmotion').addEventListener('change', e => {
-      const idx = e.target.value; state.emotion.sel = idx === '' ? null : state.emotion.data[Number(idx)]; buildPrompt();
-    });
-    $('#selExtra').addEventListener('change', e => {
-      const sels = Array.from(e.target.selectedOptions).map(o => state.extra.data[Number(o.value)]);
-      state.extra.sels = sels; buildPrompt();
-    });
-
-    // Auto-load with defaults on first paint
-    loadAll();
+    init();
   </script>
 </body>
 </html>
