@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>OD_Image_Generator</title>
+  <title>OD Image Generator</title>
   <style>
     body { margin:0; font-family: system-ui, sans-serif; background:#0f1520; color:#eee; }
     .container { max-width: 900px; margin: 0 auto; padding: 20px; }
@@ -19,7 +19,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>OD_Image_Generator</h1>
+    <h1>OD Image Generator</h1>
 
     <h2>① Main Header（アニメ / リアル）</h2>
     <select id="selHeader"></select>
@@ -37,6 +37,11 @@
     <div id="extraRadios"></div>
     <div id="extraPrompt" class="prompt-box"></div>
 
+    <h2>⑤ Outfit（衣装）</h2>
+    <select id="selOutfit"></select>
+    <div id="outfitPrompt" class="prompt-box"></div>
+    <button id="btnCopyOutfit">Outfitコピー</button>
+
     <h2>結合プロンプト</h2>
     <textarea id="out" readonly placeholder="ここに結合プロンプトが出力されます"></textarea>
     <button id="btnCopy">コピー</button>
@@ -53,6 +58,8 @@
         return data.map(r => ({label: r['label'], prompt: r['Template Prompt']}));
       } else if(kind === 'emotion'){
         return data.map(r => ({label: r['label'], prompt: r['Prompt']}));
+      } else if(kind === 'outfit'){
+        return data.map(r => ({label: r['label'], prompt: (r['outfit prompt']||[]).join(", ")}));
       } else {
         return data.map(r => ({label: r.label || r.label_ja || r.tag || '', prompt: r.prompt || r['keyword_en'] || r['Template Prompt'] || ''})).filter(o=>o.label);
       }
@@ -64,10 +71,11 @@
       header:"https://ihmn18603-max.github.io/OD-Image-Generator/Main_Header_v1.0.0.json",
       intensity:"https://ihmn18603-max.github.io/OD-Image-Generator/Intensity_v1.0.0.json",
       emotion:"https://ihmn18603-max.github.io/OD-Image-Generator/Emotion_v1.0.4.json",
-      extra:"https://ihmn18603-max.github.io/OD-Image-Generator/Extra_elements_v1.0.0.json"
+      extra:"https://ihmn18603-max.github.io/OD-Image-Generator/Extra_elements_v1.0.0.json",
+      outfit:"https://ihmn18603-max.github.io/OD-Image-Generator/Outfit_v1.1.0.json"
     };
 
-    const state={header:[],intensity:[],emotion:[],extra:[],sel:{extraChoices:{}}};
+    const state={header:[],intensity:[],emotion:[],extra:[],outfit:[],sel:{extraChoices:{}}};
 
     function fill(sel,opts,multi=false){
       sel.innerHTML=multi?"":'<option value="">— 未選択 —</option>';
@@ -85,6 +93,7 @@
         parts.push(state.sel.emotion.map(x=>x.prompt).join(", "));
       }
       if(state.sel.extraPrompt) parts.push(state.sel.extraPrompt);
+      if(state.sel.outfit) parts.push(state.sel.outfit.prompt);
       $('#out').value=parts.filter(Boolean).join(', ');
     }
 
@@ -93,9 +102,11 @@
       state.intensity=toOptions(await loadJSON(urls.intensity),'intensity');
       state.emotion=toOptions(await loadJSON(urls.emotion),'emotion');
       state.extra=await loadJSON(urls.extra);
+      state.outfit=toOptions(await loadJSON(urls.outfit),'outfit');
 
       fill($('#selHeader'),state.header);
       fill($('#selIntensity'),state.intensity);
+      fill($('#selOutfit'),state.outfit);
 
       // Emotion用チェックボックス生成
       const emoBox=$('#emotionOptions');
@@ -177,9 +188,17 @@
       $('#intensityPrompt').textContent= state.sel.intensity? state.sel.intensity.prompt : '';
       build();
     });
+    $('#selOutfit').addEventListener('change',e=>{
+      state.sel.outfit=state.outfit[e.target.value];
+      $('#outfitPrompt').textContent= state.sel.outfit? state.sel.outfit.prompt : '';
+      build();
+    });
 
     $('#btnCopy').addEventListener('click',async()=>{
       try{await navigator.clipboard.writeText($('#out').value);$('#status').textContent='コピーしました！';}catch{ $('#status').textContent='コピー失敗'; }
+    });
+    $('#btnCopyOutfit').addEventListener('click',async()=>{
+      try{await navigator.clipboard.writeText($('#outfitPrompt').textContent);$('#status').textContent='Outfitをコピーしました！';}catch{ $('#status').textContent='コピー失敗'; }
     });
 
     init();
