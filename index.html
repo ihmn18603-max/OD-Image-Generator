@@ -41,17 +41,12 @@
   <script>
     const $ = s=>document.querySelector(s);
 
-    function pickLabel(row){
-      // MainHeader専用: リアル系/アニメ系だけ表示
-      if (row.label && (row.label.includes('リアル') || row.label.includes('アニメ'))) return row.label;
-      if (row['ジャンル']) return row['ジャンル'];
-      return null;
-    }
-    function pickPrompt(row){
-      return row['Header Prompt'] || row['prompt'] || row['keyword_en'] || '';
-    }
-    function toOptions(data,isHeader=false){
-      return data.map(r=>({label: isHeader? pickLabel(r): (r.label||r.label_ja||r.tag||''), prompt: pickPrompt(r), raw:r})).filter(o=>o.label);
+    function toOptions(data, kind){
+      if(kind === 'header'){
+        return data.map(r=>({label:r['ジャンル'], prompt:r['Header Prompt']}));
+      } else {
+        return data.map(r=>({label:r.label||r.label_ja||r.tag||'', prompt:r.prompt||r['keyword_en']||r['Template Prompt']||''})).filter(o=>o.label);
+      }
     }
 
     async function loadJSON(url){ const res=await fetch(url); return res.json(); }
@@ -84,7 +79,7 @@
 
     async function init(){
       const rawHeader=await loadJSON(urls.header);
-      state.header=toOptions(rawHeader,true);
+      state.header=toOptions(rawHeader,'header');
       state.intensity=toOptions(await loadJSON(urls.intensity));
       state.emotion=toOptions(await loadJSON(urls.emotion));
       state.extra=toOptions(await loadJSON(urls.extra));
