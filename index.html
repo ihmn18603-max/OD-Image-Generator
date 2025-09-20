@@ -42,9 +42,13 @@
     const $ = s=>document.querySelector(s);
 
     function toOptions(data, kind){
-      if(kind === 'header'){
-        return data.map(r=>({label:r['ジャンル'], prompt:r['Header Prompt']}));
-      } else {
+     if(kind === 'header'){
+  return data.map(r => ({
+    label: r['ジャンル'],         // ← JSONのジャンルをそのまま表示
+    prompt: r['Header Prompt']    // ← JSONのHeader Promptをそのまま使う
+  }));
+}
+ else {
         return data.map(r=>({label:r.label||r.label_ja||r.tag||'', prompt:r.prompt||r['keyword_en']||r['Template Prompt']||''})).filter(o=>o.label);
       }
     }
