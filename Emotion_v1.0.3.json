@@ -1,0 +1,89 @@
+[
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "1\tblank_stare\t虚ろな視線\tneutral\tblank stare"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "2\tdazed\tぼんやりした表情\tneutral\tdazed"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "3\ttrance\tトランス状態\tneutral\ttrance"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "4\tshy_smile\t恥じらいの笑み\tshyness\tshy smile"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "5\tsheepish\t気まずい表情\tshyness\tsheepish"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "6\tblushing_cheeks\t頬を赤らめている\tshyness\tblushing cheeks"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "7\tslight_smile\t微笑\tjoy\tslight smile"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "8\tlight_smile\t軽い笑み\tjoy\tlight smile"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "9\tplayful_smile\t茶目っ気の笑み\tjoy\tplayful smile"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "10\thappy_tears\t嬉し涙\tjoy\thappy tears"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "11\ttroubled_eyebrows\t困った眉\tsadness\ttroubled eyebrows"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "12\tteary\t涙目\tsadness\tteary"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "13\tagonized\t苦悶の表情\tpain\tagonized face"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "14\tpained\t痛みに歪む顔\tpain\tpained expression"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "15\tsuffering\t苦しげな顔\tpain\tsuffering"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "16\tdistressed\t困惑と苦悶の表情\tpain\tdistressed"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "17\tenduring\t耐えている表情\tpain\tenduring"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "18\tstoic\t無表情で耐える\tpain\tstoic"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "100\tflushed_smirk\t火照った笑み\tsexual\tflushed smirk"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "101\taroused\t興奮した表情\tsexual\taroused"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "102\tsensual\t官能的な表情\tsexual\tsensual"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "103\tseductive_smile\t誘惑の笑み\tsexual\tseductive smile"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "104\tsuggestive\t示唆的な表情\tsexual\tsuggestive"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "105\torgasm_face\t絶頂の表情\tsexual\torgasm face"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "106\tecstasy_pain\t快楽と苦痛の混在\tsexual\tecstasy mixed with pain"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "107\tmasochistic_smile\t被虐的な笑み\tsexual\tmasochistic smile"
+  },
+  {
+    "eid\ttag\tlabel_ja\tcategory\tkeyword_en": "108\tahegao\tヘ顔（快楽と苦痛が混じった強烈な表情）\tsexual\tahegao",
+    "null": [
+      " eyes rolled back",
+      " tongue out",
+      " drooling",
+      " mouth wide open"
+    ]
+  }
+]

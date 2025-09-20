@@ -1,0 +1,26 @@
+[
+  {
+    "id\tジャンル\tHeader Prompt": "0\tリアル系\tultra realistic",
+    "null": [
+      " highly detailed",
+      " professional photography",
+      " natural lighting",
+      " soft shadows",
+      " cinematic depth of field",
+      " skin texture visible",
+      "flexible body"
+    ]
+  },
+  {
+    "id\tジャンル\tHeader Prompt": "1\tアニメ系\tmasterpiece",
+    "null": [
+      " best quality",
+      " highly detailed",
+      " anime style illustration",
+      " vibrant colors",
+      " soft shading",
+      " expressive eyes",
+      "flexible body"
+    ]
+  }
+]
