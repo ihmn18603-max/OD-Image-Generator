@@ -12,7 +12,7 @@
     select { width: 100%; padding:10px; border-radius:8px; border:1px solid #333; background:#0f1520; color:#eee; }
     textarea { width:100%; min-height:150px; margin-top:10px; border-radius:8px; border:1px solid #333; padding:10px; background:#0f1520; color:#eee; }
     button { padding:10px 16px; margin-top:10px; border:none; border-radius:8px; cursor:pointer; background:#1f7bf2; color:white; }
-    #headerPrompt { margin-top:8px; font-size:13px; color:#9ecbff; background:#121822; padding:8px; border-radius:6px; white-space:pre-wrap; }
+    .prompt-box { margin-top:8px; font-size:13px; color:#9ecbff; background:#121822; padding:8px; border-radius:6px; white-space:pre-wrap; }
   </style>
 </head>
 <body>
@@ -21,10 +21,11 @@
 
     <h2>① Main Header（アニメ / リアル）</h2>
     <select id="selHeader"></select>
-    <div id="headerPrompt"></div>
+    <div id="headerPrompt" class="prompt-box"></div>
 
     <h2>② Intensity（シチュエーション）</h2>
     <select id="selIntensity"></select>
+    <div id="intensityPrompt" class="prompt-box"></div>
 
     <h2>③ Emotion（表情）</h2>
     <select id="selEmotion"></select>
@@ -42,14 +43,12 @@
     const $ = s=>document.querySelector(s);
 
     function toOptions(data, kind){
-     if(kind === 'header'){
-  return data.map(r => ({
-    label: r['ジャンル'],         // ← JSONのジャンルをそのまま表示
-    prompt: r['Header Prompt']    // ← JSONのHeader Promptをそのまま使う
-  }));
-}
- else {
-        return data.map(r=>({label:r.label||r.label_ja||r.tag||'', prompt:r.prompt||r['keyword_en']||r['Template Prompt']||''})).filter(o=>o.label);
+      if(kind === 'header'){
+        return data.map(r => ({label: r['ジャンル'], prompt: r['Header Prompt']}));
+      } else if(kind === 'intensity'){
+        return data.map(r => ({label: r['label'], prompt: r['Template Prompt']}));
+      } else {
+        return data.map(r => ({label: r.label || r.label_ja || r.tag || '', prompt: r.prompt || r['keyword_en'] || r['Template Prompt'] || ''})).filter(o=>o.label);
       }
     }
 
@@ -82,9 +81,8 @@
     }
 
     async function init(){
-      const rawHeader=await loadJSON(urls.header);
-      state.header=toOptions(rawHeader,'header');
-      state.intensity=toOptions(await loadJSON(urls.intensity));
+      state.header=toOptions(await loadJSON(urls.header),'header');
+      state.intensity=toOptions(await loadJSON(urls.intensity),'intensity');
       state.emotion=toOptions(await loadJSON(urls.emotion));
       state.extra=toOptions(await loadJSON(urls.extra));
 
@@ -99,7 +97,11 @@
       $('#headerPrompt').textContent= state.sel.header? state.sel.header.prompt : '';
       build();
     });
-    $('#selIntensity').addEventListener('change',e=>{state.sel.intensity=state.intensity[e.target.value];build();});
+    $('#selIntensity').addEventListener('change',e=>{
+      state.sel.intensity=state.intensity[e.target.value];
+      $('#intensityPrompt').textContent= state.sel.intensity? state.sel.intensity.prompt : '';
+      build();
+    });
     $('#selEmotion').addEventListener('change',e=>{state.sel.emotion=state.emotion[e.target.value];build();});
     $('#selExtra').addEventListener('change',e=>{state.sel.extra=Array.from(e.target.selectedOptions).map(o=>state.extra[o.value]);build();});
 
