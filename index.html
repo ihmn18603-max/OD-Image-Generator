@@ -13,6 +13,8 @@
     textarea { width:100%; min-height:150px; margin-top:10px; border-radius:8px; border:1px solid #333; padding:10px; background:#0f1520; color:#eee; }
     button { padding:10px 16px; margin-top:10px; border:none; border-radius:8px; cursor:pointer; background:#1f7bf2; color:white; }
     .prompt-box { margin-top:8px; font-size:13px; color:#9ecbff; background:#121822; padding:8px; border-radius:6px; white-space:pre-wrap; }
+    .radio-group { margin:8px 0; }
+    .radio-group label { display:block; margin:4px 0; }
   </style>
 </head>
 <body>
@@ -28,11 +30,12 @@
     <div id="intensityPrompt" class="prompt-box"></div>
 
     <h2>③ Emotion（表情・最大4つ選択可）</h2>
-    <select id="selEmotion" multiple size="6"></select>
+    <div id="emotionOptions" class="checkbox-group"></div>
     <div id="emotionPrompt" class="prompt-box"></div>
 
-    <h2>④ Extra Elements（付随要素・複数可）</h2>
-    <select id="selExtra" multiple></select>
+    <h2>④ Extra Elements（Eyes / Mouth / Tongue / Saliva / Pussy Juice）</h2>
+    <div id="extraRadios"></div>
+    <div id="extraPrompt" class="prompt-box"></div>
 
     <h2>結合プロンプト</h2>
     <textarea id="out" readonly placeholder="ここに結合プロンプトが出力されます"></textarea>
@@ -64,7 +67,7 @@
       extra:"https://ihmn18603-max.github.io/OD-Image-Generator/Extra_elements_v1.0.0.json"
     };
 
-    const state={header:[],intensity:[],emotion:[],extra:[],sel:{}};
+    const state={header:[],intensity:[],emotion:[],extra:[],sel:{extraChoices:{}}};
 
     function fill(sel,opts,multi=false){
       sel.innerHTML=multi?"":'<option value="">— 未選択 —</option>';
@@ -81,7 +84,7 @@
       if(state.sel.emotion && state.sel.emotion.length){
         parts.push(state.sel.emotion.map(x=>x.prompt).join(", "));
       }
-      if(state.sel.extra&&state.sel.extra.length) parts.push(state.sel.extra.map(x=>x.prompt).join(", "));
+      if(state.sel.extraPrompt) parts.push(state.sel.extraPrompt);
       $('#out').value=parts.filter(Boolean).join(', ');
     }
 
@@ -89,12 +92,79 @@
       state.header=toOptions(await loadJSON(urls.header),'header');
       state.intensity=toOptions(await loadJSON(urls.intensity),'intensity');
       state.emotion=toOptions(await loadJSON(urls.emotion),'emotion');
-      state.extra=toOptions(await loadJSON(urls.extra));
+      state.extra=await loadJSON(urls.extra);
 
       fill($('#selHeader'),state.header);
       fill($('#selIntensity'),state.intensity);
-      fill($('#selEmotion'),state.emotion,true);
-      fill($('#selExtra'),state.extra,true);
+
+      // Emotion用チェックボックス生成
+      const emoBox=$('#emotionOptions');
+      emoBox.innerHTML='';
+      state.emotion.forEach((o,i)=>{
+        const chk=document.createElement('input');
+        chk.type='checkbox';
+        chk.value=i;
+        chk.id='emo'+i;
+        chk.onchange=()=>{
+          const selected=Array.from(document.querySelectorAll('#emotionOptions input:checked'));
+          if(selected.length>4){
+            chk.checked=false;
+            return;
+          }
+          state.sel.emotion=selected.map(el=>state.emotion[el.value]);
+          $('#emotionPrompt').textContent= state.sel.emotion.map(x=>x.prompt).join(", ");
+          build();
+        };
+        const label=document.createElement('label');
+        label.setAttribute('for','emo'+i);
+        label.textContent=o.label;
+        label.prepend(chk);
+        emoBox.appendChild(label);
+      });
+
+      // Extra Elements ラジオボタン生成
+      const categories=["eyes","mouth","tongue","saliva","pussy juice"];
+      const extraBox=$('#extraRadios');
+      categories.forEach(cat=>{
+        const wrap=document.createElement('div');
+        wrap.className='radio-group';
+        wrap.innerHTML=`<strong>${cat}</strong>`;
+        [0,1,2,3].forEach(val=>{
+          const id=`${cat}_${val}`;
+          const radio=document.createElement('input');
+          radio.type='radio'; radio.name=cat; radio.value=val; radio.id=id;
+          radio.onchange=()=>{
+            state.sel.extraChoices[cat]=parseInt(val);
+            matchExtra();
+          };
+          const label=document.createElement('label');
+          label.setAttribute('for',id);
+          label.textContent=val;
+          label.prepend(radio);
+          wrap.appendChild(label);
+        });
+        extraBox.appendChild(wrap);
+      });
+    }
+
+    function matchExtra(){
+      const c=state.sel.extraChoices;
+      if(!c) return;
+      const match=state.extra.find(e=>
+        e.eyes==c["eyes"] &&
+        e.mouth==c["mouth"] &&
+        e.tongue==c["tongue"] &&
+        e.saliva==c["saliva"] &&
+        e["pussy juice"]==c["pussy juice"]
+      );
+      if(match){
+        state.sel.extraPrompt=match.prompt;
+        $('#extraPrompt').textContent=match.prompt;
+      } else {
+        state.sel.extraPrompt='';
+        $('#extraPrompt').textContent='一致なし';
+      }
+      build();
     }
 
     $('#selHeader').addEventListener('change',e=>{
@@ -107,12 +177,6 @@
       $('#intensityPrompt').textContent= state.sel.intensity? state.sel.intensity.prompt : '';
       build();
     });
-    $('#selEmotion').addEventListener('change',e=>{
-      state.sel.emotion=Array.from(e.target.selectedOptions).slice(0,4).map(o=>state.emotion[o.value]);
-      $('#emotionPrompt').textContent= state.sel.emotion.map(x=>x.prompt).join(", ");
-      build();
-    });
-    $('#selExtra').addEventListener('change',e=>{state.sel.extra=Array.from(e.target.selectedOptions).map(o=>state.extra[o.value]);build();});
 
     $('#btnCopy').addEventListener('click',async()=>{
       try{await navigator.clipboard.writeText($('#out').value);$('#status').textContent='コピーしました！';}catch{ $('#status').textContent='コピー失敗'; }
