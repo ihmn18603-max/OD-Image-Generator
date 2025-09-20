@@ -1,0 +1,204 @@
+[
+  {
+    "cid": "1",
+    "tag": "nude",
+    "label": "裸",
+    "category": "base",
+    "outfit prompt": [
+      "nude",
+      "naked"
+    ]
+  },
+  {
+    "cid": "2",
+    "tag": "underwear",
+    "label": "下着あり",
+    "category": "base",
+    "outfit prompt": [
+      "underwear",
+      "lingerie"
+    ]
+  },
+  {
+    "cid": "3",
+    "tag": "underwear_pull",
+    "label": "下着ずらし",
+    "category": "variation",
+    "outfit prompt": [
+      "underwear pulled aside"
+    ]
+  },
+  {
+    "cid": "4",
+    "tag": "see_through",
+    "label": "ハイレグ透け下着",
+    "category": "variation",
+    "outfit prompt": [
+      "high-leg see-through lingerie"
+    ]
+  },
+  {
+    "cid": "5",
+    "tag": "swimsuit",
+    "label": "ハイレグ水着",
+    "category": "special",
+    "outfit prompt": [
+      "high-leg swimsuit"
+    ]
+  },
+  {
+    "cid": "6",
+    "tag": "garter",
+    "label": "ガーターベルト",
+    "category": "accessory",
+    "outfit prompt": [
+      "garter belt"
+    ]
+  },
+  {
+    "cid": "7",
+    "tag": "stockings",
+    "label": "ストッキング",
+    "category": "accessory",
+    "outfit prompt": [
+      "fishnet stockings"
+    ]
+  },
+  {
+    "cid": "8",
+    "tag": "shirt_open",
+    "label": "シャツはだける",
+    "category": "variation",
+    "outfit prompt": [
+      "unbuttoned shirt"
+    ]
+  },
+  {
+    "cid": "9",
+    "tag": "ao_dai",
+    "label": "アオザイ",
+    "category": "special",
+    "outfit prompt": [
+      "Ao dai",
+      "traditional vietnamese dress"
+    ]
+  },
+  {
+    "cid": "10",
+    "tag": "china_dress",
+    "label": "チャイナドレス",
+    "category": "special",
+    "outfit prompt": [
+      "china dress",
+      "cheongsam",
+      "qipao"
+    ]
+  },
+  {
+    "cid": "11",
+    "tag": "dirndl",
+    "label": "ディアンドル",
+    "category": "special",
+    "outfit prompt": [
+      "dirndl",
+      "german traditional dress"
+    ]
+  },
+  {
+    "cid": "12",
+    "tag": "leather_bodysuit",
+    "label": "黒レザーボディスーツ",
+    "category": "special",
+    "outfit prompt": [
+      "black leather bodysuit"
+    ]
+  },
+  {
+    "cid": "13",
+    "tag": "ultra_highleg_panties",
+    "label": "超ハイレグパンティ",
+    "category": "variation",
+    "outfit prompt": [
+      "ultra high-leg panties"
+    ]
+  },
+  {
+    "cid": "14",
+    "tag": "leather_corset",
+    "label": "レザーコルセット＋弾帯＋警官帽",
+    "category": "special",
+    "outfit prompt": [
+      "leather corset",
+      "frayed bullet belt",
+      "police cap"
+    ]
+  },
+  {
+    "cid": "15",
+    "tag": "police_uniform",
+    "label": "極端にタイトな紺色半袖警察制服",
+    "category": "special",
+    "outfit prompt": [
+      "extreme tight navy blue short sleeved police uniform"
+    ]
+  },
+  {
+    "cid": "16",
+    "tag": "french_maid",
+    "label": "フレンチメイドコルセットランジェリー",
+    "category": "special",
+    "outfit prompt": [
+      "french maid lingerie",
+      "corset"
+    ]
+  },
+  {
+    "cid": "17",
+    "tag": "highrise_strap_underwear",
+    "label": "ハイライズストラップ下着",
+    "category": "variation",
+    "outfit prompt": [
+      "high rise strap underwear"
+    ]
+  },
+  {
+    "cid": "18",
+    "tag": "sexy_nurse",
+    "label": "セクシーナース服",
+    "category": "special",
+    "outfit prompt": [
+      "sexy nurse uniform"
+    ]
+  },
+  {
+    "cid": "19",
+    "tag": "business_attire",
+    "label": "黒スラックス＋白ブラウス",
+    "category": "special",
+    "outfit prompt": [
+      "black business pants",
+      "white blouse"
+    ]
+  },
+  {
+    "cid": "20",
+    "tag": "doctor_coat",
+    "label": "白衣",
+    "category": "special",
+    "outfit prompt": [
+      "doctor's long white coat"
+    ]
+  },
+  {
+    "cid": "21",
+    "tag": "french_maid_torn",
+    "label": "フレンチメイド＋破れ黒ストッキング＋ガーターベルト＋ハイヒール",
+    "category": "special",
+    "outfit prompt": [
+      "French maid",
+      "torn black stockings",
+      "garter belt",
+      "high heels"
+    ]
+  }
+]
