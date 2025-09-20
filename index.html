@@ -27,8 +27,8 @@
     <select id="selIntensity"></select>
     <div id="intensityPrompt" class="prompt-box"></div>
 
-    <h2>③ Emotion（表情）</h2>
-    <select id="selEmotion"></select>
+    <h2>③ Emotion（表情・最大4つ選択可）</h2>
+    <select id="selEmotion" multiple size="6"></select>
     <div id="emotionPrompt" class="prompt-box"></div>
 
     <h2>④ Extra Elements（付随要素・複数可）</h2>
@@ -78,7 +78,9 @@
       const parts=[];
       if(state.sel.header) parts.push(state.sel.header.prompt);
       if(state.sel.intensity) parts.push(state.sel.intensity.prompt);
-      if(state.sel.emotion) parts.push(state.sel.emotion.prompt);
+      if(state.sel.emotion && state.sel.emotion.length){
+        parts.push(state.sel.emotion.map(x=>x.prompt).join(", "));
+      }
       if(state.sel.extra&&state.sel.extra.length) parts.push(state.sel.extra.map(x=>x.prompt).join(", "));
       $('#out').value=parts.filter(Boolean).join(', ');
     }
@@ -91,7 +93,7 @@
 
       fill($('#selHeader'),state.header);
       fill($('#selIntensity'),state.intensity);
-      fill($('#selEmotion'),state.emotion);
+      fill($('#selEmotion'),state.emotion,true);
       fill($('#selExtra'),state.extra,true);
     }
 
@@ -106,8 +108,8 @@
       build();
     });
     $('#selEmotion').addEventListener('change',e=>{
-      state.sel.emotion=state.emotion[e.target.value];
-      $('#emotionPrompt').textContent= state.sel.emotion? state.sel.emotion.prompt : '';
+      state.sel.emotion=Array.from(e.target.selectedOptions).slice(0,4).map(o=>state.emotion[o.value]);
+      $('#emotionPrompt').textContent= state.sel.emotion.map(x=>x.prompt).join(", ");
       build();
     });
     $('#selExtra').addEventListener('change',e=>{state.sel.extra=Array.from(e.target.selectedOptions).map(o=>state.extra[o.value]);build();});
