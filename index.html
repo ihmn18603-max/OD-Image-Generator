@@ -14,7 +14,7 @@
     button { padding:10px 16px; margin-top:10px; border:none; border-radius:8px; cursor:pointer; background:#1f7bf2; color:white; }
     .prompt-box { margin-top:8px; font-size:13px; color:#9ecbff; background:#121822; padding:8px; border-radius:6px; white-space:pre-wrap; }
     .radio-group { margin:8px 0; }
-    .radio-group label { display:block; margin:4px 0; }
+    .radio-group label { margin-right:12px; }
   </style>
 </head>
 <body>
@@ -34,7 +34,7 @@
     <div id="emotionPrompt" class="prompt-box"></div>
 
     <h2>④ Extra Elements（Eyes / Mouth / Tongue / Saliva / Pussy Juice）</h2>
-    <div id="extraRadios"></div>
+    <div id="extraElements"></div>
     <div id="extraPrompt" class="prompt-box"></div>
 
     <h2>⑤ 結合プロンプト（①〜④）</h2>
@@ -80,7 +80,7 @@
       header:"https://ihmn18603-max.github.io/OD-Image-Generator/Main_Header_v1.0.0.json",
       intensity:"https://ihmn18603-max.github.io/OD-Image-Generator/Intensity_v1.0.0.json",
       emotion:"https://ihmn18603-max.github.io/OD-Image-Generator/Emotion_v1.0.4.json",
-      extra:"https://ihmn18603-max.github.io/OD-Image-Generator/Extra_elements_v1.0.0.json",
+      extra:"https://ihmn18603-max.github.io/OD-Image-Generator/Extra_elements_v1.0.1.json",
       outfit:"https://ihmn18603-max.github.io/OD-Image-Generator/Outfit_v1.0.1.json",
       accessory:"https://ihmn18603-max.github.io/OD-Image-Generator/Accessory_v1.0.1.json"
     };
@@ -102,7 +102,9 @@
       if(state.sel.emotion && state.sel.emotion.length){
         parts.push(state.sel.emotion.map(x=>x.prompt).join(", "));
       }
-      if(state.sel.extraPrompt) parts.push(state.sel.extraPrompt);
+      if(state.sel.extraPrompts && state.sel.extraPrompts.length){
+        parts.push(state.sel.extraPrompts.join(", "));
+      }
       $('#out').value=parts.filter(Boolean).join(', ');
 
       // Outfit + Accessory 結合プロンプト
@@ -153,48 +155,38 @@
       });
 
       // Extra Elements ラジオボタン生成
-      const categories=["eyes","mouth","tongue","saliva","pussy juice"];
-      const extraBox=$('#extraRadios');
-      categories.forEach(cat=>{
+      const container=$('#extraElements');
+      const grouped={};
+      state.extra.forEach(item=>{
+        if(!grouped[item.tag]) grouped[item.tag]=[];
+        grouped[item.tag].push(item);
+      });
+
+      Object.keys(grouped).forEach(tag=>{
         const wrap=document.createElement('div');
         wrap.className='radio-group';
-        wrap.innerHTML=`<strong>${cat}</strong>`;
-        [0,1,2,3].forEach(val=>{
-          const id=`${cat}_${val}`;
+        wrap.innerHTML=`<strong>${tag}</strong><br>`;
+        grouped[tag].forEach(opt=>{
+          const id=`${tag}_${opt.level}`;
           const radio=document.createElement('input');
-          radio.type='radio'; radio.name=cat; radio.value=val; radio.id=id;
+          radio.type='radio';
+          radio.name=tag;
+          radio.value=opt.prompt;
+          radio.id=id;
           radio.onchange=()=>{
-            state.sel.extraChoices[cat]=parseInt(val);
-            matchExtra();
+            state.sel.extraChoices[tag]=opt.prompt;
+            state.sel.extraPrompts=Object.values(state.sel.extraChoices).filter(Boolean);
+            $('#extraPrompt').textContent=state.sel.extraPrompts.join(", ");
+            build();
           };
           const label=document.createElement('label');
           label.setAttribute('for',id);
-          label.textContent=val;
+          label.textContent=opt.label;
           label.prepend(radio);
           wrap.appendChild(label);
         });
-        extraBox.appendChild(wrap);
+        container.appendChild(wrap);
       });
-    }
-
-    function matchExtra(){
-      const c=state.sel.extraChoices;
-      if(!c) return;
-      const match=state.extra.find(e=>
-        e.eyes==c["eyes"] &&
-        e.mouth==c["mouth"] &&
-        e.tongue==c["tongue"] &&
-        e.saliva==c["saliva"] &&
-        e["pussy juice"]==c["pussy juice"]
-      );
-      if(match){
-        state.sel.extraPrompt=match.prompt;
-        $('#extraPrompt').textContent=match.prompt;
-      } else {
-        state.sel.extraPrompt='';
-        $('#extraPrompt').textContent='一致なし';
-      }
-      build();
     }
 
     $('#selHeader').addEventListener('change',e=>{
