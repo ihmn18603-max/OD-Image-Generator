@@ -87,20 +87,19 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
 
     function toOptions(data, kind){
       if(kind === 'header'){
-        return data.map(r => ({label: r['label'], prompt: r['Header Prompt']}));
+        return data.map(r => ({ label: r['label'], prompt: r['Header Prompt'] }));
       } else if(kind === 'intensity'){
-        return data.map(r => ({label: r['label'], prompt: r['Template Prompt']}));
+        return data.map(r => ({ label: r['label'], prompt: r['Template Prompt'] }));
       } else if(kind === 'emotion'){
-        return data.map(r => ({label: r['label'], prompt: r['Prompt']}));
+        return data.map(r => ({ label: r['label'], prompt: r['Prompt'] }));
       } else if(kind === 'outfit'){
-        return data.map(r => ({label: r['label'], prompt: (r['outfit prompt']||[]).join(", ")}));
+        return data.map(r => ({ label: r['label'], prompt: (r['outfit prompt'] || []).join(', ') }));
       } else if(kind === 'accessory'){
-        return data.map(r => ({label: r['label'], prompt: r['prompt']}));
+        return data.map(r => ({ label: r['label'], prompt: r['prompt'] }));
+      } else if(kind === 'extra'){
+        return data.map(r => ({ label: r['label'], prompt: r['prompt'] }));
       } else {
-        return data.map(r => ({
-          label: r['label'] || r['tag'] || '',
-          prompt: r['prompt'] || r['Template Prompt'] || ''
-        })).filter(o=>o.label);
+        return data.map(r => ({ label: r['label'] || r['tag'] || '', prompt: r['prompt'] || r['Template Prompt'] || '' })).filter(o => o.label);
       }
     }
 
