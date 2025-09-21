@@ -92,14 +92,15 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
 
     async function loadJSON(url){ const res=await fetch(url); return res.json(); }
 
-    const urls={
-      header:"Main_Header_v1.0.1.json",
-      intensity:"Intensity_v1.0.1.json",
-      emotion:"Emotion_v1.0.5.json",
-      extra:"Extra_elements_v1.0.2.json",
-      outfit:"Cloth_v1.0.2.json",
-      accessory:"Accessory_v1.0.2.json"
-    };
+const urls={
+  header:"OD-Image-Generator/Main_Header_v1.0.1.json",
+  intensity:"OD-Image-Generator/Intensity_v1.0.1.json",
+  emotion:"OD-Image-Generator/Emotion_v1.0.5.json",
+  extra:"OD-Image-Generator/Extra_elements_v1.0.2.json",
+  outfit:"OD-Image-Generator/Cloth_v1.0.2.json",
+  accessory:"OD-Image-Generator/Accessory_v1.0.2.json"
+};
+
 
     const state={header:[],intensity:[],emotion:[],extra:[],outfit:[],accessory:[],sel:{extraChoices:{}}};
 
