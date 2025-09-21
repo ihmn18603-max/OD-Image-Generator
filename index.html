@@ -1,206 +1,361 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>OD Image Generator</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OD Model Generator</title>
   <style>
-    body { margin:0; font-family: system-ui, sans-serif; background:#0f1520; color:#eee; }
-    .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-    h1 { margin:0 0 20px; text-align:center; }
-    h2 { font-size:16px; margin:20px 0 8px; }
-    select { width: 100%; padding:10px; border-radius:8px; border:1px solid #333; background:#0f1520; color:#eee; }
-    textarea { width:100%; min-height:150px; margin-top:10px; border-radius:8px; border:1px solid #333; padding:10px; background:#0f1520; color:#eee; }
-    button { padding:10px 16px; margin-top:10px; border:none; border-radius:8px; cursor:pointer; background:#1f7bf2; color:white; }
-    .prompt-box { margin-top:8px; font-size:13px; color:#9ecbff; background:#121822; padding:8px; border-radius:6px; white-space:pre-wrap; }
-    .radio-group { margin:8px 0; }
-    .radio-group label { display:block; margin:4px 0; }
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
+      padding: 10px;
+      max-width: 700px;
+      margin: auto;
+    }
+    select, textarea, button, input {
+      font-size: 14px;
+    }
+    select, input {
+      margin: 10px 0;
+      padding: 6px;
+      background-color: #111;
+      color: #fff;
+      border: 1px solid #444;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .accordion {
+      margin-bottom: 10px;
+      border: 1px solid #444;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .accordion-header {
+      background-color: #222;
+      padding: 12px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .accordion-header:hover {
+      background-color: #333;
+    }
+    .accordion-content {
+      display: none;
+      padding: 10px;
+      background-color: #111;
+    }
+    .prompt-block {
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+    textarea {
+      width: 100%;
+      height: 80px;
+      padding: 8px;
+      margin-top: 5px;
+      background-color: #222;
+      color: #fff;
+      border: 1px solid #555;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .button-group button {
+      flex: 1;
+      padding: 10px;
+      cursor: pointer;
+      background-color: #333;
+      color: #fff;
+      border: 1px solid #666;
+      border-radius: 4px;
+      text-align: center;
+    }
+    .button-group button:hover {
+      background-color: #444;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>OD Image Generator</h1>
+  <h1>🌍 OD Model Generator</h1>
 
-    <h2>① Main Header（アニメ / リアル）</h2>
-    <select id="selHeader"></select>
-    <div id="headerPrompt" class="prompt-box"></div>
+  <!-- 国籍 -->
+  <div class="accordion">
+    <div class="accordion-header">🌍 Nationality</div>
+    <div class="accordion-content" style="display:block;">
+      <div id="prompt-container">国コードを選択してください。</div>
+    </div>
+  </div>
 
-    <h2>② Intensity（シチュエーション）</h2>
-    <select id="selIntensity"></select>
-    <div id="intensityPrompt" class="prompt-box"></div>
+  <!-- Fetish -->
+  <div class="accordion">
+    <div class="accordion-header">🔞 Fetish</div>
+    <div class="accordion-content">
+      <div id="fetish-container">カテゴリを選択してください。</div>
+    </div>
+  </div>
 
-    <h2>③ Emotion（表情・最大4つ選択可）</h2>
-    <div id="emotionOptions" class="checkbox-group"></div>
-    <div id="emotionPrompt" class="prompt-box"></div>
-
-    <h2>④ Extra Elements（Eyes / Mouth / Tongue / Saliva / Pussy Juice）</h2>
-    <div id="extraRadios"></div>
-    <div id="extraPrompt" class="prompt-box"></div>
-
-    <h2>⑤ 結合プロンプト</h2>
-    <textarea id="out" readonly placeholder="ここに結合プロンプトが出力されます"></textarea>
-    <button id="btnCopy">コピー</button>
-    <span id="status"></span>
-
-    <h2>⑥ Outfit（衣装）</h2>
-    <select id="selOutfit"></select>
-    <div id="outfitPrompt" class="prompt-box"></div>
-    <button id="btnCopyOutfit">Outfitコピー</button>
+  <!-- Other -->
+  <div class="accordion">
+    <div class="accordion-header">🌀 Other</div>
+    <div class="accordion-content">
+      <div id="other-container">タイプを選択してください。</div>
+    </div>
   </div>
 
   <script>
-    const $ = s=>document.querySelector(s);
-
-    function toOptions(data, kind){
-      if(kind === 'header'){
-        return data.map(r => ({label: r['ジャンル'], prompt: r['Header Prompt']}));
-      } else if(kind === 'intensity'){
-        return data.map(r => ({label: r['label'], prompt: r['Template Prompt']}));
-      } else if(kind === 'emotion'){
-        return data.map(r => ({label: r['label'], prompt: r['Prompt']}));
-      } else if(kind === 'outfit'){
-        return data.map(r => ({label: r['label'], prompt: (r['outfit prompt']||[]).join(", ")}));
-      } else {
-        return data.map(r => ({label: r.label || r.label_ja || r.tag || '', prompt: r.prompt || r['keyword_en'] || r['Template Prompt'] || ''})).filter(o=>o.label);
-      }
-    }
-
-    async function loadJSON(url){ const res=await fetch(url); return res.json(); }
-
-    const urls={
-      header:"https://ihmn18603-max.github.io/OD-Image-Generator/Main_Header_v1.0.0.json",
-      intensity:"https://ihmn18603-max.github.io/OD-Image-Generator/Intensity_v1.0.0.json",
-      emotion:"https://ihmn18603-max.github.io/OD-Image-Generator/Emotion_v1.0.4.json",
-      extra:"https://ihmn18603-max.github.io/OD-Image-Generator/Extra_elements_v1.0.0.json",
-      outfit:"https://ihmn18603-max.github.io/OD-Image-Generator/Outfit_v1.1.0.json"
-    };
-
-    const state={header:[],intensity:[],emotion:[],extra:[],outfit:[],sel:{extraChoices:{}}};
-
-    function fill(sel,opts,multi=false){
-      sel.innerHTML=multi?"":'<option value="">— 未選択 —</option>';
-      opts.forEach((o,i)=>{
-        const op=document.createElement('option');
-        op.value=i; op.textContent=o.label; sel.appendChild(op);
+    // --- Accordion toggle (一つだけ開ける方式) ---
+    document.querySelectorAll(".accordion-header").forEach(header => {
+      header.addEventListener("click", () => {
+        document.querySelectorAll(".accordion-content").forEach(c => c.style.display = "none");
+        const content = header.nextElementSibling;
+        content.style.display = "block";
       });
+    });
+
+    async function loadJSON(url) {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error("Failed to load JSON");
+      return await response.json();
     }
 
-    function build(){
-      const parts=[];
-      if(state.sel.header) parts.push(state.sel.header.prompt);
-      if(state.sel.intensity) parts.push(state.sel.intensity.prompt);
-      if(state.sel.emotion && state.sel.emotion.length){
-        parts.push(state.sel.emotion.map(x=>x.prompt).join(", "));
-      }
-      if(state.sel.extraPrompt) parts.push(state.sel.extraPrompt);
-      // Outfitは結合プロンプトに含めない
-      $('#out').value=parts.filter(Boolean).join(', ');
-    }
+    // --- Nationality ---
+    function renderPrompts(data, selectedCode = "") {
+      const container = document.getElementById("prompt-container");
+      container.innerHTML = "";
 
-    async function init(){
-      state.header=toOptions(await loadJSON(urls.header),'header');
-      state.intensity=toOptions(await loadJSON(urls.intensity),'intensity');
-      state.emotion=toOptions(await loadJSON(urls.emotion),'emotion');
-      state.extra=await loadJSON(urls.extra);
-      state.outfit=toOptions(await loadJSON(urls.outfit),'outfit');
-
-      fill($('#selHeader'),state.header);
-      fill($('#selIntensity'),state.intensity);
-      fill($('#selOutfit'),state.outfit);
-
-      // Emotion用チェックボックス生成
-      const emoBox=$('#emotionOptions');
-      emoBox.innerHTML='';
-      state.emotion.forEach((o,i)=>{
-        const chk=document.createElement('input');
-        chk.type='checkbox';
-        chk.value=i;
-        chk.id='emo'+i;
-        chk.onchange=()=>{
-          const selected=Array.from(document.querySelectorAll('#emotionOptions input:checked'));
-          if(selected.length>4){
-            chk.checked=false;
-            return;
-          }
-          state.sel.emotion=selected.map(el=>state.emotion[el.value]);
-          $('#emotionPrompt').textContent= state.sel.emotion.map(x=>x.prompt).join(", ");
-          build();
-        };
-        const label=document.createElement('label');
-        label.setAttribute('for','emo'+i);
-        label.textContent=o.label;
-        label.prepend(chk);
-        emoBox.appendChild(label);
+      const select = document.createElement("select");
+      select.innerHTML = `<option value="">国コードを選択してください</option>`;
+      const codes = [...new Set(data.map(entry => entry.code))];
+      codes.forEach(code => {
+        const option = document.createElement("option");
+        option.value = code;
+        option.textContent = code;
+        select.appendChild(option);
       });
+      container.appendChild(select);
 
-      // Extra Elements ラジオボタン生成
-      const categories=["eyes","mouth","tongue","saliva","pussy juice"];
-      const extraBox=$('#extraRadios');
-      categories.forEach(cat=>{
-        const wrap=document.createElement('div');
-        wrap.className='radio-group';
-        wrap.innerHTML=`<strong>${cat}</strong>`;
-        [0,1,2,3].forEach(val=>{
-          const id=`${cat}_${val}`;
-          const radio=document.createElement('input');
-          radio.type='radio'; radio.name=cat; radio.value=val; radio.id=id;
-          radio.onchange=()=>{
-            state.sel.extraChoices[cat]=parseInt(val);
-            matchExtra();
+      const resultDiv = document.createElement("div");
+      container.appendChild(resultDiv);
+
+      select.addEventListener("change", () => {
+        resultDiv.innerHTML = "";
+        const entry = data.find(e => e.code === select.value);
+        if (!entry) return;
+
+        // 基本情報
+        const info = document.createElement("p");
+        info.innerHTML = `
+          <strong>国名:</strong> ${entry.label || ""}<br>
+          <strong>Base Aura:</strong> ${entry["base_aura"] || ""}<br>
+          <strong>Base Skin:</strong> ${entry["base_skin"] || ""}<br>
+          <strong>Figure Structure:</strong> ${entry["figure_structure"] || ""}<br>
+          <strong>Face Structure:</strong> ${entry["face_structure"] || ""}<br>
+          <strong>Notes:</strong> ${entry["notes"] || ""}<br>
+        `;
+        resultDiv.appendChild(info);
+
+        // Personality / Physical / Facial
+        ["Personality","Physical Prompt","Facial Prompt"].forEach(key => {
+          const label = document.createElement("strong");
+          label.textContent = key.replace(" Prompt",""); 
+          resultDiv.appendChild(label);
+
+          const ta = document.createElement("textarea");
+          ta.readOnly = true;
+          ta.textContent = entry[key] || "";
+          resultDiv.appendChild(ta);
+
+          const btnGroup = document.createElement("div");
+          btnGroup.className = "button-group";
+          const btn = document.createElement("button");
+          btn.textContent = `Copy ${label.textContent}`;
+          btn.onclick = () => {
+            navigator.clipboard.writeText(ta.value)
+              .then(() => alert(`✅ ${label.textContent} をコピーしました！`))
+              .catch(() => alert("⚠️ コピーに失敗しました"));
           };
-          const label=document.createElement('label');
-          label.setAttribute('for',id);
-          label.textContent=val;
-          label.prepend(radio);
-          wrap.appendChild(label);
+          btnGroup.appendChild(btn);
+          resultDiv.appendChild(btnGroup);
         });
-        extraBox.appendChild(wrap);
       });
     }
+    loadJSON("ODnationality_v1.0.0.json").then(data => renderPrompts(data));
 
-    function matchExtra(){
-      const c=state.sel.extraChoices;
-      if(!c) return;
-      const match=state.extra.find(e=>
-        e.eyes==c["eyes"] &&
-        e.mouth==c["mouth"] &&
-        e.tongue==c["tongue"] &&
-        e.saliva==c["saliva"] &&
-        e["pussy juice"]==c["pussy juice"]
-      );
-      if(match){
-        state.sel.extraPrompt=match.prompt;
-        $('#extraPrompt').textContent=match.prompt;
-      } else {
-        state.sel.extraPrompt='';
-        $('#extraPrompt').textContent='一致なし';
+    // --- Fetish ---
+    async function loadFetish(url) {
+      const data = await loadJSON(url);
+      const container = document.getElementById("fetish-container");
+
+      // 選択状態を保存する Set
+      const selectedPrompts = new Set();
+
+      // --- Category セレクト ---
+      const categories = [...new Set(data.map(e => e.category))];
+      const catSelect = document.createElement("select");
+      catSelect.innerHTML = `<option value="">カテゴリを選択</option>`;
+      categories.forEach(cat => {
+        const option = document.createElement("option");
+        option.value = cat;
+        option.textContent = cat;
+        catSelect.appendChild(option);
+      });
+      container.appendChild(catSelect);
+
+      const listDiv = document.createElement("div");
+      container.appendChild(listDiv);
+
+      // --- 最大選択数入力 & 選択数表示 ---
+      const settingsDiv = document.createElement("div");
+      settingsDiv.style.margin = "10px 0";
+
+      const maxLabel = document.createElement("label");
+      maxLabel.textContent = "最大選択数: ";
+      const maxInput = document.createElement("input");
+      maxInput.type = "number";
+      maxInput.value = 5;
+      maxInput.min = 1;
+      maxInput.style.width = "80px";
+
+      const countDisplay = document.createElement("span");
+      countDisplay.style.marginLeft = "10px";
+      countDisplay.textContent = `選択中: 0 / ${maxInput.value}`;
+
+      settingsDiv.appendChild(maxLabel);
+      settingsDiv.appendChild(maxInput);
+      settingsDiv.appendChild(countDisplay);
+
+      container.appendChild(settingsDiv);
+
+      // --- 出力エリア & ボタン ---
+      const resultArea = document.createElement("textarea");
+      resultArea.readOnly = true;
+      container.appendChild(resultArea);
+
+      const copyBtn = document.createElement("button");
+      copyBtn.textContent = "Copy Fetish Prompts";
+      container.appendChild(copyBtn);
+
+      // --- 選択数更新関数 ---
+      function updateCountDisplay() {
+        const MAX_FETISH = parseInt(maxInput.value, 10) || 5;
+        countDisplay.textContent = `選択中: ${selectedPrompts.size} / ${MAX_FETISH}`;
       }
-      build();
+
+      // --- リスト描画関数 ---
+      function renderList(category) {
+        listDiv.innerHTML = "";
+        const filtered = category ? data.filter(e => e.category === category) : data;
+
+        filtered.forEach(entry => {
+          const label = document.createElement("label");
+          const cb = document.createElement("input");
+          cb.type = "checkbox";
+          cb.value = entry.prompt;
+          cb.checked = selectedPrompts.has(entry.prompt);
+
+          cb.onchange = () => {
+            const MAX_FETISH = parseInt(maxInput.value, 10) || 5;
+            if (cb.checked) {
+              if (selectedPrompts.size >= MAX_FETISH) {
+                cb.checked = false;
+                alert(`⚠️ 選択は最大 ${MAX_FETISH} 個までです`);
+                return;
+              }
+              selectedPrompts.add(entry.prompt);
+            } else {
+              selectedPrompts.delete(entry.prompt);
+            }
+            updateCountDisplay();
+          };
+
+          label.appendChild(cb);
+          label.appendChild(document.createTextNode(`${entry.label}`));
+          listDiv.appendChild(label);
+          listDiv.appendChild(document.createElement("br"));
+        });
+      }
+
+      // 初期表示（全カテゴリ）
+      renderList("");
+      updateCountDisplay();
+
+      // カテゴリ切り替え
+      catSelect.addEventListener("change", () => {
+        renderList(catSelect.value);
+      });
+
+      // 最大選択数変更時に更新
+      maxInput.addEventListener("input", updateCountDisplay);
+
+      // コピー
+      copyBtn.onclick = () => {
+        const prompts = Array.from(selectedPrompts).join(", ");
+        resultArea.value = prompts;
+        navigator.clipboard.writeText(prompts)
+          .then(() => alert("✅ Fetish prompts をコピーしました！"))
+          .catch(() => alert("⚠️ コピーに失敗しました"));
+      };
     }
+    loadFetish("Fetish_v1.0.1.json");
 
-    $('#selHeader').addEventListener('change',e=>{
-      state.sel.header=state.header[e.target.value];
-      $('#headerPrompt').textContent= state.sel.header? state.sel.header.prompt : '';
-      build();
-    });
-    $('#selIntensity').addEventListener('change',e=>{
-      state.sel.intensity=state.intensity[e.target.value];
-      $('#intensityPrompt').textContent= state.sel.intensity? state.sel.intensity.prompt : '';
-      build();
-    });
-    $('#selOutfit').addEventListener('change',e=>{
-      state.sel.outfit=state.outfit[e.target.value];
-      $('#outfitPrompt').textContent= state.sel.outfit? state.sel.outfit.prompt : '';
-    });
+    // --- Other ---
+    async function loadOther(url) {
+      const data = await loadJSON(url);
+      const container = document.getElementById("other-container");
 
-    $('#btnCopy').addEventListener('click',async()=>{
-      try{await navigator.clipboard.writeText($('#out').value);$('#status').textContent='コピーしました！';}catch{ $('#status').textContent='コピー失敗'; }
-    });
-    $('#btnCopyOutfit').addEventListener('click',async()=>{
-      try{await navigator.clipboard.writeText($('#outfitPrompt').textContent);$('#status').textContent='Outfitをコピーしました！';}catch{ $('#status').textContent='コピー失敗'; }
-    });
+      const select = document.createElement("select");
+      select.innerHTML = `<option value="">タイプを選択</option>`;
+      data.forEach(entry => {
+        const option = document.createElement("option");
+        option.value = entry["タイプ"];
+        option.textContent = entry["タイプ"];
+        select.appendChild(option);
+      });
+      container.appendChild(select);
 
-    init();
+      const detailsArea = document.createElement("textarea");
+      detailsArea.placeholder = "Additional Personality Details";
+      detailsArea.readOnly = true;
+      container.appendChild(detailsArea);
+
+      const scenarioArea = document.createElement("textarea");
+      scenarioArea.placeholder = "Scenario";
+      scenarioArea.readOnly = true;
+      container.appendChild(scenarioArea);
+
+      const btnGroup = document.createElement("div");
+      btnGroup.className = "button-group";
+      container.appendChild(btnGroup);
+
+      const copyDetails = document.createElement("button");
+      copyDetails.textContent = "Copy Details";
+      btnGroup.appendChild(copyDetails);
+
+      const copyScenario = document.createElement("button");
+      copyScenario.textContent = "Copy Scenario";
+      btnGroup.appendChild(copyScenario);
+
+      select.addEventListener("change", () => {
+        const entry = data.find(e => e["タイプ"] === select.value);
+        detailsArea.value = entry ? entry["Additional Personality Details"] : "";
+        scenarioArea.value = entry ? entry["Scenario"] : "";
+      });
+
+      copyDetails.onclick = () => navigator.clipboard.writeText(detailsArea.value)
+        .then(() => alert("✅ Details をコピーしました！"))
+        .catch(() => alert("⚠️ コピーに失敗しました"));
+
+      copyScenario.onclick = () => navigator.clipboard.writeText(scenarioArea.value)
+        .then(() => alert("✅ Scenario をコピーしました！"))
+        .catch(() => alert("⚠️ コピーに失敗しました"));
+    }
+    loadOther("Other_v1.0.0.json");
   </script>
 </body>
 </html>
