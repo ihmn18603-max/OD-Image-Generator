@@ -97,7 +97,10 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
       } else if(kind === 'accessory'){
         return data.map(r => ({label: r['label'], prompt: r['prompt']}));
       } else {
-        return data.map(r => ({label: r.label || r.label_ja || r.tag || '', prompt: r.prompt || r['keyword_en'] || r['Template Prompt'] || ''})).filter(o=>o.label);
+        return data.map(r => ({
+          label: r['label'] || r['tag'] || '',
+          prompt: r['prompt'] || r['Template Prompt'] || ''
+        })).filter(o=>o.label);
       }
     }
 
