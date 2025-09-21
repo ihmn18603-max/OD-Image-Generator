@@ -1,0 +1,130 @@
+[
+  {
+    "id": "Ex-1",
+    "tag": "Ex-eye-0",
+    "label": "目閉",
+    "category": "eye",
+    "prompt": "eyes closed",
+    "category level": 0
+  },
+  {
+    "id": "Ex-2",
+    "tag": "Ex-eye-1",
+    "label": "目半開",
+    "category": "eye",
+    "prompt": "eyes half-open",
+    "category level": 1
+  },
+  {
+    "id": "Ex-3",
+    "tag": "Ex-eye-2",
+    "label": "目開(普通)",
+    "category": "eye",
+    "prompt": "eyes open ",
+    "category level": 2
+  },
+  {
+    "id": "Ex-4",
+    "tag": "Ex-eye-3",
+    "label": "目全開",
+    "category": "eye",
+    "prompt": "eyes wide open",
+    "category level": 3
+  },
+  {
+    "id": "Ex-5",
+    "tag": "Ex-mouth-0",
+    "label": "口閉",
+    "category": "mouth",
+    "prompt": "mouth closed",
+    "category level": 0
+  },
+  {
+    "id": "Ex-6",
+    "tag": "Ex-mouth-1",
+    "label": "口半開",
+    "category": "mouth",
+    "prompt": "mouth half-open",
+    "category level": 1
+  },
+  {
+    "id": "Ex-7",
+    "tag": "Ex-mouth-2",
+    "label": "口開",
+    "category": "mouth",
+    "prompt": "mouth wide open",
+    "category level": 2
+  },
+  {
+    "id": "Ex-8",
+    "tag": "Ex-tongue-0",
+    "label": "舌だしなし",
+    "category": "tongue",
+    "prompt": "no tongue out",
+    "category level": 0
+  },
+  {
+    "id": "Ex-9",
+    "tag": "Ex-tongue-1",
+    "label": "舌だし少",
+    "category": "tongue",
+    "prompt": "tongue slightly out",
+    "category level": 1
+  },
+  {
+    "id": "Ex-10",
+    "tag": "Ex-tongue-2",
+    "label": "舌だし大",
+    "category": "tongue",
+    "prompt": "big tongue out",
+    "category level": 2
+  },
+  {
+    "id": "Ex-11",
+    "tag": "Ex-saliva-0",
+    "label": "涎なし",
+    "category": "saliva",
+    "prompt": "no saliva",
+    "category level": 0
+  },
+  {
+    "id": "Ex-12",
+    "tag": "Ex-saliva-1",
+    "label": "涎少",
+    "category": "saliva",
+    "prompt": "saliva slight",
+    "category level": 1
+  },
+  {
+    "id": "Ex-13",
+    "tag": "Ex-saliva-2",
+    "label": "涎多",
+    "category": "saliva",
+    "prompt": "drooling",
+    "category level": 2
+  },
+  {
+    "id": "Ex-14",
+    "tag": "Ex-pussy juice-0",
+    "label": "愛液なし",
+    "category": "pussy juice",
+    "prompt": "no pussy juice",
+    "category level": 0
+  },
+  {
+    "id": "Ex-15",
+    "tag": "Ex-pussy juice-1",
+    "label": "愛液少",
+    "category": "pussy juice",
+    "prompt": "little pussy juice",
+    "category level": 1
+  },
+  {
+    "id": "Ex-16",
+    "tag": "Ex-pussy juice-2",
+    "label": "愛液ダラダラ",
+    "category": "pussy juice",
+    "prompt": "lots of pussy juice",
+    "category level": 2
+  }
+]
