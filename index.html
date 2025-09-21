@@ -92,14 +92,16 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
 
     async function loadJSON(url){ const res=await fetch(url); return res.json(); }
 
+const base = "https://ihmn18603-max.github.io/OD-Image-Generator/";
 const urls={
-  header:"Main_Header_v1.0.1.json",
-  intensity:"Intensity_v1.0.1.json",
-  emotion:"Emotion_v1.0.5.json",
-  extra:"Extra_elements_v1.0.2.json",
-  outfit:"Cloth_v1.0.2.json",
-  accessory:"OD-Image-Generator/Accessory_v1.0.2.json"
+  header: base + "Main_Header_v1.0.1.json",
+  intensity: base + "Intensity_v1.0.1.json",
+  emotion: base + "Emotion_v1.0.5.json",
+  extra: base + "Extra_elements_v1.0.2.json",
+  outfit: base + "Cloth_v1.0.2.json",
+  accessory: base + "Accessory_v1.0.2.json"
 };
+
 
 
     const state={header:[],intensity:[],emotion:[],extra:[],outfit:[],accessory:[],sel:{extraChoices:{}}};
