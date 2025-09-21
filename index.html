@@ -20,6 +20,7 @@
     .emotion-btn.active { background:#1f7bf2; color:white; border-color:#1f7bf2; }
     details summary { cursor:pointer; margin:8px 0; }
     hr { border:none; border-top:1px solid #333; margin:24px 0; }
+    span.status { margin-left:10px; font-size:13px; color:#9ecbff; }
   </style>
 </head>
 <body>
@@ -45,8 +46,7 @@
     <h2>⑤ Custom Prompt (①〜④結合)</h2>
     <textarea id="out" readonly placeholder="ここに結合プロンプトが出力されます"></textarea>
     <div id="charCount">文字数: 0</div>
-    <button id="btnCopy">コピー</button>
-    <span id="status"></span>
+    <button id="btnCopy">コピー</button><span id="statusCustom" class="status"></span>
 
     <hr>
 
@@ -60,12 +60,12 @@
 
     <h2>⑧ Outfit Prompt (⑥⑦結合)</h2>
     <textarea id="outfitAccessoryOut" readonly placeholder="ここにOutfit+Accessory結合プロンプトが出力されます"></textarea>
-    <button id="btnCopyOutfitAccessory">コピー</button>
+    <button id="btnCopyOutfitAccessory">コピー</button><span id="statusOutfit" class="status"></span>
 
     <hr>
 
     <h2>⑨ Negative Prompt</h2>
-    <button id="btnCopyNeg">コピー</button>
+    <button id="btnCopyNeg">コピー</button><span id="statusNeg" class="status"></span>
     <details>
       <summary>Negative Prompt を表示</summary>
       <textarea id="negPrompt" readonly>
@@ -87,7 +87,7 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
 
     function toOptions(data, kind){
       if(kind === 'header'){
-        return data.map(r => ({label: r['ジャンル'], prompt: r['Header Prompt']}));
+        return data.map(r => ({label: r['label'], prompt: r['Header Prompt']}));
       } else if(kind === 'intensity'){
         return data.map(r => ({label: r['label'], prompt: r['Template Prompt']}));
       } else if(kind === 'emotion'){
@@ -236,19 +236,19 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
       build();
     });
     $('#selAccessory').addEventListener('change',e=>{
-      state.sel.accessory=Array.from(e.target.selectedOptions).map(o=>state.accessory[o.value]);
+      state.sel.accessory=Array.from(e.target.selectedOptions).map(o=>state.accessory[parseInt(o.value)]);
       $('#accessoryPrompt').textContent= state.sel.accessory.map(x=>x.prompt).join(", ");
       build();
     });
 
     $('#btnCopy').addEventListener('click',async()=>{
-      try{await navigator.clipboard.writeText($('#out').value);$('#status').textContent='コピーしました！';}catch{ $('#status').textContent='コピー失敗'; }
+      try{await navigator.clipboard.writeText($('#out').value);$('#statusCustom').textContent='コピーしました！';}catch{ $('#statusCustom').textContent='コピー失敗'; }
     });
     $('#btnCopyOutfitAccessory').addEventListener('click',async()=>{
-      try{await navigator.clipboard.writeText($('#outfitAccessoryOut').value);$('#status').textContent='Outfit+Accessoryをコピーしました！';}catch{ $('#status').textContent='コピー失敗'; }
+      try{await navigator.clipboard.writeText($('#outfitAccessoryOut').value);$('#statusOutfit').textContent='Outfit Promptをコピーしました！';}catch{ $('#statusOutfit').textContent='コピー失敗'; }
     });
     $('#btnCopyNeg').addEventListener('click',async()=>{
-      try{await navigator.clipboard.writeText($('#negPrompt').value);$('#status').textContent='Negative Promptをコピーしました！';}catch{ $('#status').textContent='コピー失敗'; }
+      try{await navigator.clipboard.writeText($('#negPrompt').value);$('#statusNeg').textContent='Negative Promptをコピーしました！';}catch{ $('#statusNeg').textContent='コピー失敗'; }
     });
 
     init();
