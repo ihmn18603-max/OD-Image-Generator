@@ -15,6 +15,9 @@
     .prompt-box { margin-top:8px; font-size:13px; color:#9ecbff; background:#121822; padding:8px; border-radius:6px; white-space:pre-wrap; }
     .radio-group { margin:8px 0; }
     .radio-group label { margin-right:12px; }
+    .emotion-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:8px; }
+    .emotion-btn { padding:8px; border:1px solid #444; border-radius:6px; text-align:center; cursor:pointer; background:#1a1f2e; }
+    .emotion-btn.active { background:#1f7bf2; color:white; border-color:#1f7bf2; }
   </style>
 </head>
 <body>
@@ -30,7 +33,7 @@
     <div id="intensityPrompt" class="prompt-box"></div>
 
     <h2>③ Emotion（表情・最大4つ選択可）</h2>
-    <div id="emotionOptions" class="checkbox-group"></div>
+    <div id="emotionOptions" class="emotion-grid"></div>
     <div id="emotionPrompt" class="prompt-box"></div>
 
     <h2>④ Extra Elements（Eyes / Mouth / Tongue / Saliva / Pussy Juice）</h2>
@@ -107,7 +110,6 @@
       }
       $('#out').value=parts.filter(Boolean).join(', ');
 
-      // Outfit + Accessory 結合プロンプト
       const outfitAccessory=[];
       if(state.sel.outfit) outfitAccessory.push(state.sel.outfit.prompt);
       if(state.sel.accessory && state.sel.accessory.length){
@@ -129,29 +131,32 @@
       fill($('#selOutfit'),state.outfit);
       fill($('#selAccessory'),state.accessory,true);
 
-      // Emotion用チェックボックス生成
+      // Emotion ボタン生成
       const emoBox=$('#emotionOptions');
       emoBox.innerHTML='';
       state.emotion.forEach((o,i)=>{
-        const chk=document.createElement('input');
-        chk.type='checkbox';
-        chk.value=i;
-        chk.id='emo'+i;
-        chk.onchange=()=>{
-          const selected=Array.from(document.querySelectorAll('#emotionOptions input:checked'));
-          if(selected.length>4){
-            chk.checked=false;
-            return;
+        const btn=document.createElement('div');
+        btn.className='emotion-btn';
+        btn.textContent=o.label;
+        btn.onclick=()=>{
+          if(btn.classList.contains('active')){
+            btn.classList.remove('active');
+          } else {
+            const active=document.querySelectorAll('.emotion-btn.active');
+            if(active.length>=4){
+              return;
+            }
+            btn.classList.add('active');
           }
-          state.sel.emotion=selected.map(el=>state.emotion[el.value]);
-          $('#emotionPrompt').textContent= state.sel.emotion.map(x=>x.prompt).join(", ");
+          const selected=[...document.querySelectorAll('.emotion-btn.active')].map(b=>{
+            const obj=state.emotion.find(x=>x.label===b.textContent);
+            return obj;
+          });
+          state.sel.emotion=selected;
+          $('#emotionPrompt').textContent=selected.map(x=>x.prompt).join(", ");
           build();
         };
-        const label=document.createElement('label');
-        label.setAttribute('for','emo'+i);
-        label.textContent=o.label;
-        label.prepend(chk);
-        emoBox.appendChild(label);
+        emoBox.appendChild(btn);
       });
 
       // Extra Elements ラジオボタン生成
