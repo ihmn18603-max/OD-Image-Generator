@@ -18,6 +18,7 @@
     .emotion-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:8px; }
     .emotion-btn { padding:8px; border:1px solid #444; border-radius:6px; text-align:center; cursor:pointer; background:#1a1f2e; }
     .emotion-btn.active { background:#1f7bf2; color:white; border-color:#1f7bf2; }
+    details summary { cursor:pointer; margin:8px 0; }
   </style>
 </head>
 <body>
@@ -56,6 +57,23 @@
     <h2>⑧ Outfit + Accessory 結合プロンプト</h2>
     <textarea id="outfitAccessoryOut" readonly placeholder="ここにOutfit+Accessory結合プロンプトが出力されます"></textarea>
     <button id="btnCopyOutfitAccessory">コピー</button>
+
+    <h2>⑨ Negative Prompt</h2>
+    <button id="btnCopyNeg">コピー</button>
+    <details>
+      <summary>Negative Prompt を表示</summary>
+      <textarea id="negPrompt" readonly>
+(worst quality, low quality:1.4), blurry,
+bad anatomy, unrealistic anatomy, malformed body, unnatural body, deformed, disfigured,
+bad hands, mutated hands, extra digits, missing fingers, fused fingers, long fingers,
+bad legs, short legs, stumpy legs, deformed legs,
+extra arms, extra legs, missing arms, long neck,
+extra body, extra person, multiple people, extra head, extra hand, extra leg, cloned face,
+mutated pussy, malformed pussy, fused vagina, extra holes, double vagina, unrealistic pussy,
+large areolae, oversized nipples, puffy nipples, stretched nipples,
+obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gigantic breasts
+      </textarea>
+    </details>
   </div>
 
   <script>
@@ -220,6 +238,9 @@
     });
     $('#btnCopyOutfitAccessory').addEventListener('click',async()=>{
       try{await navigator.clipboard.writeText($('#outfitAccessoryOut').value);$('#status').textContent='Outfit+Accessoryをコピーしました！';}catch{ $('#status').textContent='コピー失敗'; }
+    });
+    $('#btnCopyNeg').addEventListener('click',async()=>{
+      try{await navigator.clipboard.writeText($('#negPrompt').value);$('#status').textContent='Negative Promptをコピーしました！';}catch{ $('#status').textContent='コピー失敗'; }
     });
 
     init();
