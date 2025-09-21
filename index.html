@@ -9,6 +9,7 @@
     .container { max-width: 900px; margin: 0 auto; padding: 20px; }
     h1 { margin:0 0 20px; text-align:center; }
     h2 { font-size:16px; margin:20px 0 8px; }
+    select, textarea, button { font-size:14px; }
     select { width: 100%; padding:10px; border-radius:8px; border:1px solid #333; background:#0f1520; color:#eee; }
     textarea { width:100%; min-height:150px; margin-top:10px; border-radius:8px; border:1px solid #333; padding:10px; background:#0f1520; color:#eee; }
     button { padding:10px 16px; margin-top:10px; border:none; border-radius:8px; cursor:pointer; background:#1f7bf2; color:white; }
@@ -68,50 +69,26 @@
     <button id="btnCopyNeg">コピー</button><span id="statusNeg" class="status"></span>
     <details>
       <summary>Negative Prompt を表示</summary>
-      <textarea id="negPrompt" readonly>
-(worst quality, low quality:1.4), blurry,
-bad anatomy, unrealistic anatomy, malformed body, unnatural body, deformed, disfigured,
-bad hands, mutated hands, extra digits, missing fingers, fused fingers, long fingers,
-bad legs, short legs, stumpy legs, deformed legs,
-extra arms, extra legs, missing arms, long neck,
-extra body, extra person, multiple people, extra head, extra hand, extra leg, cloned face,
-mutated pussy, malformed pussy, fused vagina, extra holes, double vagina, unrealistic pussy,
-large areolae, oversized nipples, puffy nipples, stretched nipples,
-obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gigantic breasts
-      </textarea>
+      <textarea id="negPrompt" readonly>…</textarea>
     </details>
   </div>
 
   <script>
     const $ = s=>document.querySelector(s);
 
-    function toOptions(data, kind){
-      if(kind === 'header'){
-        return data.map(r => ({ label: r['label'], prompt: r['Header Prompt'] }));
-      } else if(kind === 'intensity'){
-        return data.map(r => ({ label: r['label'], prompt: r['Template Prompt'] }));
-      } else if(kind === 'emotion'){
-        return data.map(r => ({ label: r['label'], prompt: r['Prompt'] }));
-      } else if(kind === 'outfit'){
-        return data.map(r => ({ label: r['label'], prompt: (r['outfit prompt'] || []).join(', ') }));
-      } else if(kind === 'accessory'){
-        return data.map(r => ({ label: r['label'], prompt: r['prompt'] }));
-      } else if(kind === 'extra'){
-        return data.map(r => ({ label: r['label'], prompt: r['prompt'] }));
-      } else {
-        return data.map(r => ({ label: r['label'] || r['tag'] || '', prompt: r['prompt'] || r['Template Prompt'] || '' })).filter(o => o.label);
-      }
+    function toOptions(data){
+      return data.map(r => ({ label: r['label'], prompt: r['prompt'] }));
     }
 
     async function loadJSON(url){ const res=await fetch(url); return res.json(); }
 
     const urls={
-      header:"https://ihmn18603-max.github.io/OD-Image-Generator/Main_Header_v1.0.0.json",
-      intensity:"https://ihmn18603-max.github.io/OD-Image-Generator/Intensity_v1.0.0.json",
-      emotion:"https://ihmn18603-max.github.io/OD-Image-Generator/Emotion_v1.0.4.json",
-      extra:"https://ihmn18603-max.github.io/OD-Image-Generator/Extra_elements_v1.0.1.json",
-      outfit:"https://ihmn18603-max.github.io/OD-Image-Generator/Outfit_v1.0.1.json",
-      accessory:"https://ihmn18603-max.github.io/OD-Image-Generator/Accessory_v1.0.1.json"
+      header:"Main_Header_v1.0.1.json",
+      intensity:"Intensity_v1.0.1.json",
+      emotion:"Emotion_v1.0.5.json",
+      extra:"Extra_elements_v1.0.2.json",
+      outfit:"Cloth_v1.0.2.json",
+      accessory:"Accessory_v1.0.2.json"
     };
 
     const state={header:[],intensity:[],emotion:[],extra:[],outfit:[],accessory:[],sel:{extraChoices:{}}};
@@ -147,12 +124,12 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
     }
 
     async function init(){
-      state.header=toOptions(await loadJSON(urls.header),'header');
-      state.intensity=toOptions(await loadJSON(urls.intensity),'intensity');
-      state.emotion=toOptions(await loadJSON(urls.emotion),'emotion');
+      state.header=toOptions(await loadJSON(urls.header));
+      state.intensity=toOptions(await loadJSON(urls.intensity));
+      state.emotion=toOptions(await loadJSON(urls.emotion));
       state.extra=await loadJSON(urls.extra);
-      state.outfit=toOptions(await loadJSON(urls.outfit),'outfit');
-      state.accessory=toOptions(await loadJSON(urls.accessory),'accessory');
+      state.outfit=toOptions(await loadJSON(urls.outfit));
+      state.accessory=toOptions(await loadJSON(urls.accessory));
 
       fill($('#selHeader'),state.header);
       fill($('#selIntensity'),state.intensity);
@@ -171,14 +148,11 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
             btn.classList.remove('active');
           } else {
             const active=document.querySelectorAll('.emotion-btn.active');
-            if(active.length>=4){
-              return;
-            }
+            if(active.length>=4){ return; }
             btn.classList.add('active');
           }
           const selected=[...document.querySelectorAll('.emotion-btn.active')].map(b=>{
-            const obj=state.emotion.find(x=>x.label===b.textContent);
-            return obj;
+            return state.emotion.find(x=>x.label===b.textContent);
           });
           state.sel.emotion=selected;
           $('#emotionPrompt').textContent=selected.map(x=>x.prompt).join(", ");
@@ -191,23 +165,23 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
       const container=$('#extraElements');
       const grouped={};
       state.extra.forEach(item=>{
-        if(!grouped[item.tag]) grouped[item.tag]=[];
-        grouped[item.tag].push(item);
+        if(!grouped[item.category]) grouped[item.category]=[];
+        grouped[item.category].push(item);
       });
 
-      Object.keys(grouped).forEach(tag=>{
+      Object.keys(grouped).forEach(cat=>{
         const wrap=document.createElement('div');
         wrap.className='radio-group';
-        wrap.innerHTML=`<strong>${tag}</strong><br>`;
-        grouped[tag].forEach(opt=>{
-          const id=`${tag}_${opt.level}`;
+        wrap.innerHTML=`<strong>${cat}</strong><br>`;
+        grouped[cat].forEach(opt=>{
+          const id=`${cat}_${opt["category level"]}`;
           const radio=document.createElement('input');
           radio.type='radio';
-          radio.name=tag;
+          radio.name=cat;
           radio.value=opt.prompt;
           radio.id=id;
           radio.onchange=()=>{
-            state.sel.extraChoices[tag]=opt.prompt;
+            state.sel.extraChoices[cat]=opt.prompt;
             state.sel.extraPrompts=Object.values(state.sel.extraChoices).filter(Boolean);
             $('#extraPrompt').textContent=state.sel.extraPrompts.join(", ");
             build();
@@ -222,6 +196,7 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
       });
     }
 
+    // 各種イベント
     $('#selHeader').addEventListener('change',e=>{
       state.sel.header=state.header[e.target.value];
       $('#headerPrompt').textContent= state.sel.header? state.sel.header.prompt : '';
