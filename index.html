@@ -19,6 +19,7 @@
     .emotion-btn { padding:8px; border:1px solid #444; border-radius:6px; text-align:center; cursor:pointer; background:#1a1f2e; }
     .emotion-btn.active { background:#1f7bf2; color:white; border-color:#1f7bf2; }
     details summary { cursor:pointer; margin:8px 0; }
+    hr { border:none; border-top:1px solid #333; margin:24px 0; }
   </style>
 </head>
 <body>
@@ -41,10 +42,13 @@
     <div id="extraElements"></div>
     <div id="extraPrompt" class="prompt-box"></div>
 
-    <h2>⑤ 結合プロンプト（①〜④）</h2>
+    <h2>⑤ Custom Prompt (①〜④結合)</h2>
     <textarea id="out" readonly placeholder="ここに結合プロンプトが出力されます"></textarea>
+    <div id="charCount">文字数: 0</div>
     <button id="btnCopy">コピー</button>
     <span id="status"></span>
+
+    <hr>
 
     <h2>⑥ Outfit（衣装）</h2>
     <select id="selOutfit"></select>
@@ -54,9 +58,11 @@
     <select id="selAccessory" multiple></select>
     <div id="accessoryPrompt" class="prompt-box"></div>
 
-    <h2>⑧ Outfit + Accessory 結合プロンプト</h2>
+    <h2>⑧ Outfit Prompt (⑥⑦結合)</h2>
     <textarea id="outfitAccessoryOut" readonly placeholder="ここにOutfit+Accessory結合プロンプトが出力されます"></textarea>
     <button id="btnCopyOutfitAccessory">コピー</button>
+
+    <hr>
 
     <h2>⑨ Negative Prompt</h2>
     <button id="btnCopyNeg">コピー</button>
@@ -126,7 +132,9 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
       if(state.sel.extraPrompts && state.sel.extraPrompts.length){
         parts.push(state.sel.extraPrompts.join(", "));
       }
-      $('#out').value=parts.filter(Boolean).join(', ');
+      const result = parts.filter(Boolean).join(', ');
+      $('#out').value = result;
+      $('#charCount').textContent = `文字数: ${result.length}`;
 
       const outfitAccessory=[];
       if(state.sel.outfit) outfitAccessory.push(state.sel.outfit.prompt);
