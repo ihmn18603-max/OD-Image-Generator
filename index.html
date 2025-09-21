@@ -79,30 +79,46 @@ extra body, extra person, multiple people, extra head, extra hand, extra leg, cl
 mutated pussy, malformed pussy, fused vagina, extra holes, double vagina, unrealistic pussy, 
 large areolae, oversized nipples, puffy nipples, stretched nipples, 
 obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gigantic breasts
-        </textarea>
+      </textarea>
     </details>
   </div>
 
   <script>
     const $ = s=>document.querySelector(s);
 
-    function toOptions(data){
-      return data.map(r => ({ label: r['label'], prompt: r['prompt'] }));
+    // ★ toOptions を kind 対応に
+    function toOptions(data, kind){
+      if(kind === 'header'){
+        return data.map(r => ({ label: r['label'], prompt: r['prompt'] }));
+      } else if(kind === 'intensity'){
+        return data.map(r => ({ label: r['label'], prompt: r['prompt'] }));
+      } else if(kind === 'emotion'){
+        return data.map(r => ({ label: r['label'], prompt: r['prompt'] }));
+      } else if(kind === 'outfit'){
+        return data.map(r => ({ label: r['label'], prompt: r['prompt'] }));
+      } else if(kind === 'accessory'){
+        return data.map(r => ({ label: r['label'], prompt: r['prompt'] }));
+      } else if(kind === 'extra'){
+        return data.map(r => ({ label: r['label'], prompt: r['prompt'] }));
+      } else {
+        return data.map(r => ({
+          label: r['label'] || r['tag'] || '',
+          prompt: r['prompt'] || ''
+        })).filter(o => o.label);
+      }
     }
 
     async function loadJSON(url){ const res=await fetch(url); return res.json(); }
 
-const base = "https://ihmn18603-max.github.io/OD-Image-Generator/";
-const urls={
-  header: base + "Main_Header_v1.0.1.json",
-  intensity: base + "Intensity_v1.0.1.json",
-  emotion: base + "Emotion_v1.0.5.json",
-  extra: base + "Extra_elements_v1.0.2.json",
-  outfit: base + "Cloth_v1.0.2.json",
-  accessory: base + "Accessory_v1.0.2.json"
-};
-
-
+    const base = "https://ihmn18603-max.github.io/OD-Image-Generator/";
+    const urls={
+      header: base + "Main_Header_v1.0.1.json",
+      intensity: base + "Intensity_v1.0.1.json",
+      emotion: base + "Emotion_v1.0.5.json",
+      extra: base + "Extra_elements_v1.0.2.json",
+      outfit: base + "Cloth_v1.0.2.json",
+      accessory: base + "Accessory_v1.0.2.json"
+    };
 
     const state={header:[],intensity:[],emotion:[],extra:[],outfit:[],accessory:[],sel:{extraChoices:{}}};
 
@@ -137,12 +153,12 @@ const urls={
     }
 
     async function init(){
-      state.header=toOptions(await loadJSON(urls.header));
-      state.intensity=toOptions(await loadJSON(urls.intensity));
-      state.emotion=toOptions(await loadJSON(urls.emotion));
-      state.extra=await loadJSON(urls.extra);
-      state.outfit=toOptions(await loadJSON(urls.outfit));
-      state.accessory=toOptions(await loadJSON(urls.accessory));
+      state.header=toOptions(await loadJSON(urls.header),'header');
+      state.intensity=toOptions(await loadJSON(urls.intensity),'intensity');
+      state.emotion=toOptions(await loadJSON(urls.emotion),'emotion');
+      state.extra=toOptions(await loadJSON(urls.extra),'extra');
+      state.outfit=toOptions(await loadJSON(urls.outfit),'outfit');
+      state.accessory=toOptions(await loadJSON(urls.accessory),'accessory'); // ←修正
 
       fill($('#selHeader'),state.header);
       fill($('#selIntensity'),state.intensity);
@@ -209,7 +225,7 @@ const urls={
       });
     }
 
-    // 各種イベント
+    // イベント登録
     $('#selHeader').addEventListener('change',e=>{
       state.sel.header=state.header[e.target.value];
       $('#headerPrompt').textContent= state.sel.header? state.sel.header.prompt : '';
