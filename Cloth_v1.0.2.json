@@ -1,275 +1,296 @@
 [
   {
-    "id": "clo-1",
-    "tag": "nude",
-    "label": "裸",
-    "category": "cloth",
-    "prompt": "nude, naked"
+    "id":"clo-1",
+    "tag":"nude",
+    "label":"裸",
+    "category":"cloth",
+    "prompt":"nude, naked"
   },
   {
-    "id": "clo-2",
-    "tag": "sweater_no_bra",
-    "label": "ノーブラセーター",
-    "category": "cloth",
-    "prompt": "thin sweater without bra"
+    "id":"clo-2",
+    "tag":"sweater_no_bra",
+    "label":"ノーブラセーター",
+    "category":"cloth",
+    "prompt":"thin sweater without bra"
   },
   {
-    "id": "clo-3",
-    "tag": "see_through_blouse",
-    "label": "シースルーブラウス",
-    "category": "cloth",
-    "prompt": "sheer see-through blouse"
+    "id":"clo-3",
+    "tag":"see_through_blouse",
+    "label":"シースルーブラウス",
+    "category":"cloth",
+    "prompt":"sheer see-through blouse"
   },
   {
-    "id": "clo-4",
-    "tag": "tight_jeans",
-    "label": "ピチピチジーンズ",
-    "category": "cloth",
-    "prompt": "tight skinny jeans"
+    "id":"clo-4",
+    "tag":"tight_jeans",
+    "label":"ピチピチジーンズ",
+    "category":"cloth",
+    "prompt":"tight skinny jeans"
   },
   {
-    "id": "clo-5",
-    "tag": "miniskirt",
-    "label": "ミニスカート",
-    "category": "cloth",
-    "prompt": "short miniskirt, panties visible"
+    "id":"clo-5",
+    "tag":"miniskirt",
+    "label":"ミニスカート",
+    "category":"cloth",
+    "prompt":"short miniskirt, panties visible"
   },
   {
-    "id": "clo-6",
-    "tag": "camisole",
-    "label": "キャミソール＋ショートパンツ",
-    "category": "cloth",
-    "prompt": "camisole with short shorts"
+    "id":"clo-6",
+    "tag":"camisole",
+    "label":"キャミソール＋ショートパンツ",
+    "category":"cloth",
+    "prompt":"camisole with short shorts"
   },
   {
-    "id": "clo-50",
-    "tag": "swimsuit",
-    "label": "超ハイレグ水着",
-    "category": "cloth",
-    "prompt": "extreme ultra high-leg swimsuit"
+    "id":"clo-50",
+    "tag":"swimsuit",
+    "label":"超ハイレグ水着",
+    "category":"cloth",
+    "prompt":"extreme ultra high-leg swimsuit"
   },
   {
-    "id": "clo-51",
-    "tag": "micro_bikini",
-    "label": "極小マイクロビキニ",
-    "category": "cloth",
-    "prompt": "ultra micro bikini, barely covering nipples and crotch"
+    "id":"clo-51",
+    "tag":"micro_bikini",
+    "label":"極小マイクロビキニ",
+    "category":"cloth",
+    "prompt":"ultra micro bikini, barely covering nipples and crotch"
   },
   {
-    "id": "clo-52",
-    "tag": "string_bikini",
-    "label": "紐ビキニ",
-    "category": "cloth",
-    "prompt": "string bikini, ultra-thin straps"
+    "id":"clo-52",
+    "tag":"string_bikini",
+    "label":"紐ビキニ",
+    "category":"cloth",
+    "prompt":"string bikini, ultra-thin straps"
   },
   {
-    "id": "clo-53",
-    "tag": "body_harness",
-    "label": "全身ハーネス",
-    "category": "cloth",
-    "prompt": "full body leather harness"
+    "id":"clo-53",
+    "tag":"body_harness",
+    "label":"全身ハーネス",
+    "category":"cloth",
+    "prompt":"full body leather harness"
   },
   {
-    "id": "clo-54",
-    "tag": "highleg_lingerie",
-    "label": "ハイレグ下着",
-    "category": "cloth",
-    "prompt": "high-leg lingerie"
+    "id":"clo-54",
+    "tag":"highleg_lingerie",
+    "label":"ハイレグ下着",
+    "category":"cloth",
+    "prompt":"high-leg lingerie"
   },
   {
-    "id": "clo-55",
-    "tag": "see_through_lingerie",
-    "label": "透け下着",
-    "category": "cloth",
-    "prompt": "see-through lingerie"
+    "id":"clo-55",
+    "tag":"see_through_lingerie",
+    "label":"透け下着",
+    "category":"cloth",
+    "prompt":"see-through lingerie"
   },
   {
-    "id": "clo-56",
-    "tag": "open_cup_underwear",
-    "label": "丸出し下着",
-    "category": "cloth",
-    "prompt": "open cup bra, crotchless lingerie"
+    "id":"clo-56",
+    "tag":"open_cup_underwear",
+    "label":"丸出し下着",
+    "category":"cloth",
+    "prompt":"open cup bra, crotchless lingerie"
   },
   {
-    "id": "clo-57",
-    "tag": "underwear_pull",
-    "label": "ずれたパンツ",
-    "category": "cloth",
-    "prompt": "pulled aside panties"
+    "id":"clo-57",
+    "tag":"underwear_pull",
+    "label":"ずれたパンツ",
+    "category":"cloth",
+    "prompt":"pulled aside panties"
   },
   {
-    "id": "clo-58",
-    "tag": "highleg_panties",
-    "label": "ハイレグパンツ",
-    "category": "cloth",
-    "prompt": "high-leg panties"
+    "id":"clo-58",
+    "tag":"highleg_panties",
+    "label":"ハイレグパンツ",
+    "category":"cloth",
+    "prompt":"high-leg panties"
   },
   {
-    "id": "clo-59",
-    "tag": "see_through_panties",
-    "label": "透けパンツ",
-    "category": "cloth",
-    "prompt": "see-through panties"
+    "id":"clo-59",
+    "tag":"see_through_panties",
+    "label":"透けパンツ",
+    "category":"cloth",
+    "prompt":"see-through panties"
   },
   {
-    "id": "clo-60",
-    "tag": "ultra_highleg_panties",
-    "label": "超ハイレグパンツ",
-    "category": "cloth",
-    "prompt": "extreme ultra high-leg panties"
+    "id":"clo-60",
+    "tag":"ultra_highleg_panties",
+    "label":"超ハイレグパンツ",
+    "category":"cloth",
+    "prompt":"extreme ultra high-leg panties"
   },
   {
-    "id": "clo-61",
-    "tag": "ultra_highleg_see_through_panties",
-    "label": "超ハイレグ透けパンツ",
-    "category": "cloth",
-    "prompt": "extreme ultra high-leg see-through panties"
+    "id":"clo-61",
+    "tag":"ultra_highleg_see_through_panties",
+    "label":"超ハイレグ透けパンツ",
+    "category":"cloth",
+    "prompt":"extreme ultra high-leg see-through panties"
   },
   {
-    "id": "clo-100",
-    "tag": "leather_bodysuit",
-    "label": "黒レザーボディスーツ",
-    "category": "cloth",
-    "prompt": "tight black leather bodysuit"
+    "id":"clo-100",
+    "tag":"leather_bodysuit",
+    "label":"黒レザーボディスーツ",
+    "category":"cloth",
+    "prompt":"tight black leather bodysuit"
   },
   {
-    "id": "clo-101",
-    "tag": "school_uniform",
-    "label": "ミニスカ制服",
-    "category": "cloth",
-    "prompt": "short school uniform, pleated micro mini skirt"
+    "id":"clo-101",
+    "tag":"school_uniform",
+    "label":"ミニスカ制服",
+    "category":"cloth",
+    "prompt":"short school uniform, pleated micro mini skirt, loose socks"
   },
   {
-    "id": "clo-102",
-    "tag": "sailor_uniform",
-    "label": "セーラー服",
-    "category": "cloth",
-    "prompt": "sailor school uniform,pleated micro mini skirt"
+    "id":"clo-102",
+    "tag":"sailor_uniform",
+    "label":"セーラー服",
+    "category":"cloth",
+    "prompt":"sailor school uniform,pleated micro mini skirt"
   },
   {
-    "id": "clo-103",
-    "tag": "office_lady",
-    "label": "OLスーツ",
-    "category": "cloth",
-    "prompt": "ultra-tight office lady suit, micro mini skirt"
+    "id":"clo-103",
+    "tag":"office_lady",
+    "label":"OLスーツ",
+    "category":"cloth",
+    "prompt":"ultra-tight office lady suit, micro mini skirt"
   },
   {
-    "id": "clo-104",
-    "tag": "secretary",
-    "label": "秘書服",
-    "category": "cloth",
-    "prompt": "ultra-tight secretary outfit, tight blouse, micro mini skirt"
+    "id":"clo-104",
+    "tag":"secretary",
+    "label":"秘書服",
+    "category":"cloth",
+    "prompt":"ultra-tight secretary outfit, tight blouse, micro mini skirt"
   },
   {
-    "id": "clo-105",
-    "tag": "teacher_outfit",
-    "label": "女教師服",
-    "category": "cloth",
-    "prompt": "ultra-tight female teacher outfit, blouse, micro mini skirt"
+    "id":"clo-105",
+    "tag":"teacher_outfit",
+    "label":"女教師服",
+    "category":"cloth",
+    "prompt":"ultra-tight female teacher outfit, blouse, micro mini skirt"
   },
   {
-    "id": "clo-106",
-    "tag": "police_uniform",
-    "label": "警察官制服",
-    "category": "cloth",
-    "prompt": "ultra-tight navy blue short sleeved police uniform"
+    "id":"clo-106",
+    "tag":"police_uniform",
+    "label":"警察官制服",
+    "category":"cloth",
+    "prompt":"ultra-tight navy blue short sleeved police uniform"
   },
   {
-    "id": "clo-107",
-    "tag": "sexy_nurse",
-    "label": "セクシーナース",
-    "category": "cloth",
-    "prompt": "ultra-tight nurse uniform"
+    "id":"clo-107",
+    "tag":"sexy_nurse",
+    "label":"セクシーナース",
+    "category":"cloth",
+    "prompt":"ultra-tight nurse uniform"
   },
   {
-    "id": "clo-108",
-    "tag": "doctor_coat",
-    "label": "白衣（女医）",
-    "category": "cloth",
-    "prompt": "doctor's long white coat, naked underneath"
+    "id":"clo-108",
+    "tag":"sexy_bartender",
+    "label":"セクシーバーテンダー",
+    "category":"cloth",
+    "prompt":"low-cut blouse, black vest, pencil skirt, stockings, high heels"
   },
   {
-    "id": "clo-200",
-    "tag": "ao_dai",
-    "label": "アオザイ",
-    "category": "cloth",
-    "prompt": "Ao dai, traditional vietnamese dress"
+    "id":"clo-109",
+    "tag":"doctor_coat",
+    "label":"白衣（女医）",
+    "category":"cloth",
+    "prompt":"doctor's long white coat, naked underneath"
   },
   {
-    "id": "clo-201",
-    "tag": "china_dress",
-    "label": "チャイナドレス",
-    "category": "cloth",
-    "prompt": "china dress, cheongsam, qipao"
+    "id":"clo-200",
+    "tag":"ao_dai",
+    "label":"アオザイ",
+    "category":"cloth",
+    "prompt":"Ao dai, traditional vietnamese dress"
   },
   {
-    "id": "clo-202",
-    "tag": "dirndl",
-    "label": "ディアンドル",
-    "category": "cloth",
-    "prompt": "dirndl, german traditional dress"
+    "id":"clo-201",
+    "tag":"china_dress",
+    "label":"チャイナドレス",
+    "category":"cloth",
+    "prompt":"china dress, cheongsam, qipao"
   },
   {
-    "id": "clo-300",
-    "tag": "french_maid_torn",
-    "label": "フレンチメイド",
-    "category": "cloth",
-    "prompt": "french maid outfit"
+    "id":"clo-202",
+    "tag":"dirndl",
+    "label":"ディアンドル",
+    "category":"cloth",
+    "prompt":"dirndl, german traditional dress"
   },
   {
-    "id": "clo-301",
-    "tag": "bunny_slut",
-    "label": "バニーガール",
-    "category": "cloth",
-    "prompt": "slutty bunny girl outfit"
+    "id":"clo-300",
+    "tag":"french_maid",
+    "label":"フレンチメイド",
+    "category":"cloth",
+    "prompt":"black dress with white apron, lace trim, puffed sleeves, headband, stockings, heels"
   },
   {
-    "id": "clo-302",
-    "tag": "catplay_costume",
-    "label": "猫プレイ衣装",
-    "category": "cloth",
-    "prompt": "catplay outfit with tail plug"
+    "id":"clo-301",
+    "tag":"sexy_french_maid",
+    "label":"セクシーフレンチメイド",
+    "category":"cloth",
+    "prompt":"short black dress, lace apron, low-cut neckline, thigh-high stockings, garter belt, high heels, lace headband"
   },
   {
-    "id": "clo-303",
-    "tag": "puppyplay_costume",
-    "label": "犬プレイ衣装",
-    "category": "cloth",
-    "prompt": "puppy outfit with tail plug"
+    "id":"clo-302",
+    "tag":"goth_french_maid",
+    "label":"ゴシック \/ モダン風フレンチメイド",
+    "category":"cloth",
+    "prompt":"black corset dress, lace apron, frilly cuffs, fishnet stockings, choker, platform heels"
   },
   {
-    "id": "clo-304",
-    "tag": "public_exposure_coat",
-    "label": "露出コート",
-    "category": "cloth",
-    "prompt": "long coat, naked underneath"
+    "id":"clo-303",
+    "tag":"bunny_slut",
+    "label":"バニーガール",
+    "category":"cloth",
+    "prompt":"slutty bunny girl outfit"
   },
   {
-    "id": "clo-305",
-    "tag": "slut_dress",
-    "label": "エロドレス",
-    "category": "cloth",
-    "prompt": "slutty dress with open crotch slit"
+    "id":"clo-304",
+    "tag":"catplay_costume",
+    "label":"猫プレイ衣装",
+    "category":"cloth",
+    "prompt":"catplay outfit with tail plug"
   },
   {
-    "id": "clo-306",
-    "tag": "milking_outfit",
-    "label": "搾乳メイド服",
-    "category": "cloth",
-    "prompt": "milking maid outfit with breast pumps"
+    "id":"clo-305",
+    "tag":"puppyplay_costume",
+    "label":"犬プレイ衣装",
+    "category":"cloth",
+    "prompt":"puppy outfit with tail plug"
   },
   {
-    "id": "clo-307",
-    "tag": "gaping_belt",
-    "label": "股間拡張ベルト",
-    "category": "cloth",
-    "prompt": "gaping belt, crotch stretched open"
+    "id":"clo-306",
+    "tag":"public_exposure_coat",
+    "label":"露出コート",
+    "category":"cloth",
+    "prompt":"long coat, naked underneath"
   },
   {
-    "id": "clo-308",
-    "tag": "spread_harness",
-    "label": "拡張ハーネス",
-    "category": "cloth",
-    "prompt": "harness pulling labia apart, exposing pussy"
+    "id":"clo-307",
+    "tag":"slut_dress",
+    "label":"エロドレス",
+    "category":"cloth",
+    "prompt":"slutty dress with open crotch slit"
+  },
+  {
+    "id":"clo-308",
+    "tag":"milking_outfit",
+    "label":"搾乳メイド服",
+    "category":"cloth",
+    "prompt":"milking maid outfit with breast pumps"
+  },
+  {
+    "id":"clo-309",
+    "tag":"gaping_belt",
+    "label":"股間拡張ベルト",
+    "category":"cloth",
+    "prompt":"gaping belt, crotch stretched open"
+  },
+  {
+    "id":"clo-310",
+    "tag":"spread_harness",
+    "label":"拡張ハーネス",
+    "category":"cloth",
+    "prompt":"harness pulling labia apart, exposing pussy"
   }
 ]
