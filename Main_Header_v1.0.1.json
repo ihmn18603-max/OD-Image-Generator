@@ -1,17 +1,14 @@
 [
   {
-    "id": "head-0",
-    "tag": "head_r",
-    "label": "リアル系",
-    "category": "header",
-    "prompt": "ultra realistic, highly detailed, professional photography, natural lighting, soft shadows, cinematic depth of field, skin texture visible, flexible body, 1girl, solo, only one girl, face visible, realistic anatomy, perfect hands, 5 fingers on each hand, visible pussy, slim waist, narrow waist, curvy body, hourglass figure, fit body, toned body, perky breasts, medium to large breasts, natural shaped breasts, firm breasts, small areolae, tiny areolae, subtle areola, small nipples, tiny nipples, subtle nipples, realistic nipples, proportional chest,  long legs, slender legs, shapely legs, leggy"
+    "id":"head-0",
+    "tag":"head_r",
+    "label":"リアル系",
+    "prompt":"ultra realistic, highly detailed, professional photography,natural lighting, soft shadows, cinematic depth of field,skin texture visible,flexible body,1girl, solo, only one girl,realistic anatomy, perfect hands, 5 fingers on each hand, pussy visible, face visible"
   },
   {
-    "id": "head-1",
-    "tag": "head_a",
-    "label": "アニメ系",
-    "category": "header",
-    "prompt": "masterpiece, best quality, highly detailed, anime style illustration, vibrant colors, soft shading, expressive eyes, flexible body, 1girl, solo, only one girl, face visible, realistic anatomy, perfect hands, 5 fingers on each hand, visible pussy, slim waist, narrow waist, curvy body, hourglass figure, fit body, toned body, perky breasts, medium to large breasts, natural shaped breasts, firm breasts, small areolae, tiny areolae, subtle areola, small nipples, tiny nipples, subtle nipples, realistic nipples, proportional chest, long legs, slender legs, shapely legs, leggy"
+    "id":"head-1",
+    "tag":"head_a",
+    "label":"アニメ系",
+    "prompt":"masterpiece, best quality, highly detailed,anime style illustration, vibrant colors, soft shading,expressive eyes,flexible body,1girl, solo, only one girl,realistic anatomy, perfect hands, 5 fingers on each hand, pussy visible, face visible"
   }
 ]
-
