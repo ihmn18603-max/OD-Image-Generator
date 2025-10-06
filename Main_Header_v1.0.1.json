@@ -1,14 +1,14 @@
 [
   {
-    "id":"head-0",
-    "tag":"head_r",
-    "label":"リアル系",
-    "prompt":"ultra realistic, highly detailed, professional photography,natural lighting, soft shadows, cinematic depth of field,skin texture visible,flexible body,1girl, solo, only one girl,realistic anatomy, perfect hands, 5 fingers on each hand, pussy visible, face visible"
+    "id": "head-0",
+    "tag": "head_r",
+    "label": "リアル系",
+    "prompt": "ultra realistic, highly detailed, professional photography, natural lighting, soft shadows, cinematic depth of field, skin texture visible, flexible body, 1girl, solo, only one girl, realistic anatomy, perfect hands, 5 fingers on each hand, pussy visible, face visible, (Hairy pussy:0.7)"
   },
   {
-    "id":"head-1",
-    "tag":"head_a",
-    "label":"アニメ系",
-    "prompt":"masterpiece, best quality, highly detailed,anime style illustration, vibrant colors, soft shading,expressive eyes,flexible body,1girl, solo, only one girl,realistic anatomy, perfect hands, 5 fingers on each hand, pussy visible, face visible"
+    "id": "head-1",
+    "tag": "head_a",
+    "label": "アニメ系",
+    "prompt": "masterpiece, best quality, highly detailed, anime style illustration, vibrant colors, soft shading, expressive eyes, flexible body, 1girl, solo, only one girl, realistic anatomy, perfect hands, 5 fingers on each hand, pussy visible, face visible, (Hairy pussy:0.7)"
   }
 ]
