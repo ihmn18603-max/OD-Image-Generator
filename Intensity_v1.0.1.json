@@ -4,118 +4,159 @@
     "tag": "int-cloth_in",
     "label": "着衣食い込み",
     "category": "intensity",
-    "prompt": "(ultra micro g-string panties:1.3),(vertical crotch strap only:1.2),(single strap splitting the pussy:1.4),(strap digging deeply into flesh:1.4),(labia forced apart by string:1.4),(gaping pussy:0.5), folds of pussy visible, crotch-centric perspective"
+    "prompt": "(ultra micro g-string panties:1.3),(vertical crotch strap only:1.2),(single strap splitting the pussy:1.4),(strap digging deeply into flesh:1.4),(labia forced apart by string:1.4),(gaping pussy:0.5), folds of pussy visible, crotch-centric perspective",
+    "intensity level": "2"
   },
   {
     "id": "int-2002",
     "tag": "int-cloth_sp",
     "label": "着衣広げ",
     "category": "intensity",
-    "prompt": "wearing panties, panties on, lingerie kept on,self spreading, hands spreading pussy through panties,fingers pulling labia apart under panties,pussy spread open with panties still on, labia pulled apart beneath panties, only crotch revealed through panties"
+    "prompt": "wearing panties, panties on, lingerie kept on,self spreading, hands spreading pussy through panties,fingers pulling labia apart under panties,pussy spread open with panties still on, labia pulled apart beneath panties,crotch revealed through panties,",
+    "intensity level": "2"
   },
   {
     "id": "int-3003",
     "tag": "int-self_sp",
     "label": "セルフ拡張",
     "category": "intensity",
-    "prompt": "self spreading, both hands spreading pussy,fingers pulling labia wide apart, labia stretched wide, gaping pussy, pussy spread wide open,vaginal cavity exposed, deep vaginal view"
+    "prompt": "self spreading, (both hands spreading pussy:1.2),fingers pulling labia wide apart, labia stretched wide, gaping pussy, pussy spread wide open,vaginal cavity exposed, deep vaginal view, face visible,",
+    "intensity level": "3"
   },
   {
-    "id": "int-3004",
-    "tag": "int-tape_sp",
-    "label": "テープ強制拡張",
+    "id": "int-5004",
+    "tag": "int-self_wet_beads",
+    "label": "セルフ拡張+潮吹き",
     "category": "intensity",
-    "prompt": "(pussy with multi tapes:1.3), (labia taped apart:1.3), (wide open gaped  pussy:1.3), (labia unnaturally stretched:1.2), gaping pussy, vaginal cavity exposed, widespread pussy, without hands"
+    "prompt": "self spreading, (both hands spreading pussy:1.2),fingers pulling labia wide apart, labia stretched wide, gaping pussy, pussy spread wide open,vaginal cavity exposed, squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, deep vaginal view, face visible,",
+    "intensity level": "5"
   },
   {
-    "id": "int-5005",
+    "id": "int-4005",
     "tag": "int-self_wet_beads",
     "label": "セルフ拡張+ビーズ",
     "category": "intensity",
-    "prompt": "self spreading, (both hands spreading pussy:1.3),fingers pulling labia wide apart, labia stretched wide,gaping pussy, pussy spread wide open,vaginal cavity exposed, deep vaginal view,anal beads in anal,balanced view, pussy and ass shown together, simultaneous focus"
+    "prompt": "self spreading, (both hands spreading pussy:1.2),fingers pulling labia wide apart, labia stretched wide,gaping pussy, pussy spread wide open,vaginal cavity exposed, anal beads in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,face visible.",
+    "intensity level": "4"
   },
   {
-    "id": "int-5006",
+    "id": "int-4006",
     "tag": "int-self_wet_dildo",
     "label": "セルフ拡張+ディルド",
     "category": "intensity",
-    "prompt": "self spreading, (both hands spreading pussy:1.3),fingers pulling labia wide apart, labia stretched wide,gaping pussy, pussy spread wide open,vaginal cavity exposed, deep vaginal view,dildo in anal,balanced view, pussy and ass shown together, simultaneous focus"
+    "prompt": "self spreading, (both hands spreading pussy:1.2),fingers pulling labia wide apart, labia stretched wide,gaping pussy, pussy spread wide open,vaginal cavity exposed,  dildo in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,face visible.",
+    "intensity level": "4"
   },
   {
-    "id": "int-5007",
-    "tag": "int-tape_wet_beads",
-    "label": "テープ強制拡張+ビーズ",
-    "category": "intensity",
-    "prompt": "(pussy with multi tapes:1.3), (labia taped apart:1.3), (wide open gaped  pussy:1.3), (labia unnaturally stretched:1.2), gaping pussy, vaginal cavity exposed, widespread pussy, without hands,anal beads in anal,balanced view, pussy and ass shown together, simultaneous focus"
-  },
-  {
-    "id": "int-5008",
-    "tag": "int-tape_wet_dildo",
-    "label": "テープ強制拡張+ディルド",
-    "category": "intensity",
-    "prompt": "(pussy with multi tapes:1.3), (labia taped apart:1.3), (wide open gaped  pussy:1.3), (labia unnaturally stretched:1.2), gaping pussy, vaginal cavity exposed, widespread pussy, without hands,dildo in anal,balanced view, pussy and ass shown together, simultaneous focus"
-  },
-  {
-    "id": "int-6009",
+    "id": "int-6007",
     "tag": "int-self_sq_beads",
     "label": "セルフ拡張+潮吹き+ビーズ",
     "category": "intensity",
-    "prompt": "self spreading, both hands spreading pussy,fingers pulling labia wide apart, labia stretched wide, gaping pussy, pussy spread wide open,vaginal cavity exposed, deep vaginal view,squirting pussy, jet of clear fluid, single strong stream,nfluid arcing outward, erotic squirting, translucent spray,anal beads in ass,balanced view, pussy and ass shown together, simultaneous focus"
+    "prompt": "self spreading, (both hands spreading pussy:1.2),fingers pulling labia wide apart, labia stretched wide, gaping pussy, pussy spread wide open,vaginal cavity exposed, squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, anal beads in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,face visible.",
+    "intensity level": "6"
   },
   {
-    "id": "int-6010",
+    "id": "int-6008",
     "tag": "int-self_sq_dildo",
     "label": "セルフ拡張+潮吹き+ディルド",
     "category": "intensity",
-    "prompt": "self spreading, both hands spreading pussy,fingers pulling labia wide apart, labia stretched wide, gaping pussy, pussy spread wide open,vaginal cavity exposed, deep vaginal view,squirting pussy, jet of clear fluid, single strong stream,\\nfluid arcing outward, erotic squirting, translucent spray,dildo in ass,balanced view, pussy and ass shown together, simultaneous focus"
+    "prompt": "self spreading, (both hands spreading pussy:1.2),fingers pulling labia wide apart, labia stretched wide, gaping pussy, pussy spread wide open,vaginal cavity exposed,  squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, dildo in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,face visible.",
+    "intensity level": "6"
   },
   {
-    "id": "int-6011",
+    "id": "int-3009",
+    "tag": "int-tape_sp",
+    "label": "テープ強制拡張",
+    "category": "intensity",
+    "prompt": "(without hands),(pussy with multi tapes:1.3), (labia taped apart:1.3), (wide open gaped  pussy:1.3), (labia unnaturally stretched:1.2), gaping pussy,pussy spread wide open, vaginal cavity exposed, deep vaginal view, face visible,",
+    "intensity level": "3"
+  },
+  {
+    "id": "int-5010",
+    "tag": "int-tape_wet_beads",
+    "label": "テープ強制拡張＋潮吹き",
+    "category": "intensity",
+    "prompt": "(without hands),(pussy with multi tapes:1.3), (labia taped apart:1.3), (wide open gaped  pussy:1.3), (labia unnaturally stretched:1.2), gaping pussy,pussy spread wide open, vaginal cavity exposed, squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, deep vaginal view, face visible,",
+    "intensity level": "5"
+  },
+  {
+    "id": "int-4011",
+    "tag": "int-tape_wet_beads",
+    "label": "テープ強制拡張+ビーズ",
+    "category": "intensity",
+    "prompt": "(without hands),(pussy with multi tapes:1.3), (labia taped apart:1.3), (wide open gaped  pussy:1.3), (labia unnaturally stretched:1.2), gaping pussy,pussy spread wide open, vaginal cavity exposed, anal beads in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,face visible.",
+    "intensity level": "4"
+  },
+  {
+    "id": "int-4012",
+    "tag": "int-tape_wet_dildo",
+    "label": "テープ強制拡張+ディルド",
+    "category": "intensity",
+    "prompt": "(without hands),(pussy with multi tapes:1.3), (labia taped apart:1.3), (wide open gaped  pussy:1.3), (labia unnaturally stretched:1.2), gaping pussy,pussy spread wide open, vaginal cavity exposed, dildo in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,face visible.",
+    "intensity level": "4"
+  },
+  {
+    "id": "int-6013",
     "tag": "int-tape_sq_beads",
     "label": "テープ強制拡張+潮吹き+ビーズ",
     "category": "intensity",
-    "prompt": "(pussy with multi tapes:1.3), (labia taped apart:1.3), (wide open gaped  pussy:1.3), (labia unnaturally stretched:1.2), gaping pussy, vaginal cavity exposed, widespread pussy, without hands,squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray,anal beads in ass,balanced view, pussy and ass shown together, simultaneous focus"
+    "prompt": "(without hands),(pussy with multi tapes:1.3), (labia taped apart:1.3), (wide open gaped  pussy:1.3), (labia unnaturally stretched:1.2), gaping pussy,pussy spread wide open, vaginal cavity exposed, squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, anal beads in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,face visible.",
+    "intensity level": "6"
   },
   {
-    "id": "int-6012",
+    "id": "int-6014",
     "tag": "int-tape_sq_dildo",
     "label": "テープ強制拡張+潮吹き+ディルド",
     "category": "intensity",
-    "prompt": "(pussy with multi tapes:1.3), (labia taped apart:1.3), (wide open gaped  pussy:1.3), (labia unnaturally stretched:1.2), gaping pussy, vaginal cavity exposed, widespread pussy, without hands,squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray,dildo in ass,balanced view, pussy and ass shown together, simultaneous focus"
+    "prompt": "(without hands),(pussy with multi tapes:1.3), (labia taped apart:1.3), (wide open gaped  pussy:1.3), (labia unnaturally stretched:1.2), gaping pussy,pussy spread wide open, vaginal cavity exposed, squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, dildo in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,face visible.",
+    "intensity level": "6"
   },
   {
-    "id": "int-3013",
+    "id": "int-3015",
     "tag": "int-ex",
     "label": "強制拡張",
     "category": "intensity",
-    "prompt": "(labia parted unnaturally:1.2), (vaginal cavity exposed:1.2), (wide open gaped pussy:1.2), soft skin tension, subtle stretching, (widespread pussy), (without hands), deep vaginal view, balanced view, pussy and ass shown together"
+    "prompt": "(without hands), (labia stretched wide), (wide open gaped  pussy:1.3), gaping pussy,pussy spread wide open,vaginal cavity exposed, deep vaginal view, face visible,",
+    "intensity level": "3"
   },
   {
-    "id": "int-5014",
+    "id": "int-5016",
+    "tag": "int-ex",
+    "label": "強制拡張＋潮吹き",
+    "category": "intensity",
+    "prompt": "(without hands), (labia stretched wide), (wide open gaped  pussy:1.3), gaping pussy,pussy spread wide open,vaginal cavity exposed, squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, deep vaginal view, face visible,",
+    "intensity level": "5"
+  },
+  {
+    "id": "int-4017",
     "tag": "int-ex_wet_beads",
     "label": "強制拡張+ビーズ",
     "category": "intensity",
-    "prompt": "(labia parted unnaturally:1.2), (vaginal cavity exposed:1.2), (wide open gaped pussy:1.2), soft skin tension, subtle stretching,(widespread pussy), (without hands), deep vaginal view, balanced view,anal beads in anal,balanced view, pussy and ass shown together, simultaneous focus"
+    "prompt": "(without hands), (labia stretched wide), (wide open gaped  pussy:1.3), gaping pussy,pussy spread wide open,vaginal cavity exposed, anal beads in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,face visible.",
+    "intensity level": "4"
   },
   {
-    "id": "int-5015",
+    "id": "int-4018",
     "tag": "int-ex_wet_dildo",
     "label": "強制拡張+ディルド",
     "category": "intensity",
-    "prompt": "(labia parted unnaturally:1.2), (vaginal cavity exposed:1.2), (wide open gaped pussy:1.2), soft skin tension, subtle stretching,(widespread pussy), (without hands),  deep vaginal view, balanced view,dildo in anal,balanced view, pussy and ass shown together, simultaneous focus"
+    "prompt": "(without hands), (labia stretched wide), (wide open gaped  pussy:1.3), gaping pussy,pussy spread wide open,vaginal cavity exposed, dildo in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,face visible.",
+    "intensity level": "4"
   },
   {
-    "id": "int-6016",
+    "id": "int-6019",
     "tag": "int-ex_sq_beads",
     "label": "強制拡張＋潮吹き+ビーズ",
     "category": "intensity",
-    "prompt": "(labia parted unnaturally:1.2), (vaginal cavity exposed:1.2), (wide open gaped pussy:1.2), soft skin tension, subtle stretching,(widespread pussy), (without hands), deep vaginal view, balanced view, squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray,anal beads in anal,balanced view, pussy and ass shown together, simultaneous focus"
+    "prompt": "(without hands), (labia stretched wide), (wide open gaped  pussy:1.3), gaping pussy,pussy spread wide open,vaginal cavity exposed, squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, anal beads in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,face visible.",
+    "intensity level": "6"
   },
   {
-    "id": "int-6017",
+    "id": "int-6020",
     "tag": "int-ex_sq_dildo",
     "label": "強制拡張＋潮吹き+ディルド",
     "category": "intensity",
-    "prompt": "(labia parted unnaturally:1.2), (vaginal cavity exposed:1.2), (wide open gaped pussy:1.2), soft skin tension, subtle stretching,(widespread pussy), (without hands),  deep vaginal view, balanced view, squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray,dildo in anal,balanced view, pussy and ass shown together, simultaneous focus"
+    "prompt": "(without hands), (labia stretched wide), (wide open gaped  pussy:1.3), gaping pussy,pussy spread wide open,vaginal cavity exposed, squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, dildo in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,face visible.",
+    "intensity level": "6"
   }
 ]
