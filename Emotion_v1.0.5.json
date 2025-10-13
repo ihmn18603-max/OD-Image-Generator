@@ -11,14 +11,14 @@
     "tag": "dazed",
     "label": "ぼんやりした表情",
     "category": "neutral",
-    "prompt": "dazed"
+    "prompt": "dazed expression"
   },
   {
     "id": "emo-3",
     "tag": "trance",
     "label": "トランス状態",
     "category": "neutral",
-    "prompt": "trance"
+    "prompt": "tranced face"
   },
   {
     "id": "emo-4",
@@ -32,7 +32,7 @@
     "tag": "sheepish",
     "label": "気まずい表情",
     "category": "shyness",
-    "prompt": "sheepish"
+    "prompt": "sheepish expression"
   },
   {
     "id": "emo-6",
@@ -81,7 +81,7 @@
     "tag": "teary",
     "label": "涙目",
     "category": "sadness",
-    "prompt": "teary"
+    "prompt": "teary face"
   },
   {
     "id": "emo-13",
@@ -102,28 +102,28 @@
     "tag": "suffering",
     "label": "苦しげな顔",
     "category": "pain",
-    "prompt": "suffering"
+    "prompt": "suffering face"
   },
   {
     "id": "emo-16",
     "tag": "distressed",
     "label": "困惑と苦悶の表情",
     "category": "pain",
-    "prompt": "distressed"
+    "prompt": "distressed expression"
   },
   {
     "id": "emo-17",
     "tag": "enduring",
     "label": "耐えている表情",
     "category": "pain",
-    "prompt": "enduring"
+    "prompt": "enduring expression"
   },
   {
     "id": "emo-18",
     "tag": "stoic",
     "label": "無表情で耐える",
     "category": "pain",
-    "prompt": "stoic"
+    "prompt": "stoic expression"
   },
   {
     "id": "emo-100",
@@ -137,14 +137,14 @@
     "tag": "aroused",
     "label": "興奮した表情",
     "category": "sexual",
-    "prompt": "aroused"
+    "prompt": "aroused expression"
   },
   {
     "id": "emo-102",
     "tag": "sensual",
     "label": "官能的な表情",
     "category": "sexual",
-    "prompt": "sensual"
+    "prompt": "sensual expression"
   },
   {
     "id": "emo-103",
@@ -158,7 +158,7 @@
     "tag": "suggestive",
     "label": "示唆的な表情",
     "category": "sexual",
-    "prompt": "suggestive"
+    "prompt": "suggestive expression"
   },
   {
     "id": "emo-105",
@@ -172,7 +172,7 @@
     "tag": "ecstasy_pain",
     "label": "快楽と苦痛",
     "category": "sexual",
-    "prompt": "ecstasy mixed with pain"
+    "prompt": "ecstasy mixed with pain expression"
   },
   {
     "id": "emo-107",
@@ -186,6 +186,125 @@
     "tag": "ahegao",
     "label": "アヘ顔",
     "category": "sexual",
-    "prompt": "ahegao, eyes rolled back, tongue out, drooling, mouth wide open"
+    "prompt": "ahegao"
+  },
+  {
+    "id": "emo-109",
+    "tag": "longing_gaze",
+    "label": "切なげな視線",
+    "category": "sexual",
+    "prompt": "longing gaze"
+  },
+  {
+    "id": "emo-110",
+    "tag": "inviting_eyes",
+    "label": "誘うような目",
+    "category": "sexual",
+    "prompt": "inviting eyes"
+  },
+  {
+    "id": "emo-111",
+    "tag": "submissive_gaze",
+    "label": "従順な視線",
+    "category": "sexual",
+    "prompt": "submissive gaze"
+  },
+  {
+    "id": "emo-112",
+    "tag": "dominant_look",
+    "label": "支配的なまなざし",
+    "category": "sexual",
+    "prompt": "dominant look"
+  },
+  {
+    "id": "emo-113",
+    "tag": "dreamy_eyes",
+    "label": "陶酔した目",
+    "category": "sexual",
+    "prompt": "dreamy eyes"
+  },
+  {
+    "id": "emo-114",
+    "tag": "parted_lips",
+    "label": "わずかに開いた唇",
+    "category": "sexual",
+    "prompt": "parted lips"
+  },
+  {
+    "id": "emo-115",
+    "tag": "biting_lips",
+    "label": "唇を噛む仕草",
+    "category": "sexual",
+    "prompt": "biting lips"
+  },
+  {
+    "id": "emo-116",
+    "tag": "wet_lips",
+    "label": "濡れた唇",
+    "category": "sexual",
+    "prompt": "wet lips"
+  },
+  {
+    "id": "emo-117",
+    "tag": "playful_tongue",
+    "label": "舌を見せる表情",
+    "category": "sexual",
+    "prompt": "playful tongue"
+  },
+  {
+    "id": "emo-118",
+    "tag": "heavy_breathing",
+    "label": "熱い吐息",
+    "category": "sexual",
+    "prompt": "heavy breathing"
+  },
+  {
+    "id": "emo-119",
+    "tag": "breathless_expression",
+    "label": "息をのむ表情",
+    "category": "sexual",
+    "prompt": "breathless expression"
+  },
+  {
+    "id": "emo-120",
+    "tag": "languid_face",
+    "label": "とろけるような表情",
+    "category": "sexual",
+    "prompt": "languid face"
+  },
+  {
+    "id": "emo-121",
+    "tag": "lustful_expression",
+    "label": "欲望に満ちた表情",
+    "category": "sexual",
+    "prompt": "lustful expression"
+  },
+  {
+    "id": "emo-122",
+    "tag": "blissful_pleasure",
+    "label": "至福の快楽",
+    "category": "sexual",
+    "prompt": "blissful pleasure"
+  },
+  {
+    "id": "emo-123",
+    "tag": "dazed_ecstasy",
+    "label": "恍惚とした表情",
+    "category": "sexual",
+    "prompt": "dazed ecstasy"
+  },
+  {
+    "id": "emo-124",
+    "tag": "afterglow_smile",
+    "label": "余韻に浸る笑み",
+    "category": "sexual",
+    "prompt": "afterglow smile"
+  },
+  {
+    "id": "emo-125",
+    "tag": "yearning_face",
+    "label": "切望に満ちた表情",
+    "category": "sexual",
+    "prompt": "yearning face"
   }
 ]
