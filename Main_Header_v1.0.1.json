@@ -4,48 +4,48 @@
     "tag": "head_r",
     "label": "リアル系",
     "category": "header",
-    "prompt": "ultra realistic, highly detailed, professional photography,natural lighting, soft shadows, cinematic depth of field,skin texture visible,1girl, solo, only one girl,realistic anatomy, perfect hands, 5 fingers on each hand, erect nipples, erect clitoris, face visible, flexible body, (Hairy pussy:0.7),"
+    "prompt": "ultra realistic, highly detailed, professional photography,natural lighting, soft shadows, cinematic depth of field,skin texture visible,1girl, solo, only one girl,realistic anatomy, perfect hands, 5 fingers on each hand, erect nipples, erect clitoris, flexible body, (Hairy pussy:0.7), face visible, looking back from both sides"
   },
   {
     "id": "head-1",
     "tag": "head_a",
     "label": "アニメ系",
     "category": "header",
-    "prompt": "masterpiece, best quality, anime style illustration, soft shading, gentle lighting, natural color palette, smooth gradients, delicate lines, pastel tones, smooth skin texture, subtle shadows, soft focus, balanced composition,expressive eyes,1girl, solo, only one girl,realistic anatomy, perfect hands, 5 fingers on each hand, erect nipples, erect clitoris, face visible, flexible body, (Hairy pussy:0.7),"
+    "prompt": "masterpiece, best quality, anime style illustration, soft shading, gentle lighting, natural color palette, smooth gradients, delicate lines, pastel tones, smooth skin texture, subtle shadows, soft focus, balanced composition,expressive eyes,1girl, solo, only one girl,realistic anatomy, perfect hands, 5 fingers on each hand, erect nipples, erect clitoris, flexible body, (Hairy pussy:0.7), face visible, looking back from both sides"
   },
   {
     "id": "head_2",
     "tag": "realistic_sensual",
     "label": "リアル系（セクシー）",
     "category": "header",
-    "prompt": "masterpiece, best quality, ultra realistic, detailed lighting, soft shadows, glossy skin texture, smooth gradients, cinematic highlights, sensual atmosphere, confident expression, elegant posture, warm tone, expressive eyes, perfect hands, realistic anatomy, solo, 1girl, erect nipples, erect clitoris, face visible, flexible body, (Hairy pussy:0.7),"
+    "prompt": "masterpiece, best quality, ultra realistic, detailed lighting, soft shadows, glossy skin texture, smooth gradients, cinematic highlights, sensual atmosphere, confident expression, elegant posture, warm tone, expressive eyes, perfect hands, realistic anatomy, solo, 1girl, erect nipples, erect clitoris, flexible body, (Hairy pussy:0.7), face visible, looking back from both sides"
   },
   {
     "id": "head_3",
     "tag": "anime_sensual",
     "label": "アニメ系（セクシー）",
     "category": "header",
-    "prompt": "masterpiece, best quality, anime style illustration, soft shading, gentle lighting, smooth gradients, pastel tones, delicate lines, glossy highlights, smooth skin texture, alluring expression, expressive eyes, subtle glow, graceful body line, elegant composition, solo, 1girl, erect nipples, erect clitoris, face visible, flexible body, (Hairy pussy:0.7),"
+    "prompt": "masterpiece, best quality, anime style illustration, soft shading, gentle lighting, smooth gradients, pastel tones, delicate lines, glossy highlights, smooth skin texture, alluring expression, expressive eyes, subtle glow, graceful body line, elegant composition, solo, 1girl, erect nipples, erect clitoris, flexible body, (Hairy pussy:0.7), face visible, looking back from both sides"
   },
   {
     "id": "head_4",
     "tag": "semi_realistic_sensual",
     "label": "セミリアル系（やわらか官能",
     "category": "header",
-    "prompt": "masterpiece, best quality, semi-realistic anime illustration, detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines, expressive eyes, elegant composition, solo, 1girl, erect nipples, erect clitoris, face visible, flexible body, (Hairy pussy:0.7),"
+    "prompt": "masterpiece, best quality, semi-realistic anime illustration, detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines, expressive eyes, elegant composition, solo, 1girl, erect nipples, erect clitoris, flexible body, (Hairy pussy:0.7), face visible, looking back from both sides"
   },
   {
     "id": "head_5",
     "tag": "glow_portrait",
     "label": "グロウライティング系（艶感強調",
     "category": "header",
-    "prompt": "masterpiece, best quality, soft shading, cinematic lighting, glossy highlights, smooth gradients, dreamy tone, gentle shadows, warm light diffusion, expressive eyes, alluring atmosphere, solo, 1girl, erect nipples, erect clitoris, face visible, flexible body, (Hairy pussy:0.7),"
+    "prompt": "masterpiece, best quality, soft shading, cinematic lighting, glossy highlights, smooth gradients, dreamy tone, gentle shadows, warm light diffusion, expressive eyes, alluring atmosphere, solo, 1girl, erect nipples, erect clitoris, flexible body, (Hairy pussy:0.7), face visible, looking back from both sides"
   },
   {
     "id": "head_6",
     "tag": "pastel_dream",
     "label": "パステル調（やわらか艶",
     "category": "header",
-    "prompt": "masterpiece, best quality, anime style illustration, soft shading, dreamy lighting, pastel color palette, smooth gradients, delicate lines, soft focus, ethereal tone, subtle shadows, smooth skin texture, solo, 1girl, erect nipples, erect clitoris, face visible, flexible body, (Hairy pussy:0.7),"
+    "prompt": "masterpiece, best quality, anime style illustration, soft shading, dreamy lighting, pastel color palette, smooth gradients, delicate lines, soft focus, ethereal tone, subtle shadows, smooth skin texture, solo, 1girl, erect nipples, erect clitoris, flexible body, (Hairy pussy:0.7), face visible, looking back from both sides"
   }
 ]
