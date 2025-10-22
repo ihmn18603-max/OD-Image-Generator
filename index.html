@@ -18,14 +18,13 @@
     textarea{width:100%;min-height:150px;margin-top:10px;border-radius:8px;border:1px solid var(--line);padding:10px;background:var(--bg);color:var(--ink)}
     button{padding:10px 16px;margin-top:10px;border:none;border-radius:8px;cursor:pointer;background:var(--accent);color:white}
     .prompt-box{margin-top:8px;font-size:13px;color:var(--muted);background:var(--panel);padding:8px;border-radius:6px;white-space:pre-wrap}
-    .emotion-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+    .emotion-grid{display:grid;grid-template-columns:repeat(1,1fr);gap:12px}
     .emotion-btn{padding:8px;border:1px solid #444;border-radius:6px;text-align:center;cursor:pointer;background:var(--chip)}
-    .emotion-btn.active{background:var(--accent);color:white;border-color:var(--accent);box-shadow:0 0 8px rgba(31,123,242,.6)}
     .radio-group{margin:12px 0}
     .radio-group__title{display:flex;align-items:center;gap:8px;margin-bottom:6px}
     .chip{display:inline-block;padding:6px 10px;border:1px solid #444;border-radius:999px;background:var(--chip)}
     .radio-group label{display:inline-block;margin:4px;cursor:pointer}
-    .radio-group input[type="radio"]{display:none}
+    .radio-group input[type="radio"], .radio-group input[type="checkbox"]{display:none}
     .radio-group span{display:inline-block;padding:8px 14px;border:1px solid #444;border-radius:8px;background:var(--chip);color:var(--ink);transition:.15s;user-select:none}
     .radio-group span:hover{background:#243048;border-color:var(--accent)}
     .radio-group input[type="radio"]:checked + span{background:var(--accent);border-color:var(--accent);color:white;box-shadow:0 0 8px rgba(31,123,242,.6)}
@@ -49,7 +48,7 @@
     <select id="selIntensity" aria-label="Intensity"></select>
     <div id="intensityPrompt" class="prompt-box" aria-live="polite"></div>
 
-    <h2 class="row">③ Emotion（最大4つ） <span id="emotionCount" class="muted">0 / 4</span></h2>
+    <h2 class="row">③ Emotion（各カテゴリから1つずつ） <span id="emotionCount" class="muted">0 / 0</span></h2>
     <div id="emotionOptions" class="emotion-grid"></div>
     <div id="emotionPrompt" class="prompt-box" aria-live="polite"></div>
 
@@ -114,18 +113,17 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
   const urls = {
     header:    base + "Main_Header_v1.0.1.json",
     intensity: base + "Intensity_v1.0.1.json",
-    emotion:   base + "Emotion_v1.0.5.json",
+    emotion:   base + "Emotion_v1.0.5.json", // ← category を含む生データを利用
     extra:     base + "Extra_elements_v1.0.2.json",
     outfit:    base + "Cloth_v1.0.2.json",
     accessory: base + "Accessory_v1.0.2.json"
   };
 
-  // kind-aware mapping so各JSONのキー違いでも安全
+  // kind-aware mapping（emotion 以外は toOptions 化）
   function toOptionsByKind(data, kind){
     switch(kind){
       case 'header':    return data.map((r,i)=>({id:i, label:r.label ?? r.Label ?? r.name ?? `Header ${i+1}`,   prompt:r['Header Prompt'] ?? r.prompt ?? r.Prompt ?? ''}));
       case 'intensity': return data.map((r,i)=>({id:i, label:r.label ?? r.Label ?? r.name ?? `Intensity ${i+1}`,prompt:r['Template Prompt'] ?? r.prompt ?? r.Prompt ?? ''}));
-      case 'emotion':   return data.map((r,i)=>({id:i, label:r.label ?? r.Label ?? r.name ?? `Emotion ${i+1}`,  prompt:r.prompt ?? r.Prompt ?? ''}));
       case 'outfit':    return data.map((r,i)=>({id:i, label:r.label ?? r.Label ?? r.name ?? `Outfit ${i+1}`,   prompt:Array.isArray(r['outfit prompt'])? r['outfit prompt'].join(', ') : (r.prompt ?? r.Prompt ?? '')}));
       case 'accessory': return data.map((r,i)=>({id:i, label:r.label ?? r.Label ?? r.name ?? `Accessory ${i+1}`,prompt:r.prompt ?? r.Prompt ?? ''}));
       default:          return data.map((r,i)=>({id:i, label:r.label ?? r.name ?? `Item ${i+1}`,               prompt:r.prompt ?? r.Prompt ?? ''}));
@@ -140,7 +138,7 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
 
   const state = {
     header:[], intensity:[], emotion:[], extra:[], outfit:[], accessory:[],
-    sel: { header:null, intensity:null, emotion:[], extraChoices:{}, extraPrompts:[], outfit:null, accessory:[] }
+    sel: { header:null, intensity:null, emotionByCat:{}, extraChoices:{}, extraPrompts:[], outfit:null, accessory:[] }
   };
 
   function fillSelect(sel, opts, {multi=false, withEmpty=true}={}){
@@ -161,7 +159,11 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
     const parts = [];
     if(state.sel.header)    parts.push(state.sel.header.prompt);
     if(state.sel.intensity) parts.push(state.sel.intensity.prompt);
-    if(state.sel.emotion?.length) parts.push(state.sel.emotion.map(x=>x.prompt).join(', '));
+
+    // Emotion: カテゴリごとに1つ
+    const emoSelected = Object.values(state.sel.emotionByCat).filter(Boolean);
+    if(emoSelected.length) parts.push(emoSelected.map(x=>x.prompt).join(', '));
+
     if(state.sel.extraPrompts?.length) parts.push(state.sel.extraPrompts.join(', '));
 
     const result = parts.filter(Boolean).join(', ');
@@ -181,7 +183,8 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
     try{
       state.header    = toOptionsByKind(await loadJSON(urls.header),    'header');
       state.intensity = toOptionsByKind(await loadJSON(urls.intensity), 'intensity');
-      state.emotion   = toOptionsByKind(await loadJSON(urls.emotion),   'emotion');
+      // Emotion は生配列（category/label/prompt/id 等）を保持
+      state.emotion   = await loadJSON(urls.emotion);
       state.extra     = await loadJSON(urls.extra); // category, label, prompt, category level
       state.outfit    = toOptionsByKind(await loadJSON(urls.outfit),    'outfit');
       state.accessory = toOptionsByKind(await loadJSON(urls.accessory), 'accessory');
@@ -191,30 +194,88 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
       fillSelect($('#selOutfit'),    state.outfit);
       fillSelect($('#selAccessory'), state.accessory, {multi:true, withEmpty:false});
 
-      // Emotion buttons (use dataset index to avoid label衝突)
+      // --- Emotion: カテゴリ別ラジオ UI ---
       const emoBox = $('#emotionOptions');
       emoBox.innerHTML = '';
-      state.emotion.forEach((o)=>{
-        const btn = document.createElement('div');
-        btn.className = 'emotion-btn';
-        btn.textContent = o.label;
-        btn.dataset.id = String(o.id);
-        btn.onclick = ()=>{
-          if(btn.classList.contains('active')){
-            btn.classList.remove('active');
-          } else if(document.querySelectorAll('.emotion-btn.active').length < 4){
-            btn.classList.add('active');
-          }
-          const selected = $$('.emotion-btn.active').map(b=> state.emotion.find(x=> String(x.id) === b.dataset.id));
-          state.sel.emotion = selected.filter(Boolean);
-          $('#emotionPrompt').textContent = state.sel.emotion.map(x=>x.prompt).join(', ');
-          $('#emotionCount').textContent = `${state.sel.emotion.length} / 4`;
-          build();
-        }
-        emoBox.appendChild(btn);
+
+      // グルーピング（小文字カテゴリ）
+      const emoGrouped = {};
+      state.emotion.forEach(o=>{
+        const cat = String(o.category || 'other').toLowerCase();
+        (emoGrouped[cat] ||= []).push(o);
       });
 
-      // Extra Elements radios（各カテゴリに「なし」を用意）
+      // 表示順（存在するもののみ）
+      const emoOrderPref = ['face','smile','stare','special','other'];
+      const emoCats = Object.keys(emoGrouped).sort((a,b)=>{
+        const ia = emoOrderPref.indexOf(a), ib = emoOrderPref.indexOf(b);
+        return (ia===-1?999:ia) - (ib===-1?999:ib) || a.localeCompare(b);
+      });
+
+      // カウンタ更新
+      function refreshEmotionCounter(){
+        const total = emoCats.length;
+        const selected = Object.values(state.sel.emotionByCat).filter(Boolean).length;
+        $('#emotionCount').textContent = `${selected} / ${total}`;
+      }
+
+      // 描画
+      emoCats.forEach(cat=>{
+        const wrap = document.createElement('div');
+        wrap.className = 'radio-group';
+
+        const title = document.createElement('div');
+        title.className = 'radio-group__title';
+        title.innerHTML = `<strong>${cat}</strong><span class="chip">1つ選択</span>`;
+        wrap.appendChild(title);
+
+        // なし
+        const noneId = `emo_${cat}__none`;
+        const noneInput = document.createElement('input');
+        noneInput.type = 'radio'; noneInput.name = `emo_${cat}`; noneInput.id = noneId; noneInput.value = '';
+        noneInput.onchange = ()=>{
+          delete state.sel.emotionByCat[cat];
+          $('#emotionPrompt').textContent = Object.values(state.sel.emotionByCat)
+            .filter(Boolean).map(x=>x.prompt).join(', ');
+          refreshEmotionCounter();
+          build();
+        };
+        const noneLabel = document.createElement('label');
+        noneLabel.setAttribute('for', noneId);
+        const noneSpan = document.createElement('span');
+        noneSpan.textContent = 'なし';
+        noneLabel.appendChild(noneInput); noneLabel.appendChild(noneSpan);
+        wrap.appendChild(noneLabel);
+
+        // 選択肢
+        emoGrouped[cat].forEach((opt, idx)=>{
+          const id = `emo_${cat}__${idx}`;
+          const radio = document.createElement('input');
+          radio.type = 'radio'; radio.name = `emo_${cat}`; radio.id = id; radio.value = opt.id ?? idx;
+          radio.onchange = ()=>{
+            state.sel.emotionByCat[cat] = opt;
+            $('#emotionPrompt').textContent = Object.values(state.sel.emotionByCat)
+              .filter(Boolean).map(x=>x.prompt).join(', ');
+            refreshEmotionCounter();
+            build();
+          };
+
+          const label = document.createElement('label');
+          label.setAttribute('for', id);
+          const span = document.createElement('span');
+          span.textContent = opt.label || opt.tag || opt.prompt || `Option ${idx+1}`;
+          label.appendChild(radio); label.appendChild(span);
+
+          wrap.appendChild(label);
+        });
+
+        emoBox.appendChild(wrap);
+      });
+
+      // 初期カウンタ
+      refreshEmotionCounter();
+
+      // ------- Extra Elements: ラジオ UI -------
       const container = $('#extraElements');
       container.innerHTML = '';
       const grouped = {};
@@ -320,8 +381,16 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
   $('#btnClear135').addEventListener('click', ()=>{
     $('#selHeader').value = ''; state.sel.header = null; $('#headerPrompt').textContent = '';
     $('#selIntensity').value = ''; state.sel.intensity = null; $('#intensityPrompt').textContent = '';
-    $$('.emotion-btn.active').forEach(b=> b.classList.remove('active'));
-    state.sel.emotion = []; $('#emotionPrompt').textContent = ''; $('#emotionCount').textContent = '0 / 4';
+
+    // Emotion: 全カテゴリ未選択へ
+    state.sel.emotionByCat = {};
+    $$('#emotionOptions input[type="radio"]').forEach(r=> r.checked = false);
+    $('#emotionPrompt').textContent = '';
+    (function(){
+      const groups = new Set($$('#emotionOptions input[type="radio"]').map(r=>r.name));
+      $('#emotionCount').textContent = `0 / ${groups.size || 0}`;
+    })();
+
     Object.keys(state.sel.extraChoices).forEach(k=> delete state.sel.extraChoices[k]);
     state.sel.extraPrompts = []; $('#extraPrompt').textContent = '';
     build();
