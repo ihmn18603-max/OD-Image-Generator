@@ -1,30 +1,30 @@
 [
   {
-    "id": "Ex-1",
+    "id": "Ex-eye1",
     "tag": "Ex-eye-0",
     "label": "目閉",
     "category": "eye",
-    "prompt": "eyes closed",
+    "prompt": "closed eyes",
     "category level": "0"
   },
   {
-    "id": "Ex-2",
+    "id": "Ex-eye2",
     "tag": "Ex-eye-1",
     "label": "目半開",
     "category": "eye",
-    "prompt": "eyes half-open",
+    "prompt": "half-open eyes",
     "category level": "1"
   },
   {
-    "id": "Ex-3",
+    "id": "Ex-eye3",
     "tag": "Ex-eye-3",
     "label": "目全開",
     "category": "eye",
-    "prompt": "eyes wide open",
+    "prompt": "wide open eyes",
     "category level": "3"
   },
   {
-    "id": "Ex-4",
+    "id": "Ex-eye4",
     "tag": "Ex-eye-4",
     "label": "焦点の定まらない目",
     "category": "eye",
@@ -32,7 +32,7 @@
     "category level": "4"
   },
   {
-    "id": "Ex-5",
+    "id": "Ex-eye5",
     "tag": "Ex-eye-5",
     "label": "ウインク",
     "category": "eye",
@@ -40,7 +40,39 @@
     "category level": "5"
   },
   {
-    "id": "Ex-6",
+    "id": "Ex-eye6",
+    "tag": "Ex-eye-6",
+    "label": "強く目をつぶる",
+    "category": "eye",
+    "prompt": "tightly closed eyes ",
+    "category level": "6"
+  },
+  {
+    "id": "Ex-eye7",
+    "tag": "Ex-eye-7",
+    "label": "ぼんやりした目",
+    "category": "eye",
+    "prompt": "glassy eyes",
+    "category level": "7"
+  },
+  {
+    "id": "Ex-eye8",
+    "tag": "Ex-eye-8",
+    "label": "うつろな目",
+    "category": "eye",
+    "prompt": "empty eyes",
+    "category level": "8"
+  },
+  {
+    "id": "Ex-eye9",
+    "tag": "Ex-eye-9",
+    "label": "白目",
+    "category": "eye",
+    "prompt": "rolling eyes",
+    "category level": "9"
+  },
+  {
+    "id": "Ex-mouth1",
     "tag": "Ex-mouth-0",
     "label": "口閉",
     "category": "mouth",
@@ -48,7 +80,7 @@
     "category level": "0"
   },
   {
-    "id": "Ex-7",
+    "id": "Ex-mouth2",
     "tag": "Ex-mouth-1",
     "label": "口半開",
     "category": "mouth",
@@ -56,7 +88,7 @@
     "category level": "1"
   },
   {
-    "id": "Ex-8",
+    "id": "Ex-mouth3",
     "tag": "Ex-mouth-2",
     "label": "口開",
     "category": "mouth",
@@ -64,7 +96,7 @@
     "category level": "2"
   },
   {
-    "id": "Ex-9",
+    "id": "Ex-mouth4",
     "tag": "Ex-mouth-3",
     "label": "わずかに開いた唇",
     "category": "mouth",
@@ -72,7 +104,7 @@
     "category level": "3"
   },
   {
-    "id": "Ex-10",
+    "id": "Ex-mouth5",
     "tag": "Ex-mouth-4",
     "label": "濡れた唇",
     "category": "mouth",
@@ -80,7 +112,7 @@
     "category level": "4"
   },
   {
-    "id": "Ex-11",
+    "id": "Ex-mouth6",
     "tag": "Ex-mouth-5",
     "label": "唇を噛む",
     "category": "mouth",
@@ -88,7 +120,15 @@
     "category level": "5"
   },
   {
-    "id": "Ex-12",
+    "id": "Ex-mouth7",
+    "tag": "Ex-mouth-6",
+    "label": "歯を食いしばる",
+    "category": "mouth",
+    "prompt": "clenching jaw",
+    "category level": "6"
+  },
+  {
+    "id": "Ex-tongue1",
     "tag": "Ex-tongue-1",
     "label": "舌だし少",
     "category": "tongue",
@@ -96,7 +136,7 @@
     "category level": "1"
   },
   {
-    "id": "Ex-13",
+    "id": "Ex-tongue2",
     "tag": "Ex-tongue-2",
     "label": "舌だし大",
     "category": "tongue",
@@ -104,7 +144,7 @@
     "category level": "2"
   },
   {
-    "id": "Ex-14",
+    "id": "Ex-saliva1",
     "tag": "Ex-saliva-1",
     "label": "涎少",
     "category": "saliva",
@@ -112,7 +152,7 @@
     "category level": "1"
   },
   {
-    "id": "Ex-15",
+    "id": "Ex-saliva2",
     "tag": "Ex-saliva-2",
     "label": "涎多",
     "category": "saliva",
@@ -120,7 +160,7 @@
     "category level": "2"
   },
   {
-    "id": "Ex-16",
+    "id": "Ex-PJ1",
     "tag": "Ex-pussy juice-1",
     "label": "愛液少",
     "category": "pussy juice",
@@ -128,15 +168,23 @@
     "category level": "1"
   },
   {
-    "id": "Ex-17",
+    "id": "Ex-PJ2",
     "tag": "Ex-pussy juice-2",
-    "label": "愛液ダラダラ",
+    "label": "愛液多",
     "category": "pussy juice",
     "prompt": "lots of pussy juice",
     "category level": "2"
   },
   {
-    "id": "Ex-18",
+    "id": "Ex-PJ3",
+    "tag": "Ex-pussy juice-3",
+    "label": "愛液ダラダラ",
+    "category": "pussy juice",
+    "prompt": "excessive pussy juice",
+    "category level": "3"
+  },
+  {
+    "id": "Ex-sweat1",
     "tag": "Ex-sweat-1",
     "label": "汗少",
     "category": "sweat",
@@ -144,11 +192,19 @@
     "category level": "1"
   },
   {
-    "id": "Ex-19",
+    "id": "Ex-sweat2",
     "tag": "Ex-sweat-2",
     "label": "汗多",
     "category": "sweat",
     "prompt": "lots of sweat",
     "category level": "2"
+  },
+  {
+    "id": "Ex-sweat3",
+    "tag": "Ex-sweat-3",
+    "label": "汗大量",
+    "category": "sweat",
+    "prompt": "excessive sweating",
+    "category level": "3"
   }
 ]
