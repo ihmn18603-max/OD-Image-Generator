@@ -2,9 +2,9 @@
   {
     "id": "emo-face1",
     "tag": "blushing_cheeks",
-    "label": "頬を赤らめている",
-    "category": "cheeks",
-    "prompt": "blushing cheeks"
+    "label": "赤面した顔",
+    "category": "face",
+    "prompt": "blushing face"
   },
   {
     "id": "emo-face2",
@@ -156,30 +156,9 @@
   {
     "id": "emo-face23",
     "tag": "happy_tears",
-    "label": "嬉し涙",
+    "label": "嬉し涙の顔",
     "category": "face",
     "prompt": "happy teary face"
-  },
-  {
-    "id": "emo-lip1",
-    "tag": "parted_lips",
-    "label": "わずかに開いた唇",
-    "category": "lips",
-    "prompt": "parted lips"
-  },
-  {
-    "id": "emo-lip2",
-    "tag": "wet_lips",
-    "label": "濡れた唇",
-    "category": "lips",
-    "prompt": "wet lips"
-  },
-  {
-    "id": "emo-lip3",
-    "tag": "biting_lips",
-    "label": "唇を噛む",
-    "category": "lips",
-    "prompt": "biting lips"
   },
   {
     "id": "emo-smile1",
