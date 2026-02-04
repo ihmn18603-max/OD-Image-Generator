@@ -1,272 +1,279 @@
 [
   {
     "id": "clo-1",
+    "tag": "sexy nurse",
+    "label": "ナース",
+    "category": "cloth",
+    "prompt": "sexy nurse, white mini dress, micro string G-string, barely there thong, very short skirt, garter belt, fishnet stockings, nurse cap"
+  },
+  {
+    "id": "clo-2",
     "tag": "sexy maid",
     "label": "メイド",
     "category": "cloth",
     "prompt": "sexy maid, obscene micro mini skirt, sheer fabric, tiny apron, white lace garter belt, ripped thigh-high stockings, maid headband"
   },
   {
-    "id": "clo-2",
+    "id": "clo-3",
     "tag": "sexy flight attendant",
     "label": "スチュワーデス",
     "category": "cloth",
     "prompt": "sexy flight attendant, very short navy blue mini skirt uniform, unbuttoned white blouse showing cleavage, red neck scarf, stewardess hat, black sheer pantyhose, high heels, glossy lips"
   },
   {
-    "id": "clo-3",
+    "id": "clo-4",
     "tag": "sexy cop",
     "label": "警官",
     "category": "cloth",
     "prompt": "sexy cop, skimpy tight police uniform, deep cleavage, underboob, extreme micro mini skirt barely covering ass, cameltoe, police hat, fingerless gloves, thigh-high boots, belt with baton, cuffs in hand"
   },
   {
-    "id": "clo-4",
+    "id": "clo-5",
     "tag": "sexy barista",
     "label": "バリスタ",
     "category": "cloth",
     "prompt": "sexy barista, ultra short mini skirt uniform, low-cut crop top apron, deep cleavage, coffee shop name tag, black sheer stockings, high heels, holding coffee cup"
   },
   {
-    "id": "clo-5",
+    "id": "clo-6",
     "tag": "sexy teacher",
     "label": "女教師",
     "category": "cloth",
     "prompt": "sexy teacher, ultra short tight pencil skirt, loose white blouse unbuttoned showing deep cleavage, cool stylish glasses, rimless thin metal frames, black sheer stockings, high heels, holding pointer"
   },
   {
-    "id": "clo-6",
+    "id": "clo-7",
     "tag": "sexy doctor",
     "label": "医者",
     "category": "cloth",
     "prompt": "sexy doctor, tight short white mini lab coat unbuttoned deep cleavage, fitted white blouse underneath breasts, stethoscope around neck, cool stylish rimless glasses, red lipstick, black sheer stockings, high heels, syringe between breasts"
   },
   {
-    "id": "clo-7",
+    "id": "clo-8",
     "tag": "sexy mad scientist",
     "label": "サイエンティスト",
     "category": "cloth",
-    "prompt": "sexy mad scientist, tight open white lab coat huge cleavage, fitted crop top, messy wild hair, safety goggles on forehead, test tubes in hand, black sheer stockings, high heels, insane smile"
+    "prompt": "sexy mad scientist, tight open white lab coat huge cleavage, fitted crop top, messy wild hair, safety goggles on forehead, speculum in hand, black sheer stockings, high heels, insane smile"
   },
   {
-    "id": "clo-8",
+    "id": "clo-9",
     "tag": "sexy secretary",
     "label": "秘書",
     "category": "cloth",
     "prompt": "sexy secretary, skimpy micro pencil skirt extreme short exposing hips, tight white blouse open wide cleavage sideboob underboob, black garter stockings with visible straps, platform high heels, holding files teasingly between thighs, satin blouse"
   },
   {
-    "id": "clo-9",
+    "id": "clo-10",
     "tag": "sexy nun",
     "label": "修道女",
     "category": "cloth",
     "prompt": "sexy nun, skin-tight black nun habit, deep plunging cleavage,breasts spilling out, ultra high side slit to hip exposing thigh and ass, lace garter belt and stockings, black veil,black fingerless gloves,  large silver cross necklace dangling in cleavage"
   },
   {
-    "id": "clo-10",
+    "id": "clo-11",
     "tag": "sexy casino dealer",
     "label": "カジノディーラー",
     "category": "cloth",
     "prompt": "sexy casino dealer, skimpy black uniform micro skirt barely covering ass cameltoe, extreme low-cut vest cleavage underboob sideboob, fishnet stockings with garters, platform heels, poker chips between breasts"
   },
   {
-    "id": "clo-11",
+    "id": "clo-12",
     "tag": "sexy race queen",
     "label": "レースクイーン",
     "category": "cloth",
     "prompt": "sexy race queen, skimpy micro bodysuit barely covering cameltoe ass, breasts spilling out low-cut front underboob, metallic fabric, thigh-high boots, garter belts, holding umbrella teasingly between thighs"
   },
   {
-    "id": "clo-12",
+    "id": "clo-13",
     "tag": "sexy bunny girl",
     "label": "バニーガール",
     "category": "cloth",
     "prompt": "sexy bunny girl, tight black leotard high-cut thong style, deep plunging neckline cleavage, bunny ears headband, white bowtie collar, fluffy tail, fishnet stockings, high heels, wrist cuffs"
   },
   {
-    "id": "clo-13",
+    "id": "clo-14",
     "tag": "sexy puppy girl",
     "label": "犬",
     "category": "cloth",
     "prompt": "sexy puppy girl, sog ear heahband, collar with bell, fluffy dog tail plug, black sheer stockings, high heels, paw mittens"
   },
   {
-    "id": "clo-14",
+    "id": "clo-15",
     "tag": "sexy kitten girl",
     "label": "猫",
     "category": "cloth",
     "prompt": "sexy kitten girl, cat ear headband, collar with bell, fluffy cat tail plug, skimpy black leotard high-cut cleavage, fishnet stockings, platform heels, paw gloves"
   },
   {
-    "id": "clo-15",
+    "id": "clo-16",
     "tag": "sexy spy",
     "label": "スパイ",
     "category": "cloth",
     "prompt": "sexy spy, tight black latex catsuit high-cut thong style, deep plunging zipper cleavage, spy gadgets belt, sunglasses, thigh-high boots, gloves, holding gun"
   },
   {
-    "id": "clo-16",
+    "id": "clo-17",
     "tag": "sexy kunoichi ninja",
     "label": "忍者",
     "category": "cloth",
     "prompt": "sexy kunoichi ninja, ultra skimpy black shinobi outfit micro shorts barely covering ass, breasts in tight wrap top deep cleavage underboob, exposed midriff, kunai and shuriken belt, garters, thigh-high fishnet boots"
   },
   {
-    "id": "clo-17",
+    "id": "clo-18",
     "tag": "sexy cheerleader",
     "label": "チアリーダー",
     "category": "cloth",
     "prompt": "sexy cheerleader, skimpy micro crop top breasts spilling out sideboob, extreme short skirt flipped up exposing thong, pom poms teasingly between thighs, fishnet stockings with garters, high platform heels"
   },
   {
-    "id": "clo-18",
+    "id": "clo-19",
     "tag": "sexy bikini",
     "label": "水着ビキニ",
     "category": "cloth",
     "prompt": "sexy bikini, tiny triangle bikini top deep cleavage, high-cut thong bottom cameltoe, strings tied loosely, glossy oiled skin"
   },
   {
-    "id": "clo-19",
+    "id": "clo-20",
     "tag": "sexy one piece swimsuit",
     "label": "水着ワンピース",
     "category": "cloth",
     "prompt": "sexy one piece swimsuit, tight one piece, side mesh,  V-plunge deep cleavage underboob, extreme high-cut sides bare hips cameltoe, platform heels, glossy lips"
   },
   {
-    "id": "clo-20",
+    "id": "clo-21",
     "tag": "sexy competitive swimsuit",
     "label": "競泳水着",
     "category": "cloth",
     "prompt": "sexy competitive swimsuit, skimpy high-leg one piece barely covering ass cameltoe fully visible, extreme plunging neckline to navel breasts sideboob spilling out,  latex glossy fabric wet look, thigh straps optional"
   },
   {
-    "id": "clo-21",
+    "id": "clo-22",
     "tag": "sexy high-leg lingerie",
     "label": "ハイレグ下着",
     "category": "cloth",
     "prompt": "sexy high-leg lingerie, breasts deep cleavage underboob spilling out from push-up bra, ultra high-cut thong panties pulling up slightly extreme digging in pronounced cameltoe wedgie visible, tiny front panel stretched taut biting into groin, sheer lace transparent fabric, matching push-up bra, thigh garters,  glossy skin, hands adjusting panties"
   },
   {
-    "id": "clo-22",
+    "id": "clo-23",
     "tag": "sexy low-rise panties",
     "label": "ローライズ下着",
     "category": "cloth",
-    "prompt": "sexy low-rise panties, breasts deep cleavage underboob spilling out from push-up bra, extreme low-rise micro thong slipping down hips thick bush pubic hair slightly peeking and cascading over lowered waistband, garter belt straps taut, platform heels optional, pulling panties further down"
+    "prompt": "sexy low-leg panties, breasts deep cleavage underboob spilling out from push-up bra, extreme low-rise micro thong slipping down hips thick bush pubic hair slightly peeking and cascading over lowered waistband, garter belt straps taut, platform heels optional, pulling panties further down"
   },
   {
-    "id": "clo-23",
+    "id": "clo-24",
     "tag": "sexy santa girl",
     "label": "ナイトリーサンタ",
     "category": "cloth",
     "prompt": "sexy santa girl, tight black red latex mini dress, white fur trim deep cleavage, black santa hat, whip in hand, handcuffs dangling from belt, collar with bell, thigh-high boots, sheer stockings"
   },
   {
-    "id": "clo-24",
+    "id": "clo-25",
     "tag": "sexy cowgirl",
     "label": "カウガール",
     "category": "cloth",
     "prompt": "sexy cowgirl, tight plaid crop top deep cleavage underboob, ultra short denim mini shorts or fringed skirt, cameltoe, cowboy hat, belt with buckle, thigh-high boots, lasso or whip in hand"
   },
   {
-    "id": "clo-25",
+    "id": "clo-26",
     "tag": "sexy ao dai girl",
     "label": "アオザイ",
     "category": "cloth",
     "prompt": "sexy ao dai girl, skimpy modified ao dai barely covering ass cameltoe visible, ultra deep side slits full hip exposure, extreme low-cut front breasts spilling out sideboob underboob, black fishnet stockings thighhighs, platform high heels,"
   },
   {
-    "id": "clo-26",
+    "id": "clo-27",
     "tag": "sexy chinese dress",
     "label": "チャイナドレス",
     "category": "cloth",
     "prompt": "sexy chinese dress, ultra short skimpy Chinese dress, deep cleavage,  ultra high side slits exposing entire hips and thighs, thighhigh stockings fishnet with garter straps"
   },
   {
-    "id": "clo-27",
+    "id": "clo-28",
     "tag": "sexy dirndl girl",
     "label": "ディアンドル",
     "category": "cloth",
     "prompt": "sexy dirndl girl, tight dirndl bodice deep cleavage, low-cut blouse spilling out breasts underboob, short flared skirt high slits exposing hips, white blouse puffed sleeves, apron tied, thighhigh stockings black sheer or fishnet, dirndl bow, platform heels"
   },
   {
-    "id": "clo-SP1",
+    "id": "clo-29",
     "tag": "sexy exposed coat girl",
     "label": "露出コート",
     "category": "cloth",
     "prompt": "sexy exposed coat girl, long trench coat open naked underneath deep cleavage breasts visible, full body nude under coat cameltoe hint exposed hips, fishnet stockings, high heels, pulling coat open slightly"
   },
   {
-    "id": "clo-SP2",
+    "id": "clo-SP1",
     "tag": "INO",
     "label": "INO",
     "category": "cloth",
     "prompt": "I-no Guilty Gear, ultra skimpy glossy red latex shoulderless fetish jacket deep plunging cleavage breasts spilling out underboob, black leather choker gold ring pulling jacket taut, witch hat with skull face, fishnet stockings with runs cameltoe hint, thigh-high boots, guitar strap between breasts"
   },
   {
-    "id": "clo-SP3",
+    "id": "clo-SP2",
     "tag": "CHU",
     "label": "CHU",
     "category": "cloth",
     "prompt": "Chun-Li, ultra skimpy very short chinese dress barely covering ass pronounced cameltoe, extreme deep V-neckline breasts spilling out sideboob underboob, ultra high side slits entire hips and thighs exposed, black fishnet thighhigh stockings with garters, spiked bracelets"
   },
   {
-    "id": "clo-SP4",
+    "id": "clo-SP3",
     "tag": "CAM",
     "label": "CAM",
     "category": "cloth",
     "prompt": "Cammy White, micro skimpy green leotard barely covering anything underboob dominant breasts spilling out sideboob, extreme high-cut thong style sides ass and hips fully exposed cameltoe deeply visible, shiny latex-like tight fabric stretched taut, red beret, spiked red gauntlets, black thighhigh stockings with garter straps, platform combat boots"
   },
   {
-    "id": "clo-SP5",
+    "id": "clo-SP4",
     "tag": "MOR",
     "label": "MOR",
     "category": "cloth",
     "prompt": "Morrigan Aensland, micro green bodysuit barely covering anything massive cleavage sideboob underboob spilling out, extreme high-cut leotard ass and hips fully exposed deep cameltoe, shiny latex glossy fabric stretched taut, bat wings spread slightly"
   },
   {
-    "id": "clo-SP6",
+    "id": "clo-SP5",
     "tag": "MTL",
     "label": "MTL",
     "category": "cloth",
     "prompt": "Maetel, ultra revealing black fur-trimmed long coat wide open full exposure black dress underneath extreme deep cleavage breasts spilling out sideboob underboob, black dress with blue accents ultra short or slit high bare hips cameltoe hint, russian black astrakhan fur hat tilted, black fur collar cuffs hem, long black boots thighhigh style"
   },
   {
-    "id": "clo-SP7",
+    "id": "clo-SP6",
     "tag": "SNC",
     "label": "SNC",
     "category": "cloth",
     "prompt": "Super Sonico, ultra revealing blue camo hoodie wide open, breasts spilling out deep cleavage underboob dominant from tight cat graphic tee, micro denim miniskirt barely covering pronounced cameltoe bare hips thighs exposed, light purple fishnet thighhigh stockings with garters, platform brown boots, oversized headphones"
   },
   {
-    "id": "clo-SP8",
+    "id": "clo-SP7",
     "tag": "FBK",
     "label": "FBK",
     "category": "cloth",
     "prompt": "Hellish Blizzard, skimpy black dress barely covering ass pronounced cameltoe, massive deep cleavage dominant underboob sideboob spilling out, extreme slits exposing thighs hips, fur cape open"
   },
   {
-    "id": "clo-SP9",
+    "id": "clo-SP8",
     "tag": "MAI",
     "label": "MAI",
     "category": "cloth",
     "prompt": "Mai Shiranui, skimpy red white revealing ninja dress extreme low-cut cleavage sideboob underboob spilling out, ultra high side slits full hip exposure cameltoe hint, red headband long ponytail, black thighhigh stockings, platform heels"
   },
   {
-    "id": "clo-SP10",
+    "id": "clo-SP9",
     "tag": "ANG",
     "label": "ANG",
     "category": "cloth",
     "prompt": "Ángel KOF, tight black white wrestler top massive cleavage sideboob underboob, micro high-cut shorts cameltoe visible ass exposed, white short hair hair over eye, black thighhigh stockings garters, combat boots"
   },
   {
-    "id": "clo-SP11",
+    "id": "clo-SP10",
     "tag": "TFA",
     "label": "TFA",
     "category": "cloth",
     "prompt": "Tifa Lockhart, slim elegant figure narrow waist long legs, white tank top extreme low-cut massive cleavage sideboob underboob dominant, micro black skirt cameltoe visible hips exposed, black thighhigh stockings, fingerless gloves elbow pads"
   },
   {
-    "id": "clo-SP12",
+    "id": "clo-SP11",
     "tag": "A18",
     "label": "A18",
     "category": "cloth",
