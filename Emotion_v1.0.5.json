@@ -15,10 +15,10 @@
   },
   {
     "id": "emo-face3",
-    "tag": "dazed",
-    "label": "ぼんやりした顔",
+    "tag": "breathless_expression",
+    "label": "息をのむ顔",
     "category": "face",
-    "prompt": "dazed face"
+    "prompt": "breathless face"
   },
   {
     "id": "emo-face4",
@@ -29,132 +29,55 @@
   },
   {
     "id": "emo-face5",
-    "tag": "sheepish",
-    "label": "気まずい顔",
-    "category": "face",
-    "prompt": "sheepish face"
-  },
-  {
-    "id": "emo-face6",
-    "tag": "teary",
-    "label": "涙目の顔",
-    "category": "face",
-    "prompt": "teary face"
-  },
-  {
-    "id": "emo-face7",
-    "tag": "agonized",
-    "label": "苦悶の顔",
-    "category": "face",
-    "prompt": "agonized face"
-  },
-  {
-    "id": "emo-face8",
-    "tag": "pained",
-    "label": "痛みに歪む顔",
-    "category": "face",
-    "prompt": "pained face"
-  },
-  {
-    "id": "emo-face9",
-    "tag": "suffering",
-    "label": "苦しげな顔",
-    "category": "face",
-    "prompt": "suffering face"
-  },
-  {
-    "id": "emo-face10",
-    "tag": "distressed",
-    "label": "困惑と苦悶の顔",
-    "category": "face",
-    "prompt": "distressed face"
-  },
-  {
-    "id": "emo-face11",
     "tag": "enduring",
     "label": "耐えている顔",
     "category": "face",
     "prompt": "enduring face"
   },
   {
-    "id": "emo-face12",
+    "id": "emo-face6",
     "tag": "stoic",
     "label": "無表情で耐える顔",
     "category": "face",
     "prompt": "stoic face"
   },
   {
-    "id": "emo-face13",
+    "id": "emo-face7",
     "tag": "aroused",
     "label": "興奮した顔",
     "category": "face",
     "prompt": "aroused face"
   },
   {
-    "id": "emo-face14",
+    "id": "emo-face8",
     "tag": "sensual",
     "label": "官能的な顔",
     "category": "face",
     "prompt": "sensual face"
   },
   {
-    "id": "emo-face15",
+    "id": "emo-face9",
     "tag": "suggestive",
     "label": "示唆的な顔",
     "category": "face",
     "prompt": "suggestive face"
   },
   {
-    "id": "emo-face16",
+    "id": "emo-face10",
     "tag": "orgasm_face",
     "label": "絶頂の顔",
     "category": "face",
     "prompt": "orgasm face"
   },
   {
-    "id": "emo-face17",
-    "tag": "ecstasy_pain",
-    "label": "快楽と苦痛の顔",
-    "category": "face",
-    "prompt": "ecstasy face"
-  },
-  {
-    "id": "emo-face18",
-    "tag": "breathless_expression",
-    "label": "息をのむ顔",
-    "category": "face",
-    "prompt": "breathless face"
-  },
-  {
-    "id": "emo-face19",
+    "id": "emo-face11",
     "tag": "languid_face",
     "label": "とろけるような顔",
     "category": "face",
     "prompt": "languid face"
   },
   {
-    "id": "emo-face20",
-    "tag": "lustful_expression",
-    "label": "欲望に満ちた顔",
-    "category": "face",
-    "prompt": "lustful face"
-  },
-  {
-    "id": "emo-face21",
-    "tag": "dazed_ecstasy",
-    "label": "恍惚とした顔",
-    "category": "face",
-    "prompt": "dazed face"
-  },
-  {
-    "id": "emo-face22",
-    "tag": "yearning_face",
-    "label": "切望に満ちた顔",
-    "category": "face",
-    "prompt": "yearning face"
-  },
-  {
-    "id": "emo-face23",
+    "id": "emo-face12",
     "tag": "happy_tears",
     "label": "嬉し涙の顔",
     "category": "face",
@@ -176,41 +99,13 @@
   },
   {
     "id": "emo-smile3",
-    "tag": "light_smile",
-    "label": "軽い笑み",
-    "category": "smile",
-    "prompt": "light smile"
-  },
-  {
-    "id": "emo-smile4",
-    "tag": "playful_smile",
-    "label": "茶目っ気の笑み",
-    "category": "smile",
-    "prompt": "playful smile"
-  },
-  {
-    "id": "emo-smile5",
-    "tag": "afterglow_smile",
-    "label": "余韻に浸る笑み",
-    "category": "smile",
-    "prompt": "afterglow smile"
-  },
-  {
-    "id": "emo-smile6",
-    "tag": "flushed_smirk",
-    "label": "火照った笑み",
-    "category": "smile",
-    "prompt": "flushed smile"
-  },
-  {
-    "id": "emo-smile7",
     "tag": "seductive_smile",
     "label": "誘惑の笑み",
     "category": "smile",
     "prompt": "seductive smile"
   },
   {
-    "id": "emo-smile8",
+    "id": "emo-smile4",
     "tag": "lewd_smile",
     "label": "淫乱な笑み",
     "category": "smile",
@@ -233,7 +128,7 @@
   {
     "id": "emo-stare3",
     "tag": "inviting_eyes",
-    "label": "誘うよう視線",
+    "label": "誘うような視線",
     "category": "stare",
     "prompt": "inviting stare"
   },
@@ -246,13 +141,6 @@
   },
   {
     "id": "emo-stare5",
-    "tag": "dominant_look",
-    "label": "支配的な視線",
-    "category": "stare",
-    "prompt": "dominant stare"
-  },
-  {
-    "id": "emo-stare6",
     "tag": "dreamy_eyes",
     "label": "陶酔した視線",
     "category": "stare",
