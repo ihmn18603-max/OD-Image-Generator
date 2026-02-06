@@ -1,15 +1,33 @@
 [
   {
-    "id": "int-2001",
+    "id": "int-1001",
+    "tag": "int-p",
+    "label": "パンツ見え",
+    "Flont Condition": "パンツ見え",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": "pussy outline visible, sheer panties, extreme low angle, focus on crotch"
+  },
+  {
+    "id": "int-1002",
+    "tag": "int-p",
+    "label": "パンツ見せ",
+    "Flont Condition": "パンツ見せ",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": "(lifting skirt with both hands:1.25), (skirt pulled up high:1.2), (skirt lift by self), sheer panties, pussy outline visible,extreme low angle, focus on crotch"
+  },
+  {
+    "id": "int-2003",
     "tag": "int-cloth_in",
     "label": "着衣食い込み",
     "Flont Condition": "着衣食い込み",
     "Back Condition": "",
     "category": "intensity",
-    "prompt": "panties lift up with both hands,(ultra micro g-string panties:1.3),(vertical crotch strap only:1.2),(single strap splitting the pussy:1.4),(strap digging deeply into flesh:1.4),(labia forced apart by string:1.4),(gaping pussy:0.5), folds of pussy visible, crotch-centric perspective, balanced view, focus on pussy,"
+    "prompt": "(deep cameltoe:1.15), detailed wedgie,(ultra minimal crotch coverage:1.15), (thin strap splitting the pussy:1.1), (strap deeply into pussy:1.25), (pussy apart by the strap:1.1), balanced close-up view, strong focus on cleft and strained fabric,"
   },
   {
-    "id": "int-2002",
+    "id": "int-2004",
     "tag": "int-cloth_sp",
     "label": "着衣広げ",
     "Flont Condition": "着衣広げ",
@@ -18,7 +36,16 @@
     "prompt": "wearing panties, panties on, lingerie kept on,self spreading, hands spreading pussy through panties,fingers pulling labia apart under panties,pussy spread open with panties still on, labia pulled apart beneath panties,crotch revealed through panties, balanced view, focus on pussy,"
   },
   {
-    "id": "int-3003",
+    "id": "int-3005",
+    "tag": "int-pwet",
+    "label": "パンツ見せ/濡れ",
+    "Flont Condition": "パンツ見せ/濡れ",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": "(lifting skirt with both hands:1.25), (skirt pulled up high:1.2), (skirt lift by self), sheer panties, pussy outline visible,pussy juice dripping from pussy, natural dripping,extreme low angle, focus on crotch"
+  },
+  {
+    "id": "int-3006",
     "tag": "int-self_sp",
     "label": "セルフ拡張",
     "Flont Condition": "セルフ拡張",
@@ -27,7 +54,7 @@
     "prompt": "self spreading, (both hands spreading pussy:1.25), (fingers pulling labia wide apart), (gaping pussy:1.25), (wide stretched labia:1.25), (wide open gaped  pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), tight anus, balanced view, pussy and ass shown together, focus on pussy,"
   },
   {
-    "id": "int-4004",
+    "id": "int-4007",
     "tag": "int-self_spw",
     "label": "セルフ拡張/濡れ",
     "Flont Condition": "セルフ拡張/濡れ",
@@ -36,259 +63,7 @@
     "prompt": "self spreading, (both hands spreading pussy:1.25), (fingers pulling labia wide apart), (gaping pussy:1.25), (wide stretched labia:1.25), (wide open gaped  pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, balanced view, pussy and ass shown together, focus on pussy,"
   },
   {
-    "id": "int-5005",
-    "tag": "int-self_sq",
-    "label": "セルフ拡張/潮吹き",
-    "Flont Condition": "セルフ拡張/潮吹き",
-    "Back Condition": "",
-    "category": "intensity",
-    "prompt": "self spreading, (both hands spreading pussy:1.25), (fingers pulling labia wide apart), (gaping pussy:1.25), (wide stretched labia:1.25), (wide open gaped  pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, balanced view, pussy and ass shown together, focus on pussy,"
-  },
-  {
-    "id": "int-5006",
-    "tag": "int-self_beads",
-    "label": "セルフ拡張/濡れ+プラグ挿入",
-    "Flont Condition": "セルフ拡張/濡れ",
-    "Back Condition": "プラグ挿入",
-    "category": "intensity",
-    "prompt": "self spreading, (both hands spreading pussy:1.25), (fingers pulling labia wide apart), (gaping pussy:1.25), (wide stretched labia:1.25), (wide open gaped  pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, anal plugs in anal, balanced view, pussy and ass shown together, focus on pussy,"
-  },
-  {
-    "id": "int-5007",
-    "tag": "int-self_beads",
-    "label": "セルフ拡張/濡れ+ビーズ挿入",
-    "Flont Condition": "セルフ拡張/濡れ",
-    "Back Condition": "ビーズ挿入",
-    "category": "intensity",
-    "prompt": "self spreading, (both hands spreading pussy:1.25), (fingers pulling labia wide apart), (gaping pussy:1.25), (wide stretched labia:1.25), (wide open gaped  pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, anal beads in anal, balanced view, pussy and ass shown together, focus on pussy,"
-  },
-  {
     "id": "int-5008",
-    "tag": "int-self_dildo",
-    "label": "セルフ拡張/濡れ+ディルド挿入",
-    "Flont Condition": "セルフ拡張/濡れ",
-    "Back Condition": "ディルド挿入",
-    "category": "intensity",
-    "prompt": "self spreading, (both hands spreading pussy:1.25), (fingers pulling labia wide apart), (gaping pussy:1.25), (wide stretched labia:1.25), (wide open gaped  pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, dildo in anal, balanced view, pussy and ass shown together, focus on pussy,"
-  },
-  {
-    "id": "int-6009",
-    "tag": "int-self_sq_beads",
-    "label": "セルフ拡張/潮吹き+プラグ挿入",
-    "Flont Condition": "セルフ拡張/潮吹き",
-    "Back Condition": "プラグ挿入",
-    "category": "intensity",
-    "prompt": "self spreading, (both hands spreading pussy:1.25), (fingers pulling labia wide apart), (gaping pussy:1.25), (wide stretched labia:1.25), (wide open gaped  pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, anal plugs in anal, balanced view, pussy and ass shown together, focus on pussy,"
-  },
-  {
-    "id": "int-6010",
-    "tag": "int-self_sq_beads",
-    "label": "セルフ拡張/潮吹き+ビーズ挿入",
-    "Flont Condition": "セルフ拡張/潮吹き",
-    "Back Condition": "ビーズ挿入",
-    "category": "intensity",
-    "prompt": "self spreading, (both hands spreading pussy:1.25), (fingers pulling labia wide apart), (gaping pussy:1.25), (wide stretched labia:1.25), (wide open gaped  pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, anal beads in anal, balanced view, pussy and ass shown together, focus on pussy,"
-  },
-  {
-    "id": "int-6011",
-    "tag": "int-self_sq_dildo",
-    "label": "セルフ拡張/潮吹き+ディルド挿入",
-    "Flont Condition": "セルフ拡張/潮吹き",
-    "Back Condition": "ディルド挿入",
-    "category": "intensity",
-    "prompt": "self spreading, (both hands spreading pussy:1.25), (fingers pulling labia wide apart), (gaping pussy:1.25), (wide stretched labia:1.25), (wide open gaped  pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, dildo in anal, balanced view, pussy and ass shown together, focus on pussy,"
-  },
-  {
-    "id": "int-3012",
-    "tag": "int-tape_sp",
-    "label": "テープ強制拡張",
-    "Flont Condition": "テープ強制拡張",
-    "Back Condition": "",
-    "category": "intensity",
-    "prompt": "(without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), tight anus, balanced view, pussy and ass shown together, focus on pussy,"
-  },
-  {
-    "id": "int-4013",
-    "tag": "int-tape_sq",
-    "label": "テープ強制拡張/濡れ",
-    "Flont Condition": "テープ強制拡張/濡れ",
-    "Back Condition": "",
-    "category": "intensity",
-    "prompt": "(without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, balanced view, pussy and ass shown together, focus on pussy,"
-  },
-  {
-    "id": "int-5014",
-    "tag": "int-tape_sq",
-    "label": "テープ強制拡張/潮吹き",
-    "Flont Condition": "テープ強制拡張/潮吹き",
-    "Back Condition": "",
-    "category": "intensity",
-    "prompt": "(without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, balanced view, pussy and ass shown together, focus on pussy,"
-  },
-  {
-    "id": "int-5015",
-    "tag": "int-tape_wet_beads",
-    "label": "テープ強制拡張/濡れ+プラグ挿入",
-    "Flont Condition": "テープ強制拡張/濡れ",
-    "Back Condition": "プラグ挿入",
-    "category": "intensity",
-    "prompt": "(without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, anal plugs in anal, balanced view, pussy and ass shown together, focus on pussy,"
-  },
-  {
-    "id": "int-5016",
-    "tag": "int-tape_wet_beads",
-    "label": "テープ強制拡張/濡れ+ビーズ挿入",
-    "Flont Condition": "テープ強制拡張/濡れ",
-    "Back Condition": "ビーズ挿入",
-    "category": "intensity",
-    "prompt": "(without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, anal beads in anal, balanced view, pussy and ass shown together, focus on pussy,"
-  },
-  {
-    "id": "int-5017",
-    "tag": "int-tape_wet_dildo",
-    "label": "テープ強制拡張/濡れ+ディルド挿入",
-    "Flont Condition": "テープ強制拡張/濡れ",
-    "Back Condition": "ディルド挿入",
-    "category": "intensity",
-    "prompt": "(without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, dildo in anal, balanced view, pussy and ass shown together, focus on pussy,"
-  },
-  {
-    "id": "int-6018",
-    "tag": "int-tape_sq_beads",
-    "label": "テープ強制拡張潮吹き+プラグ挿入",
-    "Flont Condition": "テープ強制拡張潮吹き",
-    "Back Condition": "プラグ挿入",
-    "category": "intensity",
-    "prompt": "(without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, anal plugs in anal, balanced view, pussy and ass shown together, focus on pussy,"
-  },
-  {
-    "id": "int-6019",
-    "tag": "int-tape_sq_beads",
-    "label": "テープ強制拡張潮吹き+ビーズ挿入",
-    "Flont Condition": "テープ強制拡張潮吹き",
-    "Back Condition": "ビーズ挿入",
-    "category": "intensity",
-    "prompt": "(without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, anal beads in anal, balanced view, pussy and ass shown together, focus on pussy,"
-  },
-  {
-    "id": "int-6020",
-    "tag": "int-tape_sq_dildo",
-    "label": "テープ強制拡張潮吹き+ディルド挿入",
-    "Flont Condition": "テープ強制拡張潮吹き",
-    "Back Condition": "ディルド挿入",
-    "category": "intensity",
-    "prompt": "(without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, dildo in anal, balanced view, pussy and ass shown together, focus on pussy,"
-  },
-  {
-    "id": "int-3021",
-    "tag": "int-ex",
-    "label": "強制拡張",
-    "Flont Condition": "強制拡張",
-    "Back Condition": "",
-    "category": "intensity",
-    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), tight anus, balanced view, pussy and ass shown together, focus on pussy,"
-  },
-  {
-    "id": "int-4022",
-    "tag": "int-sq",
-    "label": "強制拡張/濡れ",
-    "Flont Condition": "強制拡張/濡れ",
-    "Back Condition": "",
-    "category": "intensity",
-    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, balanced view, pussy and ass shown together, focus on pussy,"
-  },
-  {
-    "id": "int-5023",
-    "tag": "int-sq",
-    "label": "強制拡張/潮吹き",
-    "Flont Condition": "強制拡張/潮吹き",
-    "Back Condition": "",
-    "category": "intensity",
-    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
-  },
-  {
-    "id": "int-5024",
-    "tag": "int-ex_beads",
-    "label": "強制拡張/濡れ+プラグ挿入",
-    "Flont Condition": "強制拡張/濡れ",
-    "Back Condition": "プラグ挿入",
-    "category": "intensity",
-    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, anal plugs in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
-  },
-  {
-    "id": "int-5025",
-    "tag": "int-ex_beads",
-    "label": "強制拡張/濡れ+ビーズ挿入",
-    "Flont Condition": "強制拡張/濡れ",
-    "Back Condition": "ビーズ挿入",
-    "category": "intensity",
-    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, anal beads in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
-  },
-  {
-    "id": "int-5026",
-    "tag": "int-ex_dildo",
-    "label": "強制拡張/濡れ+ディルド挿入",
-    "Flont Condition": "強制拡張/濡れ",
-    "Back Condition": "ディルド挿入",
-    "category": "intensity",
-    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, dildo in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
-  },
-  {
-    "id": "int-6027",
-    "tag": "int-ex_sq_beads",
-    "label": "強制拡張/潮吹き+プラグ挿入",
-    "Flont Condition": "強制拡張/潮吹き",
-    "Back Condition": "プラグ挿入",
-    "category": "intensity",
-    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, anal plugs in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
-  },
-  {
-    "id": "int-6028",
-    "tag": "int-ex_sq_beads",
-    "label": "強制拡張/潮吹き+ビーズ挿入",
-    "Flont Condition": "強制拡張/潮吹き",
-    "Back Condition": "ビーズ挿入",
-    "category": "intensity",
-    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, anal beads in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
-  },
-  {
-    "id": "int-6029",
-    "tag": "int-ex_sq_dildo",
-    "label": "強制拡張/潮吹き+ディルド挿入",
-    "Flont Condition": "強制拡張/潮吹き",
-    "Back Condition": "ディルド挿入",
-    "category": "intensity",
-    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, dildo in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
-  },
-  {
-    "id": "int-5030",
-    "tag": "int-self_sq",
-    "label": "セルフ拡張/放尿",
-    "Flont Condition": "セルフ拡張/放尿",
-    "Back Condition": "",
-    "category": "intensity",
-    "prompt": "self spreading, (both hands spreading pussy:1.25), (fingers pulling labia wide apart), (gaping pussy:1.25), (wide stretched labia:1.25), (wide open gaped  pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), pissing, single strong stream,fluid arcing outward, erotic peeing, translucent spray, tight anus, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
-  },
-  {
-    "id": "int-5031",
-    "tag": "int-tape_sq",
-    "label": "テープ強制拡張/放尿",
-    "Flont Condition": "テープ強制拡張/放尿",
-    "Back Condition": "",
-    "category": "intensity",
-    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), pissing, single strong stream,fluid arcing outward, erotic peeing, translucent spray, tight anus, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
-  },
-  {
-    "id": "int-5032",
-    "tag": "int-sq",
-    "label": "強制拡張/放尿",
-    "Flont Condition": "強制拡張/放尿",
-    "Back Condition": "",
-    "category": "intensity",
-    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), pissing, single strong stream,fluid arcing outward, erotic peeing, translucent spray, tight anus, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
-  },
-  {
-    "id": "int-5033",
     "tag": "int-self_spw_r1",
     "label": "セルフ拡張/濡れ",
     "Flont Condition": "セルフ拡張/濡れ",
@@ -297,21 +72,255 @@
     "prompt": "(self-spreading pussy with both hands), (fingers hooked deep inside wide stretched labia), (pulling labia wide apart to force gaping pussy open obscenely), (vaginal cavity exposed), (vaginal orifice visible), wide open gaped pussy, wide stretched labia, deep vaginal view,floor with massive puddle of pussy juice, pussy juice dripping, sticky pussy juice, slimy pussy juice, natural dripping pussy juice splattering onto floor and inner thighs, tight anus, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
   },
   {
-    "id": "int-1034",
-    "tag": "int-p",
-    "label": "パンツ見せ",
-    "Flont Condition": "パンツ見せ",
+    "id": "int-5009",
+    "tag": "int-self_sq",
+    "label": "セルフ拡張/潮吹き",
+    "Flont Condition": "セルフ拡張/潮吹き",
     "Back Condition": "",
     "category": "intensity",
-    "prompt": "(lifting skirt with both hands:1.25), (skirt pulled up high:1.2), (skirt lift by self), sheer panties, pussy outline visibleextreme low angle, focus on crotch"
+    "prompt": "self spreading, (both hands spreading pussy:1.25), (fingers pulling labia wide apart), (gaping pussy:1.25), (wide stretched labia:1.25), (wide open gaped  pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, balanced view, pussy and ass shown together, focus on pussy,"
   },
   {
-    "id": "int-3035",
-    "tag": "int-pwet",
-    "label": "パンツ見せ/濡れ",
-    "Flont Condition": "パンツ見せ/濡れ",
+    "id": "int-5010",
+    "tag": "int-self_sq",
+    "label": "セルフ拡張/放尿",
+    "Flont Condition": "セルフ拡張/放尿",
     "Back Condition": "",
     "category": "intensity",
-    "prompt": "(lifting skirt with both hands:1.25), (skirt pulled up high:1.2), (skirt lift by self), sheer panties, pussy outline visible,pussy juice dripping from pussy, natural dripping,extreme low angle, focus on crotch"
+    "prompt": "self spreading, (both hands spreading pussy:1.25), (fingers pulling labia wide apart), (gaping pussy:1.25), (wide stretched labia:1.25), (wide open gaped  pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), pissing, single strong stream,fluid arcing outward, erotic peeing, translucent spray, tight anus, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
+  },
+  {
+    "id": "int-5011",
+    "tag": "int-self_beads",
+    "label": "セルフ拡張/濡れ+プラグ挿入",
+    "Flont Condition": "セルフ拡張/濡れ",
+    "Back Condition": "プラグ挿入",
+    "category": "intensity",
+    "prompt": "self spreading, (both hands spreading pussy:1.25), (fingers pulling labia wide apart), (gaping pussy:1.25), (wide stretched labia:1.25), (wide open gaped  pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, anal plugs in anal, balanced view, pussy and ass shown together, focus on pussy,"
+  },
+  {
+    "id": "int-5012",
+    "tag": "int-self_beads",
+    "label": "セルフ拡張/濡れ+ビーズ挿入",
+    "Flont Condition": "セルフ拡張/濡れ",
+    "Back Condition": "ビーズ挿入",
+    "category": "intensity",
+    "prompt": "self spreading, (both hands spreading pussy:1.25), (fingers pulling labia wide apart), (gaping pussy:1.25), (wide stretched labia:1.25), (wide open gaped  pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, anal beads in anal, balanced view, pussy and ass shown together, focus on pussy,"
+  },
+  {
+    "id": "int-5013",
+    "tag": "int-self_dildo",
+    "label": "セルフ拡張/濡れ+ディルド挿入",
+    "Flont Condition": "セルフ拡張/濡れ",
+    "Back Condition": "ディルド挿入",
+    "category": "intensity",
+    "prompt": "self spreading, (both hands spreading pussy:1.25), (fingers pulling labia wide apart), (gaping pussy:1.25), (wide stretched labia:1.25), (wide open gaped  pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, dildo in anal, balanced view, pussy and ass shown together, focus on pussy,"
+  },
+  {
+    "id": "int-6014",
+    "tag": "int-self_sq_beads",
+    "label": "セルフ拡張/潮吹き+プラグ挿入",
+    "Flont Condition": "セルフ拡張/潮吹き",
+    "Back Condition": "プラグ挿入",
+    "category": "intensity",
+    "prompt": "self spreading, (both hands spreading pussy:1.25), (fingers pulling labia wide apart), (gaping pussy:1.25), (wide stretched labia:1.25), (wide open gaped  pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, anal plugs in anal, balanced view, pussy and ass shown together, focus on pussy,"
+  },
+  {
+    "id": "int-6015",
+    "tag": "int-self_sq_beads",
+    "label": "セルフ拡張/潮吹き+ビーズ挿入",
+    "Flont Condition": "セルフ拡張/潮吹き",
+    "Back Condition": "ビーズ挿入",
+    "category": "intensity",
+    "prompt": "self spreading, (both hands spreading pussy:1.25), (fingers pulling labia wide apart), (gaping pussy:1.25), (wide stretched labia:1.25), (wide open gaped  pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, anal beads in anal, balanced view, pussy and ass shown together, focus on pussy,"
+  },
+  {
+    "id": "int-6016",
+    "tag": "int-self_sq_dildo",
+    "label": "セルフ拡張/潮吹き+ディルド挿入",
+    "Flont Condition": "セルフ拡張/潮吹き",
+    "Back Condition": "ディルド挿入",
+    "category": "intensity",
+    "prompt": "self spreading, (both hands spreading pussy:1.25), (fingers pulling labia wide apart), (gaping pussy:1.25), (wide stretched labia:1.25), (wide open gaped  pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, dildo in anal, balanced view, pussy and ass shown together, focus on pussy,"
+  },
+  {
+    "id": "int-3017",
+    "tag": "int-tape_sp",
+    "label": "テープ強制拡張",
+    "Flont Condition": "テープ強制拡張",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": "(without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), tight anus, balanced view, pussy and ass shown together, focus on pussy,"
+  },
+  {
+    "id": "int-4018",
+    "tag": "int-tape_sq",
+    "label": "テープ強制拡張/濡れ",
+    "Flont Condition": "テープ強制拡張/濡れ",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": "(without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, balanced view, pussy and ass shown together, focus on pussy,"
+  },
+  {
+    "id": "int-5019",
+    "tag": "int-tape_sq",
+    "label": "テープ強制拡張/潮吹き",
+    "Flont Condition": "テープ強制拡張/潮吹き",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": "(without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, balanced view, pussy and ass shown together, focus on pussy,"
+  },
+  {
+    "id": "int-5020",
+    "tag": "int-tape_sq",
+    "label": "テープ強制拡張/放尿",
+    "Flont Condition": "テープ強制拡張/放尿",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), pissing, single strong stream,fluid arcing outward, erotic peeing, translucent spray, tight anus, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
+  },
+  {
+    "id": "int-5021",
+    "tag": "int-tape_wet_beads",
+    "label": "テープ強制拡張/濡れ+プラグ挿入",
+    "Flont Condition": "テープ強制拡張/濡れ",
+    "Back Condition": "プラグ挿入",
+    "category": "intensity",
+    "prompt": "(without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, anal plugs in anal, balanced view, pussy and ass shown together, focus on pussy,"
+  },
+  {
+    "id": "int-5022",
+    "tag": "int-tape_wet_beads",
+    "label": "テープ強制拡張/濡れ+ビーズ挿入",
+    "Flont Condition": "テープ強制拡張/濡れ",
+    "Back Condition": "ビーズ挿入",
+    "category": "intensity",
+    "prompt": "(without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, anal beads in anal, balanced view, pussy and ass shown together, focus on pussy,"
+  },
+  {
+    "id": "int-5023",
+    "tag": "int-tape_wet_dildo",
+    "label": "テープ強制拡張/濡れ+ディルド挿入",
+    "Flont Condition": "テープ強制拡張/濡れ",
+    "Back Condition": "ディルド挿入",
+    "category": "intensity",
+    "prompt": "(without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, dildo in anal, balanced view, pussy and ass shown together, focus on pussy,"
+  },
+  {
+    "id": "int-6024",
+    "tag": "int-tape_sq_beads",
+    "label": "テープ強制拡張潮吹き+プラグ挿入",
+    "Flont Condition": "テープ強制拡張潮吹き",
+    "Back Condition": "プラグ挿入",
+    "category": "intensity",
+    "prompt": "(without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, anal plugs in anal, balanced view, pussy and ass shown together, focus on pussy,"
+  },
+  {
+    "id": "int-6025",
+    "tag": "int-tape_sq_beads",
+    "label": "テープ強制拡張潮吹き+ビーズ挿入",
+    "Flont Condition": "テープ強制拡張潮吹き",
+    "Back Condition": "ビーズ挿入",
+    "category": "intensity",
+    "prompt": "(without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, anal beads in anal, balanced view, pussy and ass shown together, focus on pussy,"
+  },
+  {
+    "id": "int-6026",
+    "tag": "int-tape_sq_dildo",
+    "label": "テープ強制拡張潮吹き+ディルド挿入",
+    "Flont Condition": "テープ強制拡張潮吹き",
+    "Back Condition": "ディルド挿入",
+    "category": "intensity",
+    "prompt": "(without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, dildo in anal, balanced view, pussy and ass shown together, focus on pussy,"
+  },
+  {
+    "id": "int-3027",
+    "tag": "int-ex",
+    "label": "強制拡張",
+    "Flont Condition": "強制拡張",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), tight anus, balanced view, pussy and ass shown together, focus on pussy,"
+  },
+  {
+    "id": "int-4028",
+    "tag": "int-sq",
+    "label": "強制拡張/濡れ",
+    "Flont Condition": "強制拡張/濡れ",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, balanced view, pussy and ass shown together, focus on pussy,"
+  },
+  {
+    "id": "int-5029",
+    "tag": "int-sq",
+    "label": "強制拡張/潮吹き",
+    "Flont Condition": "強制拡張/潮吹き",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
+  },
+  {
+    "id": "int-5030",
+    "tag": "int-sq",
+    "label": "強制拡張/放尿",
+    "Flont Condition": "強制拡張/放尿",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), pissing, single strong stream,fluid arcing outward, erotic peeing, translucent spray, tight anus, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
+  },
+  {
+    "id": "int-5031",
+    "tag": "int-ex_beads",
+    "label": "強制拡張/濡れ+プラグ挿入",
+    "Flont Condition": "強制拡張/濡れ",
+    "Back Condition": "プラグ挿入",
+    "category": "intensity",
+    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, anal plugs in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
+  },
+  {
+    "id": "int-5032",
+    "tag": "int-ex_beads",
+    "label": "強制拡張/濡れ+ビーズ挿入",
+    "Flont Condition": "強制拡張/濡れ",
+    "Back Condition": "ビーズ挿入",
+    "category": "intensity",
+    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, anal beads in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
+  },
+  {
+    "id": "int-5033",
+    "tag": "int-ex_dildo",
+    "label": "強制拡張/濡れ+ディルド挿入",
+    "Flont Condition": "強制拡張/濡れ",
+    "Back Condition": "ディルド挿入",
+    "category": "intensity",
+    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, dildo in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
+  },
+  {
+    "id": "int-6034",
+    "tag": "int-ex_sq_beads",
+    "label": "強制拡張/潮吹き+プラグ挿入",
+    "Flont Condition": "強制拡張/潮吹き",
+    "Back Condition": "プラグ挿入",
+    "category": "intensity",
+    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, anal plugs in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
+  },
+  {
+    "id": "int-6035",
+    "tag": "int-ex_sq_beads",
+    "label": "強制拡張/潮吹き+ビーズ挿入",
+    "Flont Condition": "強制拡張/潮吹き",
+    "Back Condition": "ビーズ挿入",
+    "category": "intensity",
+    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, anal beads in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
+  },
+  {
+    "id": "int-6036",
+    "tag": "int-ex_sq_dildo",
+    "label": "強制拡張/潮吹き+ディルド挿入",
+    "Flont Condition": "強制拡張/潮吹き",
+    "Back Condition": "ディルド挿入",
+    "category": "intensity",
+    "prompt": " (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.3), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, dildo in anal, balanced view, pussy and ass shown together, simultaneous focus on pussy and anal,"
   }
 ]
