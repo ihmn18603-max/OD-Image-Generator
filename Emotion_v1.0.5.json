@@ -1,150 +1,171 @@
 [
   {
     "id": "emo-face1",
-    "tag": "blushing_cheeks",
-    "label": "赤面した顔",
-    "category": "face",
-    "prompt": "blushing face"
-  },
-  {
-    "id": "emo-face2",
-    "tag": "troubled_eyebrows",
-    "label": "困った顔",
-    "category": "face",
-    "prompt": "troubled face"
-  },
-  {
-    "id": "emo-face3",
-    "tag": "breathless_expression",
+    "tag": "breathless",
     "label": "息をのむ顔",
     "category": "face",
     "prompt": "breathless face"
   },
   {
-    "id": "emo-face4",
-    "tag": "trance",
+    "id": "emo-face2",
+    "tag": "tranced",
     "label": "トランスした顔",
     "category": "face",
     "prompt": "tranced face"
   },
   {
-    "id": "emo-face5",
+    "id": "emo-face3",
     "tag": "enduring",
     "label": "耐えている顔",
     "category": "face",
     "prompt": "enduring face"
   },
   {
-    "id": "emo-face6",
+    "id": "emo-face4",
     "tag": "stoic",
     "label": "無表情で耐える顔",
     "category": "face",
     "prompt": "stoic face"
   },
   {
+    "id": "emo-face5",
+    "tag": "a shocked",
+    "label": "ぎょっと驚いている顔",
+    "category": "face",
+    "prompt": "a shocked face"
+  },
+  {
+    "id": "emo-face6",
+    "tag": "confused ",
+    "label": "困惑している顔",
+    "category": "face",
+    "prompt": "confused  face"
+  },
+  {
     "id": "emo-face7",
+    "tag": "delighted",
+    "label": "喜んでいる顔",
+    "category": "face",
+    "prompt": "delighted face"
+  },
+  {
+    "id": "emo-face8",
     "tag": "aroused",
     "label": "興奮した顔",
     "category": "face",
     "prompt": "aroused face"
   },
   {
-    "id": "emo-face8",
+    "id": "emo-face9",
     "tag": "sensual",
     "label": "官能的な顔",
     "category": "face",
     "prompt": "sensual face"
   },
   {
-    "id": "emo-face9",
-    "tag": "suggestive",
-    "label": "示唆的な顔",
+    "id": "emo-face10",
+    "tag": "Ecstasy",
+    "label": "エクスタシーの顔",
     "category": "face",
-    "prompt": "suggestive face"
+    "prompt": "Ecstasy face"
   },
   {
-    "id": "emo-face10",
-    "tag": "orgasm_face",
+    "id": "emo-face11",
+    "tag": "orgasm",
     "label": "絶頂の顔",
     "category": "face",
     "prompt": "orgasm face"
   },
   {
-    "id": "emo-face11",
-    "tag": "languid_face",
+    "id": "emo-face12",
+    "tag": "languid",
     "label": "とろけるような顔",
     "category": "face",
     "prompt": "languid face"
   },
   {
-    "id": "emo-face12",
-    "tag": "happy_tears",
+    "id": "emo-face13",
+    "tag": "happy teary",
     "label": "嬉し涙の顔",
     "category": "face",
     "prompt": "happy teary face"
   },
   {
     "id": "emo-smile1",
-    "tag": "shy_smile",
+    "tag": "shy",
     "label": "恥じらいの笑み",
     "category": "smile",
     "prompt": "shy smile"
   },
   {
     "id": "emo-smile2",
-    "tag": "slight_smile",
+    "tag": "slight",
     "label": "微笑",
     "category": "smile",
     "prompt": "slight smile"
   },
   {
     "id": "emo-smile3",
-    "tag": "seductive_smile",
+    "tag": "seductive",
     "label": "誘惑の笑み",
     "category": "smile",
     "prompt": "seductive smile"
   },
   {
     "id": "emo-smile4",
-    "tag": "lewd_smile",
+    "tag": "lewd",
     "label": "淫乱な笑み",
     "category": "smile",
     "prompt": "lewd smile"
   },
   {
     "id": "emo-stare1",
-    "tag": "blank_stare",
+    "tag": "blank",
     "label": "虚ろな視線",
     "category": "stare",
     "prompt": "blank stare"
   },
   {
     "id": "emo-stare2",
-    "tag": "longing_gaze",
+    "tag": "longing",
     "label": "切なげな視線",
     "category": "stare",
     "prompt": "longing stare"
   },
   {
     "id": "emo-stare3",
-    "tag": "inviting_eyes",
+    "tag": "inviting",
     "label": "誘うような視線",
     "category": "stare",
     "prompt": "inviting stare"
   },
   {
     "id": "emo-stare4",
-    "tag": "submissive_gaze",
+    "tag": "submissive",
     "label": "従順な視線",
     "category": "stare",
     "prompt": "submissive stare"
   },
   {
     "id": "emo-stare5",
-    "tag": "dreamy_eyes",
+    "tag": "dreamy",
     "label": "陶酔した視線",
     "category": "stare",
     "prompt": "dreamy stare"
+  },
+  {
+    "id": "emo-cheek1",
+    "tag": "blushing",
+    "label": "赤面した頬",
+    "category": "cheeks",
+    "prompt": "blushing cheeks"
+  },
+  {
+    "id": "emo-eyebrow1",
+    "tag": "troubled",
+    "label": "困り眉",
+    "category": "eyebrows",
+    "prompt": "troubled eyebrows"
   },
   {
     "id": "emo-sp1",
