@@ -219,9 +219,16 @@
   {
     "id": "clo-32",
     "tag": "sexy pirate",
-    "label": "海賊",
+    "label": "海賊(洋)",
     "category": "cloth",
     "prompt": "sexy pirate girl, low-cut corset top, deep cleavage, underboob, short fringed skirt, pirate hat eyepatch, thighhigh boots, fishnet stockings, sword"
+  },
+  {
+    "id": "clo-33",
+    "tag": "sexy japanese pirate",
+    "label": "海賊(和)",
+    "category": "cloth",
+    "prompt": "sexy japnese pirate girl, short black kimono, extreme side slits, deep cleavage, red obi loosely falling open, katana at waist, black thighhigh stockings, long boots, red ribbons, glossy lips, fierce looks, wild intense glaring eyes, battle scars"
   },
   {
     "id": "clo-33",
@@ -254,91 +261,98 @@
   {
     "id": "clo-SP1",
     "tag": "INO",
-    "label": "INO",
+    "label": "イノ",
     "category": "cloth",
     "prompt": "I-no Guilty Gear, ultra skimpy glossy red latex shoulderless fetish jacket, deep  cleavage, underboob, black leather choker gold ring pulling jacket taut, witch hat with skull face, fishnet stockings, thigh-high boots, guitar strap between breasts"
   },
   {
     "id": "clo-SP2",
     "tag": "CHU",
-    "label": "CHU",
+    "label": "チュンリー",
     "category": "cloth",
     "prompt": "Chun-Li, ultra skimpy very short chinese dress barely hip, extreme deep V-neckline,sideboob, underboob, ultra high side slits, black fishnet thighhigh stockings with garters, spiked bracelets"
   },
   {
     "id": "clo-SP3",
     "tag": "CAM",
-    "label": "CAM",
+    "label": "キャミイ",
     "category": "cloth",
     "prompt": "Cammy White, micro skimpy green leotard barely covering, underboob, sideboob, extreme high-cut thong style, latex fabric stretched taut, red beret, spiked red gauntlets, black thighhigh stockings with garter straps, platform combat boots"
   },
   {
     "id": "clo-SP4",
+    "tag": "JUR",
+    "label": "ジュリ",
+    "category": "cloth",
+    "prompt": "Han Juri, ultra skimpy black purple bodysuit, deep cleavage, underboob, extreme high-cut sides, spiderweb accents, eyepatch, claw gloves, thighhigh boots"
+  },
+  {
+    "id": "clo-SP5",
     "tag": "MOR",
-    "label": "MOR",
+    "label": "モリガン",
     "category": "cloth",
     "prompt": "Morrigan Aensland, micro green bodysuit barely covering, deep cleavage, sideboob, underboob, extreme high-cut leotard, latex glossy fabric stretched taut, bat wings spread slightly"
   },
   {
-    "id": "clo-SP5",
-    "tag": "MTL",
-    "label": "MTL",
-    "category": "cloth",
-    "prompt": "Maetel, ultra revealing black fur-trimmed long coat wide open full exposure black dress underneath, deep cleavage, sideboob underboob, black dress with ultra high slit, russian black astrakhan fur hat tilted, black fur collar cuffs hem, long black boots thighhigh style"
-  },
-  {
     "id": "clo-SP6",
-    "tag": "SNC",
-    "label": "SNC",
-    "category": "cloth",
-    "prompt": "Super Sonico, ultra revealing blue camo hoodie wide open, deep cleavage, underboob dominant from tight cat graphic tee, micro denim miniskirt barely covering pronounced cameltoe bare hips thighs exposed, light purple fishnet thighhigh stockings with garters, platform brown boots, oversized headphones"
-  },
-  {
-    "id": "clo-SP7",
     "tag": "FBK",
-    "label": "FBK",
+    "label": "フブキ",
     "category": "cloth",
     "prompt": "Hellish Blizzard, skimpy black dress, deep cleavage,underboob, sideboob, extreme high slits, fur cape open"
   },
   {
-    "id": "clo-SP8",
+    "id": "clo-SP7",
     "tag": "MAI",
-    "label": "MAI",
+    "label": "舞",
     "category": "cloth",
     "prompt": "Mai Shiranui, skimpy red white revealing ninja dress extreme low-cut cleavage sideboob underboob spilling out, ultra high side slits full hip exposure cameltoe hint, red headband long ponytail, black thighhigh stockings, platform heels"
   },
   {
-    "id": "clo-SP9",
+    "id": "clo-SP8",
     "tag": "ANG",
-    "label": "ANG",
+    "label": "アンヘル",
     "category": "cloth",
     "prompt": "Ángel KOF, tight black white wrestler top, deep cleavage, sideboob, underboob, micro high-cut shorts, black thighhigh stockings garters, combat boots"
   },
   {
-    "id": "clo-SP10",
+    "id": "clo-SP9",
     "tag": "TFA",
-    "label": "TFA",
+    "label": "ティファ",
     "category": "cloth",
     "prompt": "Tifa Lockhart, white tank top, deep cleavage, sideboob, underboob, micro black skirt, black thighhigh stockings, fingerless gloves elbow pads"
   },
   {
+    "id": "clo-SP10",
+    "tag": "MTL",
+    "label": "メーテル",
+    "category": "cloth",
+    "prompt": "Maetel, ultra revealing black fur-trimmed long coat wide open full exposure black dress underneath, deep cleavage, sideboob underboob, black dress with ultra high slit, russian black astrakhan fur hat tilted, black fur collar cuffs hem, long black boots thighhigh style"
+  },
+  {
     "id": "clo-SP11",
+    "tag": "SNC",
+    "label": "そに子",
+    "category": "cloth",
+    "prompt": "Super Sonico, ultra revealing blue camo hoodie wide open, deep cleavage, underboob dominant from tight cat graphic tee, micro denim miniskirt barely covering pronounced cameltoe bare hips thighs exposed, light purple fishnet thighhigh stockings with garters, platform brown boots, oversized headphones"
+  },
+  {
+    "id": "clo-SP12",
     "tag": "A18",
     "label": "A18",
     "category": "cloth",
     "prompt": "Android 18, ultra skimpy black crop top, deep cleavage, underboob, micro denim skirt, black thighhigh stockings"
   },
   {
-    "id": "clo-SP12",
+    "id": "clo-SP13",
     "tag": "HAQ",
-    "label": "HAQ",
+    "label": "ハーレクイン",
     "category": "cloth",
     "prompt": "sexy Harley Quinn, red blue split crop top, deep cleavage, underboob, ultra short shorts, red blue pigtails, choker, fishnet stockings, platform boots, baseball bat"
   },
   {
-    "id": "clo-SP13",
+    "id": "clo-SP14",
     "tag": "JER",
-    "label": "JER",
+    "label": "ジェシカラビット",
     "category": "cloth",
     "prompt": "sexy Jessica Rabbit, ultra low-cut red sequin evening gown, deep cleavage, underboob, sideboob, long slit, long red gloves, purple eyeshadow red lips, high heels, glossy skin"
   }
