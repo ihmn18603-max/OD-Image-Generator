@@ -92,27 +92,20 @@
   },
   {
     "id": "emo-face14",
-    "tag": "full-face blush",
-    "label": "顔全体が赤い",
-    "category": "face",
-    "prompt": "full-face blush"
-  },
-  {
-    "id": "emo-face15",
     "tag": "orgasm",
     "label": "絶頂の顔",
     "category": "face",
     "prompt": "orgasm face"
   },
   {
-    "id": "emo-face16",
+    "id": "emo-face15",
     "tag": "languid",
     "label": "とろけるような顔",
     "category": "face",
     "prompt": "languid face"
   },
   {
-    "id": "emo-face17",
+    "id": "emo-face16",
     "tag": "happy teary",
     "label": "嬉し涙の顔",
     "category": "face",
@@ -187,6 +180,13 @@
     "label": "赤面した頬",
     "category": "cheeks",
     "prompt": "blushing cheeks"
+  },
+  {
+    "id": "emo-cheek2",
+    "tag": "full-face blush",
+    "label": "顔全体が赤い",
+    "category": "cheeks",
+    "prompt": "full-face blush"
   },
   {
     "id": "emo-eyebrow1",
