@@ -17,51 +17,51 @@
   },
   {
     "id": "Ex-eye3",
-    "tag": "Ex-eye-3",
-    "label": "目全開",
+    "tag": "Ex-eye-2",
+    "label": "見開いた目",
     "category": "eye",
-    "prompt": "wide open eyes",
-    "category level": "3"
+    "prompt": "wide-eyed",
+    "category level": "2"
   },
   {
     "id": "Ex-eye4",
-    "tag": "Ex-eye-4",
+    "tag": "Ex-eye-9",
     "label": "焦点の定まらない目",
     "category": "eye",
     "prompt": "unfocused eyes",
-    "category level": "4"
+    "category level": "9"
   },
   {
     "id": "Ex-eye5",
-    "tag": "Ex-eye-5",
+    "tag": "Ex-eye-9",
     "label": "ウインク",
     "category": "eye",
     "prompt": "winking eyes",
-    "category level": "5"
+    "category level": "9"
   },
   {
     "id": "Ex-eye6",
-    "tag": "Ex-eye-6",
+    "tag": "Ex-eye-9",
     "label": "強く目をつぶる",
     "category": "eye",
     "prompt": "tightly closed eyes ",
-    "category level": "6"
+    "category level": "9"
   },
   {
     "id": "Ex-eye7",
-    "tag": "Ex-eye-7",
+    "tag": "Ex-eye-9",
     "label": "ぼんやりした目",
     "category": "eye",
     "prompt": "glassy eyes",
-    "category level": "7"
+    "category level": "9"
   },
   {
     "id": "Ex-eye8",
-    "tag": "Ex-eye-8",
+    "tag": "Ex-eye-9",
     "label": "うつろな目",
     "category": "eye",
     "prompt": "empty eyes",
-    "category level": "8"
+    "category level": "9"
   },
   {
     "id": "Ex-eye9",
@@ -69,6 +69,22 @@
     "label": "白目",
     "category": "eye",
     "prompt": "rolling eyes",
+    "category level": "9"
+  },
+  {
+    "id": "Ex-eye10",
+    "tag": "Ex-eye-9",
+    "label": "猫目",
+    "category": "eye",
+    "prompt": "(slit pupils:1.2)",
+    "category level": "9"
+  },
+  {
+    "id": "Ex-eye11",
+    "tag": "Ex-eye-9",
+    "label": "グルグル目",
+    "category": "eye",
+    "prompt": "@_@ eyes",
     "category level": "9"
   },
   {
@@ -88,15 +104,15 @@
     "category level": "1"
   },
   {
-    "id": "Ex-mouth3",
-    "tag": "Ex-mouth-2",
-    "label": "口開",
+    "id": "Ex-mouth4",
+    "tag": "Ex-mouth-3",
+    "label": "のどちんこ",
     "category": "mouth",
-    "prompt": "mouth wide open",
-    "category level": "2"
+    "prompt": "uvula",
+    "category level": "3"
   },
   {
-    "id": "Ex-mouth4",
+    "id": "Ex-mouth5",
     "tag": "Ex-mouth-3",
     "label": "わずかに開いた唇",
     "category": "mouth",
@@ -104,7 +120,7 @@
     "category level": "3"
   },
   {
-    "id": "Ex-mouth5",
+    "id": "Ex-mouth6",
     "tag": "Ex-mouth-4",
     "label": "濡れた唇",
     "category": "mouth",
@@ -112,7 +128,7 @@
     "category level": "4"
   },
   {
-    "id": "Ex-mouth6",
+    "id": "Ex-mouth7",
     "tag": "Ex-mouth-5",
     "label": "唇を噛む",
     "category": "mouth",
@@ -120,7 +136,7 @@
     "category level": "5"
   },
   {
-    "id": "Ex-mouth7",
+    "id": "Ex-mouth8",
     "tag": "Ex-mouth-6",
     "label": "歯を食いしばる",
     "category": "mouth",
@@ -158,6 +174,14 @@
     "category": "saliva",
     "prompt": "drooling",
     "category level": "2"
+  },
+  {
+    "id": "Ex-saliva3",
+    "tag": "Ex-saliva-3",
+    "label": "歯と歯の間から唾液",
+    "category": "saliva",
+    "prompt": "saliva trail between teeth",
+    "category level": "3"
   },
   {
     "id": "Ex-PJ1",
