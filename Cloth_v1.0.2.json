@@ -1,401 +1,353 @@
 [
   {
-    "id": "clo-1",
-    "tag": "sexy teacher",
-    "label": "教師",
-    "category": "cloth",
-    "prompt": "sexy teacher, short tight pencil skirt, loose white blouse, deep cleavage, cool stylish glasses, rimless thin metal frames, black sheer stockings, high heels, holding pointer"
+    "id": "int-1001",
+    "tag": "int-p",
+    "label": "パンツ見え",
+    "Flont Condition": "パンツ見え",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (hairy pussy:0.8), sheer panties, pussy outline visible, balanced view"
   },
   {
-    "id": "clo-2",
-    "tag": "sexy music teacher",
-    "label": "音楽教師",
-    "category": "cloth",
-    "prompt": "sexy music teacher, form-fitting red dress, deep cleavage, sideboob, underboob, ultra high side slits, holding flute, black thighhigh stockings garters, platform stilettos, lipstick"
+    "id": "int-1002",
+    "tag": "int-p",
+    "label": "パンツ見せ",
+    "Flont Condition": "パンツ見せ",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (hairy pussy:0.8),(lifting skirt with both hands:1.25), (skirt pulled up high:1.2), (skirt lift by self), sheer panties, pussy outline visible, balanced view"
   },
   {
-    "id": "clo-3",
-    "tag": "sexy gym teacher",
-    "label": "体育教師",
-    "category": "cloth",
-    "prompt": "sexy gym teacher woman, tight cropped sports jacket, deep cleavage, loose low-leg track pants, midriff, whistle necklace"
+    "id": "int-2003",
+    "tag": "int-cloth_in",
+    "label": "食い込み",
+    "Flont Condition": "食い込み",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (hairy pussy:0.8), (deep cameltoe:1.15), detailed wedgie,(ultra minimal crotch coverage:1.15), (thin strap splitting the pussy:1.1), (strap deeply into pussy:1.25), (pussy apart by the strap:1.1), balanced view"
   },
   {
-    "id": "clo-4",
-    "tag": "sexy doctor",
-    "label": "医者",
-    "category": "cloth",
-    "prompt": "sexy doctor, tight short white mini lab coat, deep cleavage, fitted white blouse, stethoscope around neck, cool stylish rimless glasses, red lipstick, black sheer stockings, high heels, syringe between breasts"
+    "id": "int-3004",
+    "tag": "int-cloth_sp",
+    "label": "着衣広げ",
+    "Flont Condition": "着衣広げ",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (hairy pussy:0.8), (panties on), sheer panties, (ultra minimal crotch coverage:1.15), self spreading, (hands spreading pussy), (fingers pulling labia wide apart:1.2), (wide open gaped pussy), balanced view"
   },
   {
-    "id": "clo-5",
-    "tag": "sexy nurse",
-    "label": "ナース",
-    "category": "cloth",
-    "prompt": "sexy nurse, white mini dress, micro string G-string, barely there thong, very short skirt, garter belt, fishnet stockings, nurse cap"
+    "id": "int-3005",
+    "tag": "int-p",
+    "label": "パンツ見え/濡れ",
+    "Flont Condition": "パンツ見え/濡れ",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (hairy pussy:0.8), sheer panties, pussy outline visible,pussy juice dripping from pussy, natural dripping, balanced view"
   },
   {
-    "id": "clo-6",
-    "tag": "sexy maid",
-    "label": "メイド",
-    "category": "cloth",
-    "prompt": "sexy maid, obscene micro mini skirt, sheer fabric, tiny apron, lace garter belt, fishnet stockings, maid headband"
+    "id": "int-3006",
+    "tag": "int-pwet",
+    "label": "パンツ見せ/濡れ",
+    "Flont Condition": "パンツ見せ/濡れ",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": "(lifting skirt with both hands:1.25), (skirt pulled up high:1.2), (skirt lift by self), sheer panties, pussy outline visible,pussy juice dripping from pussy, natural dripping, balanced view"
   },
   {
-    "id": "clo-7",
-    "tag": "sexy flight attendant",
-    "label": "スチュワーデス",
-    "category": "cloth",
-    "prompt": "sexy flight attendant, very short navy blue mini skirt uniform, white blouse, cleavage, red neck scarf, stewardess hat, black sheer pantyhose, high heels, glossy lips"
+    "id": "int-3007",
+    "tag": "int-cloth_in",
+    "label": "食い込み/濡れ",
+    "Flont Condition": "食い込み/濡れ",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (hairy pussy:0.8), (deep cameltoe:1.15), detailed wedgie,(ultra minimal crotch coverage:1.15), (thin strap splitting the pussy:1.1), (strap deeply into pussy:1.25), (pussy apart by the strap:1.1),pussy juice dripping from pussy, natural dripping, balanced view"
   },
   {
-    "id": "clo-8",
-    "tag": "sexy cop",
-    "label": "警官",
-    "category": "cloth",
-    "prompt": "sexy cop, tight police uniform, deep cleavage, underboob, extreme micro mini skirt, police hat, fingerless gloves, thigh-high boots, belt with baton, cuffs in hand"
+    "id": "int-3008",
+    "tag": "int-cloth_sp",
+    "label": "着衣広げ/濡れ",
+    "Flont Condition": "着衣広げ/濡れ",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (hairy pussy:0.8), (panties on), sheer panties, (ultra minimal crotch coverage:1.15), self spreading, (hands spreading pussy), (fingers pulling labia wide apart:1.2), (wide open gaped pussy),pussy juice dripping from pussy, natural dripping, balanced view"
   },
   {
-    "id": "clo-9",
-    "tag": "sexy gal",
-    "label": "ギャル",
-    "category": "cloth",
-    "prompt": "sexy gal, micro miniskirt, extreme crop top, deep cleavage, underboob, long platform boots, eyeshadow"
+    "id": "int-3009",
+    "tag": "int-self_sp",
+    "label": "セルフ拡張",
+    "Flont Condition": "セルフ拡張",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " erect clitoris, [hairy pussy], self spreading, (hands spreading pussy:1.2), (fingers pulling labia wide apart), (gaping pussy:1.2), (wide stretched labia:1.2), (wide open gaped pussy:1.2), tight anus, balanced view"
   },
   {
-    "id": "clo-10",
-    "tag": "sxy dress",
-    "label": "ドレス",
-    "category": "cloth",
-    "prompt": "sexy dress, skimpy form-fitting gown extreme plunging neckline,underboob,high side slits, black fishnet stockings garters, platform stilettos high heels"
+    "id": "int-4010",
+    "tag": "int-self_spw_r1",
+    "label": "(試)セルフ拡張/濡れ",
+    "Flont Condition": "(試)セルフ拡張/濡れ",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": "(self-spreading pussy with both hands), (fingers hooked deep inside wide stretched labia), (pulling labia wide apart to force gaping pussy open obscenely), (vaginal cavity exposed), (vaginal orifice visible), wide open gaped pussy, wide stretched labia, deep vaginal view,floor with massive puddle of pussy juice, pussy juice dripping, sticky pussy juice, slimy pussy juice, natural dripping pussy juice splattering onto floor and inner thighs, tight anus, balanced view"
   },
   {
-    "id": "clo-11",
-    "tag": "sexy JK",
-    "label": "女子高生",
-    "category": "cloth",
-    "prompt": "sexy schoolgirl JK, ultra short pleated sailor skirt, white sailor blouse, deep cleavage, underboob, red ribbon tie loose, black thighhigh stockings, mary jane shoes, glossy lips"
+    "id": "int-4011",
+    "tag": "int-self_spw",
+    "label": "セルフ拡張/濡れ",
+    "Flont Condition": "セルフ拡張/濡れ",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], self spreading, (hands spreading pussy:1.2), (fingers pulling labia wide apart), (gaping pussy:1.2), (wide stretched labia:1.2), (wide open gaped pussy:1.2), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, balanced view"
   },
   {
-    "id": "clo-12",
-    "tag": "sexy burlesque",
-    "label": "バーレスク",
-    "category": "cloth",
-    "prompt": "sexy burlesque dancer, corset top, deep cleavage, underboob, micro skirt, feather boa headdress, fishnet stockings garters, high heels gloves"
+    "id": "int-5012",
+    "tag": "int-self_sq",
+    "label": "セルフ拡張/潮吹き",
+    "Flont Condition": "セルフ拡張/潮吹き",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], self spreading, (hands spreading pussy:1.2), (fingers pulling labia wide apart), (gaping pussy:1.2), (wide stretched labia:1.2), (wide open gaped pussy:1.2), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, balanced view"
   },
   {
-    "id": "clo-13",
-    "tag": "sexy barista",
-    "label": "バリスタ",
-    "category": "cloth",
-    "prompt": "sexy barista, ultra short mini skirt uniform, low-cut crop top apron, deep cleavage, coffee shop name tag, black sheer stockings, high heels, holding coffee cup"
+    "id": "int-5013",
+    "tag": "int-self_sq",
+    "label": "セルフ拡張/放尿",
+    "Flont Condition": "セルフ拡張/放尿",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], self spreading, (hands spreading pussy:1.2), (fingers pulling labia wide apart), (gaping pussy:1.2), (wide stretched labia:1.2), (wide open gaped pussy:1.2), pissing, single strong stream,fluid arcing outward, erotic peeing, translucent spray, tight anus, balanced view"
   },
   {
-    "id": "clo-14",
-    "tag": "sexy mad scientist",
-    "label": "サイエンティスト",
-    "category": "cloth",
-    "prompt": "sexy mad scientist, tight open white lab coat,deep cleavage, fitted crop top, messy wild hair, speculum in hand, black sheer stockings, high heels, insane smile"
+    "id": "int-5014",
+    "tag": "int-self_beads",
+    "label": "セルフ拡張/濡れ+プラグ",
+    "Flont Condition": "セルフ拡張/濡れ",
+    "Back Condition": "プラグ",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], self spreading, (hands spreading pussy:1.2), (fingers pulling labia wide apart), (gaping pussy:1.2), (wide stretched labia:1.2), (wide open gaped pussy:1.2), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, anal plugs in anal, balanced view"
   },
   {
-    "id": "clo-15",
-    "tag": "sexy secretary",
-    "label": "秘書",
-    "category": "cloth",
-    "prompt": "sexy secretary, skimpy micro pencil skirt, tight white blouse, cleavage, sideboob, garter stockings, platform high heels, holding files, satin blouse"
+    "id": "int-5015",
+    "tag": "int-self_beads",
+    "label": "セルフ拡張/濡れ+ビーズ",
+    "Flont Condition": "セルフ拡張/濡れ",
+    "Back Condition": "ビーズ",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], self spreading, (hands spreading pussy:1.2), (fingers pulling labia wide apart), (gaping pussy:1.2), (wide stretched labia:1.2), (wide open gaped pussy:1.2), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, anal beads in anal, balanced view"
   },
   {
-    "id": "clo-16",
-    "tag": "sexy nun",
-    "label": "修道女",
-    "category": "cloth",
-    "prompt": "sexy nun, skin-tight black nun habit, deep cleavage, ultra high side slit, lace garter belt and stockings, black veil,black fingerless gloves, silver cross necklace in cleavage"
+    "id": "int-5016",
+    "tag": "int-self_dildo",
+    "label": "セルフ拡張/濡れ+ディルド",
+    "Flont Condition": "セルフ拡張/濡れ",
+    "Back Condition": "ディルド",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], self spreading, (hands spreading pussy:1.2), (fingers pulling labia wide apart), (gaping pussy:1.2), (wide stretched labia:1.2), (wide open gaped pussy:1.2), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, dildo in anal, balanced view"
   },
   {
-    "id": "clo-17",
-    "tag": "sexy casino dealer",
-    "label": "カジノディーラー",
-    "category": "cloth",
-    "prompt": "sexy casino dealer, skimpy black uniform micro skirt, extreme low-cut vest, deep cleavage, fishnet stockings with garters, platform heels, poker chips between breasts"
+    "id": "int-6017",
+    "tag": "int-self_sq_beads",
+    "label": "セルフ拡張/潮吹き+プラグ",
+    "Flont Condition": "セルフ拡張/潮吹き",
+    "Back Condition": "プラグ",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], self spreading, (hands spreading pussy:1.2), (fingers pulling labia wide apart), (gaping pussy:1.2), (wide stretched labia:1.2), (wide open gaped pussy:1.2), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, anal plugs in anal, balanced view"
   },
   {
-    "id": "clo-18",
-    "tag": "sexy race queen",
-    "label": "レースクイーン",
-    "category": "cloth",
-    "prompt": "sexy race queen, skimpy micro bodysuit barely covering cameltoe ass, breasts spilling out low-cut front underboob, metallic fabric, thigh-high boots, garter belts, holding umbrella teasingly between thighs"
+    "id": "int-6018",
+    "tag": "int-self_sq_beads",
+    "label": "セルフ拡張/潮吹き+ビーズ",
+    "Flont Condition": "セルフ拡張/潮吹き",
+    "Back Condition": "ビーズ",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], self spreading, (hands spreading pussy:1.2), (fingers pulling labia wide apart), (gaping pussy:1.2), (wide stretched labia:1.2), (wide open gaped pussy:1.2), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, anal beads in anal, balanced view"
   },
   {
-    "id": "clo-19",
-    "tag": "sexy bunny girl",
-    "label": "バニーガール",
-    "category": "cloth",
-    "prompt": "sexy bunny girl, tight black leotard high-cut thong style, deep plunging neckline cleavage, bunny ears headband, white bowtie collar, fluffy tail, fishnet stockings, high heels, wrist cuffs"
+    "id": "int-6019",
+    "tag": "int-self_sq_dildo",
+    "label": "セルフ拡張/潮吹き+ディルド",
+    "Flont Condition": "セルフ拡張/潮吹き",
+    "Back Condition": "ディルド",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], self spreading, (hands spreading pussy:1.2), (fingers pulling labia wide apart), (gaping pussy:1.2), (wide stretched labia:1.2), (wide open gaped pussy:1.2), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, dildo in anal, balanced view"
   },
   {
-    "id": "clo-20",
-    "tag": "sexy puppy girl",
-    "label": "犬",
-    "category": "cloth",
-    "prompt": "sexy puppy girl, dog ear heahband, collar with bell, fluffy dog tail plug, black sheer stockings, high heels,ball gag"
+    "id": "int-3020",
+    "tag": "int-tape_sp",
+    "label": "テープ強制拡張",
+    "Flont Condition": "テープ強制拡張",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (erect clitoris), [hairy pussy], (without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), tight anus, balanced view"
   },
   {
-    "id": "clo-21",
-    "tag": "sexy kitten girl",
-    "label": "猫",
-    "category": "cloth",
-    "prompt": "sexy kitten girl, cat ear headband, collar with bell, fluffy cat tail plug, skimpy black leotard high-cut cleavage, fishnet stockings, platform heels, "
+    "id": "int-4021",
+    "tag": "int-tape_sq",
+    "label": "テープ強制拡張/濡れ",
+    "Flont Condition": "テープ強制拡張/濡れ",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], (without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, balanced view"
   },
   {
-    "id": "clo-22",
-    "tag": "sexy spy",
-    "label": "スパイ",
-    "category": "cloth",
-    "prompt": "sexy spy, tight black latex catsuit, deep cleavage, spy gadgets belt, thigh-high boots, gloves, guns between breasts"
+    "id": "int-5022",
+    "tag": "int-tape_sq",
+    "label": "テープ強制拡張/潮吹き",
+    "Flont Condition": "テープ強制拡張/潮吹き",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], (without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, balanced view"
   },
   {
-    "id": "clo-23",
-    "tag": "sexy kunoichi ninja",
-    "label": "忍者",
-    "category": "cloth",
-    "prompt": "sexy kunoichi ninja, ultra skimpy black shinobi outfit micro shorts, wrap top, deep cleavage, underboob, exposed midriff, kunai and shuriken belt, garters, thigh-high fishnet boots"
+    "id": "int-5023",
+    "tag": "int-tape_sq",
+    "label": "テープ強制拡張/放尿",
+    "Flont Condition": "テープ強制拡張/放尿",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], (without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), pissing, single strong stream,fluid arcing outward, erotic peeing, translucent spray, tight anus, balanced view"
   },
   {
-    "id": "clo-24",
-    "tag": "sexy cheerleader",
-    "label": "チアリーダー",
-    "category": "cloth",
-    "prompt": "sexy cheerleader, skimpy micro crop top, sideboob, extreme short skirt, exposing thong, fishnet stockings with garters, high platform heels, holding pom poms"
+    "id": "int-5024",
+    "tag": "int-tape_wet_beads",
+    "label": "テープ強制拡張/濡れ+プラグ",
+    "Flont Condition": "テープ強制拡張/濡れ",
+    "Back Condition": "プラグ",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], (without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, anal plugs in anal, balanced view"
   },
   {
-    "id": "clo-25",
-    "tag": "sexy bikini",
-    "label": "水着ビキニ",
-    "category": "cloth",
-    "prompt": "sexy bikini, tiny triangle bikini top deep cleavage, high-cut thong, strings tied loosely, glossy oiled skin"
+    "id": "int-5025",
+    "tag": "int-tape_wet_beads",
+    "label": "テープ強制拡張/濡れ+ビーズ",
+    "Flont Condition": "テープ強制拡張/濡れ",
+    "Back Condition": "ビーズ",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], (without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, anal beads in anal, balanced view"
   },
   {
-    "id": "clo-26",
-    "tag": "sexy competitive swimsuit",
-    "label": "競泳水着",
-    "category": "cloth",
-    "prompt": "sexy competitive swimsuit, skimpy high-leg one piece, extreme plunging neckline, sideboob,  latex glossy fabric wet look"
+    "id": "int-5026",
+    "tag": "int-tape_wet_dildo",
+    "label": "テープ強制拡張/濡れ+ディルド",
+    "Flont Condition": "テープ強制拡張/濡れ",
+    "Back Condition": "ディルド",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], (without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, dildo in anal, balanced view"
   },
   {
-    "id": "clo-27",
-    "tag": "sexy high-leg lingerie",
-    "label": "ハイレグ下着",
-    "category": "cloth",
-    "prompt": "sexy high-leg lingerie, deep cleavage, underboob, push-up bra, ultra high-cut thong panties,  deep cameltoe wedgie visible, sheer lace transparent fabric, thigh garters,  glossy skin, hands adjusting panties"
+    "id": "int-6027",
+    "tag": "int-tape_sq_beads",
+    "label": "テープ強制拡張潮吹き+プラグ",
+    "Flont Condition": "テープ強制拡張潮吹き",
+    "Back Condition": "プラグ",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], (without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, anal plugs in anal, balanced view"
   },
   {
-    "id": "clo-28",
-    "tag": "sexy low-rise panties",
-    "label": "ローライズ下着",
-    "category": "cloth",
-    "prompt": "sexy low-leg panties, deep cleavage, underboob, push-up bra, extreme low-rise micro thong, slipping down hips thick bush pubic hair slightly visible, garter belt straps taut, pulling panties further down"
+    "id": "int-6028",
+    "tag": "int-tape_sq_beads",
+    "label": "テープ強制拡張潮吹き+ビーズ",
+    "Flont Condition": "テープ強制拡張潮吹き",
+    "Back Condition": "ビーズ",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], (without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, anal beads in anal, balanced view"
   },
   {
-    "id": "clo-29",
-    "tag": "sexy santa girl",
-    "label": "ナイトリーサンタ",
-    "category": "cloth",
-    "prompt": "sexy santa girl, tight black red latex mini dress, white fur trim deep cleavage, black santa hat, whip in hand, handcuffs dangling from belt, collar with bell, thigh-high boots, sheer stockings"
+    "id": "int-6029",
+    "tag": "int-tape_sq_dildo",
+    "label": "テープ強制拡張潮吹き+ディルド",
+    "Flont Condition": "テープ強制拡張潮吹き",
+    "Back Condition": "ディルド",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], (without hands), (pussy with multi tapes:1.3), (labia aparted by tape:1.3), (extreme wide open gaped pussy by tape:1.25), (extreme stretched labia by tape:1.25), (vaginal cavity exposed:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, dildo in anal, balanced view"
   },
   {
-    "id": "clo-30",
-    "tag": "sexy punk girl",
-    "label": "パンクガール",
-    "category": "cloth",
-    "prompt": "sexy punk girl, ripped black crop top, deep cleavage, underboob, ultra short plaid mini skirt,torned fishnet stockings, platform boots, spiked choker collar, studded belt, leather fingerless gloves, mohawk or messy colored hair, heavy eyeliner, red lips, glossy skin"
+    "id": "int-3030",
+    "tag": "int-ex",
+    "label": "強制拡張",
+    "Flont Condition": "強制拡張",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.25), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), tight anus, balanced view"
   },
   {
-    "id": "clo-31",
-    "tag": "sexy cowgirl",
-    "label": "カウガール",
-    "category": "cloth",
-    "prompt": "sexy cowgirl, tight plaid crop top, deep cleavage, underboob, ultra short denim mini shorts or fringed skirt, cowboy hat, belt with buckle, thigh-high boots, lasso in hand"
+    "id": "int-4031",
+    "tag": "int-sq",
+    "label": "強制拡張/濡れ",
+    "Flont Condition": "強制拡張/濡れ",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.25), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, balanced view"
   },
   {
-    "id": "clo-32",
-    "tag": "sexy chinese dress",
-    "label": "チャイナドレス",
-    "category": "cloth",
-    "prompt": "sexy chinese dress, ultra short skimpy Chinese dress, deep cleavage,  ultra high side slits, thighhigh stockings fishnet with garter straps"
+    "id": "int-5032",
+    "tag": "int-sq",
+    "label": "強制拡張/潮吹き",
+    "Flont Condition": "強制拡張/潮吹き",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.25), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, balanced view"
   },
   {
-    "id": "clo-33",
-    "tag": "sexy dirndl girl",
-    "label": "ディアンドル",
-    "category": "cloth",
-    "prompt": "sexy dirndl girl, tight dirndl bodice deep cleavage, low-cut blouse spilling out breasts underboob, short flared skirt high slits exposing hips, white blouse puffed sleeves, apron tied, fishnet stockings, platform heels"
+    "id": "int-5033",
+    "tag": "int-sq",
+    "label": "強制拡張/放尿",
+    "Flont Condition": "強制拡張/放尿",
+    "Back Condition": "",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.25), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), pissing, single strong stream,fluid arcing outward, erotic peeing, translucent spray, tight anus, balanced view"
   },
   {
-    "id": "clo-34",
-    "tag": "sexy exposed coat girl",
-    "label": "露出コート",
-    "category": "cloth",
-    "prompt": "sexy exposed coat girl, long trench coat, deep cleavage, full body nude under coat, fishnet stockings, high heels"
+    "id": "int-5034",
+    "tag": "int-ex_beads",
+    "label": "強制拡張/濡れ+プラグ",
+    "Flont Condition": "強制拡張/濡れ",
+    "Back Condition": "プラグ",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.25), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, anal plugs in anal, balanced view"
   },
   {
-    "id": "clo-35",
-    "tag": "sexy pirate",
-    "label": "海賊(洋)",
-    "category": "cloth",
-    "prompt": "sexy pirate girl, low-cut corset top, deep cleavage, underboob, short fringed skirt, pirate hat eyepatch, thighhigh boots, fishnet stockings, sword"
+    "id": "int-5035",
+    "tag": "int-ex_beads",
+    "label": "強制拡張/濡れ+ビーズ",
+    "Flont Condition": "強制拡張/濡れ",
+    "Back Condition": "ビーズ",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.25), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, anal beads in anal, balanced view"
   },
   {
-    "id": "clo-36",
-    "tag": "sexy japanese pirate",
-    "label": "海賊(和)",
-    "category": "cloth",
-    "prompt": "sexy japnese pirate girl, short black kimono, extreme side slits, deep cleavage, red obi loosely falling open, katana at waist, black thighhigh stockings, long boots, red ribbons, glossy lips, fierce looks, wild intense glaring eyes, battle scars"
+    "id": "int-5036",
+    "tag": "int-ex_dildo",
+    "label": "強制拡張/濡れ+ディルド",
+    "Flont Condition": "強制拡張/濡れ",
+    "Back Condition": "ディルド",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.25), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), wet pussy, sticky pussy, slimy pussy juice, sticky pussy juice, pussy juice dripping from pussy, natural dripping, tight anus, dildo in anal, balanced view"
   },
   {
-    "id": "clo-36",
-    "tag": "sexy catwoman",
-    "label": "キャットウーマン",
-    "category": "cloth",
-    "prompt": "sexy catwoman, tight black latex catsuit, deep cleavage, underboob, extreme high-cut sides, cat ears, whip in hand, tail, black thighhigh boots, glossy skin"
+    "id": "int-6037",
+    "tag": "int-ex_sq_beads",
+    "label": "強制拡張/潮吹き+プラグ",
+    "Flont Condition": "強制拡張/潮吹き",
+    "Back Condition": "プラグ",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.25), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, anal plugs in anal, balanced view"
   },
   {
-    "id": "clo-37",
-    "tag": "sexy witch",
-    "label": "魔女",
-    "category": "cloth",
-    "prompt": "sexy witch, mini black dress, deep cleavage, underboob, high side slits, pointed hat, broom, fishnet stockings, high heels"
+    "id": "int-6038",
+    "tag": "int-ex_sq_beads",
+    "label": "強制拡張/潮吹き+ビーズ",
+    "Flont Condition": "強制拡張/潮吹き",
+    "Back Condition": "ビーズ",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.25), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, anal beads in anal, balanced view"
   },
   {
-    "id": "clo-38",
-    "tag": "sexy succubus",
-    "label": "サキュバス",
-    "category": "cloth",
-    "prompt": "sexy succubus, skimpy red black bodysuit, deep cleavage, underboob, high-cut thong bare hips, bat wings, horns tail, fishnet stockings, high heels"
-  },
-  {
-    "id": "clo-39",
-    "tag": "sexy dark elf sorceress",
-    "label": "ダークエルフ",
-    "category": "cloth",
-    "prompt": "sexy dark elf sorceress,cropped halter top, barely covering cleavage, underboob, sideboob,high-waisted loincloth with deep V-front, thin fabric transparent,long cape mantle draped loosely from shoulders, choker with diamond pendant, arm cuffs, anklets, glossy skin"
-  },
-  {
-    "id": "clo-39",
-    "tag": "sexy vampiress",
-    "label": "バンパイア",
-    "category": "cloth",
-    "prompt": "sexy vampiress, gothic black dress, deep cleavage, underboob, high side slits bare hips, choker with red gem, fangs, red lips, black fishnet stockings, high heels"
-  },
-  {
-    "id": "clo-SP1",
-    "tag": "INO",
-    "label": "イノ",
-    "category": "cloth",
-    "prompt": "I-no Guilty Gear, ultra skimpy glossy red latex shoulderless fetish jacket, deep  cleavage, underboob, black leather choker gold ring pulling jacket taut, witch hat with skull face, fishnet stockings, thigh-high boots, guitar strap between breasts"
-  },
-  {
-    "id": "clo-SP2",
-    "tag": "CHU",
-    "label": "チュンリー",
-    "category": "cloth",
-    "prompt": "Chun-Li, ultra skimpy very short chinese dress barely hip, extreme deep V-neckline,sideboob, underboob, ultra high side slits, black fishnet thighhigh stockings with garters, spiked bracelets"
-  },
-  {
-    "id": "clo-SP3",
-    "tag": "CAM",
-    "label": "キャミイ",
-    "category": "cloth",
-    "prompt": "Cammy White, micro skimpy green leotard barely covering, underboob, sideboob, extreme high-cut thong style, latex fabric stretched taut, red beret, spiked red gauntlets, black thighhigh stockings with garter straps, platform combat boots"
-  },
-  {
-    "id": "clo-SP4",
-    "tag": "JUR",
-    "label": "ジュリ",
-    "category": "cloth",
-    "prompt": "Han Juri, ultra skimpy black purple bodysuit, deep cleavage, underboob, extreme high-cut sides, spiderweb accents, eyepatch, claw gloves, thighhigh boots"
-  },
-  {
-    "id": "clo-SP5",
-    "tag": "MOR",
-    "label": "モリガン",
-    "category": "cloth",
-    "prompt": "Morrigan Aensland, micro green bodysuit barely covering, deep cleavage, sideboob, underboob, extreme high-cut leotard, latex glossy fabric stretched taut, bat wings spread slightly"
-  },
-  {
-    "id": "clo-SP6",
-    "tag": "FBK",
-    "label": "フブキ",
-    "category": "cloth",
-    "prompt": "Hellish Blizzard, skimpy black dress, deep cleavage,underboob, sideboob, extreme high slits, fur cape open"
-  },
-  {
-    "id": "clo-SP7",
-    "tag": "MAI",
-    "label": "舞",
-    "category": "cloth",
-    "prompt": "Mai Shiranui, skimpy red white revealing ninja dress extreme low-cut cleavage sideboob underboob spilling out, ultra high side slits full hip exposure cameltoe hint, red headband long ponytail, black thighhigh stockings, platform heels"
-  },
-  {
-    "id": "clo-SP8",
-    "tag": "ANG",
-    "label": "アンヘル",
-    "category": "cloth",
-    "prompt": "Ángel KOF, tight black white wrestler top, deep cleavage, sideboob, underboob, micro high-cut shorts, black thighhigh stockings garters, combat boots"
-  },
-  {
-    "id": "clo-SP9",
-    "tag": "TFA",
-    "label": "ティファ",
-    "category": "cloth",
-    "prompt": "Tifa Lockhart, white tank top, deep cleavage, sideboob, underboob, micro black skirt, black thighhigh stockings, fingerless gloves elbow pads"
-  },
-  {
-    "id": "clo-SP10",
-    "tag": "JSC",
-    "label": "ゼシカ",
-    "category": "cloth",
-    "prompt": "Jessica Albert DQ8, off-shoulder purple top, deep cleavage, underboob, red skirt, yellow corset belt with pouches, whip at waist, black thighhigh stockings, brown boots, long blonde ponytail with orange ties, glossy skin"
-  },
-  {
-    "id": "clo-SP11",
-    "tag": "MTL",
-    "label": "メーテル",
-    "category": "cloth",
-    "prompt": "Maetel, ultra revealing black fur-trimmed long coat wide open full exposure black dress underneath, deep cleavage, sideboob underboob, black dress with ultra high slit, russian black astrakhan fur hat tilted, black fur collar cuffs hem, long black boots thighhigh style"
-  },
-  {
-    "id": "clo-SP12",
-    "tag": "SNC",
-    "label": "そに子",
-    "category": "cloth",
-    "prompt": "Super Sonico, ultra revealing blue camo hoodie wide open, deep cleavage, underboob dominant from tight cat graphic tee, micro denim miniskirt barely covering pronounced cameltoe bare hips thighs exposed, light purple fishnet thighhigh stockings with garters, platform brown boots, oversized headphones"
-  },
-  {
-    "id": "clo-SP13",
-    "tag": "A18",
-    "label": "A18",
-    "category": "cloth",
-    "prompt": "Android 18, ultra skimpy black crop top, deep cleavage, underboob, micro denim skirt, black thighhigh stockings"
-  },
-  {
-    "id": "clo-SP14",
-    "tag": "HAQ",
-    "label": "ハーレクイン",
-    "category": "cloth",
-    "prompt": "sexy Harley Quinn, red blue split crop top, deep cleavage, underboob, ultra short shorts, red blue pigtails, choker, fishnet stockings, platform boots, baseball bat"
-  },
-  {
-    "id": "clo-SP15",
-    "tag": "JER",
-    "label": "ジェシカラビット",
-    "category": "cloth",
-    "prompt": "sexy Jessica Rabbit, ultra low-cut red sequin evening gown, deep cleavage, underboob, sideboob, long slit, long red gloves, purple eyeshadow red lips, high heels, glossy skin"
-  },
-  {
-    "id": "clo-SP16",
-    "tag": "JAS",
-    "label": "ジャスミン",
-    "category": "cloth",
-    "prompt": "sexy Princess Jasmine, ultra skimpy teal crop top, deep neckline cleavage, underboob, sheer low-leg harem pants, gold jewelry armbands anklets choker, tiara, bare feet or golden sandals, glossy skin"
+    "id": "int-6038",
+    "tag": "int-ex_sq_dildo",
+    "label": "強制拡張/潮吹き+ディルド",
+    "Flont Condition": "強制拡張/潮吹き",
+    "Back Condition": "ディルド",
+    "category": "intensity",
+    "prompt": " (erect clitoris:1.25), [hairy pussy], (without hands:1.2), (extreme wide stretched labia:1.25), (unnaturally wide open gaped pussy:1.25), (vaginal cavity exposed:1.25), (vaginal orifice visible:1.25), (deep vaginal view:1.25), squirting pussy, jet of clear fluid, single strong stream,fluid arcing outward, erotic squirting, translucent spray, tight anus, dildo in anal, balanced view"
   }
 ]
