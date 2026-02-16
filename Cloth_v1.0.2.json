@@ -95,199 +95,213 @@
     "tag": "sexy mad scientist",
     "label": "サイエンティスト",
     "category": "cloth",
-    "prompt": "sexy mad scientist, tight open white lab coat,deep cleavage, fitted crop top, messy wild hair, speculum in hand, black sheer stockings, high heels, insane smile"
+    "prompt": "sexy mad scientist, tight open white lab coat,deep cleavage, fitted crop top, messy wild hair, speculum in hand, black sheer stockings, high heels"
   },
   {
     "id": "clo-15",
+    "tag": "sexy waitress",
+    "label": "ウェイトレス",
+    "category": "cloth",
+    "prompt": "sexy waitress, tight white shirt, orange short mini skirt, frilly white apron red ribbon bow at neck, black thighhigh stockings, high heels"
+  },
+  {
+    "id": "clo-16",
+    "tag": "sexy bank teller",
+    "label": "受付",
+    "category": "cloth",
+    "prompt": "sexy bank teller, tight blue long-sleeve shirt, black vest, black knee-length pencil skirt with high side slit, red bow tie, sheer black pantyhose, high heels"
+  },
+  {
+    "id": "clo-17",
     "tag": "sexy secretary",
     "label": "秘書",
     "category": "cloth",
     "prompt": "sexy secretary, skimpy micro pencil skirt, tight white blouse, cleavage, sideboob, garter stockings, platform high heels, holding files, satin blouse"
   },
   {
-    "id": "clo-16",
+    "id": "clo-18",
     "tag": "sexy nun",
     "label": "修道女",
     "category": "cloth",
     "prompt": "sexy nun, skin-tight black nun habit, deep cleavage, ultra high side slit, lace garter belt and stockings, black veil,black fingerless gloves, silver cross necklace in cleavage"
   },
   {
-    "id": "clo-17",
+    "id": "clo-19",
     "tag": "sexy casino dealer",
     "label": "カジノディーラー",
     "category": "cloth",
     "prompt": "sexy casino dealer, skimpy black uniform micro skirt, extreme low-cut vest, deep cleavage, fishnet stockings with garters, platform heels, poker chips between breasts"
   },
   {
-    "id": "clo-18",
+    "id": "clo-20",
     "tag": "sexy race queen",
     "label": "レースクイーン",
     "category": "cloth",
     "prompt": "sexy race queen, skimpy micro bodysuit barely covering cameltoe ass, breasts spilling out low-cut front underboob, metallic fabric, thigh-high boots, garter belts, holding umbrella teasingly between thighs"
   },
   {
-    "id": "clo-19",
+    "id": "clo-21",
     "tag": "sexy show girl",
     "label": "ショーガール",
     "category": "cloth",
     "prompt": "sexy show girl, glossy black sequin bodysuit, deep cleavage, underboob, high-cut sides, silk top hat, holding cane/stick, long fishnet stockings, high heels stilettos"
   },
   {
-    "id": "clo-20",
+    "id": "clo-22",
     "tag": "sexy bunny girl",
     "label": "バニーガール",
     "category": "cloth",
     "prompt": "sexy bunny girl, tight black leotard high-cut thong style, deep plunging neckline cleavage, bunny ears headband, white bowtie collar, fluffy tail, fishnet stockings, high heels, wrist cuffs"
   },
   {
-    "id": "clo-21",
+    "id": "clo-23",
     "tag": "sexy puppy girl",
     "label": "犬",
     "category": "cloth",
     "prompt": "sexy puppy girl, dog ear heahband, collar with bell, fluffy dog tail plug, black sheer stockings, high heels,ball gag"
   },
   {
-    "id": "clo-22",
+    "id": "clo-24",
     "tag": "sexy kitten girl",
     "label": "猫",
     "category": "cloth",
     "prompt": "sexy kitten girl, cat ear headband, collar with bell, fluffy cat tail plug, skimpy black leotard high-cut cleavage, fishnet stockings, platform heels, "
   },
   {
-    "id": "clo-23",
+    "id": "clo-25",
     "tag": "sexy spy",
     "label": "スパイ",
     "category": "cloth",
     "prompt": "sexy spy, tight black latex catsuit, deep cleavage, spy gadgets belt, thigh-high boots, gloves, guns between breasts"
   },
   {
-    "id": "clo-24",
+    "id": "clo-26",
     "tag": "sexy kunoichi ninja",
     "label": "忍者",
     "category": "cloth",
     "prompt": "sexy kunoichi ninja, ultra skimpy black shinobi outfit micro shorts, wrap top, deep cleavage, underboob, exposed midriff, kunai and shuriken belt, garters, thigh-high fishnet boots"
   },
   {
-    "id": "clo-25",
+    "id": "clo-27",
     "tag": "sexy cheerleader",
     "label": "チアリーダー",
     "category": "cloth",
     "prompt": "sexy cheerleader, skimpy micro crop top, sideboob, extreme short skirt, exposing thong, fishnet stockings with garters, high platform heels, holding pom poms"
   },
   {
-    "id": "clo-26",
+    "id": "clo-28",
     "tag": "sexy bikini",
     "label": "水着ビキニ",
     "category": "cloth",
     "prompt": "sexy bikini, tiny triangle bikini top deep cleavage, high-cut thong, strings tied loosely, glossy oiled skin"
   },
   {
-    "id": "clo-27",
+    "id": "clo-29",
     "tag": "sexy competitive swimsuit",
     "label": "競泳水着",
     "category": "cloth",
     "prompt": "sexy competitive swimsuit, skimpy high-leg one piece, extreme plunging neckline, sideboob,  latex glossy fabric wet look"
   },
   {
-    "id": "clo-28",
+    "id": "clo-30",
     "tag": "sexy high-leg lingerie",
     "label": "ハイレグ下着",
     "category": "cloth",
     "prompt": "sexy high-leg lingerie, deep cleavage, underboob, push-up bra, ultra high-cut thong panties,  deep cameltoe wedgie visible, sheer lace transparent fabric, thigh garters,  glossy skin, hands adjusting panties"
   },
   {
-    "id": "clo-29",
+    "id": "clo-31",
     "tag": "sexy low-rise panties",
     "label": "ローライズ下着",
     "category": "cloth",
     "prompt": "sexy low-leg panties, deep cleavage, underboob, push-up bra, extreme low-rise micro thong, slipping down hips thick bush pubic hair slightly visible, garter belt straps taut, pulling panties further down"
   },
   {
-    "id": "clo-30",
+    "id": "clo-32",
     "tag": "sexy santa girl",
     "label": "ナイトリーサンタ",
     "category": "cloth",
     "prompt": "sexy santa girl, tight black red latex mini dress, white fur trim deep cleavage, black santa hat, whip in hand, handcuffs dangling from belt, collar with bell, thigh-high boots, sheer stockings"
   },
   {
-    "id": "clo-31",
+    "id": "clo-33",
     "tag": "sexy punk girl",
     "label": "パンクガール",
     "category": "cloth",
     "prompt": "sexy punk girl, ripped black crop top, deep cleavage, underboob, ultra short plaid mini skirt,torned fishnet stockings, platform boots, spiked choker collar, studded belt, leather fingerless gloves, mohawk or messy colored hair, heavy eyeliner, red lips, glossy skin"
   },
   {
-    "id": "clo-32",
+    "id": "clo-34",
     "tag": "sexy cowgirl",
     "label": "カウガール",
     "category": "cloth",
     "prompt": "sexy cowgirl, tight plaid crop top, deep cleavage, underboob, ultra short denim mini shorts or fringed skirt, cowboy hat, belt with buckle, thigh-high boots, lasso in hand"
   },
   {
-    "id": "clo-33",
+    "id": "clo-35",
     "tag": "sexy chinese dress",
     "label": "チャイナドレス",
     "category": "cloth",
     "prompt": "sexy chinese dress, ultra short skimpy Chinese dress, deep cleavage,  ultra high side slits, thighhigh stockings fishnet with garter straps"
   },
   {
-    "id": "clo-34",
+    "id": "clo-36",
     "tag": "sexy dirndl girl",
     "label": "ディアンドル",
     "category": "cloth",
     "prompt": "sexy dirndl girl, tight dirndl bodice deep cleavage, low-cut blouse spilling out breasts underboob, short flared skirt high slits exposing hips, white blouse puffed sleeves, apron tied, fishnet stockings, platform heels"
   },
   {
-    "id": "clo-35",
+    "id": "clo-37",
     "tag": "sexy exposed coat girl",
     "label": "露出コート",
     "category": "cloth",
     "prompt": "sexy exposed coat girl, long trench coat, deep cleavage, full body nude under coat, fishnet stockings, high heels"
   },
   {
-    "id": "clo-36",
+    "id": "clo-38",
     "tag": "sexy pirate",
     "label": "海賊(洋)",
     "category": "cloth",
     "prompt": "sexy pirate girl, low-cut corset top, deep cleavage, underboob, short fringed skirt, pirate hat eyepatch, thighhigh boots, fishnet stockings, sword"
   },
   {
-    "id": "clo-37",
+    "id": "clo-39",
     "tag": "sexy japanese pirate",
     "label": "海賊(和)",
     "category": "cloth",
     "prompt": "sexy japnese pirate girl, short black kimono, extreme side slits, deep cleavage, red obi loosely falling open, katana at waist, black thighhigh stockings, long boots, red ribbons, glossy lips, fierce looks, wild intense glaring eyes, battle scars"
   },
   {
-    "id": "clo-37",
+    "id": "clo-39",
     "tag": "sexy catwoman",
     "label": "キャットウーマン",
     "category": "cloth",
     "prompt": "sexy catwoman, tight black latex catsuit, deep cleavage, underboob, extreme high-cut sides, cat ears, whip in hand, tail, black thighhigh boots, glossy skin"
   },
   {
-    "id": "clo-38",
+    "id": "clo-40",
     "tag": "sexy witch",
     "label": "魔女",
     "category": "cloth",
     "prompt": "sexy witch, mini black dress, deep cleavage, underboob, high side slits, pointed hat, broom, fishnet stockings, high heels"
   },
   {
-    "id": "clo-39",
+    "id": "clo-41",
     "tag": "sexy succubus",
     "label": "サキュバス",
     "category": "cloth",
     "prompt": "sexy succubus, skimpy red black bodysuit, deep cleavage, underboob, high-cut thong bare hips, bat wings, horns tail, fishnet stockings, high heels"
   },
   {
-    "id": "clo-40",
+    "id": "clo-42",
     "tag": "sexy dark elf sorceress",
     "label": "ダークエルフ",
     "category": "cloth",
     "prompt": "sexy dark elf sorceress,cropped halter top, barely covering cleavage, underboob, sideboob,high-waisted loincloth with deep V-front, thin fabric transparent,long cape mantle draped loosely from shoulders, choker with diamond pendant, arm cuffs, anklets, glossy skin"
   },
   {
-    "id": "clo-40",
+    "id": "clo-42",
     "tag": "sexy vampiress",
     "label": "バンパイア",
     "category": "cloth",
