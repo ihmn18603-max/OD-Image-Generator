@@ -112,6 +112,13 @@
     "prompt": "happy teary face"
   },
   {
+    "id": "emo-face17",
+    "tag": "blindfolded",
+    "label": "目隠し",
+    "category": "face",
+    "prompt": "blindfolded face"
+  },
+  {
     "id": "emo-smile1",
     "tag": "shy",
     "label": "恥じらいの笑み",
