@@ -224,6 +224,20 @@
     "prompt": "pussy juice stain"
   },
   {
+    "id": "Ex-PJ5",
+    "tag": "Ex-pussy juice-3",
+    "label": "愛液水たまり",
+    "category": "pussy juice",
+    "prompt": "pussy juice puddle"
+  },
+  {
+    "id": "Ex-PJ6",
+    "tag": "Ex-pussy juice-3",
+    "label": "愛液糸引き",
+    "category": "pussy juice",
+    "prompt": "pussy juice trail"
+  },
+  {
     "id": "Ex-sweat1",
     "tag": "Ex-sweat-1",
     "label": "汗少",
@@ -245,17 +259,17 @@
     "prompt": "excessive sweating"
   },
   {
-    "id": "Ex-sweat4",
-    "tag": "Ex-sweat-3",
+    "id": "Ex-steam1",
+    "tag": "Ex-steam-3",
     "label": "蒸気・湯気",
-    "category": "sweat",
+    "category": "steam",
     "prompt": "steam"
   },
   {
-    "id": "Ex-sweat5",
-    "tag": "Ex-sweat-3",
+    "id": "Ex-steam2",
+    "tag": "Ex-steam-3",
     "label": "蒸れた体",
-    "category": "sweat",
+    "category": "steam",
     "prompt": "steaming body"
   }
 ]
