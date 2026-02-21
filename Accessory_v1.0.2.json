@@ -432,5 +432,33 @@
     "label": "バイブ",
     "category": "accessory",
     "prompt": "vibrator"
+  },
+  {
+    "id": "acc-63",
+    "tag": "clitoris ring",
+    "label": "クリリング",
+    "category": "accessory",
+    "prompt": "clitoris ring"
+  },
+  {
+    "id": "acc-64",
+    "tag": "clitoris pump",
+    "label": "クリポンプ",
+    "category": "accessory",
+    "prompt": "clitoris pump"
+  },
+  {
+    "id": "acc-65",
+    "tag": "clitoris clamp",
+    "label": "クリクリップ",
+    "category": "accessory",
+    "prompt": "clitoris clamp"
+  },
+  {
+    "id": "acc-66",
+    "tag": "clitoris chain",
+    "label": "クリ鎖",
+    "category": "accessory",
+    "prompt": "clitoris chain"
   }
 ]
