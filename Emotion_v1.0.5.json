@@ -81,7 +81,7 @@
     "tag": "aroused",
     "label": "興奮した顔",
     "category": "face",
-    "prompt": "aroused face"
+    "prompt": "(aroused face:1.2)"
   },
   {
     "id": "emo-face13",
