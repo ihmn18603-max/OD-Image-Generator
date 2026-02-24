@@ -1,73 +1,73 @@
 [
   {
     "id": "acc-1",
+    "tag": "double eyelid",
+    "label": "二重",
+    "category": "accessory",
+    "prompt": "double eyelid"
+  },
+  {
+    "id": "acc-2",
     "tag": "eyelashes",
     "label": "長まつ毛",
     "category": "accessory",
     "prompt": "long eyelashe"
   },
   {
-    "id": "acc-2",
+    "id": "acc-3",
+    "tag": "aegyo sal",
+    "label": "涙袋",
+    "category": "accessory",
+    "prompt": "aegyo sal"
+  },
+  {
+    "id": "acc-4",
     "tag": "eyeshadows",
     "label": "アイシャドウ",
     "category": "accessory",
     "prompt": "smoky eyeshadow"
   },
   {
-    "id": "acc-3",
+    "id": "acc-5",
     "tag": "eyeliner",
     "label": "アイライン",
     "category": "accessory",
     "prompt": "eyeliner"
   },
   {
-    "id": "acc-4",
+    "id": "acc-6",
     "tag": "eyelash extension",
     "label": "まつ毛エクステ",
     "category": "accessory",
     "prompt": "eyelash extension"
   },
   {
-    "id": "acc-5",
+    "id": "acc-7",
     "tag": "mascara",
     "label": "マスカラ",
     "category": "accessory",
     "prompt": "mascara"
   },
   {
-    "id": "acc-6",
+    "id": "acc-8",
     "tag": "lipsticks",
     "label": "紅口紅",
     "category": "accessory",
     "prompt": "red lipsticks"
   },
   {
-    "id": "acc-7",
+    "id": "acc-9",
     "tag": "basic make",
     "label": "化粧4点セット",
     "category": "accessory",
     "prompt": "long eyelashes, eyeshadows, mascara, Red lipsticks"
   },
   {
-    "id": "acc-8",
+    "id": "acc-10",
     "tag": "gal make",
     "label": "ギャルメイク",
     "category": "accessory",
-    "prompt": "big eyes, double eyelid, prominent aegyo sal, (pink lipsticks), exaggerated eyelashes, light-colored  eyeshadow, dark eyeline"
-  },
-  {
-    "id": "acc-9",
-    "tag": "Bgal make",
-    "label": "黒ギャルメイク",
-    "category": "accessory",
-    "prompt": "extremally thin eyebrows , thick bluish eyeshadow, thick black eyeliner, Highlighted eyes with eyeliner, false eyelashes"
-  },
-  {
-    "id": "acc-10",
-    "tag": "Wgal make",
-    "label": "白ギャルメイク",
-    "category": "accessory",
-    "prompt": "thick eyeshadow, extremally thin eyebrows, Highlighted eyes with eyeliner, false eyelashes"
+    "prompt": "big eyes, double eyelid, prominent aegyo sal, pink lipsticks, exaggerated eyelashes, light-colored  eyeshadow, dark eyeline"
   },
   {
     "id": "acc-11",
