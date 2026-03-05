@@ -4,28 +4,28 @@
     "tag": "double eyelid",
     "label": "二重",
     "category": "accessory",
-    "prompt": "double_eyelid"
+    "prompt": "doubleeyelid"
   },
   {
     "id": "acc-2",
     "tag": "eyelashes",
     "label": "長まつ毛",
     "category": "accessory",
-    "prompt": "long_eyelashe"
+    "prompt": "longeyelashe"
   },
   {
     "id": "acc-3",
     "tag": "aegyo sal",
     "label": "涙袋",
     "category": "accessory",
-    "prompt": "aegyo_sal"
+    "prompt": "aegyosal"
   },
   {
     "id": "acc-4",
     "tag": "eyeshadows",
     "label": "アイシャドウ",
     "category": "accessory",
-    "prompt": "smoky_eyeshadow"
+    "prompt": "smokyeyeshadow"
   },
   {
     "id": "acc-5",
@@ -39,7 +39,7 @@
     "tag": "eyelash extension",
     "label": "まつ毛エクステ",
     "category": "accessory",
-    "prompt": "eyelash_extension"
+    "prompt": "eyelashextension"
   },
   {
     "id": "acc-7",
@@ -53,28 +53,28 @@
     "tag": "lipsticks",
     "label": "紅口紅",
     "category": "accessory",
-    "prompt": "red_lips"
+    "prompt": "redlips"
   },
   {
     "id": "acc-9",
     "tag": "basic make",
     "label": "化粧4点セット",
     "category": "accessory",
-    "prompt": "long_eyelashes, eyeshadows, mascara, red_lips"
+    "prompt": "longeyelashes, eyeshadows, mascara, redlips"
   },
   {
     "id": "acc-10",
     "tag": "gal make",
     "label": "ギャルメイク",
     "category": "accessory",
-    "prompt": "big_eyes, double_eyelid, emphasis_aegyo_sal, pink_lips, exaggerated_eyelashes, light-colored_ eyeshadow, dark_eyeline"
+    "prompt": "bigeyes, doubleeyelid, emphasisaegyosal, pinklips, exaggeratedeyelashes, light-colored eyeshadow, darkeyeline"
   },
   {
     "id": "acc-11",
     "tag": "nail polish",
     "label": "マニキュア",
     "category": "accessory",
-    "prompt": "nail_polish"
+    "prompt": "nailpolish"
   },
   {
     "id": "acc-12",
@@ -88,21 +88,21 @@
     "tag": "hoop earrings",
     "label": "フープイヤリング",
     "category": "accessory",
-    "prompt": "hoop_earrings"
+    "prompt": "hoopearrings"
   },
   {
     "id": "acc-14",
     "tag": "stud earrings",
     "label": "スタッドピアス",
     "category": "accessory",
-    "prompt": "stud_earrings"
+    "prompt": "studearrings"
   },
   {
     "id": "acc-15",
     "tag": "drop earrings",
     "label": "ドロップピアス",
     "category": "accessory",
-    "prompt": "drop_earrings"
+    "prompt": "dropearrings"
   },
   {
     "id": "acc-16",
@@ -151,14 +151,14 @@
     "tag": "a bow tie",
     "label": "蝶ネクタイ",
     "category": "accessory",
-    "prompt": "a_bow_tie"
+    "prompt": "abowtie"
   },
   {
     "id": "acc-23",
     "tag": "collar chain",
     "label": "カラーチェーン",
     "category": "accessory",
-    "prompt": "collar_chain"
+    "prompt": "collarchain"
   },
   {
     "id": "acc-24",
@@ -179,7 +179,7 @@
     "tag": "elbow gloves",
     "label": "肘まである手袋",
     "category": "accessory",
-    "prompt": "elbow_gloves"
+    "prompt": "elbowgloves"
   },
   {
     "id": "acc-27",
@@ -207,7 +207,7 @@
     "tag": "bridal garter",
     "label": "ブライダルガーター",
     "category": "accessory",
-    "prompt": "bridal_garter"
+    "prompt": "bridalgarter"
   },
   {
     "id": "acc-31",
@@ -221,84 +221,84 @@
     "tag": "highleg_lingerie",
     "label": "ハイレグ下着",
     "category": "accessory",
-    "prompt": "high-leg_lingerie"
+    "prompt": "high-leglingerie"
   },
   {
     "id": "acc-33",
     "tag": "see_through_lingerie",
     "label": "透け下着",
     "category": "accessory",
-    "prompt": "see-through_lingerie"
+    "prompt": "see-throughlingerie"
   },
   {
     "id": "acc-34",
     "tag": "open_cup_underwear",
     "label": "丸出し下着",
     "category": "accessory",
-    "prompt": "open_cup_bra, crotchless_lingerie"
+    "prompt": "opencupbra, crotchlesslingerie"
   },
   {
     "id": "acc-35",
     "tag": "underwear_pull",
     "label": "ずれたパンツ",
     "category": "accessory",
-    "prompt": "pulled_aside_panties"
+    "prompt": "pulledasidepanties"
   },
   {
     "id": "acc-36",
     "tag": "highleg_panties",
     "label": "ハイレグパンツ",
     "category": "accessory",
-    "prompt": "high-leg_panties"
+    "prompt": "high-legpanties"
   },
   {
     "id": "acc-37",
     "tag": "see_through_panties",
     "label": "透けパンツ",
     "category": "accessory",
-    "prompt": "see-through_panties"
+    "prompt": "see-throughpanties"
   },
   {
     "id": "acc-38",
     "tag": "ultra_highleg_panties",
     "label": "超ハイレグパンツ",
     "category": "accessory",
-    "prompt": "extreme_ultra_high-leg_panties"
+    "prompt": "extremeultrahigh-legpanties"
   },
   {
     "id": "acc-39",
     "tag": "ultra_highleg_see_through_panties",
     "label": "超ハイレグ透けパンツ",
     "category": "accessory",
-    "prompt": "extreme_ultra_high-leg_see-through_panties"
+    "prompt": "extremeultrahigh-legsee-throughpanties"
   },
   {
     "id": "acc-40",
     "tag": "garter",
     "label": "ガーターベルト",
     "category": "accessory",
-    "prompt": "garter_belt"
+    "prompt": "garterbelt"
   },
   {
     "id": "acc-41",
     "tag": "stockings",
     "label": "網ストッキング",
     "category": "accessory",
-    "prompt": "fishnet_stockings"
+    "prompt": "fishnetstockings"
   },
   {
     "id": "acc-42",
     "tag": "torn_stockings",
     "label": "網ストッキング(破)",
     "category": "accessory",
-    "prompt": "torn_fishnet_stockings"
+    "prompt": "tornfishnetstockings"
   },
   {
     "id": "acc-43",
     "tag": "high_heels",
     "label": "ハイヒール",
     "category": "accessory",
-    "prompt": "high_heels"
+    "prompt": "highheels"
   },
   {
     "id": "acc-44",
@@ -326,28 +326,28 @@
     "tag": "anklecuffs",
     "label": "足枷",
     "category": "accessory",
-    "prompt": "ankle_cuffs"
+    "prompt": "anklecuffs"
   },
   {
     "id": "acc-48",
     "tag": "collar",
     "label": "首輪",
     "category": "accessory",
-    "prompt": "leather_collar"
+    "prompt": "leathercollar"
   },
   {
     "id": "acc-49",
     "tag": "leash",
     "label": "リード",
     "category": "accessory",
-    "prompt": "collar_with_leash"
+    "prompt": "collarwithleash"
   },
   {
     "id": "acc-50",
     "tag": "ball_gag",
     "label": "ボールギャグ",
     "category": "accessory",
-    "prompt": "ball_gag"
+    "prompt": "ballgag"
   },
   {
     "id": "acc-51",
@@ -361,7 +361,7 @@
     "tag": "speculum",
     "label": "膣鏡",
     "category": "accessory",
-    "prompt": "vaginal_speculum"
+    "prompt": "vaginalspeculum"
   },
   {
     "id": "acc-53",
@@ -375,56 +375,56 @@
     "tag": "rope_bondage",
     "label": "縄拘束",
     "category": "accessory",
-    "prompt": "tied_with_ropes"
+    "prompt": "tiedwithropes"
   },
   {
     "id": "acc-55",
     "tag": "shibari",
     "label": "緊縛",
     "category": "accessory",
-    "prompt": "shibari_rope_bondage,"
+    "prompt": "shibariropebondage,"
   },
   {
     "id": "acc-56",
     "tag": "spreader_bar",
     "label": "開脚棒",
     "category": "accessory",
-    "prompt": "spreader_bar, legs_forced_apart"
+    "prompt": "spreaderbar, legsforcedapart"
   },
   {
     "id": "acc-57",
     "tag": "chains",
     "label": "鎖",
     "category": "accessory",
-    "prompt": "chained_restraints"
+    "prompt": "chainedrestraints"
   },
   {
     "id": "acc-58",
     "tag": "nipple_clamps",
     "label": "乳首クリップ",
     "category": "accessory",
-    "prompt": "nipple_clamps"
+    "prompt": "nippleclamps"
   },
   {
     "id": "acc-59",
     "tag": "nipple piercing",
     "label": "乳首ピアス",
     "category": "accessory",
-    "prompt": "nipple_piercing"
+    "prompt": "nipplepiercing"
   },
   {
     "id": "acc-60",
     "tag": "pubic tattoo,crotch tattoo",
     "label": "淫紋",
     "category": "accessory",
-    "prompt": "pubic_tattoo,crotch_tattoo"
+    "prompt": "pubictattoo,crotchtattoo"
   },
   {
     "id": "acc-61",
     "tag": "milking machine,breast pump",
     "label": "乳搾り器",
     "category": "accessory",
-    "prompt": "milking_machine,breast_pump"
+    "prompt": "milkingmachine,breastpump"
   },
   {
     "id": "acc-62",
@@ -438,27 +438,27 @@
     "tag": "clitoris ring",
     "label": "クリリング",
     "category": "accessory",
-    "prompt": "clitoris_ring"
+    "prompt": "clitorisring"
   },
   {
     "id": "acc-64",
     "tag": "clitoris pump",
     "label": "クリポンプ",
     "category": "accessory",
-    "prompt": "clitoris_pump"
+    "prompt": "clitorispump"
   },
   {
     "id": "acc-65",
     "tag": "clitoris clamp",
     "label": "クリクリップ",
     "category": "accessory",
-    "prompt": "clitoris_clamp"
+    "prompt": "clitorisclamp"
   },
   {
     "id": "acc-66",
     "tag": "clitoris chain",
     "label": "クリ鎖",
     "category": "accessory",
-    "prompt": "clitoris_chain"
+    "prompt": "clitorischain"
   }
 ]
