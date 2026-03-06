@@ -1,266 +1,273 @@
 [
   {
     "id": "Ex-eye1",
-    "tag": "Ex-eye-",
+    "tag": "Ex-eye1",
     "label": "目閉",
     "category": "eye",
     "prompt": "closed eyes"
   },
   {
     "id": "Ex-eye2",
-    "tag": "Ex-eye-",
+    "tag": "Ex-eye2",
     "label": "目半開",
     "category": "eye",
     "prompt": "half-open eyes"
   },
   {
     "id": "Ex-eye3",
-    "tag": "Ex-eye-",
+    "tag": "Ex-eye3",
     "label": "見開いた目",
     "category": "eye",
     "prompt": "wide-eyed"
   },
   {
     "id": "Ex-eye4",
-    "tag": "Ex-eye-",
+    "tag": "Ex-eye4",
     "label": "焦点の定まらない目",
     "category": "eye",
     "prompt": "unfocused eyes"
   },
   {
     "id": "Ex-eye5",
-    "tag": "Ex-eye-",
+    "tag": "Ex-eye5",
     "label": "ウインク",
     "category": "eye",
     "prompt": "winking eyes"
   },
   {
     "id": "Ex-eye6",
-    "tag": "Ex-eye-",
+    "tag": "Ex-eye6",
     "label": "強く目をつぶる",
     "category": "eye",
     "prompt": "tightly closed eyes "
   },
   {
     "id": "Ex-eye7",
-    "tag": "Ex-eye-",
+    "tag": "Ex-eye7",
     "label": "ぼんやりした目",
     "category": "eye",
     "prompt": "glassy eyes"
   },
   {
     "id": "Ex-eye8",
-    "tag": "Ex-eye-",
+    "tag": "Ex-eye8",
     "label": "うつろな目",
     "category": "eye",
     "prompt": "empty eyes"
   },
   {
     "id": "Ex-eye9",
-    "tag": "Ex-eye-",
+    "tag": "Ex-eye9",
     "label": "白目",
     "category": "eye",
     "prompt": "rolling eyes"
   },
   {
     "id": "Ex-eye10",
-    "tag": "Ex-eye-",
+    "tag": "Ex-eye10",
     "label": "猫目",
     "category": "eye",
     "prompt": "(slit pupils:1.2)"
   },
   {
     "id": "Ex-eye11",
-    "tag": "Ex-eye-",
+    "tag": "Ex-eye11",
     "label": "グルグル目",
     "category": "eye",
     "prompt": "@ @ eyes"
   },
   {
     "id": "Ex-eye12",
-    "tag": "Ex-eye-",
+    "tag": "Ex-eye12",
     "label": "ハート目",
     "category": "eye",
     "prompt": "heart shaped pupils"
   },
   {
     "id": "Ex-eye13",
-    "tag": "Ex-eye-",
+    "tag": "Ex-eye13",
     "label": "細長い形の目",
     "category": "eye",
     "prompt": "narrow and long shape eyes"
   },
   {
     "id": "Ex-eye14",
-    "tag": "Ex-eye-",
+    "tag": "Ex-eye14",
     "label": "丸く大きな目",
     "category": "eye",
     "prompt": "round eyes"
   },
   {
     "id": "Ex-eye15",
-    "tag": "Ex-eye-",
+    "tag": "Ex-eye15",
     "label": "狐目",
     "category": "eye",
-    "prompt": "Sharp fox-like eyes"
+    "prompt": "sharp fox-like eyes"
   },
   {
     "id": "Ex-eye16",
-    "tag": "Ex-eye-",
+    "tag": "Ex-eye16",
     "label": "三白眼",
     "category": "eye",
-    "prompt": "Sanpaku eyes"
+    "prompt": "sanpaku eyes"
+  },
+  {
+    "id": "Ex-eye17",
+    "tag": "Ex-eye17",
+    "label": "つり目",
+    "category": "eye",
+    "prompt": "tsurime"
   },
   {
     "id": "Ex-mouth1",
-    "tag": "Ex-mouth-",
+    "tag": "Ex-mouth1",
     "label": "口閉",
     "category": "mouth",
     "prompt": "mouth closed"
   },
   {
     "id": "Ex-mouth2",
-    "tag": "Ex-mouth-",
+    "tag": "Ex-mouth2",
     "label": "口半開",
     "category": "mouth",
     "prompt": "mouth half-open"
   },
   {
     "id": "Ex-mouth4",
-    "tag": "Ex-mouth-",
+    "tag": "Ex-mouth4",
     "label": "のどちんこ",
     "category": "mouth",
     "prompt": "uvula"
   },
   {
     "id": "Ex-mouth5",
-    "tag": "Ex-mouth-",
+    "tag": "Ex-mouth5",
     "label": "わずかに開いた唇",
     "category": "mouth",
     "prompt": "parted lips"
   },
   {
     "id": "Ex-mouth6",
-    "tag": "Ex-mouth-",
+    "tag": "Ex-mouth6",
     "label": "濡れた唇",
     "category": "mouth",
     "prompt": "wet lips"
   },
   {
     "id": "Ex-mouth7",
-    "tag": "Ex-mouth-",
+    "tag": "Ex-mouth7",
     "label": "唇を噛む",
     "category": "mouth",
     "prompt": "biting lips"
   },
   {
     "id": "Ex-tongue1",
-    "tag": "Ex-tongue-",
+    "tag": "Ex-tongue1",
     "label": "舌だし少",
     "category": "tongue",
     "prompt": "tongue slightly out"
   },
   {
     "id": "Ex-tongue2",
-    "tag": "Ex-tongue-",
+    "tag": "Ex-tongue2",
     "label": "舌だし大",
     "category": "tongue",
     "prompt": "big tongue out"
   },
   {
     "id": "Ex-saliva1",
-    "tag": "Ex-saliva-",
+    "tag": "Ex-saliva1",
     "label": "涎少",
     "category": "saliva",
     "prompt": "saliva slight"
   },
   {
     "id": "Ex-saliva2",
-    "tag": "Ex-saliva-",
+    "tag": "Ex-saliva2",
     "label": "涎多",
     "category": "saliva",
     "prompt": "drooling"
   },
   {
     "id": "Ex-saliva3",
-    "tag": "Ex-saliva-",
+    "tag": "Ex-saliva3",
     "label": "歯と歯の間から唾液",
     "category": "saliva",
     "prompt": "saliva trail between teeth"
   },
   {
     "id": "Ex-PJ1",
-    "tag": "Ex-pussy juice-",
+    "tag": "Ex-PJ1",
     "label": "愛液少",
     "category": "pussy juice",
     "prompt": "little pussy juice"
   },
   {
     "id": "Ex-PJ2",
-    "tag": "Ex-pussy juice-",
+    "tag": "Ex-PJ2",
     "label": "愛液多",
     "category": "pussy juice",
     "prompt": "lots of pussy juice"
   },
   {
     "id": "Ex-PJ3",
-    "tag": "Ex-pussy juice-",
+    "tag": "Ex-PJ3",
     "label": "愛液ダラダラ",
     "category": "pussy juice",
     "prompt": "excessive pussy juice"
   },
   {
     "id": "Ex-PJ4",
-    "tag": "Ex-pussy juice-",
+    "tag": "Ex-PJ4",
     "label": "下着の愛液跡",
     "category": "pussy juice",
     "prompt": "pussy juice stain"
   },
   {
     "id": "Ex-PJ5",
-    "tag": "Ex-pussy juice-",
+    "tag": "Ex-PJ5",
     "label": "愛液水たまり",
     "category": "pussy juice",
     "prompt": "pussy juice puddle"
   },
   {
     "id": "Ex-PJ6",
-    "tag": "Ex-pussy juice-",
+    "tag": "Ex-PJ6",
     "label": "愛液糸引き",
     "category": "pussy juice",
     "prompt": "pussy juice trail"
   },
   {
     "id": "Ex-sweat1",
-    "tag": "Ex-sweat-",
+    "tag": "Ex-sweat1",
     "label": "汗少",
     "category": "sweat",
     "prompt": "little sweat"
   },
   {
     "id": "Ex-sweat2",
-    "tag": "Ex-sweat-",
+    "tag": "Ex-sweat2",
     "label": "汗多",
     "category": "sweat",
     "prompt": "lots of sweat"
   },
   {
     "id": "Ex-sweat3",
-    "tag": "Ex-sweat-",
+    "tag": "Ex-sweat3",
     "label": "汗大量",
     "category": "sweat",
     "prompt": "excessive sweating"
   },
   {
     "id": "Ex-steam1",
-    "tag": "Ex-steam-",
+    "tag": "Ex-steam1",
     "label": "蒸気・湯気",
     "category": "steam",
     "prompt": "steam"
   },
   {
     "id": "Ex-steam2",
-    "tag": "Ex-steam-",
+    "tag": "Ex-steam2",
     "label": "蒸れた体",
     "category": "steam",
     "prompt": "steaming body"
