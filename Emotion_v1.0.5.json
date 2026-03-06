@@ -99,27 +99,34 @@
   },
   {
     "id": "emo-face15",
+    "tag": "moaning",
+    "label": "喘ぎ顔",
+    "category": "face",
+    "prompt": "moaning face"
+  },
+  {
+    "id": "emo-face16",
     "tag": "orgasm",
     "label": "絶頂の顔",
     "category": "face",
     "prompt": "orgasm face"
   },
   {
-    "id": "emo-face16",
+    "id": "emo-face17",
     "tag": "languid",
     "label": "とろけるような顔",
     "category": "face",
     "prompt": "languid face"
   },
   {
-    "id": "emo-face17",
+    "id": "emo-face18",
     "tag": "happy teary",
     "label": "嬉し涙の顔",
     "category": "face",
     "prompt": "happy teary face"
   },
   {
-    "id": "emo-face18",
+    "id": "emo-face19",
     "tag": "blindfolded",
     "label": "目隠し",
     "category": "face",
