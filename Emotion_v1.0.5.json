@@ -1,13 +1,20 @@
 [
   {
     "id": "emo-face1",
+    "tag": "serious",
+    "label": "真剣な顔",
+    "category": "face",
+    "prompt": "serious face"
+  },
+  {
+    "id": "emo-face2",
     "tag": "breathless",
     "label": "息をのむ顔",
     "category": "face",
     "prompt": "breathless face"
   },
   {
-    "id": "emo-face2",
+    "id": "emo-face3",
     "tag": "naughty",
     "label": "イタズラな顔",
     "category": "face",
@@ -56,63 +63,63 @@
     "prompt": "(a surprised face:1.2)"
   },
   {
-    "id": "emo-face9",
+    "id": "emo-face10",
     "tag": "a shocked",
     "label": "ぎょっと驚いている顔",
     "category": "face",
     "prompt": "(a shocked face:1.2)"
   },
   {
-    "id": "emo-face10",
+    "id": "emo-face11",
     "tag": "confused ",
     "label": "困惑している顔",
     "category": "face",
     "prompt": "confused face"
   },
   {
-    "id": "emo-face11",
+    "id": "emo-face12",
     "tag": "delighted",
     "label": "喜んでいる顔",
     "category": "face",
     "prompt": "delighted face"
   },
   {
-    "id": "emo-face12",
+    "id": "emo-face13",
     "tag": "aroused",
     "label": "興奮した顔",
     "category": "face",
     "prompt": "(aroused face:1.2)"
   },
   {
-    "id": "emo-face13",
+    "id": "emo-face14",
     "tag": "sensual",
     "label": "官能的な顔",
     "category": "face",
     "prompt": "sensual face"
   },
   {
-    "id": "emo-face14",
+    "id": "emo-face15",
     "tag": "orgasm",
     "label": "絶頂の顔",
     "category": "face",
     "prompt": "orgasm face"
   },
   {
-    "id": "emo-face15",
+    "id": "emo-face16",
     "tag": "languid",
     "label": "とろけるような顔",
     "category": "face",
     "prompt": "languid face"
   },
   {
-    "id": "emo-face16",
+    "id": "emo-face17",
     "tag": "happy teary",
     "label": "嬉し涙の顔",
     "category": "face",
     "prompt": "happy teary face"
   },
   {
-    "id": "emo-face17",
+    "id": "emo-face18",
     "tag": "blindfolded",
     "label": "目隠し",
     "category": "face",
