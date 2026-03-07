@@ -25,7 +25,7 @@
     "tag": "anime_sensual",
     "label": "アニメ系(セクシー)",
     "category": "header",
-    "prompt": " (1 lady), (solo), anime style illustration, pastel color palette, soft shading, gentle lighting, smooth gradients, delicate lines, glossy highlights, smooth skin texture, subtle glow, (covered stiff erect nipples:1.2), flexible body"
+    "prompt": " (1 lady), (solo), anime style illustration, [pastel color palette], soft shading, gentle lighting, smooth gradients, delicate lines, glossy highlights, smooth skin texture, subtle glow, (covered stiff erect nipples:1.2), flexible body"
   },
   {
     "id": "head_4",
@@ -39,34 +39,34 @@
     "tag": "glow_portrait",
     "label": "グロウライティング系(艶感強調)",
     "category": "header",
-    "prompt": " (1 lady), (solo), pastel color palette, soft shading, cinematic lighting, glossy highlights, smooth gradients, dreamy tone, gentle shadows, warm light diffusion,  (covered stiff erect nipples:1.2), flexible body"
+    "prompt": " (1 lady), (solo), [pastel color palette], soft shading, cinematic lighting, glossy highlights, smooth gradients, dreamy tone, gentle shadows, warm light diffusion,  (covered stiff erect nipples:1.2), flexible body"
   },
   {
     "id": "head_6",
     "tag": "pastel_dream",
     "label": "パステル調(やわらか艶)",
     "category": "header",
-    "prompt": " (1 lady), (solo), anime style illustration, soft shading, dreamy lighting, pastel color palette, smooth gradients, delicate lines, soft focus, ethereal tone, subtle shadows, smooth skin texture, (covered stiff erect nipples:1.2), flexible body"
+    "prompt": " (1 lady), (solo), anime style illustration, soft shading, dreamy lighting, [pastel color palette], smooth gradients, delicate lines, soft focus, ethereal tone, subtle shadows, smooth skin texture, (covered stiff erect nipples:1.2), flexible body"
   },
   {
     "id": "head_7",
     "tag": "hyper_real_erotic",
     "label": "ハイパーリアル(超エロティック)",
     "category": "header",
-    "prompt": " (1 lady), (solo), ultra detailed, pastel color palette, cinematic lighting, rim light, dramatic backlighting, strong chiaroscuro, volumetric light rays, moody atmosphere, high contrast, realistic anatomy,  (covered stiff erect nipples:1.2), flexible body"
+    "prompt": " (1 lady), (solo), ultra detailed, [pastel color palette], cinematic lighting, rim light, dramatic backlighting, strong chiaroscuro, volumetric light rays, moody atmosphere, high contrast, realistic anatomy,  (covered stiff erect nipples:1.2), flexible body"
   },
   {
     "id": "head_8",
     "tag": "cinematic_glow",
     "label": "シネマティックグロウ(映画的艶)",
     "category": "header",
-    "prompt": " (1 lady), (solo), ultra detailed, pastel color palette, cinematic lighting, rim light, dramatic backlighting, strong chiaroscuro, volumetric light rays, moody atmosphere, high contrast, (covered stiff erect nipples:1.2), flexible body"
+    "prompt": " (1 lady), (solo), ultra detailed, [pastel color palette], cinematic lighting, rim light, dramatic backlighting, strong chiaroscuro, volumetric light rays, moody atmosphere, high contrast, (covered stiff erect nipples:1.2), flexible body"
   },
   {
     "id": "head_9",
     "tag": "velvet_soft_real",
     "label": "ベルベットソフトリアル(柔らか極上肌)",
     "category": "header",
-    "prompt": " (1 lady), (solo), ultra realistic, pastel color palette, velvet smooth skin texture, luxurious soft lighting, warm candlelight tones, gentle subsurface scattering, delicate blush, realistic anatomy,  (covered stiff erect nipples:1.2), flexible body"
+    "prompt": " (1 lady), (solo), ultra realistic, [pastel color palette], velvet smooth skin texture, luxurious soft lighting, warm candlelight tones, gentle subsurface scattering, delicate blush, realistic anatomy,  (covered stiff erect nipples:1.2), flexible body"
   }
 ]
