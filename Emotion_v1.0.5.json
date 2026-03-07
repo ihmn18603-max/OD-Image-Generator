@@ -172,14 +172,14 @@
     "tag": "seductive",
     "label": "誘惑の笑み",
     "category": "smile",
-    "prompt": " seductive smile"
+    "prompt": " (seductive smile:1.2)"
   },
   {
     "id": "emo-smile4",
     "tag": "lewd",
     "label": "淫乱な笑み",
     "category": "smile",
-    "prompt": " lewd smile"
+    "prompt": " (lustful smile:1.2)"
   },
   {
     "id": "emo-stare1",
