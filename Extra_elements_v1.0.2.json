@@ -35,13 +35,6 @@
     "prompt": "winking eyes"
   },
   {
-    "id": "Ex-eye6",
-    "tag": "Ex-eye6",
-    "label": "強く目をつぶる",
-    "category": "eye",
-    "prompt": "tightly closed eyes "
-  },
-  {
     "id": "Ex-eye7",
     "tag": "Ex-eye7",
     "label": "ぼんやりした目",
@@ -63,13 +56,6 @@
     "prompt": "rolling eyes"
   },
   {
-    "id": "Ex-eye10",
-    "tag": "Ex-eye10",
-    "label": "猫目",
-    "category": "eye",
-    "prompt": "(slit pupils:1.2)"
-  },
-  {
     "id": "Ex-eye11",
     "tag": "Ex-eye11",
     "label": "グルグル目",
@@ -82,41 +68,6 @@
     "label": "ハート目",
     "category": "eye",
     "prompt": "heart shaped pupils"
-  },
-  {
-    "id": "Ex-eye13",
-    "tag": "Ex-eye13",
-    "label": "細長い形の目",
-    "category": "eye",
-    "prompt": "narrow and long shape eyes"
-  },
-  {
-    "id": "Ex-eye14",
-    "tag": "Ex-eye14",
-    "label": "丸く大きな目",
-    "category": "eye",
-    "prompt": "round eyes"
-  },
-  {
-    "id": "Ex-eye15",
-    "tag": "Ex-eye15",
-    "label": "狐目",
-    "category": "eye",
-    "prompt": "sharp fox-like eyes"
-  },
-  {
-    "id": "Ex-eye16",
-    "tag": "Ex-eye16",
-    "label": "三白眼",
-    "category": "eye",
-    "prompt": "sanpaku eyes"
-  },
-  {
-    "id": "Ex-eye17",
-    "tag": "Ex-eye17",
-    "label": "つり目",
-    "category": "eye",
-    "prompt": "tsurime"
   },
   {
     "id": "Ex-mouth1",
@@ -159,6 +110,13 @@
     "label": "唇を噛む",
     "category": "mouth",
     "prompt": "biting lips"
+  },
+  {
+    "id": "Ex-mouth8",
+    "tag": "Ex-mouth8",
+    "label": "歯を食いしばる",
+    "category": "mouth",
+    "prompt": "clenching_jaw"
   },
   {
     "id": "Ex-tongue1",
@@ -257,6 +215,13 @@
     "label": "汗大量",
     "category": "sweat",
     "prompt": "excessive sweating"
+  },
+  {
+    "id": "Ex-sweat4",
+    "tag": "Ex-sweat4",
+    "label": "汗滴り",
+    "category": "sweat",
+    "prompt": "sweat drops"
   },
   {
     "id": "Ex-steam1",
