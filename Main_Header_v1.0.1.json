@@ -3,7 +3,7 @@
     "id": "head-1",
     "tag": "1",
     "label": "純粋リアル",
-    "prompt": " (1 lady), (solo), ultra realistic, realistic anatomy, highly detailed, pastel color, vibrant accents, professional photography, natural lighting, soft shadows, cinematic depth of field, skin texture visible,sharp focus, photorealistic, natural colors, detailed pores and skin imperfections, subtle makeup"
+    "prompt": " (1 lady), (solo), ultra realistic, realistic anatomy, highly detailed, (pastel color:1.2), (vibrant accents), professional photography, natural lighting, soft shadows, cinematic depth of field, skin texture visible,sharp focus, photorealistic, natural colors, detailed pores and skin imperfections, subtle makeup"
   },
   {
     "id": "head-2",
@@ -15,42 +15,42 @@
     "id": "head-3",
     "tag": "3",
     "label": "リアルセクシー",
-    "prompt": " (1 lady), (solo),ultra realistic, photorealistic, realistic anatomy, detailed lighting, soft shadows, glossy skin texture, smooth gradients, cinematic highlights, sensual atmosphere, warm tone, alluring gaze, seductive expression, intimate mood, subtle blush, inviting pose"
+    "prompt": " (1 lady), (solo),ultra realistic, photorealistic, realistic anatomy, (pastel color:1.2), (vibrant accents), detailed lighting, soft shadows, glossy skin texture, smooth gradients, cinematic highlights, sensual atmosphere, warm tone, alluring gaze, seductive expression, intimate mood, subtle blush, inviting pose"
   },
   {
     "id": "head-4",
     "tag": "4",
     "label": "アニメセクシー",
-    "prompt": " (1 lady), (solo),  anime style illustration, pastel color, vibrant accents, soft shading, gentle lighting, smooth gradients, delicate lines, glossy highlights, smooth skin texture, subtle glow, sensual tone, alluring eyes, glossy lips, teasing expression, intimate atmosphere"
+    "prompt": " (1 lady), (solo),  anime style illustration, (pastel color:1.2), (vibrant accents), soft shading, gentle lighting, smooth gradients, delicate lines, glossy highlights, smooth skin texture, subtle glow, sensual tone, alluring eyes, glossy lips, teasing expression, intimate atmosphere"
   },
   {
     "id": "head-5",
     "tag": "5",
     "label": "セミリアルやわらか官能",
-    "prompt": " (1 lady), (solo), semi-realistic anime illustration, pastel color, vibrant accents,detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural skin tones, delicate lines, gentle eroticism, soft skin, alluring gaze, intimate atmosphere"
+    "prompt": " (1 lady), (solo), semi-realistic anime illustration, realistic anatomy, pastel color, vibrant accents,detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural skin tones, delicate lines, gentle eroticism, soft skin, alluring gaze, intimate atmosphere"
   },
   {
     "id": "head-6",
     "tag": "6",
     "label": "セミリアルリアル寄り官能",
-    "prompt": " (1 lady), (solo), semi-realistic anime illustration, (photorealistic:0.8), realistic anatomy, pastel color, vibrant accents,detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines, gentle sensuality, tender expression, inviting pose, warm intimate mood"
+    "prompt": " (1 lady), (solo), semi-realistic anime illustration, (photorealistic:0.6), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines, gentle sensuality, tender expression, inviting pose, warm intimate mood"
   },
   {
     "id": "head-7",
     "tag": "7",
     "label": "グロウ/艶感強調",
-    "prompt": " (1 lady), (solo), pastel color, vibrant accents,soft shading, cinematic lighting, glossy highlights, smooth gradients, dreamy tone, gentle shadows, warm light diffusion, subtle glow, rim light, high sheen skin, luxurious atmosphere, radiant skin"
+    "prompt": " (1 lady), (solo), (pastel color:1.2), (vibrant accents),soft shading, cinematic lighting, glossy highlights, smooth gradients, dreamy tone, gentle shadows, warm light diffusion, subtle glow, rim light, high sheen skin, luxurious atmosphere, radiant skin"
   },
   {
     "id": "head-8",
     "tag": "8",
     "label": "パステルドリーム(ethereal/soft focus 特化)",
-    "prompt": " (1 lady), (solo), anime style illustration, pastel color, vibrant accents,soft shading, dreamy lighting, smooth gradients, delicate lines, soft focus, ethereal tone, subtle shadows, smooth skin texture, hazy atmosphere, gentle bloom, floating particles, serene and dreamy mood"
+    "prompt": " (1 lady), (solo), anime style illustration, (pastel color:1.2), (vibrant accents),soft shading, dreamy lighting, smooth gradients, delicate lines, soft focus, ethereal tone, subtle shadows, smooth skin texture, hazy atmosphere, gentle bloom, floating particles, serene and dreamy mood"
   },
   {
     "id": "head-9",
     "tag": "9",
     "label": "ベルベットソフトリアル(柔らか極上肌)",
-    "prompt": " (1 lady), (solo), ultra realistic, realistic anatomy,  pastel color, vibrant accents,velvet smooth skin texture, luxurious soft lighting, warm candlelight tones, gentle subsurface scattering, delicate blush, soft shadows, velvety skin details, plush and inviting skin, intimate warmth"
+    "prompt": " (1 lady), (solo), ultra realistic, realistic anatomy,  (pastel color:1.2), (vibrant accents),velvet smooth skin texture, luxurious soft lighting, warm candlelight tones, gentle subsurface scattering, delicate blush, soft shadows, velvety skin details, plush and inviting skin, intimate warmth"
   }
 ]
