@@ -56,15 +56,15 @@
     "prompt": "rolling eyes"
   },
   {
-    "id": "Ex-eye11",
-    "tag": "Ex-eye11",
+    "id": "Ex-eye10",
+    "tag": "Ex-eye10",
     "label": "グルグル目",
     "category": "eye",
     "prompt": "@ @ eyes"
   },
   {
-    "id": "Ex-eye12",
-    "tag": "Ex-eye12",
+    "id": "Ex-eye11",
+    "tag": "Ex-eye11",
     "label": "ハート目",
     "category": "eye",
     "prompt": "heart shaped pupils"
@@ -84,39 +84,67 @@
     "prompt": "mouth half-open"
   },
   {
-    "id": "Ex-mouth4",
-    "tag": "Ex-mouth4",
+    "id": "Ex-mouth3",
+    "tag": "Ex-mouth3",
     "label": "のどちんこ",
     "category": "mouth",
     "prompt": "uvula"
   },
   {
-    "id": "Ex-mouth5",
-    "tag": "Ex-mouth5",
+    "id": "Ex-mouth4",
+    "tag": "Ex-mouth4",
     "label": "わずかに開いた唇",
     "category": "mouth",
     "prompt": "parted lips"
   },
   {
-    "id": "Ex-mouth6",
-    "tag": "Ex-mouth6",
+    "id": "Ex-mouth5",
+    "tag": "Ex-mouth5",
     "label": "濡れた唇",
     "category": "mouth",
     "prompt": "wet lips"
   },
   {
-    "id": "Ex-mouth7",
-    "tag": "Ex-mouth7",
+    "id": "Ex-mouth6",
+    "tag": "Ex-mouth6",
     "label": "唇を噛む",
     "category": "mouth",
     "prompt": "biting lips"
+  },
+  {
+    "id": "Ex-mouth7",
+    "tag": "Ex-mouth7",
+    "label": "舌なめずり",
+    "category": "mouth",
+    "prompt": "licking lips"
   },
   {
     "id": "Ex-mouth8",
     "tag": "Ex-mouth8",
     "label": "歯を食いしばる",
     "category": "mouth",
-    "prompt": "clenching_jaw"
+    "prompt": "clenching jaw"
+  },
+  {
+    "id": "Ex-mouth9",
+    "tag": "Ex-mouth9",
+    "label": "逆への字の口",
+    "category": "mouth",
+    "prompt": "frown, closed mouth"
+  },
+  {
+    "id": "Ex-mouth10",
+    "tag": "Ex-mouth10",
+    "label": "波口",
+    "category": "mouth",
+    "prompt": "wavy mouth"
+  },
+  {
+    "id": "Ex-mouth11",
+    "tag": "Ex-mouth11",
+    "label": "唇を噛む",
+    "category": "mouth",
+    "prompt": "biting own lip"
   },
   {
     "id": "Ex-tongue1",
@@ -154,6 +182,13 @@
     "prompt": "saliva trail between teeth"
   },
   {
+    "id": "Ex-saliva4",
+    "tag": "Ex-saliva4",
+    "label": "よだれを垂らす",
+    "category": "saliva",
+    "prompt": "saliva trail"
+  },
+  {
     "id": "Ex-PJ1",
     "tag": "Ex-PJ1",
     "label": "愛液少",
@@ -177,7 +212,7 @@
   {
     "id": "Ex-PJ4",
     "tag": "Ex-PJ4",
-    "label": "下着の愛液跡",
+    "label": "愛液のシミ",
     "category": "pussy juice",
     "prompt": "pussy juice stain"
   },
@@ -226,13 +261,20 @@
   {
     "id": "Ex-steam1",
     "tag": "Ex-steam1",
+    "label": "吐息",
+    "category": "steam",
+    "prompt": "breath"
+  },
+  {
+    "id": "Ex-steam2",
+    "tag": "Ex-steam2",
     "label": "蒸気・湯気",
     "category": "steam",
     "prompt": "steam"
   },
   {
-    "id": "Ex-steam2",
-    "tag": "Ex-steam2",
+    "id": "Ex-steam3",
+    "tag": "Ex-steam3",
     "label": "蒸れた体",
     "category": "steam",
     "prompt": "steaming body"
