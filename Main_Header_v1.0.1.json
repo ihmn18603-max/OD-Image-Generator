@@ -39,13 +39,13 @@
     "id": "head-7",
     "tag": "7",
     "label": "セミリアル:リアル官能/ebifurya",
-    "prompt": " (1 lady), (solo), (ebifurya), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (vibrant accents), (pastel color:1.2), (vibrant accents),"
+    "prompt": " (1 lady), (solo), (ebifurya:0.9), (photorealistic:1.2), realistic anatomy, (pastel color:1.2), (vibrant accents), (pastel color:1.2), (vibrant accents),"
   },
   {
     "id": "head-8",
     "tag": "8",
     "label": "セミリアル:リアル官能/agoto",
-    "prompt": " (1 lady), (solo), (agoto), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (vibrant accents), (pastel color:1.2), (vibrant accents),"
+    "prompt": " (1 lady), (solo), agoto, (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (vibrant accents), (pastel color:1.2), (vibrant accents),"
   },
   {
     "id": "head-9",
@@ -75,7 +75,7 @@
     "id": "head-13",
     "tag": "13",
     "label": "☆セミリアル:リアル官能/kpop",
-    "prompt": " (1 lady), (solo), (kpop), photorealistic, realistic anatomy, (pastel color:1.2), (vibrant accents), (pastel color:1.2), (vibrant accents),"
+    "prompt": " (1 lady), (solo), kpop, (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (vibrant accents), (pastel color:1.2), (vibrant accents),"
   },
   {
     "id": "head-14",
@@ -93,7 +93,7 @@
     "id": "head-16",
     "tag": "16",
     "label": "セミリアル:リアル官能/sabu_sabuDenego",
-    "prompt": " (1 lady), (solo), (sabu_sabuDenego), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (vibrant accents), (pastel color:1.2), (vibrant accents),"
+    "prompt": " (1 lady), (solo), (sabu_sabuDenego:0.9), (photorealistic:0.9), realistic anatomy, (pastel color:1.2), (vibrant accents), (pastel color:1.2), (vibrant accents),"
   },
   {
     "id": "head-17",
@@ -105,7 +105,7 @@
     "id": "head-18",
     "tag": "18",
     "label": "セミリアル:リアル官能/dirtyEro",
-    "prompt": " (1 lady), (solo), (dirtyEro:1.2), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (vibrant accents), (pastel color:1.2), (vibrant accents),"
+    "prompt": " (1 lady), (solo), (dirtyEro), photorealistic, realistic anatomy, (pastel color:1.2), (vibrant accents), (pastel color:1.2), (vibrant accents),"
   },
   {
     "id": "head-19",
@@ -117,7 +117,7 @@
     "id": "head-20",
     "tag": "20",
     "label": "セミリアル:リアル官能/rajah_dajah",
-    "prompt": " (1 lady), (solo), (rajah_dajah), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (vibrant accents), (pastel color:1.2), (vibrant accents),"
+    "prompt": " (1 lady), (solo), rajah_dajah, (photorealistic:0.9), realistic anatomy, (pastel color:1.2), (vibrant accents), (pastel color:1.2), (vibrant accents),"
   },
   {
     "id": "head-21",
