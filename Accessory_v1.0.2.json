@@ -81,14 +81,14 @@
     "tag": "slit pupils",
     "label": "猫目",
     "category": "accessory",
-    "prompt": "pupils:1.2)"
+    "prompt": "(slit pupils:1.2)"
   },
   {
     "id": "acc-13",
     "tag": "eyelashes",
     "label": "長まつ毛",
     "category": "accessory",
-    "prompt": "long eyelashe"
+    "prompt": "long eyelashes"
   },
   {
     "id": "acc-14",
