@@ -3,144 +3,168 @@
     "id": "head-1",
     "tag": "1",
     "label": "純粋リアル",
-    "prompt": " (1 lady), (solo), ultra realistic, realistic anatomy, highly detailed, (pastel color:1.2), (vibrant accents), professional photography, natural lighting, soft shadows, cinematic depth of field, skin texture visible,sharp focus, photorealistic, natural colors, detailed pores and skin imperfections, subtle makeup"
+    "prompt": " (1 lady), (solo), ultra realistic, realistic anatomy, highly detailed, (pastel color:1.2), (vibrant accents), professional photography, natural lighting, soft shadows, cinematic depth of field, skin texture visible,sharp focus, photorealistic, natural colors, detailed pores and skin imperfections, subtle makeup",
+    "": ""
   },
   {
     "id": "head-2",
     "tag": "2",
     "label": "純粋アニメ",
-    "prompt": " (1 lady), (solo), anime style illustration, natural color palette, soft shading, gentle lighting, smooth gradients, delicate lines, pastel tones, smooth skin texture, subtle shadows, soft focus, expressive eyes, clean anime lines, vibrant yet natural colors"
+    "prompt": " (1 lady), (solo), anime style illustration, natural color palette, soft shading, gentle lighting, smooth gradients, delicate lines, pastel tones, smooth skin texture, subtle shadows, soft focus, expressive eyes, clean anime lines, vibrant yet natural colors",
+    "": ""
   },
   {
     "id": "head-3",
     "tag": "3",
     "label": "リアルセクシー",
-    "prompt": " (1 lady), (solo),ultra realistic, photorealistic, realistic anatomy, (pastel color:1.2), (vibrant accents), detailed lighting, soft shadows, glossy skin texture, smooth gradients, cinematic highlights, sensual atmosphere, warm tone, alluring gaze, seductive expression, intimate mood, subtle blush, inviting pose"
+    "prompt": " (1 lady), (solo),ultra realistic, photorealistic, realistic anatomy, (pastel color:1.2), (vibrant accents), detailed lighting, soft shadows, glossy skin texture, smooth gradients, cinematic highlights, sensual atmosphere, warm tone, alluring gaze, seductive expression, intimate mood, subtle blush, inviting pose",
+    "": ""
   },
   {
     "id": "head-4",
     "tag": "4",
     "label": "アニメセクシー",
-    "prompt": " (1 lady), (solo),  anime style illustration, (pastel color:1.2), (vibrant accents), soft shading, gentle lighting, smooth gradients, delicate lines, glossy highlights, smooth skin texture, subtle glow, sensual tone, alluring eyes, glossy lips, teasing expression, intimate atmosphere"
+    "prompt": " (1 lady), (solo),  anime style illustration, (pastel color:1.2), (vibrant accents), soft shading, gentle lighting, smooth gradients, delicate lines, glossy highlights, smooth skin texture, subtle glow, sensual tone, alluring eyes, glossy lips, teasing expression, intimate atmosphere",
+    "": ""
   },
   {
     "id": "head-5",
     "tag": "5",
     "label": "セミリアル:やわらか官能",
-    "prompt": " (1 lady), (solo), semi-realistic anime illustration, realistic anatomy, pastel color, vibrant accents,detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural skin tones, delicate lines, gentle eroticism, soft skin, alluring gaze, intimate atmosphere"
+    "prompt": " (1 lady), (solo), semi-realistic anime illustration, realistic anatomy, pastel color, vibrant accents,detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, natural skin tones, delicate lines,",
+    "": ""
   },
   {
     "id": "head-6",
     "tag": "6",
     "label": "セミリアル:リアル官能/基本",
-    "prompt": " (1 lady), (solo), semi-realistic anime illustration, (photorealistic:0.6), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines,"
+    "prompt": " (1 lady), (solo), semi-realistic anime illustration, (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, natural skin tones, delicate lines,",
+    "": ""
   },
   {
     "id": "head-7",
     "tag": "7",
     "label": "セミリアル:リアル官能/ebifurya",
-    "prompt": " (1 lady), (solo), (ebifurya:0.9), (photorealistic:1.2), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines,"
+    "prompt": " (1 lady), (solo), (ebifurya:0.9), (photorealistic:1.2), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, natural skin tones, delicate lines,",
+    "": ""
   },
   {
     "id": "head-8",
     "tag": "8",
     "label": "セミリアル:リアル官能/agoto",
-    "prompt": " (1 lady), (solo), agoto, (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines,"
+    "prompt": " (1 lady), (solo), agoto, (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, natural skin tones, delicate lines,",
+    "": ""
   },
   {
     "id": "head-9",
     "tag": "9",
     "label": "☆セミリアル:リアル官能/gingami_giluziru",
-    "prompt": " (1 lady), (solo), (gingami_giluziru), photorealistic, realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines,"
+    "prompt": " (1 lady), (solo), (gingami_giluziru), photorealistic, realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, natural skin tones, delicate lines,",
+    "": ""
   },
   {
     "id": "head-10",
     "tag": "10",
     "label": "☆セミリアル:リアル官能/meion",
-    "prompt": " (1 lady), (solo), (meion), photorealistic, realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines,"
+    "prompt": " (1 lady), (solo), (meion), photorealistic, realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, natural skin tones, delicate lines,",
+    "": ""
   },
   {
     "id": "head-11",
     "tag": "11",
     "label": "☆セミリアル:リアル官能/smjim1986",
-    "prompt": " (1 lady), (solo), (smjim1986), photorealistic, realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines,"
+    "prompt": " (1 lady), (solo), (smjim1986), photorealistic, realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, natural skin tones, delicate lines,",
+    "": ""
   },
   {
     "id": "head-12",
     "tag": "12",
     "label": "☆セミリアル:リアル官能/dima_ivanov",
-    "prompt": " (1 lady), (solo), (dima_ivanov:1.2), photorealistic, realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines,"
+    "prompt": " (1 lady), (solo), (dima_ivanov:1.2), photorealistic, realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, natural skin tones, delicate lines,",
+    "": ""
   },
   {
     "id": "head-13",
     "tag": "13",
     "label": "☆セミリアル:リアル官能/kpop",
-    "prompt": " (1 lady), (solo), kpop, (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines,"
+    "prompt": " (1 lady), (solo), kpop, (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, natural skin tones, delicate lines,",
+    "": ""
   },
   {
     "id": "head-14",
     "tag": "14",
     "label": "☆セミリアル:リアル官能/cian_yo",
-    "prompt": " (1 lady), (solo), (cian_yo:0.9), photorealistic, realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines,"
+    "prompt": " (1 lady), (solo), (cian_yo:0.9), photorealistic, realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, natural skin tones, delicate lines,",
+    "": ""
   },
   {
     "id": "head-15",
     "tag": "15",
     "label": "セミリアル:リアル官能/pinup_style",
-    "prompt": " (1 lady), (solo), (pinup_style:1.3), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines,"
+    "prompt": " (1 lady), (solo), (pinup_style:1.3), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, natural skin tones, delicate lines,",
+    "": ""
   },
   {
     "id": "head-16",
     "tag": "16",
     "label": "セミリアル:リアル官能/sabu_sabuDenego",
-    "prompt": " (1 lady), (solo), (sabu_sabuDenego:0.9), (photorealistic:0.9), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines,"
+    "prompt": " (1 lady), (solo), (sabu_sabuDenego:0.9), (photorealistic:0.9), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, natural skin tones, delicate lines,",
+    "": ""
   },
   {
     "id": "head-17",
     "tag": "17",
     "label": "☆セミリアル:リアル官能/numaNoan",
-    "prompt": " (1 lady), (solo), (numaNoan), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines,"
+    "prompt": " (1 lady), (solo), (numaNoan), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, natural skin tones, delicate lines,",
+    "": ""
   },
   {
     "id": "head-18",
     "tag": "18",
     "label": "セミリアル:リアル官能/dirtyEro",
-    "prompt": " (1 lady), (solo), (dirtyEro), photorealistic, realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines,"
+    "prompt": " (1 lady), (solo), (dirtyEro), photorealistic, realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, natural skin tones, delicate lines,",
+    "": ""
   },
   {
     "id": "head-19",
     "tag": "19",
     "label": "セミリアル:リアル官能/cartoonized",
-    "prompt": " (1 lady), (solo), (cartoonized), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines,"
+    "prompt": " (1 lady), (solo), (cartoonized), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, natural skin tones, delicate lines,",
+    "": ""
   },
   {
     "id": "head-20",
     "tag": "20",
     "label": "セミリアル:リアル官能/rajah_dajah",
-    "prompt": " (1 lady), (solo), rajah_dajah, (photorealistic:0.9), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines,"
+    "prompt": " (1 lady), (solo), rajah_dajah, (photorealistic:0.9), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, natural skin tones, delicate lines,",
+    "": ""
   },
   {
     "id": "head-21",
     "tag": "21",
     "label": "セミリアル:リアル官能/toastyToast",
-    "prompt": " (1 lady), (solo), (toastyToast:1.2), (photorealistic:1.2), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, sensual tone, natural colors, delicate lines,"
+    "prompt": " (1 lady), (solo), (toastyToast:1.2), (photorealistic:1.2), realistic anatomy, (pastel color:1.2), (vibrant accents),detailed shading, balanced lighting, smooth gradients, subtle highlights, soft focus, natural skin tones, delicate lines,",
+    "": ""
   },
   {
     "id": "head-22",
     "tag": "22",
     "label": "グロウ/艶感強調",
-    "prompt": " (1 lady), (solo), (pastel color:1.2), (vibrant accents),soft shading, cinematic lighting, glossy highlights, smooth gradients, dreamy tone, gentle shadows, warm light diffusion, subtle glow, rim light, high sheen skin, luxurious atmosphere, radiant skin"
+    "prompt": " (1 lady), (solo), (pastel color:1.2), (vibrant accents),soft shading, cinematic lighting, glossy highlights, smooth gradients, dreamy tone, gentle shadows, warm light diffusion, subtle glow, rim light, high sheen skin, luxurious atmosphere, radiant skin",
+    "": ""
   },
   {
     "id": "head-23",
     "tag": "23",
     "label": "パステルドリーム(ethereal/soft focus 特化)",
-    "prompt": " (1 lady), (solo), anime style illustration, (pastel color:1.2), (vibrant accents),soft shading, dreamy lighting, smooth gradients, delicate lines, soft focus, ethereal tone, subtle shadows, smooth skin texture, hazy atmosphere, gentle bloom, floating particles, serene and dreamy mood"
+    "prompt": " (1 lady), (solo), anime style illustration, (pastel color:1.2), (vibrant accents),soft shading, dreamy lighting, smooth gradients, delicate lines, soft focus, ethereal tone, subtle shadows, smooth skin texture, hazy atmosphere, gentle bloom, floating particles, serene and dreamy mood",
+    "": ""
   },
   {
     "id": "head-24",
     "tag": "24",
     "label": "ベルベットソフトリアル(柔らか極上肌)",
-    "prompt": " (1 lady), (solo), ultra realistic, realistic anatomy,  (pastel color:1.2), (vibrant accents),velvet smooth skin texture, luxurious soft lighting, warm candlelight tones, gentle subsurface scattering, delicate blush, soft shadows, velvety skin details, plush and inviting skin, intimate warmth"
+    "prompt": " (1 lady), (solo), ultra realistic, realistic anatomy,  (pastel color:1.2), (vibrant accents),velvet smooth skin texture, luxurious soft lighting, warm candlelight tones, gentle subsurface scattering, delicate blush, soft shadows, velvety skin details, plush and inviting skin, intimate warmth",
+    "": ""
   }
 ]
