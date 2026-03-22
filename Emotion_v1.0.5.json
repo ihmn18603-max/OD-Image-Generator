@@ -4,14 +4,14 @@
     "tag": "serious",
     "label": "真剣な顔",
     "category": "face",
-    "prompt": "serious face"
+    "prompt": "(serious face:1.2)"
   },
   {
     "id": "emo-face2",
     "tag": "breathless",
     "label": "息をのむ顔",
     "category": "face",
-    "prompt": "breathless face"
+    "prompt": "(breathless face:1.2)"
   },
   {
     "id": "emo-face3",
@@ -25,21 +25,21 @@
     "tag": "smug",
     "label": "ドヤ顔",
     "category": "face",
-    "prompt": "smug face"
+    "prompt": "(smug face:1.2)"
   },
   {
     "id": "emo-face5",
     "tag": ">:(",
     "label": "怒り顔",
     "category": "face",
-    "prompt": ">:( face"
+    "prompt": "(>:( face:1.2)"
   },
   {
     "id": "emo-face6",
     "tag": "tranced",
     "label": "トランスした顔",
     "category": "face",
-    "prompt": "tranced face"
+    "prompt": "(tranced face:1.2)"
   },
   {
     "id": "emo-face7",
@@ -53,7 +53,7 @@
     "tag": "stoic",
     "label": "無表情で耐える顔",
     "category": "face",
-    "prompt": "stoic face"
+    "prompt": "(stoic face:1.2)"
   },
   {
     "id": "emo-face9",
@@ -67,7 +67,7 @@
     "tag": "bashful face",
     "label": "照れくさい顔",
     "category": "face",
-    "prompt": "bashful face"
+    "prompt": "(bashful face:1.2)"
   },
   {
     "id": "emo-face11",
@@ -95,14 +95,14 @@
     "tag": "confused ",
     "label": "困惑している顔",
     "category": "face",
-    "prompt": "confused face"
+    "prompt": "(confused face:1.2)"
   },
   {
     "id": "emo-face15",
     "tag": "delighted",
     "label": "喜んでいる顔",
     "category": "face",
-    "prompt": "delighted face"
+    "prompt": "(delighted face:1.2)"
   },
   {
     "id": "emo-face16",
@@ -137,7 +137,7 @@
     "tag": "blindfolded",
     "label": "目隠し",
     "category": "face",
-    "prompt": "blindfolded face"
+    "prompt": "(blindfolded face:1.2)"
   },
   {
     "id": "emo-face21",
@@ -151,7 +151,7 @@
     "tag": "gesugao",
     "label": "ゲス顔",
     "category": "face",
-    "prompt": "gesugao"
+    "prompt": "(gesugao:1.2)"
   },
   {
     "id": "emo-face23",
@@ -168,18 +168,32 @@
     "prompt": "(ahegao:1.2)"
   },
   {
+    "id": "emo-eyebrow1",
+    "tag": "troubled brow",
+    "label": "困り眉",
+    "category": "eyebrows",
+    "prompt": "(troubled brow:1.2)"
+  },
+  {
+    "id": "emo-eyebrow2",
+    "tag": "furrowed brow",
+    "label": "ひそめ眉",
+    "category": "eyebrows",
+    "prompt": "(furrowed brow:1.2)"
+  },
+  {
     "id": "emo-smile1",
     "tag": "shy",
     "label": "恥じらいの笑み",
     "category": "smile",
-    "prompt": "shy smile"
+    "prompt": "(shy smile:1.2)"
   },
   {
     "id": "emo-smile2",
     "tag": "slight",
     "label": "微笑",
     "category": "smile",
-    "prompt": "slight smile"
+    "prompt": "(slight smile:1.2)"
   },
   {
     "id": "emo-smile3",
@@ -200,62 +214,62 @@
     "tag": "blank",
     "label": "虚ろな視線",
     "category": "stare",
-    "prompt": "blank stare"
+    "prompt": "(blank stare:1.2)"
   },
   {
     "id": "emo-stare2",
     "tag": "longing",
     "label": "切なげな視線",
     "category": "stare",
-    "prompt": "longing stare"
+    "prompt": "(longing stare:1.2)"
   },
   {
     "id": "emo-stare3",
     "tag": "inviting",
     "label": "誘うような視線",
     "category": "stare",
-    "prompt": "inviting stare"
+    "prompt": "(inviting stare:1.2)"
   },
   {
     "id": "emo-stare4",
     "tag": "submissive",
     "label": "従順な視線",
     "category": "stare",
-    "prompt": "submissive stare"
+    "prompt": "(submissive stare:1.2)"
   },
   {
     "id": "emo-stare5",
     "tag": "dreamy",
     "label": "陶酔した視線",
     "category": "stare",
-    "prompt": "dreamy stare"
+    "prompt": "(dreamy stare:1.2)"
   },
   {
     "id": "emo-cheek1",
     "tag": "blushing",
     "label": "赤面した頬",
     "category": "cheeks",
-    "prompt": "blushing cheeks"
+    "prompt": "(blushing cheeks:1.2)"
   },
   {
     "id": "emo-cheek2",
     "tag": "full-face blush",
     "label": "顔全体が赤い",
     "category": "cheeks",
-    "prompt": "full-face blush"
+    "prompt": "(full-face blush:1.2)"
   },
   {
     "id": "emo-sp1",
+    "tag": "closed eyes, clenched teeth, furrowed brow",
+    "label": "我慢",
+    "category": "sp",
+    "prompt": "(closed eyes), (clenched teeth), (furrowed brow)"
+  },
+  {
+    "id": "emo-sp2",
     "tag": "arched back, head back",
     "label": "仰け反り",
     "category": "sp",
     "prompt": "(arched back),(head back)"
-  },
-  {
-    "id": "emo-sp2",
-    "tag": "closed eyes, clenched teeth, furrowed brow",
-    "label": "我慢",
-    "category": "sp",
-    "prompt": "closed eyes, clenched teeth, furrowed brow"
   }
 ]
