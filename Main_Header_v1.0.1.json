@@ -33,109 +33,109 @@
     "id": "head-6",
     "tag": "6",
     "label": "セミリアル:リアル官能/基本",
-    "prompt": " (1 lady), (solo), (absurdres:1.2), (toon rendering), semi-realistic anime illustration, (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
+    "prompt": " (1 lady), (solo), (absurdres:1.2), (ultra hires 3D:1.2), (8k:1.2), (soft gradient:1.2), (unreal engine 5:1.2), semi-realistic anime illustration, (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
   },
   {
     "id": "head-7",
     "tag": "7",
     "label": "セミリアル:リアル官能/urushihara_satoshi",
-    "prompt": " (1 lady), (solo), (absurdres:1.2), (toon rendering), (urushihara_satoshi), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
+    "prompt": " (1 lady), (solo), (absurdres:1.2), (ultra hires 3D:1.2), (8k:1.2), (soft gradient:1.2), (unreal engine 5:1.2), (urushihara_satoshi), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
   },
   {
     "id": "head-8",
     "tag": "8",
     "label": "セミリアル:リアル官能/kagami_hirotaka",
-    "prompt": " (1 lady), (solo), (absurdres:1.2), (toon rendering), (kagami_hirotaka), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
+    "prompt": " (1 lady), (solo), (absurdres:1.2), (ultra hires 3D:1.2), (8k:1.2), (soft gradient:1.2), (unreal engine 5:1.2), (kagami_hirotaka), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
   },
   {
     "id": "head-9",
     "tag": "9",
     "label": "セミリアル:リアル官能/ebifurya",
-    "prompt": " (1 lady), (solo), (absurdres:1.2), (toon rendering), (ebifurya:0.9), (photorealistic), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
+    "prompt": " (1 lady), (solo), (absurdres:1.2), (ultra hires 3D:1.2), (8k:1.2), (soft gradient:1.2), (unreal engine 5:1.2), (ebifurya:0.9), (photorealistic), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
   },
   {
     "id": "head-10",
     "tag": "10",
     "label": "セミリアル:リアル官能/agoto",
-    "prompt": " (1 lady), (solo), (absurdres:1.2), (toon rendering), agoto, (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
+    "prompt": " (1 lady), (solo), (absurdres:1.2), (ultra hires 3D:1.2), (8k:1.2), (soft gradient:1.2), (unreal engine 5:1.2), agoto, (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
   },
   {
     "id": "head-11",
     "tag": "11",
     "label": "☆セミリアル:リアル官能/gingami_giluziru",
-    "prompt": " (1 lady), (solo), (absurdres:1.2), (toon rendering), (gingami_giluziru), photorealistic, realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
+    "prompt": " (1 lady), (solo), (absurdres:1.2), (ultra hires 3D:1.2), (8k:1.2), (soft gradient:1.2), (unreal engine 5:1.2), (gingami_giluziru), photorealistic, realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
   },
   {
     "id": "head-12",
     "tag": "12",
     "label": "☆セミリアル:リアル官能/meion",
-    "prompt": " (1 lady), (solo), (absurdres:1.2), (toon rendering), (meion), photorealistic, realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
+    "prompt": " (1 lady), (solo), (absurdres:1.2), (ultra hires 3D:1.2), (8k:1.2), (soft gradient:1.2), (unreal engine 5:1.2), (meion), photorealistic, realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
   },
   {
     "id": "head-13",
     "tag": "13",
     "label": "☆セミリアル:リアル官能/smjim1986",
-    "prompt": " (1 lady), (solo), (absurdres:1.2), (toon rendering), (smjim1986), photorealistic, realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
+    "prompt": " (1 lady), (solo), (absurdres:1.2), (ultra hires 3D:1.2), (8k:1.2), (soft gradient:1.2), (unreal engine 5:1.2), (smjim1986), photorealistic, realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
   },
   {
     "id": "head-14",
     "tag": "14",
     "label": "☆セミリアル:リアル官能/dima_ivanov",
-    "prompt": " (1 lady), (solo), (absurdres:1.2), (toon rendering), (dima_ivanov:1.2), photorealistic, realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
+    "prompt": " (1 lady), (solo), (absurdres:1.2), (ultra hires 3D:1.2), (8k:1.2), (soft gradient:1.2), (unreal engine 5:1.2), (dima_ivanov:1.2), photorealistic, realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
   },
   {
     "id": "head-15",
     "tag": "15",
     "label": "☆セミリアル:リアル官能/kpop",
-    "prompt": " (1 lady), (solo), (absurdres:1.2), (toon rendering), kpop, (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
+    "prompt": " (1 lady), (solo), (absurdres:1.2), (ultra hires 3D:1.2), (8k:1.2), (soft gradient:1.2), (unreal engine 5:1.2), kpop, (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
   },
   {
     "id": "head-16",
     "tag": "16",
     "label": "☆セミリアル:リアル官能/cian_yo",
-    "prompt": " (1 lady), (solo), (absurdres:1.2), (toon rendering), (cian_yo:0.9), photorealistic, realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
+    "prompt": " (1 lady), (solo), (absurdres:1.2), (ultra hires 3D:1.2), (8k:1.2), (soft gradient:1.2), (unreal engine 5:1.2), (cian_yo:0.9), photorealistic, realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
   },
   {
     "id": "head-17",
     "tag": "17",
     "label": "セミリアル:リアル官能/pinup_style",
-    "prompt": " (1 lady), (solo), (absurdres:1.2), (toon rendering), (pinup_style:1.2), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
+    "prompt": " (1 lady), (solo), (absurdres:1.2), (ultra hires 3D:1.2), (8k:1.2), (soft gradient:1.2), (unreal engine 5:1.2), (pinup_style:1.2), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
   },
   {
     "id": "head-18",
     "tag": "18",
     "label": "セミリアル:リアル官能/sabu_sabuDenego",
-    "prompt": " (1 lady), (solo), (absurdres:1.2), (toon rendering), (sabu_sabuDenego:0.9), (photorealistic:0.9), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
+    "prompt": " (1 lady), (solo), (absurdres:1.2), (ultra hires 3D:1.2), (8k:1.2), (soft gradient:1.2), (unreal engine 5:1.2), (sabu_sabuDenego:0.9), (photorealistic:0.9), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
   },
   {
     "id": "head-19",
     "tag": "19",
     "label": "☆セミリアル:リアル官能/numaNoan",
-    "prompt": " (1 lady), (solo), (absurdres:1.2), (toon rendering), (numaNoan), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
+    "prompt": " (1 lady), (solo), (absurdres:1.2), (ultra hires 3D:1.2), (8k:1.2), (soft gradient:1.2), (unreal engine 5:1.2), (numaNoan), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
   },
   {
     "id": "head-20",
     "tag": "20",
     "label": "セミリアル:リアル官能/dirtyEro",
-    "prompt": " (1 lady), (solo), (absurdres:1.2), (toon rendering), (dirtyEro:0.9), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
+    "prompt": " (1 lady), (solo), (absurdres:1.2), (ultra hires 3D:1.2), (8k:1.2), (soft gradient:1.2), (unreal engine 5:1.2), (dirtyEro:0.9), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
   },
   {
     "id": "head-21",
     "tag": "21",
     "label": "セミリアル:リアル官能/cartoonized",
-    "prompt": " (1 lady), (solo), (absurdres:1.2), (toon rendering), (cartoonized), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
+    "prompt": " (1 lady), (solo), (absurdres:1.2), (ultra hires 3D:1.2), (8k:1.2), (soft gradient:1.2), (unreal engine 5:1.2), (cartoonized), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
   },
   {
     "id": "head-22",
     "tag": "22",
     "label": "セミリアル:リアル官能/rajah_dajah",
-    "prompt": " (1 lady), (solo), (absurdres:1.2), (toon rendering), rajah_dajah, (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
+    "prompt": " (1 lady), (solo), (absurdres:1.2), (ultra hires 3D:1.2), (8k:1.2), (soft gradient:1.2), (unreal engine 5:1.2), rajah_dajah, (photorealistic:0.8), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
   },
   {
     "id": "head-23",
     "tag": "23",
     "label": "セミリアル:リアル官能/toastyToast",
-    "prompt": " (1 lady), (solo), (absurdres:1.2), (toon rendering), (toastyToast), (photorealistic), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
+    "prompt": " (1 lady), (solo), (absurdres:1.2), (ultra hires 3D:1.2), (8k:1.2), (soft gradient:1.2), (unreal engine 5:1.2), (toastyToast), (photorealistic), realistic anatomy, (pastel color:1.2), detailed shading, balanced light, smooth gradients, soft focus, delicate lines,"
   },
   {
     "id": "head-24",
