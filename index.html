@@ -131,9 +131,11 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
   }
 
   async function loadJSON(url){
-    const res = await fetch(url, {cache:'no-store'});
-    if(!res.ok) throw new Error(`Fetch失敗: ${url}`);
-    return res.json();
+  // URLの末尾に実行時刻を付けて、キャッシュを完全に無効化する
+  const cacheBuster = url + "?t=" + Date.now();
+  const res = await fetch(cacheBuster, {cache:'no-store'});
+  if(!res.ok) throw new Error(`Fetch失敗: ${url}`);
+  return res.json();
   }
 
   const state = {
