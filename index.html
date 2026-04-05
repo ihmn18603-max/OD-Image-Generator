@@ -7,6 +7,8 @@
   <style>
     :root{
       --bg:#0f1520; --panel:#121822; --ink:#eee; --muted:#9ecbff; --line:#333; --accent:#1f7bf2; --chip:#1a1f2e;
+      --search-bg:#0d1829; --search-border:#2a3f6a; --tag-active:#1f7bf2; --tag-inactive:#1a1f2e;
+      --result-bg:#141d2e; --result-hover:#1a2540;
     }
     *{box-sizing:border-box}
     body{margin:0;font-family:system-ui, -apple-system, Segoe UI, Roboto, sans-serif;background:var(--bg);color:var(--ink)}
@@ -34,6 +36,79 @@
     .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
     .btn-ghost{background:transparent;border:1px solid #3a4b6a;color:var(--muted)}
     .muted{opacity:.8}
+
+    /* ── Search Mode UI ── */
+    .intensity-header{display:flex;align-items:center;gap:10px;margin:20px 0 8px;flex-wrap:wrap}
+    .intensity-header h2{margin:0}
+    .btn-search-toggle{padding:6px 14px;border-radius:20px;border:1px solid var(--search-border);background:transparent;color:var(--muted);font-size:13px;cursor:pointer;transition:.2s;margin-top:0}
+    .btn-search-toggle.active{background:var(--accent);border-color:var(--accent);color:white}
+    .btn-search-toggle:hover{border-color:var(--accent);color:var(--ink)}
+
+    #searchPanel{
+      display:none;
+      background:var(--search-bg);
+      border:1px solid var(--search-border);
+      border-radius:10px;
+      padding:14px;
+      margin-bottom:10px;
+      animation:fadeIn .2s ease;
+    }
+    #searchPanel.visible{display:block}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+
+    .filter-row{margin-bottom:12px}
+    .filter-label{font-size:12px;color:var(--muted);margin-bottom:6px;font-weight:600;letter-spacing:.04em}
+    .filter-tags{display:flex;flex-wrap:wrap;gap:6px}
+    .filter-tag{
+      padding:5px 12px;
+      border-radius:20px;
+      border:1px solid #2a3f6a;
+      background:var(--tag-inactive);
+      color:#aac;
+      font-size:12px;
+      cursor:pointer;
+      transition:.15s;
+      user-select:none;
+    }
+    .filter-tag:hover{border-color:var(--accent);color:var(--ink)}
+    .filter-tag.active{background:var(--accent);border-color:var(--accent);color:white;box-shadow:0 0 6px rgba(31,123,242,.5)}
+    .filter-tag.any{border-style:dashed;color:#7a9ab0}
+    .filter-tag.any.active{background:#243048;border-style:solid;color:var(--muted);box-shadow:none}
+
+    .search-result-header{
+      display:flex;align-items:center;justify-content:space-between;
+      font-size:12px;color:var(--muted);margin:10px 0 6px;
+      border-top:1px solid #1e2d45;padding-top:10px;
+    }
+    #resultCount{font-weight:700;color:var(--ink)}
+
+    #resultList{
+      max-height:280px;
+      overflow-y:auto;
+      border:1px solid #1e2d45;
+      border-radius:8px;
+    }
+    .result-item{
+      display:flex;align-items:flex-start;gap:10px;
+      padding:10px 12px;
+      border-bottom:1px solid #1a2535;
+      cursor:pointer;
+      transition:.15s;
+    }
+    .result-item:last-child{border-bottom:none}
+    .result-item:hover{background:var(--result-hover)}
+    .result-item.selected{background:#1a3055;border-left:3px solid var(--accent)}
+    .result-item input[type="radio"]{accent-color:var(--accent);flex-shrink:0;margin-top:3px}
+    .result-item-body{min-width:0}
+    .result-label{font-size:13px;font-weight:600;color:var(--ink);margin-bottom:3px}
+    .result-tags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:4px}
+    .result-tag{font-size:11px;padding:2px 7px;border-radius:10px;background:#1e2d45;color:#8aabcf}
+    .result-tag.lv{background:#1a3a5c;color:#6bbfff}
+    .result-prompt{font-size:11px;color:#556;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:600px}
+    #resultList::-webkit-scrollbar{width:6px}
+    #resultList::-webkit-scrollbar-track{background:#0d1525}
+    #resultList::-webkit-scrollbar-thumb{background:#2a3f6a;border-radius:3px}
+    .no-results{padding:20px;text-align:center;color:#556;font-size:13px}
   </style>
 </head>
 <body>
@@ -44,9 +119,54 @@
     <select id="selHeader" aria-label="Main Header"></select>
     <div id="headerPrompt" class="prompt-box" aria-live="polite"></div>
 
-    <h2>② Intensity（シチュエーション）</h2>
+    <!-- ② Intensity with search mode -->
+    <div class="intensity-header">
+      <h2>② Intensity（シチュエーション）</h2>
+      <button id="btnSearchToggle" class="btn-search-toggle" title="絞り込み検索モードを切替">🔍 検索モード</button>
+    </div>
+
+    <!-- 通常セレクト -->
     <select id="selIntensity" aria-label="Intensity"></select>
     <div id="intensityPrompt" class="prompt-box" aria-live="polite"></div>
+
+    <!-- 検索パネル -->
+    <div id="searchPanel">
+      <!-- フィルター行 -->
+      <div class="filter-row">
+        <div class="filter-label">Level</div>
+        <div class="filter-tags" id="filterLevel"></div>
+      </div>
+      <div class="filter-row">
+        <div class="filter-label">シチュエーション</div>
+        <div class="filter-tags" id="filterSituation"></div>
+      </div>
+      <div class="filter-row">
+        <div class="filter-label">拡張</div>
+        <div class="filter-tags" id="filterExpansion"></div>
+      </div>
+      <div class="filter-row">
+        <div class="filter-label">姿勢</div>
+        <div class="filter-tags" id="filterPosture"></div>
+      </div>
+      <div class="filter-row">
+        <div class="filter-label">状態</div>
+        <div class="filter-tags" id="filterState"></div>
+      </div>
+      <div class="filter-row">
+        <div class="filter-label">挿入物</div>
+        <div class="filter-tags" id="filterInsert"></div>
+      </div>
+      <div class="filter-row">
+        <div class="filter-label">精液有/無</div>
+        <div class="filter-tags" id="filterSemen"></div>
+      </div>
+
+      <div class="search-result-header">
+        <span>結果: <span id="resultCount">0</span> 件</span>
+        <button class="btn-ghost" id="btnResetFilters" style="padding:4px 10px;font-size:12px;margin-top:0">フィルターをリセット</button>
+      </div>
+      <div id="resultList"></div>
+    </div>
 
     <h2 class="row">③ Emotion（各カテゴリから1つずつ） <span id="emotionCount" class="muted">0 / 0</span></h2>
     <div id="emotionOptions" class="emotion-grid"></div>
@@ -113,17 +233,16 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
   const urls = {
     header:    base + "Main_Header_v1.0.1.json",
     intensity: base + "Intensity_v1.0.1.json",
-    emotion:   base + "Emotion_v1.0.5.json", // ← category を含む生データを利用
+    emotion:   base + "Emotion_v1.0.5.json",
     extra:     base + "Extra_elements_v1.0.2.json",
     outfit:    base + "Cloth_v1.0.2.json",
     accessory: base + "Accessory_v1.0.2.json"
   };
 
-  // kind-aware mapping（emotion 以外は toOptions 化）
   function toOptionsByKind(data, kind){
     switch(kind){
       case 'header':    return data.map((r,i)=>({id:i, label:r.label ?? r.Label ?? r.name ?? `Header ${i+1}`,   prompt:r['Header Prompt'] ?? r.prompt ?? r.Prompt ?? ''}));
-      case 'intensity': return data.map((r,i)=>({id:i, label:r.label ?? r.Label ?? r.name ?? `Intensity ${i+1}`,prompt:r['Template Prompt'] ?? r.prompt ?? r.Prompt ?? ''}));
+      case 'intensity': return data.map((r,i)=>({id:i, label:r.label ?? r.Label ?? r.name ?? `Intensity ${i+1}`,prompt:r['Template Prompt'] ?? r.prompt ?? r.Prompt ?? '', raw:r}));
       case 'outfit':    return data.map((r,i)=>({id:i, label:r.label ?? r.Label ?? r.name ?? `Outfit ${i+1}`,   prompt:Array.isArray(r['outfit prompt'])? r['outfit prompt'].join(', ') : (r.prompt ?? r.Prompt ?? '')}));
       case 'accessory': return data.map((r,i)=>({id:i, label:r.label ?? r.Label ?? r.name ?? `Accessory ${i+1}`,prompt:r.prompt ?? r.Prompt ?? ''}));
       default:          return data.map((r,i)=>({id:i, label:r.label ?? r.name ?? `Item ${i+1}`,               prompt:r.prompt ?? r.Prompt ?? ''}));
@@ -131,16 +250,17 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
   }
 
   async function loadJSON(url){
-  // URLの末尾に実行時刻を付けて、キャッシュを完全に無効化する
-  const cacheBuster = url + "?t=" + Date.now();
-  const res = await fetch(cacheBuster, {cache:'no-store'});
-  if(!res.ok) throw new Error(`Fetch失敗: ${url}`);
-  return res.json();
+    const cacheBuster = url + "?t=" + Date.now();
+    const res = await fetch(cacheBuster, {cache:'no-store'});
+    if(!res.ok) throw new Error(`Fetch失敗: ${url}`);
+    return res.json();
   }
 
   const state = {
-    header:[], intensity:[], emotion:[], extra:[], outfit:[], accessory:[],
-    sel: { header:null, intensity:null, emotionByCat:{}, extraChoices:{}, extraPrompts:[], outfit:null, accessory:[] }
+    header:[], intensity:[], intensityRaw:[], emotion:[], extra:[], outfit:[], accessory:[],
+    sel: { header:null, intensity:null, emotionByCat:{}, extraChoices:{}, extraPrompts:[], outfit:null, accessory:[] },
+    searchMode: false,
+    filters: { level:null, 'シチュエーション':null, '拡張':null, '姿勢':null, '状態':null, '挿入物':null, '精液有/無':null }
   };
 
   function fillSelect(sel, opts, {multi=false, withEmpty=true}={}){
@@ -162,7 +282,6 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
     if(state.sel.header)    parts.push(state.sel.header.prompt);
     if(state.sel.intensity) parts.push(state.sel.intensity.prompt);
 
-    // Emotion: カテゴリごとに1つ
     const emoSelected = Object.values(state.sel.emotionByCat).filter(Boolean);
     if(emoSelected.length) parts.push(emoSelected.map(x=>x.prompt).join(', '));
 
@@ -180,14 +299,164 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
 
   function setStatus(el, msg){ el.textContent = msg; setTimeout(()=> el.textContent = '', 1800); }
 
+  // ============================================================
+  // SEARCH MODE
+  // ============================================================
+
+  const FILTER_KEYS = ['level', 'シチュエーション', '拡張', '姿勢', '状態', '挿入物', '精液有/無'];
+  const FILTER_IDS  = ['filterLevel','filterSituation','filterExpansion','filterPosture','filterState','filterInsert','filterSemen'];
+
+  function getFilteredItems(){
+    return state.intensityRaw.filter(item=>{
+      return FILTER_KEYS.every(key=>{
+        const f = state.filters[key];
+        return !f || String(item[key]) === f;
+      });
+    });
+  }
+
+  function renderFilterTags(){
+    FILTER_KEYS.forEach((key, ki)=>{
+      const container = $(`#${FILTER_IDS[ki]}`);
+      if(!container) return;
+      container.innerHTML = '';
+
+      // unique values
+      const vals = [...new Set(state.intensityRaw.map(r=>String(r[key]||'').trim()).filter(Boolean))].sort((a,b)=>{
+        if(!isNaN(a) && !isNaN(b)) return Number(a)-Number(b);
+        return a.localeCompare(b,'ja');
+      });
+
+      // "すべて" tag
+      const anyTag = document.createElement('span');
+      anyTag.className = 'filter-tag any' + (!state.filters[key] ? ' active' : '');
+      anyTag.textContent = 'すべて';
+      anyTag.addEventListener('click', ()=>{
+        state.filters[key] = null;
+        renderFilterTags();
+        renderResults();
+      });
+      container.appendChild(anyTag);
+
+      vals.forEach(v=>{
+        const tag = document.createElement('span');
+        tag.className = 'filter-tag' + (state.filters[key] === v ? ' active' : '');
+        tag.textContent = v;
+        tag.addEventListener('click', ()=>{
+          state.filters[key] = (state.filters[key] === v) ? null : v;
+          renderFilterTags();
+          renderResults();
+        });
+        container.appendChild(tag);
+      });
+    });
+  }
+
+  function renderResults(){
+    const filtered = getFilteredItems();
+    $('#resultCount').textContent = filtered.length;
+
+    const list = $('#resultList');
+    list.innerHTML = '';
+
+    if(!filtered.length){
+      list.innerHTML = '<div class="no-results">条件に一致するIntensityがありません</div>';
+      return;
+    }
+
+    filtered.forEach(raw=>{
+      const opt = state.intensity.find(x=> x.raw === raw);
+      if(!opt) return;
+      const isSelected = state.sel.intensity && String(state.sel.intensity.id) === String(opt.id);
+
+      const item = document.createElement('div');
+      item.className = 'result-item' + (isSelected ? ' selected' : '');
+
+      const radio = document.createElement('input');
+      radio.type = 'radio';
+      radio.name = 'intensitySearch';
+      radio.value = String(opt.id);
+      radio.checked = isSelected;
+
+      const body = document.createElement('div');
+      body.className = 'result-item-body';
+
+      const labelDiv = document.createElement('div');
+      labelDiv.className = 'result-label';
+      labelDiv.textContent = opt.label;
+
+      const tagsDiv = document.createElement('div');
+      tagsDiv.className = 'result-tags';
+
+      const addTag = (text, extra='')=>{
+        const t = document.createElement('span');
+        t.className = 'result-tag' + (extra ? ' '+extra : '');
+        t.textContent = text;
+        tagsDiv.appendChild(t);
+      };
+      addTag(`Lv${raw.level}`, 'lv');
+      if(raw['シチュエーション']) addTag(raw['シチュエーション']);
+      if(raw['拡張'] && raw['拡張'] !== '拡張無し') addTag(raw['拡張']);
+      if(raw['姿勢'] && raw['姿勢'] !== '-') addTag(raw['姿勢']);
+      if(raw['状態'] && raw['状態'] !== '無し') addTag(raw['状態']);
+      if(raw['挿入物'] && raw['挿入物'] !== '無し') addTag(raw['挿入物']);
+      if(raw['精液有/無'] && raw['精液有/無'] !== '精液無') addTag(raw['精液有/無']);
+
+      const promptDiv = document.createElement('div');
+      promptDiv.className = 'result-prompt';
+      promptDiv.textContent = opt.prompt;
+      promptDiv.title = opt.prompt;
+
+      body.appendChild(labelDiv);
+      body.appendChild(tagsDiv);
+      body.appendChild(promptDiv);
+      item.appendChild(radio);
+      item.appendChild(body);
+
+      // click handler
+      const select = ()=>{
+        state.sel.intensity = opt;
+        // sync normal select
+        $('#selIntensity').value = String(opt.id);
+        $('#intensityPrompt').textContent = opt.prompt;
+        build();
+        // re-render to update selected state
+        renderResults();
+      };
+      item.addEventListener('click', select);
+
+      list.appendChild(item);
+    });
+  }
+
+  function toggleSearchMode(force){
+    state.searchMode = (force !== undefined) ? force : !state.searchMode;
+    const panel = $('#searchPanel');
+    const btn   = $('#btnSearchToggle');
+    const sel   = $('#selIntensity');
+
+    if(state.searchMode){
+      panel.classList.add('visible');
+      btn.classList.add('active');
+      sel.style.display = 'none';
+      renderFilterTags();
+      renderResults();
+    } else {
+      panel.classList.remove('visible');
+      btn.classList.remove('active');
+      sel.style.display = 'block';
+    }
+  }
+
   // ---------- init ----------
   async function init(){
     try{
       state.header    = toOptionsByKind(await loadJSON(urls.header),    'header');
-      state.intensity = toOptionsByKind(await loadJSON(urls.intensity), 'intensity');
-      // Emotion は生配列（category/label/prompt/id 等）を保持
+      const rawIntensity = await loadJSON(urls.intensity);
+      state.intensityRaw = rawIntensity;
+      state.intensity = toOptionsByKind(rawIntensity, 'intensity');
       state.emotion   = await loadJSON(urls.emotion);
-      state.extra     = await loadJSON(urls.extra); // category, label, prompt, category level
+      state.extra     = await loadJSON(urls.extra);
       state.outfit    = toOptionsByKind(await loadJSON(urls.outfit),    'outfit');
       state.accessory = toOptionsByKind(await loadJSON(urls.accessory), 'accessory');
 
@@ -196,51 +465,41 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
       fillSelect($('#selOutfit'),    state.outfit);
       fillSelect($('#selAccessory'), state.accessory, {multi:true, withEmpty:false});
 
-      // --- Emotion: カテゴリ別ラジオ UI ---
+      // --- Emotion ---
       const emoBox = $('#emotionOptions');
       emoBox.innerHTML = '';
-
-      // グルーピング（小文字カテゴリ）
       const emoGrouped = {};
       state.emotion.forEach(o=>{
         const cat = String(o.category || 'other').toLowerCase();
         (emoGrouped[cat] ||= []).push(o);
       });
-
-      // 表示順（存在するもののみ）
       const emoOrderPref = ['face','smile','stare','special','other'];
       const emoCats = Object.keys(emoGrouped).sort((a,b)=>{
         const ia = emoOrderPref.indexOf(a), ib = emoOrderPref.indexOf(b);
         return (ia===-1?999:ia) - (ib===-1?999:ib) || a.localeCompare(b);
       });
 
-      // カウンタ更新
       function refreshEmotionCounter(){
         const total = emoCats.length;
         const selected = Object.values(state.sel.emotionByCat).filter(Boolean).length;
         $('#emotionCount').textContent = `${selected} / ${total}`;
       }
 
-      // 描画
       emoCats.forEach(cat=>{
         const wrap = document.createElement('div');
         wrap.className = 'radio-group';
-
         const title = document.createElement('div');
         title.className = 'radio-group__title';
         title.innerHTML = `<strong>${cat}</strong><span class="chip">1つ選択</span>`;
         wrap.appendChild(title);
 
-        // なし
         const noneId = `emo_${cat}__none`;
         const noneInput = document.createElement('input');
         noneInput.type = 'radio'; noneInput.name = `emo_${cat}`; noneInput.id = noneId; noneInput.value = '';
         noneInput.onchange = ()=>{
           delete state.sel.emotionByCat[cat];
-          $('#emotionPrompt').textContent = Object.values(state.sel.emotionByCat)
-            .filter(Boolean).map(x=>x.prompt).join(', ');
-          refreshEmotionCounter();
-          build();
+          $('#emotionPrompt').textContent = Object.values(state.sel.emotionByCat).filter(Boolean).map(x=>x.prompt).join(', ');
+          refreshEmotionCounter(); build();
         };
         const noneLabel = document.createElement('label');
         noneLabel.setAttribute('for', noneId);
@@ -249,35 +508,27 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
         noneLabel.appendChild(noneInput); noneLabel.appendChild(noneSpan);
         wrap.appendChild(noneLabel);
 
-        // 選択肢
         emoGrouped[cat].forEach((opt, idx)=>{
           const id = `emo_${cat}__${idx}`;
           const radio = document.createElement('input');
           radio.type = 'radio'; radio.name = `emo_${cat}`; radio.id = id; radio.value = opt.id ?? idx;
           radio.onchange = ()=>{
             state.sel.emotionByCat[cat] = opt;
-            $('#emotionPrompt').textContent = Object.values(state.sel.emotionByCat)
-              .filter(Boolean).map(x=>x.prompt).join(', ');
-            refreshEmotionCounter();
-            build();
+            $('#emotionPrompt').textContent = Object.values(state.sel.emotionByCat).filter(Boolean).map(x=>x.prompt).join(', ');
+            refreshEmotionCounter(); build();
           };
-
           const label = document.createElement('label');
           label.setAttribute('for', id);
           const span = document.createElement('span');
           span.textContent = opt.label || opt.tag || opt.prompt || `Option ${idx+1}`;
           label.appendChild(radio); label.appendChild(span);
-
           wrap.appendChild(label);
         });
-
         emoBox.appendChild(wrap);
       });
-
-      // 初期カウンタ
       refreshEmotionCounter();
 
-      // ------- Extra Elements: ラジオ UI -------
+      // ------- Extra Elements -------
       const container = $('#extraElements');
       container.innerHTML = '';
       const grouped = {};
@@ -285,7 +536,6 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
         const cat = item.category || 'Other';
         (grouped[cat] ||= []).push(item);
       });
-
       const preferredOrder = ['eye','mouth','tongue','saliva','sweat','pussy juice','Other'];
       const keys = Object.keys(grouped).sort((a,b)=>{
         const ia = preferredOrder.indexOf(String(a).toLowerCase());
@@ -300,7 +550,6 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
         title.innerHTML = `<strong>${cat}</strong><span class="chip">1つ選択</span>`;
         wrap.appendChild(title);
 
-        // none option
         const noneId = `${cat}__none`;
         const noneInput = document.createElement('input');
         noneInput.type = 'radio'; noneInput.name = cat; noneInput.id = noneId; noneInput.value = '';
@@ -318,7 +567,7 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
         wrap.appendChild(noneLabel);
 
         grouped[cat].forEach((opt, idx)=>{
-          const id = `${cat}__${idx}`; // 安全な一意ID
+          const id = `${cat}__${idx}`;
           const radio = document.createElement('input');
           radio.type = 'radio'; radio.name = cat; radio.id = id; radio.value = opt.prompt || '';
           radio.onchange = ()=>{
@@ -366,6 +615,13 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
     build();
   });
 
+  $('#btnSearchToggle').addEventListener('click', ()=> toggleSearchMode());
+  $('#btnResetFilters').addEventListener('click', ()=>{
+    FILTER_KEYS.forEach(k=> state.filters[k] = null);
+    renderFilterTags();
+    renderResults();
+  });
+
   $('#btnCopy').addEventListener('click', async()=>{
     try{ await navigator.clipboard.writeText($('#out').value); setStatus($('#statusCustom'), 'コピーしました！'); }
     catch{ setStatus($('#statusCustom'), 'コピー失敗'); }
@@ -379,12 +635,9 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
     catch{ setStatus($('#statusNeg'), 'コピー失敗'); }
   });
 
-  // Clear buttons
   $('#btnClear135').addEventListener('click', ()=>{
     $('#selHeader').value = ''; state.sel.header = null; $('#headerPrompt').textContent = '';
     $('#selIntensity').value = ''; state.sel.intensity = null; $('#intensityPrompt').textContent = '';
-
-    // Emotion: 全カテゴリ未選択へ
     state.sel.emotionByCat = {};
     $$('#emotionOptions input[type="radio"]').forEach(r=> r.checked = false);
     $('#emotionPrompt').textContent = '';
@@ -392,25 +645,23 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
       const groups = new Set($$('#emotionOptions input[type="radio"]').map(r=>r.name));
       $('#emotionCount').textContent = `0 / ${groups.size || 0}`;
     })();
-
     Object.keys(state.sel.extraChoices).forEach(k=> delete state.sel.extraChoices[k]);
     state.sel.extraPrompts = []; $('#extraPrompt').textContent = '';
+    // 検索モードなら結果も更新
+    if(state.searchMode) renderResults();
     build();
   });
   $('#btnClear68').addEventListener('click', ()=>{
     $('#selOutfit').value = ''; state.sel.outfit = null; $('#outfitPrompt').textContent = '';
     $('#selAccessory').value = null; state.sel.accessory = []; $('#accessoryPrompt').textContent = '';
-    // checklist側も全部オフ
     $$('#accessoryChecklist input[type="checkbox"]').forEach(ch=> ch.checked = false);
     build();
   });
 
-  // Accessory: checklist UI for smartphone
   $('#btnToggleAccessory').addEventListener('click', ()=>{
     const list = $('#accessoryChecklist');
     const sel  = $('#selAccessory');
     if(list.style.display === 'none' || list.style.display === ''){
-      // build checklist from current data
       list.innerHTML = '';
       state.accessory.forEach(it=>{
         const id = `acc__${it.id}`;
@@ -420,7 +671,6 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
         const cb = document.createElement('input');
         cb.type = 'checkbox'; cb.id = id; cb.value = String(it.id); cb.style.display='none';
         const span = document.createElement('span'); span.textContent = it.label;
-        // reflect current selection
         cb.checked = !!state.sel.accessory.find(a=> String(a.id)===String(it.id));
         cb.onchange = ()=>{
           if(cb.checked){ sel.querySelector(`option[value="${it.id}"]`).selected = true; }
