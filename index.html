@@ -141,7 +141,7 @@
         <div class="filter-tags" id="filterSituation"></div>
       </div>
       <div class="filter-row">
-        <div class="filter-label">拡張</div>
+        <div class="filter-label">対象</div>
         <div class="filter-tags" id="filterExpansion"></div>
       </div>
       <div class="filter-row">
@@ -157,7 +157,7 @@
         <div class="filter-tags" id="filterInsert"></div>
       </div>
       <div class="filter-row">
-        <div class="filter-label">精液有/無</div>
+        <div class="filter-label">精液有無</div>
         <div class="filter-tags" id="filterSemen"></div>
       </div>
 
@@ -260,7 +260,7 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
     header:[], intensity:[], intensityRaw:[], emotion:[], extra:[], outfit:[], accessory:[],
     sel: { header:null, intensity:null, emotionByCat:{}, extraChoices:{}, extraPrompts:[], outfit:null, accessory:[] },
     searchMode: false,
-    filters: { level:null, 'シチュエーション':null, '拡張':null, '姿勢':null, '状態':null, '挿入物':null, '精液有/無':null }
+    filters: { level:null, 'シチュエーション':null, '対象':null, '姿勢':null, '状態':null, '挿入物':null, '精液有無':null }
   };
 
   function fillSelect(sel, opts, {multi=false, withEmpty=true}={}){
@@ -303,7 +303,7 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
   // SEARCH MODE
   // ============================================================
 
-  const FILTER_KEYS = ['level', 'シチュエーション', '拡張', '姿勢', '状態', '挿入物', '精液有/無'];
+  const FILTER_KEYS = ['level', 'シチュエーション', '対象', '姿勢', '状態', '挿入物', '精液有無'];
   const FILTER_IDS  = ['filterLevel','filterSituation','filterExpansion','filterPosture','filterState','filterInsert','filterSemen'];
 
   function getFilteredItems(){
@@ -396,11 +396,11 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
       };
       addTag(`Lv${raw.level}`, 'lv');
       if(raw['シチュエーション']) addTag(raw['シチュエーション']);
-      if(raw['拡張'] && raw['拡張'] !== '拡張無し') addTag(raw['拡張']);
+      if(raw['対象'] && raw['対象'] !== '-') addTag(raw['対象']);
       if(raw['姿勢'] && raw['姿勢'] !== '-') addTag(raw['姿勢']);
-      if(raw['状態'] && raw['状態'] !== '無し') addTag(raw['状態']);
-      if(raw['挿入物'] && raw['挿入物'] !== '無し') addTag(raw['挿入物']);
-      if(raw['精液有/無'] && raw['精液有/無'] !== '精液無') addTag(raw['精液有/無']);
+      if(raw['状態'] && raw['状態'] !== '-') addTag(raw['状態']);
+      if(raw['挿入物'] && raw['挿入物'] !== '-') addTag(raw['挿入物']);
+      if(raw['精液有無'] && raw['精液有無'] !== '-') addTag(raw['精液有無']);
 
       const promptDiv = document.createElement('div');
       promptDiv.className = 'result-prompt';
