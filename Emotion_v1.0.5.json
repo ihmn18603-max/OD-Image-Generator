@@ -267,9 +267,23 @@
   },
   {
     "id": "emo-sp2",
+    "tag": "body trembling",
+    "label": "痙攣",
+    "category": "sp",
+    "prompt": "(body trembling:1.2)"
+  },
+  {
+    "id": "emo-sp3",
     "tag": "arched back, head back",
     "label": "仰け反り",
     "category": "sp",
-    "prompt": "(arched back),(head back)"
+    "prompt": "(arched back), (head back)"
+  },
+  {
+    "id": "emo-sp4",
+    "tag": "body trembling, arched back, head back",
+    "label": "痙攣仰け反り",
+    "category": "sp",
+    "prompt": "(body trembling:1.2), (arched back), (head back)"
   }
 ]
