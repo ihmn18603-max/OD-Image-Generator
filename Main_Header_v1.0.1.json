@@ -15,7 +15,7 @@
     "id": "head-3",
     "tag": "3",
     "label": "リアルセクシー",
-    "prompt": " (1woman), (absurdres:1.2),ultra realistic, photorealistic, realistic anatomy, (pastel color:1.2), detailed lighting, soft shadows, glossy skin texture, smooth gradients, cinematic highlights, sensual atmosphere, warm tone, alluring gaze, seductive expression, intimate mood, subtle blush, inviting pose"
+    "prompt": " (1woman), (absurdres:1.2), ultra realistic, photorealistic, realistic anatomy, (pastel color:1.2), detailed lighting, soft shadows, glossy skin texture, smooth gradients, cinematic highlights, sensual atmosphere, warm tone, alluring gaze, seductive expression, intimate mood, subtle blush, inviting pose"
   },
   {
     "id": "head-4",
@@ -27,7 +27,7 @@
     "id": "head-5",
     "tag": "5",
     "label": "アニメリアル",
-    "prompt": " (1woman), raw photo, 8k resolution, dslr, (art by artgerm:1.2), realistic, (grim light), sharp focus,highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), 8k resolution, dslr, (art by artgerm:1.2), realistic, (grim light), sharp focus,highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-6",
@@ -38,13 +38,13 @@
   {
     "id": "head-7",
     "tag": "7",
-    "label": "セミリアル:①",
-    "prompt": " (1woman), raw photo, 8k resolution, dslr, (art by artgerm:1.2), semi-realistic,, (grim light), sharp focus,highly detailed, incredible hair rendering, perfect facial structure,"
+    "label": "セミリアル:aregerm",
+    "prompt": " (1woman), 8k resolution, dslr, (art by artgerm:1.2), semi-realistic,, (grim light), sharp focus,highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-8",
     "tag": "8",
-    "label": "セミリアル:②",
+    "label": "セミリアル:disney",
     "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (disney), semi-realistic, (photorealistic:0.8), (realistic anatomy), (pastel color:1.2), (grim light), (soft gradient:1.2), smooth gradient, detailed shading, soft focus, (absurd detailed skin:1.2), (absurd detailed pussy:1.2), (absurd detailed face), (absurd detailed eyes), "
   },
   {
