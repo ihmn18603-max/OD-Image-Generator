@@ -51,151 +51,151 @@
     "id": "head-9",
     "tag": "9",
     "label": "セミリアル:やわらか官能",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), semi-realistic, realistic anatomy, pastel color, balanced lighting, sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), semi-realistic, realistic anatomy, pastel color, balanced lighting, sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-10",
     "tag": "10",
     "label": "セミリアル/disney",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (disney), (realistic), (photorealistic), (realistic anatomy), (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (disney), (semi-realistic), (photorealistic), (realistic anatomy), (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-11",
     "tag": "11",
     "label": "セミリアル/v-mag",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (v-mag), (realistic), (photorealistic), (realistic anatomy), (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (v-mag), (realistic), (photorealistic), (realistic anatomy), (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-12",
     "tag": "12",
     "label": "セミリアル/rororogi_mogera",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (rororogi_mogera:1.3), semi-realistic, (photorealistic), (realistic anatomy), (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (rororogi_mogera:1.3), semi-realistic, (photorealistic), (realistic anatomy), (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-13",
     "tag": "13",
     "label": "セミリアル/gorgeous mushroom",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (gorgeous mushroom:1.2), (realistic:1.2), (photorealistic), (realistic anatomy), (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (gorgeous mushroom:1.2), (realistic:1.2), (photorealistic), (realistic anatomy), (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-14",
     "tag": "14",
     "label": "セミリアル/hisasi",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (hisasi), realistic, (photorealistic:0.8), (realistic anatomy), (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (hisasi), realistic, (photorealistic:0.8), (realistic anatomy), (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-15",
     "tag": "15",
     "label": "セミリアル/diives",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (diives), (realistic), (photorealistic), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (diives), (realistic), (photorealistic), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-16",
     "tag": "16",
     "label": "セミリアル/fugtrup",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (fugtrup), (realistic), (photorealistic), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (fugtrup), (realistic), (photorealistic), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-17",
     "tag": "17",
     "label": "セミリアル/urushihara_satoshi",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (urushihara_satoshi), (realistic), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (urushihara_satoshi), (realistic), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-18",
     "tag": "18",
     "label": "セミリアル/kagami_hirotaka",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (kagami_hirotaka), (realistic), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (kagami_hirotaka), (realistic), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-19",
     "tag": "19",
     "label": "セミリアル/ebifurya",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (ebifurya:0.9), (realistic), (photorealistic), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (ebifurya:0.9), (realistic), (photorealistic), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-20",
     "tag": "20",
     "label": "セミリアル/agoto",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), agoto, (realistic), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), agoto, (realistic), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-21",
     "tag": "21",
     "label": "セミリアル/gingami_giluziru",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (gingami_giluziru), (realistic), photorealistic, realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (gingami_giluziru), (realistic), photorealistic, realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-22",
     "tag": "22",
     "label": "セミリアル/meion",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (meion), (realistic), photorealistic, realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (meion), (realistic), photorealistic, realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-23",
     "tag": "23",
     "label": "セミリアル/smjim1986",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (smjim1986), (realistic), photorealistic, realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (smjim1986), (realistic), photorealistic, realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-24",
     "tag": "24",
     "label": "セミリアル/dima_ivanov",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (dima_ivanov:1.2), (realistic), photorealistic, realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (dima_ivanov:1.2), (realistic), photorealistic, realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-25",
     "tag": "25",
     "label": "セミリアル/kpop",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), kpop, (realistic), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), kpop, (realistic), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-26",
     "tag": "26",
     "label": "セミリアル/cian_yo",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (cian_yo:0.9), (realistic), photorealistic, realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (cian_yo:0.9), (realistic), photorealistic, realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-27",
     "tag": "27",
     "label": "セミリアル/pinup_style",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (pinup_style:1.2), (realistic), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (pinup_style:1.2), (realistic), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-28",
     "tag": "28",
     "label": "セミリアル/sabu_sabuDenego",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (sabu_sabuDenego:0.9), (realistic), (photorealistic:0.9), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (sabu_sabuDenego:0.9), (realistic), (photorealistic:0.9), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-29",
     "tag": "29",
     "label": "セミリアル/numaNoan",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (numaNoan), (realistic), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (numaNoan), (realistic), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-30",
     "tag": "30",
     "label": "セミリアル/dirtyEro",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (dirtyEro:0.9), (realistic), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (dirtyEro:0.9), (realistic), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-31",
     "tag": "31",
     "label": "セミリアル/cartoonized",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (cartoonized), (realistic), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (cartoonized), (realistic), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-32",
     "tag": "32",
     "label": "セミリアル/rajah_dajah",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), rajah_dajah, (realistic), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), rajah_dajah, (realistic), (photorealistic:0.8), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-33",
     "tag": "33",
     "label": "セミリアル/toastyToast",
-    "prompt": " (1woman), (absurdres:1.2), (absolutely resolution:1.2), (texture:1.2), (toastyToast), (realistic), (photorealistic), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "prompt": " (1woman), (absurdres:1.2), (toastyToast), (realistic), (photorealistic), realistic anatomy, (pastel color:1.2), (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-34",
