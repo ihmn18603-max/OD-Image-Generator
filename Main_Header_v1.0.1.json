@@ -32,26 +32,26 @@
   {
     "id": "head-6",
     "tag": "6",
-    "label": "8K/artgerm",
-    "prompt": " (1woman), 8k resolution, dslr, (artgerm:1.2), (wlop:0.8), (cutesexyrobutts:0.8), (realistic), (photorealistic), realistic anatomy, (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "label": "セミリアル:やわらか官能",
+    "prompt": " (1woman), (absurdres:1.2), (manga illustration:1.2), (Japanese comic art:1.2), (ink darwing:1.2), semi-realistic, realistic anatomy, pastel color, balanced lighting, sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-7",
     "tag": "7",
-    "label": "8K/boris vallejo",
-    "prompt": " (1woman), 8k resolution, dslr, boris vallejo, sakimichan, (cutesexyrobutts:0.8), (realistic), (photorealistic), realistic anatomy, (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "label": "8K/artgerm",
+    "prompt": " (1woman), 8k resolution, dslr, (artgerm:1.2), (wlop:0.8), (cutesexyrobutts:0.8), (realistic), (photorealistic), realistic anatomy, (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-8",
     "tag": "8",
-    "label": "8K/shexyo",
-    "prompt": " (1woman), 8k resolution, dslr, shexyo, cutesexyrobutts, (thegoldensmurf:0.9), (realistic), (photorealistic), realistic anatomy, (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "label": "8K/boris vallejo",
+    "prompt": " (1woman), 8k resolution, dslr, boris vallejo, sakimichan, (cutesexyrobutts:0.8), (realistic), (photorealistic), realistic anatomy, (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-9",
     "tag": "9",
-    "label": "セミリアル:やわらか官能",
-    "prompt": " (1woman), (absurdres:1.2), semi-realistic, realistic anatomy, pastel color, balanced lighting, sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
+    "label": "8K/shexyo",
+    "prompt": " (1woman), 8k resolution, dslr, shexyo, cutesexyrobutts, (thegoldensmurf:0.9), (realistic), (photorealistic), realistic anatomy, (grim light), sharp focus, highly detailed, incredible hair rendering, perfect facial structure,"
   },
   {
     "id": "head-10",
