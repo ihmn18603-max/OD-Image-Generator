@@ -170,9 +170,9 @@
   {
     "id": "emo-eyebrow1",
     "tag": "troubled brow",
-    "label": "困り眉",
+    "label": "眉上げ",
     "category": "eyebrows",
-    "prompt": "(troubled brow:1.2)"
+    "prompt": "(raised eyebrows:1.2)"
   },
   {
     "id": "emo-eyebrow2",
