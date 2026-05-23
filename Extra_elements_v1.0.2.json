@@ -107,41 +107,34 @@
   {
     "id": "Ex-mouth6",
     "tag": "Ex-mouth6",
-    "label": "唇を噛む",
-    "category": "mouth",
-    "prompt": "(biting lips:1.2)"
-  },
-  {
-    "id": "Ex-mouth7",
-    "tag": "Ex-mouth7",
     "label": "舌なめずり",
     "category": "mouth",
     "prompt": "(licking lips:1.2)"
   },
   {
-    "id": "Ex-mouth8",
-    "tag": "Ex-mouth8",
+    "id": "Ex-mouth7",
+    "tag": "Ex-mouth7",
     "label": "歯を食いしばる",
     "category": "mouth",
     "prompt": "(clenching jaw:1.2)"
   },
   {
-    "id": "Ex-mouth9",
-    "tag": "Ex-mouth9",
+    "id": "Ex-mouth8",
+    "tag": "Ex-mouth8",
     "label": "逆への字の口",
     "category": "mouth",
     "prompt": "(frown, closed mouth:1.2)"
   },
   {
-    "id": "Ex-mouth10",
-    "tag": "Ex-mouth10",
+    "id": "Ex-mouth9",
+    "tag": "Ex-mouth9",
     "label": "波口",
     "category": "mouth",
     "prompt": "(wavy mouth:1.2)"
   },
   {
-    "id": "Ex-mouth11",
-    "tag": "Ex-mouth11",
+    "id": "Ex-mouth10",
+    "tag": "Ex-mouth10",
     "label": "唇を噛む",
     "category": "mouth",
     "prompt": "(biting own lip:1.2)"
@@ -215,6 +208,34 @@
     "label": "汗滴り",
     "category": "sweat",
     "prompt": "(sweat drops:1.2)"
+  },
+  {
+    "id": "Ex-milk1",
+    "tag": "Ex-milk1",
+    "label": "服の上から母乳",
+    "category": "milk",
+    "prompt": "(lactation through clothes:1.2)"
+  },
+  {
+    "id": "Ex-milk2",
+    "tag": "Ex-milk2",
+    "label": "母乳",
+    "category": "milk",
+    "prompt": "(breast milk:1.2), (lactation:1.2)"
+  },
+  {
+    "id": "Ex-milk3",
+    "tag": "Ex-milk3",
+    "label": "母乳噴射",
+    "category": "milk",
+    "prompt": "(projectile lactation:1.2)"
+  },
+  {
+    "id": "Ex-milk4",
+    "tag": "Ex-milk4",
+    "label": "搾乳機",
+    "category": "milk",
+    "prompt": "(milking machine:1.2), (breast pump:1.2)"
   },
   {
     "id": "Ex-steam1",
