@@ -197,13 +197,20 @@
   },
   {
     "id": "emo-smile3",
+    "tag": "evil",
+    "label": "邪悪な笑み",
+    "category": "smile",
+    "prompt": "(evil smile:1.2)"
+  },
+  {
+    "id": "emo-smile4",
     "tag": "seductive",
     "label": "誘惑の笑み",
     "category": "smile",
     "prompt": "(seductive smile:1.2)"
   },
   {
-    "id": "emo-smile4",
+    "id": "emo-smile5",
     "tag": "lewd",
     "label": "淫乱な笑み",
     "category": "smile",
