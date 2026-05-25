@@ -257,5 +257,19 @@
     "label": "蒸れた体",
     "category": "steam",
     "prompt": "(steaming body:1.2)"
+  },
+  {
+    "id": "Ex-camera1",
+    "tag": "Ex-camera1",
+    "label": "膝見切れ",
+    "category": "camera",
+    "prompt": "(knees out of frame:1.3)"
+  },
+  {
+    "id": "Ex-camera2",
+    "tag": "Ex-camera2",
+    "label": "太もも見切れ",
+    "category": "camera",
+    "prompt": "(thighs out of frame:1.3)"
   }
 ]
