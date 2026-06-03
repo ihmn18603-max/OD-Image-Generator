@@ -285,5 +285,54 @@
     "label": "ハート",
     "category": "mark",
     "prompt": "(heart effects:1.2)"
+  },
+  {
+    "id": "Ex-pose1",
+    "tag": "Ex-pose1",
+    "label": "ダブルピース",
+    "category": "pose",
+    "prompt": "(double v:1.2)"
+  },
+  {
+    "id": "Ex-pose2",
+    "tag": "Ex-pose2",
+    "label": "投げキッス",
+    "category": "pose",
+    "prompt": "(blowing kiss:1.2)"
+  },
+  {
+    "id": "Ex-pose3",
+    "tag": "Ex-pose3",
+    "label": "髪かき上げ",
+    "category": "pose",
+    "prompt": "(one hand adjusting hair:1.2)"
+  },
+  {
+    "id": "Ex-pose4",
+    "tag": "Ex-pose4",
+    "label": "疑似フェラ",
+    "category": "pose",
+    "prompt": "(fellatio gesture:1.2)"
+  },
+  {
+    "id": "Ex-pose5",
+    "tag": "Ex-pose5",
+    "label": "射精待ち",
+    "category": "pose",
+    "prompt": "(oral invitation:1.2)"
+  },
+  {
+    "id": "Ex-pose6",
+    "tag": "Ex-pose6",
+    "label": "腋見せ",
+    "category": "pose",
+    "prompt": "(visible armpit:1.2)"
+  },
+  {
+    "id": "Ex-pose6",
+    "tag": "Ex-pose6",
+    "label": "指舐め",
+    "category": "pose",
+    "prompt": "(licking own finger:1.2)"
   }
 ]
