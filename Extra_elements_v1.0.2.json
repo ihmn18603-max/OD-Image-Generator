@@ -186,28 +186,14 @@
     "tag": "Ex-sweat1",
     "label": "汗少",
     "category": "sweat",
-    "prompt": "(little sweat:1.2)"
-  },
-  {
-    "id": "Ex-sweat2",
-    "tag": "Ex-sweat2",
-    "label": "汗多",
-    "category": "sweat",
-    "prompt": "(lots of sweat:1.2)"
+    "prompt": "(little face sweat:1.2)"
   },
   {
     "id": "Ex-sweat3",
     "tag": "Ex-sweat3",
     "label": "汗大量",
     "category": "sweat",
-    "prompt": "(excessive sweating:1.2)"
-  },
-  {
-    "id": "Ex-sweat4",
-    "tag": "Ex-sweat4",
-    "label": "汗滴り",
-    "category": "sweat",
-    "prompt": "(sweat drops:1.2)"
+    "prompt": "(excessive face sweat:1.2)"
   },
   {
     "id": "Ex-milk1",
@@ -271,5 +257,33 @@
     "label": "太もも見切れ",
     "category": "camera",
     "prompt": "(thighs out of frame:1.3)"
+  },
+  {
+    "id": "Ex-mark1",
+    "tag": "Ex-mark1",
+    "label": "!",
+    "category": "mark",
+    "prompt": "(exclamation mark:1.2)"
+  },
+  {
+    "id": "Ex-mark2",
+    "tag": "Ex-mark2",
+    "label": "照れ",
+    "category": "mark",
+    "prompt": "(spoken blush mark:1.2)"
+  },
+  {
+    "id": "Ex-mark3",
+    "tag": "Ex-mark3",
+    "label": "汗",
+    "category": "mark",
+    "prompt": "(sweat drops:1.2)"
+  },
+  {
+    "id": "Ex-mark4",
+    "tag": "Ex-mark4",
+    "label": "ハート",
+    "category": "mark",
+    "prompt": "(heart effects:1.2)"
   }
 ]
