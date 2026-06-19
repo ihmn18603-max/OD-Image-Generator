@@ -86,55 +86,62 @@
   {
     "id": "Ex-mouth3",
     "tag": "Ex-mouth3",
+    "label": "口開",
+    "category": "mouth",
+    "prompt": "(open mouth:1.2)"
+  },
+  {
+    "id": "Ex-mouth4",
+    "tag": "Ex-mouth4",
     "label": "のどちんこ",
     "category": "mouth",
     "prompt": "(uvula:1.2)"
   },
   {
-    "id": "Ex-mouth4",
-    "tag": "Ex-mouth4",
+    "id": "Ex-mouth5",
+    "tag": "Ex-mouth5",
     "label": "わずかに開いた唇",
     "category": "mouth",
     "prompt": "(parted lips:1.2)"
   },
   {
-    "id": "Ex-mouth5",
-    "tag": "Ex-mouth5",
+    "id": "Ex-mouth6",
+    "tag": "Ex-mouth6",
     "label": "濡れた唇",
     "category": "mouth",
     "prompt": "(wet lips:1.2)"
   },
   {
-    "id": "Ex-mouth6",
-    "tag": "Ex-mouth6",
+    "id": "Ex-mouth7",
+    "tag": "Ex-mouth7",
     "label": "舌なめずり",
     "category": "mouth",
     "prompt": "(licking lips:1.2)"
   },
   {
-    "id": "Ex-mouth7",
-    "tag": "Ex-mouth7",
-    "label": "歯を食いしばる",
-    "category": "mouth",
-    "prompt": "(clenching jaw:1.2)"
-  },
-  {
     "id": "Ex-mouth8",
     "tag": "Ex-mouth8",
+    "label": "歯を食いしばる",
+    "category": "mouth",
+    "prompt": "(slenched teeth:1.2)"
+  },
+  {
+    "id": "Ex-mouth9",
+    "tag": "Ex-mouth9",
     "label": "逆への字の口",
     "category": "mouth",
     "prompt": "(frown, closed mouth:1.2)"
   },
   {
-    "id": "Ex-mouth9",
-    "tag": "Ex-mouth9",
+    "id": "Ex-mouth10",
+    "tag": "Ex-mouth10",
     "label": "波口",
     "category": "mouth",
     "prompt": "(wavy mouth:1.2)"
   },
   {
-    "id": "Ex-mouth10",
-    "tag": "Ex-mouth10",
+    "id": "Ex-mouth11",
+    "tag": "Ex-mouth11",
     "label": "唇を噛む",
     "category": "mouth",
     "prompt": "(biting own lip:1.2)"
@@ -329,10 +336,31 @@
     "prompt": "(visible armpit:1.2)"
   },
   {
-    "id": "Ex-pose6",
-    "tag": "Ex-pose6",
+    "id": "Ex-pose7",
+    "tag": "Ex-pose7",
     "label": "指舐め",
     "category": "pose",
     "prompt": "(licking own finger:1.2)"
+  },
+  {
+    "id": "Ex-pose8",
+    "tag": "Ex-pose8",
+    "label": "メロイックサイン",
+    "category": "pose",
+    "prompt": "(metal hand gesture:1.2), (double m/:1.2)"
+  },
+  {
+    "id": "Ex-pose9",
+    "tag": "Ex-pose9",
+    "label": "中指",
+    "category": "pose",
+    "prompt": "(middle finger:1.2)"
+  },
+  {
+    "id": "Ex-pose10",
+    "tag": "Ex-pose10",
+    "label": "ブーイング",
+    "category": "pose",
+    "prompt": "(thumbs down:1.2)"
   }
 ]
