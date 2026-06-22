@@ -92,76 +92,83 @@
   },
   {
     "id": "emo-face14",
+    "tag": "curious",
+    "label": "きょとん顔",
+    "category": "face",
+    "prompt": "(curious expression:1.2)"
+  },
+  {
+    "id": "emo-face15",
     "tag": "confused ",
     "label": "困惑している顔",
     "category": "face",
     "prompt": "(confused face:1.2)"
   },
   {
-    "id": "emo-face15",
+    "id": "emo-face16",
     "tag": "delighted",
     "label": "喜んでいる顔",
     "category": "face",
     "prompt": "(delighted face:1.2)"
   },
   {
-    "id": "emo-face16",
+    "id": "emo-face17",
     "tag": "aroused",
     "label": "興奮した顔",
     "category": "face",
     "prompt": "(aroused face:1.2)"
   },
   {
-    "id": "emo-face17",
+    "id": "emo-face18",
     "tag": "sensual",
     "label": "官能的な顔",
     "category": "face",
     "prompt": "(sensual face:1.2)"
   },
   {
-    "id": "emo-face18",
+    "id": "emo-face19",
     "tag": "moaning",
     "label": "喘ぎ顔",
     "category": "face",
     "prompt": "(moaning face:1.2)"
   },
   {
-    "id": "emo-face19",
+    "id": "emo-face20",
     "tag": "orgasm",
     "label": "絶頂の顔",
     "category": "face",
     "prompt": "(orgasm face:1.2)"
   },
   {
-    "id": "emo-face20",
+    "id": "emo-face21",
     "tag": "blindfolded",
     "label": "目隠し",
     "category": "face",
     "prompt": "(blindfolded face:1.2)"
   },
   {
-    "id": "emo-face21",
+    "id": "emo-face22",
     "tag": "fucked silly face",
     "label": "んほぉ顔",
     "category": "face",
     "prompt": "(fucked silly face:1.2)"
   },
   {
-    "id": "emo-face22",
+    "id": "emo-face23",
     "tag": "gesugao",
     "label": "ゲス顔",
     "category": "face",
     "prompt": "(gesugao:1.2)"
   },
   {
-    "id": "emo-face23",
+    "id": "emo-face24",
     "tag": "torogao",
     "label": "トロ顔",
     "category": "face",
     "prompt": "(torogao:1.2)"
   },
   {
-    "id": "emo-face24",
+    "id": "emo-face25",
     "tag": "ahegao",
     "label": "アヘ顔",
     "category": "face",
@@ -190,27 +197,34 @@
   },
   {
     "id": "emo-smile2",
+    "tag": "big",
+    "label": "満面の笑み",
+    "category": "smile",
+    "prompt": "(big smile:1.2)"
+  },
+  {
+    "id": "emo-smile3",
     "tag": "slight",
     "label": "微笑",
     "category": "smile",
     "prompt": "(slight smile:1.2)"
   },
   {
-    "id": "emo-smile3",
+    "id": "emo-smile4",
     "tag": "evil",
     "label": "邪悪な笑み",
     "category": "smile",
     "prompt": "(evil smile:1.2)"
   },
   {
-    "id": "emo-smile4",
+    "id": "emo-smile5",
     "tag": "seductive",
     "label": "誘惑の笑み",
     "category": "smile",
     "prompt": "(seductive smile:1.2)"
   },
   {
-    "id": "emo-smile5",
+    "id": "emo-smile6",
     "tag": "lewd",
     "label": "淫乱な笑み",
     "category": "smile",
@@ -292,5 +306,12 @@
     "label": "痙攣仰け反り",
     "category": "sp",
     "prompt": "(body trembling:1.2), (arched back), (head back)"
+  },
+  {
+    "id": "emo-sp5",
+    "tag": "twiching pussy",
+    "label": "マンコ痙攣",
+    "category": "sp",
+    "prompt": "(twitching pussy), (spasming), (convulsing)"
   }
 ]
