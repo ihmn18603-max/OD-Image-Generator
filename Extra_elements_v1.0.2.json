@@ -364,6 +364,13 @@
     "prompt": "(thumbs down:1.2)"
   },
   {
+    "id": "Ex-pose11",
+    "tag": "Ex-pose11",
+    "label": "しー",
+    "category": "pose",
+    "prompt": "(shushing:1.2)"
+  },
+  {
     "id": "Ex-string1",
     "tag": "Ex-string1",
     "label": "指糸引き",
