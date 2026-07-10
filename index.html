@@ -109,44 +109,47 @@
     #resultList::-webkit-scrollbar-track{background:#0d1525}
     #resultList::-webkit-scrollbar-thumb{background:#2a3f6a;border-radius:3px}
     .no-results{padding:20px;text-align:center;color:#556;font-size:13px}
+
 /* ============== モバイル対応強化 ============== */
-    @media (max-width: 600px) {
-      .container { padding: 12px; }
-      
-      .emotion-grid {
-        grid-template-columns: 1fr !important;
-        gap: 10px;
-      }
-      
-      select, button, textarea, .prompt-box {
-        font-size: 16px !important;
-        padding: 12px 10px;
-      }
-      
-      .chip, .radio-group span, .filter-tag {
-        padding: 10px 12px;
-        font-size: 15px;
-        min-height: 44px;
-      }
-      
-      #resultList {
-        max-height: 420px;
-      }
-      
-      .result-item {
-        padding: 12px;
-      }
-      
-      h1, h2 {
-        font-size: 1.1rem;
-      }
-      
-      .row {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 8px;
-      }
-    }
+@media (max-width: 600px) {
+  .container { padding: 12px; }
+  
+  .emotion-grid {
+    grid-template-columns: 1fr !important; /* 強制1列 */
+    gap: 8px;
+  }
+  
+  .radio-group {
+    margin: 8px 0;
+  }
+  
+  select, button, textarea, .prompt-box {
+    font-size: 16px !important;
+    padding: 12px 10px;
+  }
+  
+  .chip, .radio-group span, .filter-tag {
+    padding: 10px 12px;
+    font-size: 15px;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #resultList { max-height: 420px; }
+  
+  .result-item { padding: 12px; }
+  
+  h1, h2 { font-size: 1.1rem; }
+  
+  .row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+}
+
   </style>
 </head>
 <body>
