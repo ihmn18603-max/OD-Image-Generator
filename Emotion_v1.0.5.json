@@ -84,13 +84,6 @@
     "prompt": "(a shocked face:1.2)"
   },
   {
-    "id": "emo-face13",
-    "tag": "looking away",
-    "label": "目をそらす",
-    "category": "face",
-    "prompt": "(looking away face:1.2)"
-  },
-  {
     "id": "emo-face14",
     "tag": "curious",
     "label": "きょとん顔",
@@ -229,41 +222,6 @@
     "label": "淫乱な笑み",
     "category": "smile",
     "prompt": "(lustful smile:1.2)"
-  },
-  {
-    "id": "emo-stare1",
-    "tag": "blank",
-    "label": "虚ろな視線",
-    "category": "stare",
-    "prompt": "(blank stare:1.2)"
-  },
-  {
-    "id": "emo-stare2",
-    "tag": "longing",
-    "label": "切なげな視線",
-    "category": "stare",
-    "prompt": "(longing stare:1.2)"
-  },
-  {
-    "id": "emo-stare3",
-    "tag": "inviting",
-    "label": "誘うような視線",
-    "category": "stare",
-    "prompt": "(inviting stare:1.2)"
-  },
-  {
-    "id": "emo-stare4",
-    "tag": "submissive",
-    "label": "従順な視線",
-    "category": "stare",
-    "prompt": "(submissive stare:1.2)"
-  },
-  {
-    "id": "emo-stare5",
-    "tag": "dreamy",
-    "label": "陶酔した視線",
-    "category": "stare",
-    "prompt": "(dreamy stare:1.2)"
   },
   {
     "id": "emo-cheek1",
