@@ -70,6 +70,41 @@
     "prompt": "(heart shaped pupils:1.2)"
   },
   {
+    "id": "Ex-eye12",
+    "tag": "Ex-eye12",
+    "label": "遠くを見る",
+    "category": "eye",
+    "prompt": "(staring into the distance:1.2)"
+  },
+  {
+    "id": "Ex-eye13",
+    "tag": "Ex-eye13",
+    "label": "視線横",
+    "category": "eye",
+    "prompt": "(looking to the side:1.2)"
+  },
+  {
+    "id": "Ex-eye14",
+    "tag": "Ex-eye14",
+    "label": "視線下",
+    "category": "eye",
+    "prompt": "(looking down:1.2)"
+  },
+  {
+    "id": "Ex-eye15",
+    "tag": "Ex-eye15",
+    "label": "目をそらす",
+    "category": "eye",
+    "prompt": "(looking away:1.2)"
+  },
+  {
+    "id": "Ex-eye16",
+    "tag": "Ex-eye16",
+    "label": "流し目",
+    "category": "eye",
+    "prompt": " (sideways glance:1.2)"
+  },
+  {
     "id": "Ex-mouth1",
     "tag": "Ex-mouth1",
     "label": "口閉",
