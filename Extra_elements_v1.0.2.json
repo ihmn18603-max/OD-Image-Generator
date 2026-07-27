@@ -102,7 +102,14 @@
     "tag": "Ex-eye16",
     "label": "流し目",
     "category": "eye",
-    "prompt": " (sideways glance:1.2)"
+    "prompt": "(sideways glance:1.2)"
+  },
+  {
+    "id": "Ex-eye17",
+    "tag": "Ex-eye17",
+    "label": "横顔チラ見",
+    "category": "eye",
+    "prompt": "(slightly profile face:1.2), (sideways glance)"
   },
   {
     "id": "Ex-mouth1",
