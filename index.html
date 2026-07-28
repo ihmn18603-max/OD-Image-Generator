@@ -25,7 +25,7 @@
     .radio-group{margin:12px 0}
     .radio-group__title{display:flex;align-items:center;gap:8px;margin-bottom:6px}
     .chip{display:inline-block;padding:6px 10px;border:1px solid #444;border-radius:999px;background:var(--chip)}
-.radio-group label{display:block;margin:4px 0;cursor:pointer;width:100%}
+    .radio-group label{display:inline-block;margin:4px;cursor:pointer}
     .radio-group input[type="radio"], .radio-group input[type="checkbox"]{display:none}
     .radio-group span{display:inline-block;padding:8px 14px;border:1px solid #444;border-radius:8px;background:var(--chip);color:var(--ink);transition:.15s;user-select:none}
     .radio-group span:hover{background:#243048;border-color:var(--accent)}
@@ -109,47 +109,6 @@
     #resultList::-webkit-scrollbar-track{background:#0d1525}
     #resultList::-webkit-scrollbar-thumb{background:#2a3f6a;border-radius:3px}
     .no-results{padding:20px;text-align:center;color:#556;font-size:13px}
-
-/* ============== モバイル対応強化 ============== */
-@media (max-width: 600px) {
-  .container { padding: 12px; }
-  
-  .emotion-grid {
-    grid-template-columns: 1fr !important; /* 強制1列 */
-    gap: 8px;
-  }
-  
-  .radio-group {
-    margin: 8px 0;
-  }
-  
-  select, button, textarea, .prompt-box {
-    font-size: 16px !important;
-    padding: 12px 10px;
-  }
-  
-  .chip, .radio-group span, .filter-tag {
-    padding: 10px 12px;
-    font-size: 15px;
-    min-height: 48px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #resultList { max-height: 420px; }
-  
-  .result-item { padding: 12px; }
-  
-  h1, h2 { font-size: 1.1rem; }
-  
-  .row {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
-  }
-}
-
   </style>
 </head>
 <body>
