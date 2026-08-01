@@ -336,78 +336,155 @@
     "prompt": "(heart effects)"
   },
   {
-    "id": "Ex-pose1",
-    "tag": "Ex-pose1",
+    "id": "Ex-Apose1",
+    "tag": "Ex-Apose1",
     "label": "ダブルピース",
     "category": "pose",
     "prompt": "(double v)"
   },
   {
-    "id": "Ex-pose2",
-    "tag": "Ex-pose2",
+    "id": "Ex-Apose2",
+    "tag": "Ex-Apose2",
     "label": "投げキッス",
     "category": "pose",
     "prompt": "(blowing kiss)"
   },
   {
-    "id": "Ex-pose3",
-    "tag": "Ex-pose3",
+    "id": "Ex-Apose3",
+    "tag": "Ex-Apose3",
     "label": "髪かき上げ",
     "category": "pose",
     "prompt": "(one hand adjusting hair)"
   },
   {
-    "id": "Ex-pose4",
-    "tag": "Ex-pose4",
+    "id": "Ex-Apose4",
+    "tag": "Ex-Apose4",
     "label": "疑似フェラ",
     "category": "pose",
     "prompt": "(fellatio gesture)"
   },
   {
-    "id": "Ex-pose5",
-    "tag": "Ex-pose5",
+    "id": "Ex-Apose5",
+    "tag": "Ex-Apose5",
     "label": "射精待ち",
     "category": "pose",
     "prompt": "(oral invitation)"
   },
   {
-    "id": "Ex-pose6",
-    "tag": "Ex-pose6",
+    "id": "Ex-Apose6",
+    "tag": "Ex-Apose6",
     "label": "腋見せ",
     "category": "pose",
-    "prompt": "(visible armpit)"
+    "prompt": "(armpit)"
   },
   {
-    "id": "Ex-pose7",
-    "tag": "Ex-pose7",
+    "id": "Ex-Apose7",
+    "tag": "Ex-Apose7",
     "label": "指舐め",
     "category": "pose",
     "prompt": "(licking own finger)"
   },
   {
-    "id": "Ex-pose8",
-    "tag": "Ex-pose8",
+    "id": "Ex-Apose8",
+    "tag": "Ex-Apose8",
     "label": "メロイックサイン",
     "category": "pose",
     "prompt": "(metal hand gesture), (double m/)"
   },
   {
-    "id": "Ex-pose9",
-    "tag": "Ex-pose9",
+    "id": "Ex-Apose9",
+    "tag": "Ex-Apose9",
     "label": "中指",
     "category": "pose",
     "prompt": "(middle finger)"
   },
   {
-    "id": "Ex-pose10",
-    "tag": "Ex-pose10",
+    "id": "Ex-Apose10",
+    "tag": "Ex-Apose10",
     "label": "ブーイング",
     "category": "pose",
     "prompt": "(thumbs down)"
   },
   {
-    "id": "Ex-pose11",
-    "tag": "Ex-pose11",
+    "id": "Ex-Apose11",
+    "tag": "Ex-Apose11",
+    "label": "しー",
+    "category": "pose",
+    "prompt": "(shushing)"
+  },
+  {
+    "id": "Ex-Bpose1",
+    "tag": "Ex-Bpose1",
+    "label": "ダブルピース",
+    "category": "pose",
+    "prompt": "(double v)"
+  },
+  {
+    "id": "Ex-Bpose2",
+    "tag": "Ex-Bpose2",
+    "label": "投げキッス",
+    "category": "pose",
+    "prompt": "(blowing kiss)"
+  },
+  {
+    "id": "Ex-Bpose3",
+    "tag": "Ex-Bpose3",
+    "label": "髪かき上げ",
+    "category": "pose",
+    "prompt": "(one hand adjusting hair)"
+  },
+  {
+    "id": "Ex-Bpose4",
+    "tag": "Ex-Bpose4",
+    "label": "疑似フェラ",
+    "category": "pose",
+    "prompt": "(fellatio gesture)"
+  },
+  {
+    "id": "Ex-Bpose5",
+    "tag": "Ex-Bpose5",
+    "label": "射精待ち",
+    "category": "pose",
+    "prompt": "(oral invitation)"
+  },
+  {
+    "id": "Ex-Bpose6",
+    "tag": "Ex-Bpose6",
+    "label": "腋見せ",
+    "category": "pose",
+    "prompt": "(armpit)"
+  },
+  {
+    "id": "Ex-Bpose7",
+    "tag": "Ex-Bpose7",
+    "label": "指舐め",
+    "category": "pose",
+    "prompt": "(licking own finger)"
+  },
+  {
+    "id": "Ex-Bpose8",
+    "tag": "Ex-Bpose8",
+    "label": "メロイックサイン",
+    "category": "pose",
+    "prompt": "(metal hand gesture), (double m/)"
+  },
+  {
+    "id": "Ex-Bpose9",
+    "tag": "Ex-Bpose9",
+    "label": "中指",
+    "category": "pose",
+    "prompt": "(middle finger)"
+  },
+  {
+    "id": "Ex-Bpose10",
+    "tag": "Ex-Bpose10",
+    "label": "ブーイング",
+    "category": "pose",
+    "prompt": "(thumbs down)"
+  },
+  {
+    "id": "Ex-Bpose11",
+    "tag": "Ex-Bpose11",
     "label": "しー",
     "category": "pose",
     "prompt": "(shushing)"
