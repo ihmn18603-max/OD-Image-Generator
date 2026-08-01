@@ -39,6 +39,28 @@
     .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
     .btn-ghost{background:transparent;border:1px solid #3a4b6a;color:var(--muted)}
     .muted{opacity:.8;font-size:12px}
+    .btn-mini{padding:3px 10px;margin-top:0;font-size:11px;border-radius:14px;font-weight:normal}
+
+    /* ── アコーディオン（Emotion / Extra elements） ── */
+    .acc{border:1px solid #2a3346;border-radius:8px;background:#131a26;overflow:hidden}
+    #extraElements{display:flex;flex-direction:column;gap:5px}
+    .acc__head{
+      display:flex;align-items:center;gap:8px;width:100%;
+      margin:0;padding:7px 10px;background:transparent;border:none;border-radius:0;
+      color:var(--ink);font-size:12px;text-align:left;cursor:pointer;
+    }
+    .acc__head:hover{background:#1a2233}
+    .acc__name{font-weight:700;flex:0 0 auto}
+    .acc__value{
+      flex:1;min-width:0;color:#5f708a;font-size:11px;
+      white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+    }
+    .acc.has-value .acc__value{color:#6bbfff}
+    .acc__arrow{flex:0 0 auto;color:#5f708a;font-size:10px;transition:transform .15s}
+    .acc.open .acc__arrow{transform:rotate(180deg)}
+    .acc__body{display:none;padding:0 10px 9px}
+    .acc.open .acc__body{display:flex}
+    .acc__body.radio-group{margin:0}
 
     /* ── Search Mode UI ── */
     .intensity-header{display:flex;align-items:center;gap:10px;margin:20px 0 8px;flex-wrap:wrap}
@@ -163,10 +185,58 @@
   .row { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 6px; }
 }
 
+/* ── 画面下固定の結合プロンプトバー ── */
+#stickyBar{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;
+  display:none;
+  background:rgba(16,22,33,.96);
+  border-top:1px solid #2a3f6a;
+  box-shadow:0 -4px 18px rgba(0,0,0,.5);
+  padding-bottom:env(safe-area-inset-bottom, 0px);
+}
+#stickyBar.visible{display:block}
+.sticky-inner{
+  max-width:900px;margin:0 auto;padding:8px 12px;
+  display:flex;align-items:flex-start;gap:10px;
+}
+.sticky-main{flex:1;min-width:0}
+.sticky-tabs{display:flex;align-items:center;gap:4px;margin-bottom:4px}
+.sticky-tab{
+  margin-top:0;padding:3px 9px;font-size:10px;font-weight:700;letter-spacing:.02em;
+  border-radius:12px;border:1px solid #2a3f6a;background:transparent;color:#5f708a;
+  cursor:pointer;white-space:nowrap;transition:.15s;
+}
+.sticky-tab:hover{color:var(--ink);border-color:var(--accent)}
+.sticky-tab.active{background:#1c2b45;border-color:var(--accent);color:var(--muted)}
+.sticky-tab span{opacity:.7;font-weight:normal;margin-left:3px}
+.sticky-text{
+  font-size:11px;line-height:1.45;color:var(--ink);
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+  overflow:hidden;word-break:break-word;
+}
+#stickyBar.expanded .sticky-text{
+  display:block;max-height:42vh;overflow-y:auto;
+  -webkit-line-clamp:unset;
+}
+.sticky-actions{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.sticky-copy{
+  margin-top:0;padding:7px 14px;font-size:12px;border-radius:8px;
+  background:var(--accent);color:#fff;border:none;cursor:pointer;white-space:nowrap;
+}
+.sticky-copy.done{background:#1d9e5a}
+.sticky-expand{
+  margin-top:0;padding:7px 9px;font-size:10px;border-radius:8px;
+  background:transparent;border:1px solid #3a4b6a;color:var(--muted);cursor:pointer;
+  transition:transform .15s;
+}
+#stickyBar.expanded .sticky-expand{transform:rotate(180deg)}
+/* バーに隠れないよう下に余白を確保 */
+body.has-sticky .container{padding-bottom:96px}
+
 /* 画面が広い場合はカテゴリ自体も2列に */
 @media (min-width: 700px) {
-  .emotion-grid { grid-template-columns: repeat(2, 1fr); }
-  #extraElements { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .emotion-grid { grid-template-columns: repeat(2, 1fr); align-items: start; }
+  #extraElements { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; align-items: start; }
 }
 
   </style>
@@ -232,11 +302,15 @@
       <div id="resultList"></div>
     </div>
 
-    <h2 class="row">③ Emotion（各カテゴリから1つずつ） <span id="emotionCount" class="muted">0 / 0</span></h2>
+    <h2 class="row">③ Emotion（各カテゴリから1つずつ） <span id="emotionCount" class="muted">0 / 0</span>
+      <button id="btnToggleEmotionAll" class="btn-ghost btn-mini" type="button">すべて開く</button>
+    </h2>
     <div id="emotionOptions" class="emotion-grid"></div>
     <div id="emotionPrompt" class="prompt-box" aria-live="polite"></div>
 
-    <h2>④ Extra Elements（Eye / Mouth / Tongue / Saliva / Sweat / Milk / Steam / Camera / Mark / Gesture / Pose / String）</h2>
+    <h2 class="row">④ Extra Elements
+      <button id="btnToggleExtraAll" class="btn-ghost btn-mini" type="button">すべて開く</button>
+    </h2>
     <div id="extraElements"></div>
     <div id="extraPrompt" class="prompt-box" aria-live="polite"></div>
 
@@ -288,6 +362,23 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
     </details>
   </div>
 
+  <!-- 画面下に固定される⑤結合プロンプトバー -->
+  <div id="stickyBar" aria-live="polite">
+    <div class="sticky-inner">
+      <div class="sticky-main">
+        <div class="sticky-tabs">
+          <button id="tabCustom" class="sticky-tab" type="button">⑤ Custom <span id="tabCustomCount">0</span></button>
+          <button id="tabOutfit" class="sticky-tab" type="button">⑧ Outfit <span id="tabOutfitCount">0</span></button>
+        </div>
+        <div id="stickyText" class="sticky-text"></div>
+      </div>
+      <div class="sticky-actions">
+        <button id="btnStickyCopy" class="sticky-copy" type="button">コピー</button>
+        <button id="btnStickyExpand" class="sticky-expand" type="button" title="全文表示">▲</button>
+      </div>
+    </div>
+  </div>
+
   <script>
   // ---------- helpers ----------
   const $ = (s)=>document.querySelector(s);
@@ -324,6 +415,7 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
     header:[], intensity:[], intensityRaw:[], emotion:[], extra:[], outfit:[], accessory:[],
     sel: { header:null, intensity:null, emotionByCat:{}, extraChoices:{}, extraPrompts:[], outfit:null, accessory:[] },
     searchMode: false,
+    stickyTab: 'custom',
     filters: { level:null, 'シチュエーション':null, '対象':null, '姿勢':null, '前状態':null, '前挿入物':null, '精液有無':null, '後状態':null },
     filterQuery: {},
     filterExpanded: {}
@@ -361,9 +453,46 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
     if(state.sel.outfit) wear.push(state.sel.outfit.prompt);
     if(state.sel.accessory?.length) wear.push(state.sel.accessory.map(x=>x.prompt).join(', '));
     $('#outfitAccessoryOut').value = wear.filter(Boolean).join(', ');
+
+    updateStickyBar();
   }
 
   function setStatus(el, msg){ el.textContent = msg; setTimeout(()=> el.textContent = '', 1800); }
+
+  // ---------- 画面下固定の結合プロンプトバー ----------
+  function stickyActiveText(){
+    return state.stickyTab === 'outfit' ? $('#outfitAccessoryOut').value : $('#out').value;
+  }
+
+  function updateStickyBar(){
+    const bar = $('#stickyBar');
+    if(!bar) return;
+    const custom = $('#out').value;
+    const outfit = $('#outfitAccessoryOut').value;
+    const has = !!(custom || outfit);
+
+    bar.classList.toggle('visible', has);
+    document.body.classList.toggle('has-sticky', has);
+    if(!has){
+      bar.classList.remove('expanded');
+      $('#stickyText').textContent = '';
+      return;
+    }
+
+    // 表示中のタブが空になったら、中身のある方へ自動で切り替える
+    if(state.stickyTab === 'custom' && !custom && outfit) state.stickyTab = 'outfit';
+    if(state.stickyTab === 'outfit' && !outfit && custom) state.stickyTab = 'custom';
+
+    // 中身のあるタブだけ出す
+    $('#tabCustom').style.display = custom ? '' : 'none';
+    $('#tabOutfit').style.display = outfit ? '' : 'none';
+    $('#tabCustom').classList.toggle('active', state.stickyTab === 'custom');
+    $('#tabOutfit').classList.toggle('active', state.stickyTab === 'outfit');
+    $('#tabCustomCount').textContent = `${custom.length}字`;
+    $('#tabOutfitCount').textContent = `${outfit.length}字`;
+
+    $('#stickyText').textContent = stickyActiveText();
+  }
 
   // ============================================================
   // SEARCH MODE
@@ -604,6 +733,59 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
       fillSelect($('#selOutfit'),    state.outfit);
       fillSelect($('#selAccessory'), state.accessory, {multi:true, withEmpty:false});
 
+      // 折りたたみカテゴリを1つ作るヘルパー（Emotion / Extra elements 共通）
+      function makeAccordion(cat, parent){
+        const acc = document.createElement('div');
+        acc.className = 'acc';
+
+        const head = document.createElement('button');
+        head.type = 'button';
+        head.className = 'acc__head';
+
+        const nameEl = document.createElement('span');
+        nameEl.className = 'acc__name';
+        nameEl.textContent = cat;
+
+        const valEl = document.createElement('span');
+        valEl.className = 'acc__value';
+        valEl.textContent = 'なし';
+
+        const arrow = document.createElement('span');
+        arrow.className = 'acc__arrow';
+        arrow.textContent = '▼';
+
+        head.appendChild(nameEl); head.appendChild(valEl); head.appendChild(arrow);
+
+        const body = document.createElement('div');
+        body.className = 'radio-group acc__body';
+
+        head.addEventListener('click', ()=> acc.classList.toggle('open'));
+
+        acc.appendChild(head); acc.appendChild(body);
+        parent.appendChild(acc);
+
+        return {
+          acc, body,
+          setValue(text){
+            const has = !!text;
+            valEl.textContent = has ? text : 'なし';
+            acc.classList.toggle('has-value', has);
+          }
+        };
+      }
+
+      // セクション内の全カテゴリを開閉するボタンの配線
+      function wireToggleAll(btnSel, boxSel){
+        const btn = $(btnSel);
+        if(!btn) return;
+        btn.addEventListener('click', ()=>{
+          const accs = $$(`${boxSel} .acc`);
+          const openAll = accs.some(a=> !a.classList.contains('open'));
+          accs.forEach(a=> a.classList.toggle('open', openAll));
+          btn.textContent = openAll ? 'すべて閉じる' : 'すべて開く';
+        });
+      }
+
       // --- Emotion ---
       const emoBox = $('#emotionOptions');
       emoBox.innerHTML = '';
@@ -625,18 +807,14 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
       }
 
       emoCats.forEach(cat=>{
-        const wrap = document.createElement('div');
-        wrap.className = 'radio-group';
-        const title = document.createElement('div');
-        title.className = 'radio-group__title';
-        title.innerHTML = `<strong>${cat}</strong><span class="chip">1つ選択</span>`;
-        wrap.appendChild(title);
+        const { body: wrap, setValue } = makeAccordion(cat, emoBox);
 
         const noneId = `emo_${cat}__none`;
         const noneInput = document.createElement('input');
         noneInput.type = 'radio'; noneInput.name = `emo_${cat}`; noneInput.id = noneId; noneInput.value = '';
         noneInput.onchange = ()=>{
           delete state.sel.emotionByCat[cat];
+          setValue('');
           $('#emotionPrompt').textContent = Object.values(state.sel.emotionByCat).filter(Boolean).map(x=>x.prompt).join(', ');
           refreshEmotionCounter(); build();
         };
@@ -651,21 +829,23 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
           const id = `emo_${cat}__${idx}`;
           const radio = document.createElement('input');
           radio.type = 'radio'; radio.name = `emo_${cat}`; radio.id = id; radio.value = opt.id ?? idx;
+          const text = opt.label || opt.tag || opt.prompt || `Option ${idx+1}`;
           radio.onchange = ()=>{
             state.sel.emotionByCat[cat] = opt;
+            setValue(text);
             $('#emotionPrompt').textContent = Object.values(state.sel.emotionByCat).filter(Boolean).map(x=>x.prompt).join(', ');
             refreshEmotionCounter(); build();
           };
           const label = document.createElement('label');
           label.setAttribute('for', id);
           const span = document.createElement('span');
-          span.textContent = opt.label || opt.tag || opt.prompt || `Option ${idx+1}`;
+          span.textContent = text;
           label.appendChild(radio); label.appendChild(span);
           wrap.appendChild(label);
         });
-        emoBox.appendChild(wrap);
       });
       refreshEmotionCounter();
+      wireToggleAll('#btnToggleEmotionAll', '#emotionOptions');
 
       // ------- Extra Elements -------
       const container = $('#extraElements');
@@ -682,18 +862,14 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
         return (ia===-1?999:ia) - (ib===-1?999:ib) || a.localeCompare(b);
       });
       keys.forEach(cat=>{
-        const wrap = document.createElement('div');
-        wrap.className = 'radio-group';
-        const title = document.createElement('div');
-        title.className = 'radio-group__title';
-        title.innerHTML = `<strong>${cat}</strong><span class="chip">1つ選択</span>`;
-        wrap.appendChild(title);
+        const { body: wrap, setValue } = makeAccordion(cat, container);
 
         const noneId = `${cat}__none`;
         const noneInput = document.createElement('input');
         noneInput.type = 'radio'; noneInput.name = cat; noneInput.id = noneId; noneInput.value = '';
         noneInput.onchange = ()=>{
           delete state.sel.extraChoices[cat];
+          setValue('');
           state.sel.extraPrompts = Object.values(state.sel.extraChoices).filter(Boolean);
           $('#extraPrompt').textContent = state.sel.extraPrompts.join(', ');
           build();
@@ -709,8 +885,10 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
           const id = `${cat}__${idx}`;
           const radio = document.createElement('input');
           radio.type = 'radio'; radio.name = cat; radio.id = id; radio.value = opt.prompt || '';
+          const text = opt.label || `Lv ${opt['category level'] ?? idx+1}`;
           radio.onchange = ()=>{
             state.sel.extraChoices[cat] = radio.value;
+            setValue(text);
             state.sel.extraPrompts = Object.values(state.sel.extraChoices).filter(Boolean);
             $('#extraPrompt').textContent = state.sel.extraPrompts.join(', ');
             build();
@@ -718,12 +896,12 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
           const label = document.createElement('label');
           label.setAttribute('for', id);
           const span = document.createElement('span');
-          span.textContent = opt.label || `Lv ${opt['category level'] ?? idx+1}`;
+          span.textContent = text;
           label.appendChild(radio); label.appendChild(span);
           wrap.appendChild(label);
         });
-        container.appendChild(wrap);
       });
+      wireToggleAll('#btnToggleExtraAll', '#extraElements');
 
     }catch(err){
       console.error(err);
@@ -766,6 +944,27 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
     renderResults();
   });
 
+  $('#tabCustom').addEventListener('click', ()=>{
+    state.stickyTab = 'custom'; updateStickyBar();
+  });
+  $('#tabOutfit').addEventListener('click', ()=>{
+    state.stickyTab = 'outfit'; updateStickyBar();
+  });
+
+  $('#btnStickyCopy').addEventListener('click', async()=>{
+    const btn = $('#btnStickyCopy');
+    try{
+      await navigator.clipboard.writeText(stickyActiveText());
+      btn.textContent = 'コピー完了'; btn.classList.add('done');
+    }catch{
+      btn.textContent = 'コピー失敗';
+    }
+    setTimeout(()=>{ btn.textContent = 'コピー'; btn.classList.remove('done'); }, 1500);
+  });
+  $('#btnStickyExpand').addEventListener('click', ()=>{
+    $('#stickyBar').classList.toggle('expanded');
+  });
+
   $('#btnCopy').addEventListener('click', async()=>{
     try{ await navigator.clipboard.writeText($('#out').value); setStatus($('#statusCustom'), 'コピーしました！'); }
     catch{ setStatus($('#statusCustom'), 'コピー失敗'); }
@@ -791,6 +990,13 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
     })();
     Object.keys(state.sel.extraChoices).forEach(k=> delete state.sel.extraChoices[k]);
     state.sel.extraPrompts = []; $('#extraPrompt').textContent = '';
+    $$('#extraElements input[type="radio"]').forEach(r=> r.checked = false);
+    // アコーディオン見出しの選択中表示も戻す
+    $$('#emotionOptions .acc, #extraElements .acc').forEach(a=>{
+      a.classList.remove('has-value');
+      const v = a.querySelector('.acc__value');
+      if(v) v.textContent = 'なし';
+    });
     // 検索モードなら結果も更新
     if(state.searchMode) renderResults();
     build();
