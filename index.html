@@ -11,31 +11,34 @@
       --result-bg:#141d2e; --result-hover:#1a2540;
     }
     *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui, -apple-system, Segoe UI, Roboto, sans-serif;background:var(--bg);color:var(--ink)}
+    body{margin:0;font-family:system-ui, -apple-system, Segoe UI, Roboto, sans-serif;background:var(--bg);color:var(--ink);font-size:14px}
     .container{max-width:900px;margin:0 auto;padding:20px}
-    h1{margin:0 0 20px;text-align:center}
-    h2{font-size:16px;margin:20px 0 8px}
+    h1{margin:0 0 16px;text-align:center;font-size:20px}
+    h2{font-size:15px;margin:18px 0 6px}
     select, textarea, button{font-size:14px}
-    select{width:100%;padding:10px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
-    textarea{width:100%;min-height:150px;margin-top:10px;border-radius:8px;border:1px solid var(--line);padding:10px;background:var(--bg);color:var(--ink)}
-    button{padding:10px 16px;margin-top:10px;border:none;border-radius:8px;cursor:pointer;background:var(--accent);color:white}
-    .prompt-box{margin-top:8px;font-size:13px;color:var(--muted);background:var(--panel);padding:8px;border-radius:6px;white-space:pre-wrap}
-    .emotion-grid{display:grid;grid-template-columns:repeat(1,1fr);gap:12px}
+    select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+    textarea{width:100%;min-height:130px;margin-top:8px;border-radius:8px;border:1px solid var(--line);padding:8px;background:var(--bg);color:var(--ink)}
+    button{padding:8px 14px;margin-top:8px;border:none;border-radius:8px;cursor:pointer;background:var(--accent);color:white}
+    .prompt-box{margin-top:6px;font-size:12px;color:var(--muted);background:var(--panel);padding:7px;border-radius:6px;white-space:pre-wrap}
+    .emotion-grid{display:grid;grid-template-columns:repeat(1,1fr);gap:8px}
     .emotion-btn{padding:8px;border:1px solid #444;border-radius:6px;text-align:center;cursor:pointer;background:var(--chip)}
-    .radio-group{margin:12px 0}
-    .radio-group__title{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+
+    /* 選択肢を横方向に流し込む（Emotion / Extra elements 共通） */
+    .radio-group{display:flex;flex-wrap:wrap;align-items:center;gap:5px;margin:10px 0}
+    .radio-group__title{flex:0 0 100%;display:flex;align-items:center;gap:6px;margin-bottom:2px;font-size:12px}
     .chip{display:inline-block;padding:6px 10px;border:1px solid #444;border-radius:999px;background:var(--chip)}
-.radio-group label{display:block;margin:4px 0;cursor:pointer;width:100%}
+    .radio-group__title .chip{padding:2px 8px;font-size:10px;border-radius:999px;opacity:.75}
+    .radio-group label{display:inline-block;margin:0;cursor:pointer;width:auto}
     .radio-group input[type="radio"], .radio-group input[type="checkbox"]{display:none}
-    .radio-group span{display:inline-block;padding:8px 14px;border:1px solid #444;border-radius:8px;background:var(--chip);color:var(--ink);transition:.15s;user-select:none}
+    .radio-group span{display:inline-block;padding:5px 10px;border:1px solid #444;border-radius:7px;background:var(--chip);color:var(--ink);font-size:12px;line-height:1.3;transition:.15s;user-select:none;white-space:nowrap}
     .radio-group span:hover{background:#243048;border-color:var(--accent)}
     .radio-group input[type="radio"]:checked + span{background:var(--accent);border-color:var(--accent);color:white;box-shadow:0 0 8px rgba(31,123,242,.6)}
-    details summary{cursor:pointer;margin:8px 0}
-    hr{border:none;border-top:1px solid var(--line);margin:24px 0}
-    .status{margin-left:10px;font-size:13px;color:var(--muted)}
+    details summary{cursor:pointer;margin:8px 0;font-size:13px}
+    hr{border:none;border-top:1px solid var(--line);margin:20px 0}
+    .status{margin-left:10px;font-size:12px;color:var(--muted)}
     .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
     .btn-ghost{background:transparent;border:1px solid #3a4b6a;color:var(--muted)}
-    .muted{opacity:.8}
+    .muted{opacity:.8;font-size:12px}
 
     /* ── Search Mode UI ── */
     .intensity-header{display:flex;align-items:center;gap:10px;margin:20px 0 8px;flex-wrap:wrap}
@@ -56,16 +59,25 @@
     #searchPanel.visible{display:block}
     @keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
 
-    .filter-row{margin-bottom:12px}
-    .filter-label{font-size:12px;color:var(--muted);margin-bottom:6px;font-weight:600;letter-spacing:.04em}
-    .filter-tags{display:flex;flex-wrap:wrap;gap:6px}
+    .filter-row{display:flex;align-items:flex-start;gap:8px;margin-bottom:7px}
+    .filter-label{flex:0 0 66px;font-size:11px;color:var(--muted);font-weight:600;letter-spacing:.02em;padding-top:5px;line-height:1.2}
+    .filter-tags{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
+    .filter-tag-list{display:flex;flex-wrap:wrap;gap:4px}
+    .filter-search{
+      width:100%;max-width:220px;padding:3px 8px;font-size:11px;
+      border-radius:6px;border:1px solid #2a3f6a;background:#0a1220;color:var(--ink);
+    }
+    .filter-search:focus{outline:none;border-color:var(--accent)}
+    .filter-search::placeholder{color:#4a5f80}
     .filter-tag{
-      padding:5px 12px;
+      padding:4px 9px;
       border-radius:20px;
       border:1px solid #2a3f6a;
       background:var(--tag-inactive);
       color:#aac;
-      font-size:12px;
+      font-size:11px;
+      line-height:1.3;
+      white-space:nowrap;
       cursor:pointer;
       transition:.15s;
       user-select:none;
@@ -74,6 +86,8 @@
     .filter-tag.active{background:var(--accent);border-color:var(--accent);color:white;box-shadow:0 0 6px rgba(31,123,242,.5)}
     .filter-tag.any{border-style:dashed;color:#7a9ab0}
     .filter-tag.any.active{background:#243048;border-style:solid;color:var(--muted);box-shadow:none}
+    .filter-tag.more{background:transparent;border-style:dotted;color:#6b8fc4;font-weight:600}
+    .filter-tag.more:hover{background:#182842}
 
     .search-result-header{
       display:flex;align-items:center;justify-content:space-between;
@@ -89,8 +103,8 @@
       border-radius:8px;
     }
     .result-item{
-      display:flex;align-items:flex-start;gap:10px;
-      padding:10px 12px;
+      display:flex;align-items:flex-start;gap:8px;
+      padding:7px 10px;
       border-bottom:1px solid #1a2535;
       cursor:pointer;
       transition:.15s;
@@ -98,56 +112,61 @@
     .result-item:last-child{border-bottom:none}
     .result-item:hover{background:var(--result-hover)}
     .result-item.selected{background:#1a3055;border-left:3px solid var(--accent)}
-    .result-item input[type="radio"]{accent-color:var(--accent);flex-shrink:0;margin-top:3px}
-    .result-item-body{min-width:0}
-    .result-label{font-size:13px;font-weight:600;color:var(--ink);margin-bottom:3px}
-    .result-tags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:4px}
-    .result-tag{font-size:11px;padding:2px 7px;border-radius:10px;background:#1e2d45;color:#8aabcf}
+    .result-item input[type="radio"]{accent-color:var(--accent);flex-shrink:0;margin-top:2px}
+    .result-item-body{flex:1;min-width:0}
+    .result-label{font-size:12px;font-weight:600;color:var(--ink);margin-bottom:2px}
+    .result-tags{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:3px}
+    .result-tag{font-size:10px;padding:1px 6px;border-radius:10px;background:#1e2d45;color:#8aabcf}
     .result-tag.lv{background:#1a3a5c;color:#6bbfff}
-    .result-prompt{font-size:11px;color:#556;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:600px}
+    .result-prompt{font-size:10px;color:#667;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
     #resultList::-webkit-scrollbar{width:6px}
     #resultList::-webkit-scrollbar-track{background:#0d1525}
     #resultList::-webkit-scrollbar-thumb{background:#2a3f6a;border-radius:3px}
     .no-results{padding:20px;text-align:center;color:#556;font-size:13px}
 
-/* ============== モバイル対応強化 ============== */
+/* ============== モバイル対応（省スペース・横並び優先） ============== */
 @media (max-width: 600px) {
-  .container { padding: 12px; }
-  
-  .emotion-grid {
-    grid-template-columns: 1fr !important; /* 強制1列 */
-    gap: 8px;
-  }
-  
-  .radio-group {
-    margin: 8px 0;
-  }
-  
-  select, button, textarea, .prompt-box {
-    font-size: 16px !important;
-    padding: 12px 10px;
-  }
-  
-  .chip, .radio-group span, .filter-tag {
-    padding: 10px 12px;
-    font-size: 15px;
-    min-height: 48px;
+  .container { padding: 10px; }
+
+  h1 { font-size: 17px; margin-bottom: 12px; }
+  h2 { font-size: 13px; margin: 14px 0 5px; }
+
+  .emotion-grid { grid-template-columns: 1fr; gap: 6px; }
+
+  .radio-group { margin: 8px 0; gap: 4px; }
+  .radio-group__title { font-size: 11px; margin-bottom: 1px; }
+
+  /* iOSのフォーカス時自動ズームを防ぐため入力系は16pxを維持 */
+  select, textarea { font-size: 16px; padding: 8px; }
+  button { font-size: 13px; padding: 8px 12px; }
+  .prompt-box { font-size: 11px; padding: 6px; }
+
+  /* 選択肢チップ：小さめだがタップ可能なサイズを確保 */
+  .radio-group span, .filter-tag {
+    padding: 6px 9px;
+    font-size: 12px;
+    min-height: 32px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
   }
-  
-  #resultList { max-height: 420px; }
-  
-  .result-item { padding: 12px; }
-  
-  h1, h2 { font-size: 1.1rem; }
-  
-  .row {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
-  }
+  .radio-group__title .chip { min-height: 0; padding: 2px 7px; font-size: 10px; }
+
+  .filter-row { margin-bottom: 6px; }
+  .filter-label { flex-basis: 54px; font-size: 10px; padding-top: 8px; }
+  .filter-tags { gap: 4px; }
+
+  #searchPanel { padding: 10px; }
+  #resultList { max-height: 55vh; }
+  .result-item { padding: 8px 9px; }
+
+  .row { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 6px; }
+}
+
+/* 画面が広い場合はカテゴリ自体も2列に */
+@media (min-width: 700px) {
+  .emotion-grid { grid-template-columns: repeat(2, 1fr); }
+  #extraElements { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
 }
 
   </style>
@@ -305,7 +324,9 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
     header:[], intensity:[], intensityRaw:[], emotion:[], extra:[], outfit:[], accessory:[],
     sel: { header:null, intensity:null, emotionByCat:{}, extraChoices:{}, extraPrompts:[], outfit:null, accessory:[] },
     searchMode: false,
-    filters: { level:null, 'シチュエーション':null, '対象':null, '姿勢':null, '前状態':null, '前挿入物':null, '精液有無':null, '後状態':null }
+    filters: { level:null, 'シチュエーション':null, '対象':null, '姿勢':null, '前状態':null, '前挿入物':null, '精液有無':null, '後状態':null },
+    filterQuery: {},
+    filterExpanded: {}
   };
 
   function fillSelect(sel, opts, {multi=false, withEmpty=true}={}){
@@ -360,40 +381,112 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
     });
   }
 
+  // 1つのフィルター行に一度に表示するタグ数の上限（超過分は「＋他N件」で展開）
+  const collapseLimit = ()=> (window.innerWidth <= 600 ? 8 : 14);
+  // この件数を超えるフィルターにはキーワード絞り込み入力を出す
+  const FILTER_SEARCH_THRESHOLD = 20;
+
+  // 「自分以外のフィルター」を適用した結果から、そのキーの選択肢を作る
+  // （選んだ条件に応じて他のフィルターの候補が自動的に減り、0件になる組み合わせを避けられる）
+  function uniqueVals(key){
+    const items = state.intensityRaw.filter(item=>
+      FILTER_KEYS.every(k=> k===key || !state.filters[k] || String(item[k]) === state.filters[k])
+    );
+    return [...new Set(items.map(r=>String(r[key]||'').trim()).filter(Boolean))].sort((a,b)=>{
+      if(!isNaN(a) && !isNaN(b)) return Number(a)-Number(b);
+      return a.localeCompare(b,'ja');
+    });
+  }
+
+  function renderTagList(key, ki){
+    const container = $(`#${FILTER_IDS[ki]}`);
+    if(!container) return;
+    const listDiv = container.querySelector('.filter-tag-list');
+    if(!listDiv) return;
+    listDiv.innerHTML = '';
+
+    const all = uniqueVals(key);
+    const q = (state.filterQuery[key] || '').trim().toLowerCase();
+    const vals = q ? all.filter(v=> v.toLowerCase().includes(q)) : all;
+
+    // 「すべて」
+    const anyTag = document.createElement('span');
+    anyTag.className = 'filter-tag any' + (!state.filters[key] ? ' active' : '');
+    anyTag.textContent = 'すべて';
+    anyTag.addEventListener('click', ()=>{
+      state.filters[key] = null;
+      renderFilterTags();
+      renderResults();
+    });
+    listDiv.appendChild(anyTag);
+
+    const expanded = !!state.filterExpanded[key] || !!q;
+    const LIMIT = collapseLimit();
+    let shown = (expanded || vals.length <= LIMIT)
+      ? vals
+      : vals.slice(0, LIMIT);
+
+    // 選択中の値は折りたたみ時でも必ず表示する
+    const cur = state.filters[key];
+    if(cur && !shown.includes(cur)) shown = [cur, ...shown];
+
+    shown.forEach(v=>{
+      const tag = document.createElement('span');
+      tag.className = 'filter-tag' + (state.filters[key] === v ? ' active' : '');
+      tag.textContent = v;
+      tag.addEventListener('click', ()=>{
+        state.filters[key] = (state.filters[key] === v) ? null : v;
+        renderFilterTags();
+        renderResults();
+      });
+      listDiv.appendChild(tag);
+    });
+
+    if(vals.length > LIMIT){
+      const toggle = document.createElement('span');
+      toggle.className = 'filter-tag more';
+      if(state.filterExpanded[key]){
+        toggle.textContent = '折りたたむ';
+        toggle.addEventListener('click', ()=>{
+          state.filterExpanded[key] = false;
+          renderTagList(key, ki);
+        });
+        listDiv.appendChild(toggle);
+      } else if(!q){
+        toggle.textContent = `＋他${vals.length - LIMIT}件`;
+        toggle.addEventListener('click', ()=>{
+          state.filterExpanded[key] = true;
+          renderTagList(key, ki);
+        });
+        listDiv.appendChild(toggle);
+      }
+    }
+  }
+
   function renderFilterTags(){
     FILTER_KEYS.forEach((key, ki)=>{
       const container = $(`#${FILTER_IDS[ki]}`);
       if(!container) return;
-      container.innerHTML = '';
 
-      // unique values
-      const vals = [...new Set(state.intensityRaw.map(r=>String(r[key]||'').trim()).filter(Boolean))].sort((a,b)=>{
-        if(!isNaN(a) && !isNaN(b)) return Number(a)-Number(b);
-        return a.localeCompare(b,'ja');
-      });
-
-      // "すべて" tag
-      const anyTag = document.createElement('span');
-      anyTag.className = 'filter-tag any' + (!state.filters[key] ? ' active' : '');
-      anyTag.textContent = 'すべて';
-      anyTag.addEventListener('click', ()=>{
-        state.filters[key] = null;
-        renderFilterTags();
-        renderResults();
-      });
-      container.appendChild(anyTag);
-
-      vals.forEach(v=>{
-        const tag = document.createElement('span');
-        tag.className = 'filter-tag' + (state.filters[key] === v ? ' active' : '');
-        tag.textContent = v;
-        tag.addEventListener('click', ()=>{
-          state.filters[key] = (state.filters[key] === v) ? null : v;
-          renderFilterTags();
-          renderResults();
-        });
-        container.appendChild(tag);
-      });
+      // 骨組み（検索欄＋タグ置き場）は最初の1回だけ作る＝入力中にフォーカスが外れない
+      if(!container.querySelector('.filter-tag-list')){
+        container.innerHTML = '';
+        if(uniqueVals(key).length > FILTER_SEARCH_THRESHOLD){
+          const input = document.createElement('input');
+          input.type = 'text';
+          input.className = 'filter-search';
+          input.placeholder = 'キーワードで絞り込み';
+          input.addEventListener('input', ()=>{
+            state.filterQuery[key] = input.value;
+            renderTagList(key, ki);
+          });
+          container.appendChild(input);
+        }
+        const listDiv = document.createElement('div');
+        listDiv.className = 'filter-tag-list';
+        container.appendChild(listDiv);
+      }
+      renderTagList(key, ki);
     });
   }
 
@@ -663,7 +756,12 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
 
   $('#btnSearchToggle').addEventListener('click', ()=> toggleSearchMode());
   $('#btnResetFilters').addEventListener('click', ()=>{
-    FILTER_KEYS.forEach(k=> state.filters[k] = null);
+    FILTER_KEYS.forEach(k=>{
+      state.filters[k] = null;
+      state.filterQuery[k] = '';
+      state.filterExpanded[k] = false;
+    });
+    $$('#searchPanel .filter-search').forEach(el=> el.value = '');
     renderFilterTags();
     renderResults();
   });
