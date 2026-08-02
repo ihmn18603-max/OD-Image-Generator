@@ -162,16 +162,22 @@
     "prompt": "(biting own lip)"
   },
   {
+    "tag": "Ex-mouth12",
+    "label": "キス口",
+    "category": "mouth",
+    "prompt": "(kissing mouth)"
+  },
+  {
     "tag": "Ex-tongue1",
     "label": "舌だし少",
     "category": "tongue",
-    "prompt": "(tongue slightly out)"
+    "prompt": "(slightly tongue out)"
   },
   {
     "tag": "Ex-tongue2",
     "label": "舌だし大",
     "category": "tongue",
-    "prompt": "(big tongue out)"
+    "prompt": "(tongue out)"
   },
   {
     "tag": "Ex-saliva1",
@@ -187,7 +193,7 @@
   },
   {
     "tag": "Ex-saliva3",
-    "label": "歯と歯の間から唾液",
+    "label": "歯と歯の間の唾液",
     "category": "saliva",
     "prompt": "(saliva trail between teeth)"
   },
@@ -199,13 +205,13 @@
   },
   {
     "tag": "Ex-sweat1",
-    "label": "汗少",
+    "label": "顔汗少",
     "category": "sweat",
-    "prompt": "(little face sweat)"
+    "prompt": "(slightly face sweat)"
   },
   {
-    "tag": "Ex-sweat3",
-    "label": "汗大量",
+    "tag": "Ex-sweat2",
+    "label": "顔汗大量",
     "category": "sweat",
     "prompt": "(excessive face sweat)"
   },
