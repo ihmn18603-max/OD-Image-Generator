@@ -40,6 +40,9 @@
     .btn-ghost{background:transparent;border:1px solid #3a4b6a;color:var(--muted)}
     .muted{opacity:.8;font-size:12px}
     .btn-mini{padding:3px 10px;margin-top:0;font-size:11px;border-radius:14px;font-weight:normal}
+    .free-input{min-height:0;margin-top:0;font-size:13px;line-height:1.5;resize:vertical}
+    .free-input:focus{outline:none;border-color:var(--accent)}
+    .free-input::placeholder{color:#4a5f80}
 
     /* ── アコーディオン（Emotion / Extra elements） ── */
     .acc{border:1px solid #2a3346;border-radius:8px;background:#131a26;overflow:hidden}
@@ -159,7 +162,7 @@
   .radio-group__title { font-size: 11px; margin-bottom: 1px; }
 
   /* iOSのフォーカス時自動ズームを防ぐため入力系は16pxを維持 */
-  select, textarea { font-size: 16px; padding: 8px; }
+  select, textarea, .free-input { font-size: 16px; padding: 8px; }
   button { font-size: 13px; padding: 8px 12px; }
   .prompt-box { font-size: 11px; padding: 6px; }
 
@@ -314,9 +317,15 @@ body.has-sticky .container{padding-bottom:96px}
     <div id="extraElements"></div>
     <div id="extraPrompt" class="prompt-box" aria-live="polite"></div>
 
-    <h2>⑤ Custom Prompt (①〜④結合)</h2>
+    <h2 class="row">④-2 追加プロンプト（自由入力）
+      <span id="freeCount" class="muted">0</span>
+      <button id="btnClearFree" class="btn-ghost btn-mini" type="button">消去</button>
+    </h2>
+    <textarea id="freePrompt" class="free-input" rows="2" placeholder="ここに入力した内容が①〜④の後ろに結合されます（例: masterpiece, best quality）"></textarea>
+
+    <h2>⑤ Custom Prompt (①〜④-2結合)</h2>
     <div class="row">
-      <button id="btnClear135" class="btn-ghost" title="①〜④をリセット">クリア</button>
+      <button id="btnClear135" class="btn-ghost" title="①〜④-2をリセット">クリア</button>
       <span id="charCount" class="muted">文字数: 0</span>
     </div>
     <textarea id="out" readonly placeholder="ここに結合プロンプトが出力されます"></textarea>
@@ -444,6 +453,12 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
     if(emoSelected.length) parts.push(emoSelected.map(x=>x.prompt).join(', '));
 
     if(state.sel.extraPrompts?.length) parts.push(state.sel.extraPrompts.join(', '));
+
+    // ④-2 自由入力（前後の空白と余分なカンマを除去して結合）
+    const freeEl = $('#freePrompt');
+    const free = freeEl ? freeEl.value.trim().replace(/^[,、\s]+|[,、\s]+$/g, '') : '';
+    if(free) parts.push(free);
+    if($('#freeCount')) $('#freeCount').textContent = `${free.length}字`;
 
     const result = parts.filter(Boolean).join(', ');
     $('#out').value = result;
@@ -944,6 +959,12 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
     renderResults();
   });
 
+  $('#freePrompt').addEventListener('input', build);
+  $('#btnClearFree').addEventListener('click', ()=>{
+    $('#freePrompt').value = '';
+    build();
+  });
+
   $('#tabCustom').addEventListener('click', ()=>{
     state.stickyTab = 'custom'; updateStickyBar();
   });
@@ -990,6 +1011,7 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
     })();
     Object.keys(state.sel.extraChoices).forEach(k=> delete state.sel.extraChoices[k]);
     state.sel.extraPrompts = []; $('#extraPrompt').textContent = '';
+    $('#freePrompt').value = '';
     $$('#extraElements input[type="radio"]').forEach(r=> r.checked = false);
     // アコーディオン見出しの選択中表示も戻す
     $$('#emotionOptions .acc, #extraElements .acc').forEach(a=>{
