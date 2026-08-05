@@ -248,7 +248,7 @@ body.has-sticky .container{padding-bottom:96px}
   <div class="container">
     <h1>OD Image Generator</h1>
 
-    <h2>① Main Header（アニメ / リアル）</h2>
+    <h2>① Main Header（lightning）</h2>
     <select id="selHeader" aria-label="Main Header"></select>
     <div id="headerPrompt" class="prompt-box" aria-live="polite"></div>
 
@@ -274,28 +274,32 @@ body.has-sticky .container{padding-bottom:96px}
         <div class="filter-tags" id="filterSituation"></div>
       </div>
       <div class="filter-row">
-        <div class="filter-label">対象</div>
-        <div class="filter-tags" id="filterExpansion"></div>
-      </div>
-      <div class="filter-row">
         <div class="filter-label">姿勢</div>
         <div class="filter-tags" id="filterPosture"></div>
+      </div>
+      <div class="filter-row">
+        <div class="filter-label">対象</div>
+        <div class="filter-tags" id="filterTarget"></div>
       </div>
       <div class="filter-row">
         <div class="filter-label">前状態</div>
         <div class="filter-tags" id="filterStateBefore"></div>
       </div>
       <div class="filter-row">
-        <div class="filter-label">前挿入物</div>
+        <div class="filter-label">前挿入</div>
         <div class="filter-tags" id="filterInsertBefore"></div>
-      </div>
-      <div class="filter-row">
-        <div class="filter-label">精液有無</div>
-        <div class="filter-tags" id="filterSemen"></div>
       </div>
       <div class="filter-row">
         <div class="filter-label">後状態</div>
         <div class="filter-tags" id="filterStateAfter"></div>
+      </div>
+      <div class="filter-row">
+        <div class="filter-label">後挿入</div>
+        <div class="filter-tags" id="filterInsertAfter"></div>
+      </div>
+      <div class="filter-row">
+        <div class="filter-label">精液有無</div>
+        <div class="filter-tags" id="filterSemen"></div>
       </div>
 
       <div class="search-result-header">
@@ -425,7 +429,7 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
     sel: { header:null, intensity:null, emotionByCat:{}, extraChoices:{}, extraPrompts:[], outfit:null, accessory:[] },
     searchMode: false,
     stickyTab: 'custom',
-    filters: { level:null, 'シチュエーション':null, '対象':null, '姿勢':null, '前状態':null, '前挿入物':null, '精液有無':null, '後状態':null },
+    filters: {},   // キーは FILTER_KEYS に従う（未選択なら undefined）
     filterQuery: {},
     filterExpanded: {}
   };
@@ -513,16 +517,50 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
   // SEARCH MODE
   // ============================================================
 
-  const FILTER_KEYS = ['level', 'シチュエーション', '対象', '姿勢', '前状態', '前挿入物', '精液有無', '後状態'];
-  const FILTER_IDS  = ['filterLevel','filterSituation','filterExpansion','filterPosture','filterStateBefore','filterInsertBefore','filterSemen','filterStateAfter'];
+  // 表示順の定義。key は実データから自動解決するので、JSON側のキー名に
+  // 連番プレフィックス（"3.姿勢" など）が付いていても付いていなくても動く。
+  const FILTER_DEFS = [
+    { id:'filterLevel',        match:'level' },
+    { id:'filterSituation',    match:'シチュエーション' },
+    { id:'filterPosture',      match:'姿勢' },
+    { id:'filterTarget',       match:'対象' },
+    { id:'filterStateBefore',  match:'前状態' },
+    { id:'filterInsertBefore', match:'前挿入' },
+    { id:'filterStateAfter',   match:'後状態' },
+    { id:'filterInsertAfter',  match:'後挿入' },
+    { id:'filterSemen',        match:'精液有無' },
+  ];
+  let FILTER_KEYS = [];
 
-  function getFilteredItems(){
-    return state.intensityRaw.filter(item=>{
-      return FILTER_KEYS.every(key=>{
-        const f = state.filters[key];
-        return !f || String(item[key]) === f;
-      });
+  // "3.姿勢" → "姿勢" のように、先頭の連番・記号を落として比較する
+  function normKey(k){
+    return String(k).replace(/^\s*\d+\s*[.．_\-:：]?\s*/, '').trim().toLowerCase();
+  }
+
+  function resolveFilterKeys(sample){
+    const keys = Object.keys(sample || {});
+    FILTER_DEFS.forEach(def=>{
+      const want = def.match.toLowerCase();
+      def.key = keys.find(k=> normKey(k) === want)
+             || keys.find(k=> normKey(k).startsWith(want))
+             || null;
+      // 対応するキーが無い項目は行ごと隠す
+      const box = document.getElementById(def.id);
+      const row = box && box.closest('.filter-row');
+      if(row) row.style.display = def.key ? '' : 'none';
     });
+    FILTER_KEYS = FILTER_DEFS.filter(d=> d.key).map(d=> d.key);
+    console.log('[Intensity] 解決したフィルターキー:', FILTER_DEFS.map(d=> `${d.match} → ${d.key ?? '(該当なし)'}`));
+  }
+
+  // フィルター後の「選択肢オブジェクト」を直接返す（rawとの照合を挟まない）
+  function getFilteredOptions(){
+    return state.intensity.filter(o=>
+      FILTER_KEYS.every(key=>{
+        const f = state.filters[key];
+        return !f || String(o.raw?.[key]) === f;
+      })
+    );
   }
 
   // 1つのフィルター行に一度に表示するタグ数の上限（超過分は「＋他N件」で展開）
@@ -533,17 +571,17 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
   // 「自分以外のフィルター」を適用した結果から、そのキーの選択肢を作る
   // （選んだ条件に応じて他のフィルターの候補が自動的に減り、0件になる組み合わせを避けられる）
   function uniqueVals(key){
-    const items = state.intensityRaw.filter(item=>
-      FILTER_KEYS.every(k=> k===key || !state.filters[k] || String(item[k]) === state.filters[k])
+    const items = state.intensity.filter(o=>
+      FILTER_KEYS.every(k=> k===key || !state.filters[k] || String(o.raw?.[k]) === state.filters[k])
     );
-    return [...new Set(items.map(r=>String(r[key]||'').trim()).filter(Boolean))].sort((a,b)=>{
+    return [...new Set(items.map(o=>String(o.raw?.[key] ?? '').trim()).filter(Boolean))].sort((a,b)=>{
       if(!isNaN(a) && !isNaN(b)) return Number(a)-Number(b);
       return a.localeCompare(b,'ja');
     });
   }
 
-  function renderTagList(key, ki){
-    const container = $(`#${FILTER_IDS[ki]}`);
+  function renderTagList(key, boxId){
+    const container = $(`#${boxId}`);
     if(!container) return;
     const listDiv = container.querySelector('.filter-tag-list');
     if(!listDiv) return;
@@ -593,14 +631,14 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
         toggle.textContent = '折りたたむ';
         toggle.addEventListener('click', ()=>{
           state.filterExpanded[key] = false;
-          renderTagList(key, ki);
+          renderTagList(key, boxId);
         });
         listDiv.appendChild(toggle);
       } else if(!q){
         toggle.textContent = `＋他${vals.length - LIMIT}件`;
         toggle.addEventListener('click', ()=>{
           state.filterExpanded[key] = true;
-          renderTagList(key, ki);
+          renderTagList(key, boxId);
         });
         listDiv.appendChild(toggle);
       }
@@ -608,8 +646,11 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
   }
 
   function renderFilterTags(){
-    FILTER_KEYS.forEach((key, ki)=>{
-      const container = $(`#${FILTER_IDS[ki]}`);
+    FILTER_DEFS.forEach(def=>{
+      const key = def.key;
+      if(!key) return;
+      const boxId = def.id;
+      const container = $(`#${boxId}`);
       if(!container) return;
 
       // 骨組み（検索欄＋タグ置き場）は最初の1回だけ作る＝入力中にフォーカスが外れない
@@ -622,7 +663,7 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
           input.placeholder = 'キーワードで絞り込み';
           input.addEventListener('input', ()=>{
             state.filterQuery[key] = input.value;
-            renderTagList(key, ki);
+            renderTagList(key, boxId);
           });
           container.appendChild(input);
         }
@@ -630,12 +671,12 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
         listDiv.className = 'filter-tag-list';
         container.appendChild(listDiv);
       }
-      renderTagList(key, ki);
+      renderTagList(key, boxId);
     });
   }
 
   function renderResults(){
-    const filtered = getFilteredItems();
+    const filtered = getFilteredOptions();
     $('#resultCount').textContent = filtered.length;
 
     const list = $('#resultList');
@@ -646,9 +687,8 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
       return;
     }
 
-    filtered.forEach(raw=>{
-      const opt = state.intensity.find(x=> x.raw === raw);
-      if(!opt) return;
+    filtered.forEach(opt=>{
+      const raw = opt.raw || {};
       const isSelected = state.sel.intensity && String(state.sel.intensity.id) === String(opt.id);
 
       const item = document.createElement('div');
@@ -676,14 +716,13 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
         t.textContent = text;
         tagsDiv.appendChild(t);
       };
-      addTag(`Lv${raw.level}`, 'lv');
-      if(raw['シチュエーション']) addTag(raw['シチュエーション']);
-      if(raw['対象'] && raw['対象'] !== '-') addTag(raw['対象']);
-      if(raw['姿勢'] && raw['姿勢'] !== '-') addTag(raw['姿勢']);
-      if(raw['前状態'] && raw['前状態'] !== '-') addTag(raw['前状態']);
-      if(raw['前挿入物'] && raw['前挿入物'] !== '-') addTag(raw['前挿入物']);
-      if(raw['精液有無'] && raw['精液有無'] !== '-') addTag(raw['精液有無']);
-      if(raw['後状態'] && raw['後状態'] !== '-') addTag(raw['後状態']);
+      const lvKey = FILTER_DEFS[0].key;
+      if(lvKey && raw[lvKey] != null) addTag(`Lv${raw[lvKey]}`, 'lv');
+      FILTER_DEFS.slice(1).forEach(def=>{
+        if(!def.key) return;
+        const v = raw[def.key];
+        if(v && String(v) !== '-') addTag(String(v));
+      });
 
       const promptDiv = document.createElement('div');
       promptDiv.className = 'result-prompt';
@@ -738,6 +777,7 @@ obese, fat, overweight, flabby, saggy breasts, huge breasts, balloon breasts, gi
       const rawIntensity = await loadJSON(urls.intensity);
       state.intensityRaw = rawIntensity;
       state.intensity = toOptionsByKind(rawIntensity, 'intensity');
+      resolveFilterKeys(rawIntensity[0]);
       state.emotion   = await loadJSON(urls.emotion);
       state.extra     = await loadJSON(urls.extra);
       state.outfit    = toOptionsByKind(await loadJSON(urls.outfit),    'outfit');
