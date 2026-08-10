@@ -1,401 +1,482 @@
 [
   {
+    "id": "Ex-eye1",
     "tag": "Ex-eye1",
     "label": "目閉",
     "category": "eye",
     "prompt": "(closed eyes)"
   },
   {
+    "id": "Ex-eye2",
     "tag": "Ex-eye2",
     "label": "目半開",
     "category": "eye",
     "prompt": "(half-open eyes)"
   },
   {
+    "id": "Ex-eye3",
     "tag": "Ex-eye3",
     "label": "見開いた目",
     "category": "eye",
     "prompt": "(wide-eyed)"
   },
   {
+    "id": "Ex-eye4",
     "tag": "Ex-eye4",
     "label": "焦点の定まらない目",
     "category": "eye",
     "prompt": "(unfocused eyes)"
   },
   {
+    "id": "Ex-eye5",
     "tag": "Ex-eye5",
     "label": "ウインク",
     "category": "eye",
     "prompt": "(winking eyes)"
   },
   {
+    "id": "Ex-eye7",
     "tag": "Ex-eye7",
     "label": "ぼんやりした目",
     "category": "eye",
     "prompt": "(glassy eyes)"
   },
   {
+    "id": "Ex-eye8",
     "tag": "Ex-eye8",
     "label": "うつろな目",
     "category": "eye",
     "prompt": "(empty eyes)"
   },
   {
+    "id": "Ex-eye9",
     "tag": "Ex-eye9",
     "label": "白目",
     "category": "eye",
     "prompt": "(rolling eyes)"
   },
   {
+    "id": "Ex-eye10",
     "tag": "Ex-eye10",
     "label": "グルグル目",
     "category": "eye",
     "prompt": "(@ @ eyes)"
   },
   {
+    "id": "Ex-eye11",
     "tag": "Ex-eye11",
     "label": "ハート目",
     "category": "eye",
     "prompt": "(heart shaped pupils)"
   },
   {
+    "id": "Ex-eye12",
     "tag": "Ex-eye12",
     "label": "遠くを見る",
     "category": "eye",
     "prompt": "(staring into the distance)"
   },
   {
+    "id": "Ex-eye13",
     "tag": "Ex-eye13",
     "label": "視線横",
     "category": "eye",
     "prompt": "(looking to the side)"
   },
   {
+    "id": "Ex-eye14",
     "tag": "Ex-eye14",
     "label": "視線下",
     "category": "eye",
     "prompt": "(looking down)"
   },
   {
+    "id": "Ex-eye15",
     "tag": "Ex-eye15",
     "label": "目をそらす",
     "category": "eye",
     "prompt": "(looking away)"
   },
   {
+    "id": "Ex-eye16",
     "tag": "Ex-eye16",
     "label": "流し目",
     "category": "eye",
     "prompt": "(sideways glance)"
   },
   {
+    "id": "Ex-eye17",
     "tag": "Ex-eye17",
     "label": "横顔チラ見",
     "category": "eye",
     "prompt": "(slightly profile face), (sideways glance)"
   },
   {
+    "id": "Ex-mouth1",
     "tag": "Ex-mouth1",
     "label": "口閉",
     "category": "mouth",
     "prompt": "(mouth closed)"
   },
   {
+    "id": "Ex-mouth2",
     "tag": "Ex-mouth2",
     "label": "口半開",
     "category": "mouth",
     "prompt": "(mouth half-open)"
   },
   {
+    "id": "Ex-mouth3",
     "tag": "Ex-mouth3",
     "label": "口開",
     "category": "mouth",
     "prompt": "(open mouth)"
   },
   {
+    "id": "Ex-mouth4",
     "tag": "Ex-mouth4",
     "label": "のどちんこ",
     "category": "mouth",
     "prompt": "(uvula)"
   },
   {
+    "id": "Ex-mouth5",
     "tag": "Ex-mouth5",
     "label": "わずかに開いた唇",
     "category": "mouth",
     "prompt": "(parted lips)"
   },
   {
+    "id": "Ex-mouth6",
     "tag": "Ex-mouth6",
     "label": "濡れた唇",
     "category": "mouth",
     "prompt": "(wet lips)"
   },
   {
+    "id": "Ex-mouth7",
     "tag": "Ex-mouth7",
     "label": "舌なめずり",
     "category": "mouth",
     "prompt": "(licking lips)"
   },
   {
+    "id": "Ex-mouth8",
     "tag": "Ex-mouth8",
     "label": "歯を食いしばる",
     "category": "mouth",
     "prompt": "(slenched teeth)"
   },
   {
+    "id": "Ex-mouth9",
     "tag": "Ex-mouth9",
     "label": "逆への字の口",
     "category": "mouth",
     "prompt": "(frown, closed mouth)"
   },
   {
+    "id": "Ex-mouth10",
     "tag": "Ex-mouth10",
     "label": "波口",
     "category": "mouth",
     "prompt": "(wavy mouth)"
   },
   {
+    "id": "Ex-mouth11",
     "tag": "Ex-mouth11",
     "label": "唇を噛む",
     "category": "mouth",
     "prompt": "(biting own lip)"
   },
   {
+    "id": "Ex-mouth12",
     "tag": "Ex-mouth12",
     "label": "キス口",
     "category": "mouth",
     "prompt": "(kissing mouth)"
   },
   {
+    "id": "Ex-tongue1",
     "tag": "Ex-tongue1",
     "label": "舌だし少",
     "category": "tongue",
     "prompt": "(slightly tongue out)"
   },
   {
+    "id": "Ex-tongue2",
     "tag": "Ex-tongue2",
     "label": "舌だし大",
     "category": "tongue",
     "prompt": "(tongue out)"
   },
   {
+    "id": "Ex-saliva1",
     "tag": "Ex-saliva1",
     "label": "涎少",
     "category": "saliva",
     "prompt": "(saliva slight)"
   },
   {
+    "id": "Ex-saliva2",
     "tag": "Ex-saliva2",
     "label": "涎多",
     "category": "saliva",
     "prompt": "(drooling)"
   },
   {
+    "id": "Ex-saliva3",
     "tag": "Ex-saliva3",
     "label": "歯と歯の間の唾液",
     "category": "saliva",
     "prompt": "(saliva trail between teeth)"
   },
   {
+    "id": "Ex-saliva4",
     "tag": "Ex-saliva4",
     "label": "よだれを垂らす",
     "category": "saliva",
     "prompt": "(saliva trail)"
   },
   {
+    "id": "Ex-sweat1",
     "tag": "Ex-sweat1",
     "label": "顔汗少",
     "category": "sweat",
     "prompt": "(slightly face sweat)"
   },
   {
+    "id": "Ex-sweat2",
     "tag": "Ex-sweat2",
     "label": "顔汗大量",
     "category": "sweat",
     "prompt": "(excessive face sweat)"
   },
   {
+    "id": "Ex-milk1",
     "tag": "Ex-milk1",
     "label": "服の上から母乳",
     "category": "milk",
     "prompt": "(lactation through clothes)"
   },
   {
+    "id": "Ex-milk2",
     "tag": "Ex-milk2",
     "label": "母乳",
     "category": "milk",
     "prompt": "(breast milk), (lactation)"
   },
   {
+    "id": "Ex-milk3",
     "tag": "Ex-milk3",
     "label": "母乳噴射",
     "category": "milk",
     "prompt": "(projectile lactation)"
   },
   {
+    "id": "Ex-milk4",
     "tag": "Ex-milk4",
     "label": "搾乳機",
     "category": "milk",
     "prompt": "(milking machine), (breast pump)"
   },
   {
+    "id": "Ex-steam1",
     "tag": "Ex-steam1",
     "label": "吐息",
     "category": "steam",
     "prompt": "(breath)"
   },
   {
+    "id": "Ex-steam2",
     "tag": "Ex-steam2",
     "label": "蒸気・湯気",
     "category": "steam",
     "prompt": "(steam)"
   },
   {
+    "id": "Ex-steam3",
     "tag": "Ex-steam3",
     "label": "蒸れた体",
     "category": "steam",
     "prompt": "(steaming body)"
   },
   {
+    "id": "Ex-camera1",
     "tag": "Ex-camera1",
     "label": "膝見切れ",
     "category": "camera",
     "prompt": "(knees out of frame)"
   },
   {
+    "id": "Ex-camera2",
     "tag": "Ex-camera2",
     "label": "太もも見切れ",
     "category": "camera",
     "prompt": "(thighs out of frame)"
   },
   {
+    "id": "Ex-mark1",
     "tag": "Ex-mark1",
     "label": "!",
     "category": "mark",
     "prompt": "(exclamation mark)"
   },
   {
+    "id": "Ex-mark2",
     "tag": "Ex-mark2",
     "label": "照れ",
     "category": "mark",
     "prompt": "(spoken blush mark)"
   },
   {
+    "id": "Ex-mark3",
     "tag": "Ex-mark3",
     "label": "汗",
     "category": "mark",
     "prompt": "(sweat drops)"
   },
   {
+    "id": "Ex-mark4",
     "tag": "Ex-mark4",
     "label": "ハート",
     "category": "mark",
     "prompt": "(heart effects)"
   },
   {
+    "id": "Ex-gesture1",
+    "tag": "Ex-gesture1",
+    "label": "猫ポーズ",
+    "category": "gesture",
+    "prompt": "(paw pose)"
+  },
+  {
+    "id": "Ex-gesture1",
+    "tag": "Ex-gesture1",
+    "label": "ガオーポーズ",
+    "category": "gesture",
+    "prompt": "(claw pose)"
+  },
+  {
+    "id": "Ex-gesture1",
     "tag": "Ex-gesture1",
     "label": "ダブルピース",
     "category": "gesture",
     "prompt": "(double v)"
   },
   {
+    "id": "Ex-gesture2",
     "tag": "Ex-gesture2",
     "label": "投げキッス",
     "category": "gesture",
     "prompt": "(blowing kiss)"
   },
   {
+    "id": "Ex-gesture3",
     "tag": "Ex-gesture3",
     "label": "髪かき上げ",
     "category": "gesture",
     "prompt": "(hand adjusting hair)"
   },
   {
+    "id": "Ex-gesture4",
     "tag": "Ex-gesture4",
     "label": "腋見せ",
     "category": "gesture",
     "prompt": "(armpit)"
   },
   {
+    "id": "Ex-gesture5",
     "tag": "Ex-gesture5",
     "label": "指舐め",
     "category": "gesture",
     "prompt": "(licking own finger)"
   },
   {
+    "id": "Ex-gesture6",
     "tag": "Ex-gesture6",
     "label": "メロイックサイン",
     "category": "gesture",
     "prompt": "(metal hand gesture), (double m/)"
   },
   {
+    "id": "Ex-gesture7",
     "tag": "Ex-gesture7",
     "label": "中指",
     "category": "gesture",
     "prompt": "(middle finger)"
   },
   {
+    "id": "Ex-gesture8",
     "tag": "Ex-gesture8",
     "label": "ブーイング",
     "category": "gesture",
     "prompt": "(thumbs down)"
   },
   {
+    "id": "Ex-gesture9",
     "tag": "Ex-gesture9",
     "label": "しー",
     "category": "gesture",
     "prompt": "(shushing)"
   },
   {
+    "id": "Ex-gesture10",
     "tag": "Ex-gesture10",
     "label": "脱いだパンツ見せ",
     "category": "gesture",
     "prompt": "(presenting removed panties), (pussy juice stain:1.2) panties"
   },
   {
+    "id": "Ex-gesture11",
     "tag": "Ex-gesture11",
     "label": "パンツ引っ掛かり",
     "category": "gesture",
     "prompt": "(removed panties around one leg), (pussy juice stain:1.2) panties"
   },
   {
+    "id": "Ex-pose1",
     "tag": "Ex-pose1",
     "label": "疑似フェラ",
     "category": "pose",
     "prompt": "(fellatio gesture)"
   },
   {
+    "id": "Ex-pose2",
     "tag": "Ex-pose2",
     "label": "射精待ち",
     "category": "pose",
     "prompt": "(oral invitation)"
   },
   {
+    "id": "Ex-string1",
     "tag": "Ex-string1",
     "label": "セルフ指糸引き",
     "category": "string",
     "prompt": "(imminent pussy insertion:1.2), (fingering:1.2), (pussy juice string from finger:1.2) "
   },
   {
+    "id": "Ex-string2",
     "tag": "Ex-string2",
     "label": "セルフディルド糸引き",
     "category": "string",
     "prompt": "(imminent pussy insertion:1.2), (hand holding dildo:1.2), (pussy juice string from dildo:1.2) "
   },
   {
+    "id": "Ex-string3",
     "tag": "Ex-string3",
     "label": "固定ディルド糸引き",
     "category": "string",
     "prompt": "(imminent pussy insertion:1.2), (suctioncup dildo:1.2), (pussy juice string from dildo:1.2) "
   },
   {
+    "id": "Ex-string4",
     "tag": "Ex-string4",
     "label": "POV指糸引き",
     "category": "string",
     "prompt": "(imminent pussy insertion:1.2),  (POV fingering:1.2), (pussy juice string from POV finger:1.2) "
   },
   {
+    "id": "Ex-string5",
     "tag": "Ex-string5",
     "label": "POVディルド糸引き",
     "category": "string",
