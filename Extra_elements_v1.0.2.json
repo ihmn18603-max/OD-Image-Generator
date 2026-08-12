@@ -4,14 +4,14 @@
     "tag": "Ex-eye1",
     "label": "目閉",
     "category": "eye",
-    "prompt": "(closed eyes)"
+    "prompt": "(closed eyes:1.2)"
   },
   {
     "id": "Ex-eye",
     "tag": "Ex-eye2",
     "label": "目半開",
     "category": "eye",
-    "prompt": "(half-open eyes)"
+    "prompt": "(half-open eyes:1.2)"
   },
   {
     "id": "Ex-eye",
@@ -110,6 +110,13 @@
     "label": "横顔チラ見",
     "category": "eye",
     "prompt": "(slightly profile face), (sideways glance)"
+  },
+  {
+    "id": "Ex-eye",
+    "tag": "Ex-eye17",
+    "label": "カメラ目線",
+    "category": "eye",
+    "prompt": "(looking at viewer)"
   },
   {
     "id": "Ex-mouth",
@@ -242,14 +249,14 @@
     "tag": "Ex-sweat1",
     "label": "顔汗少",
     "category": "sweat",
-    "prompt": "(slightly face sweat)"
+    "prompt": "(face sweat:1.2)"
   },
   {
     "id": "Ex-sweat",
     "tag": "Ex-sweat2",
     "label": "顔汗大量",
     "category": "sweat",
-    "prompt": "(excessive face sweat)"
+    "prompt": "(drastic face sweat:1.2), (sweatdrops:1.2)"
   },
   {
     "id": "Ex-milk",
@@ -359,83 +366,90 @@
   {
     "id": "Ex-gesture",
     "tag": "Ex-gesture3",
+    "label": "ピース",
+    "category": "gesture",
+    "prompt": "(v)"
+  },
+  {
+    "id": "Ex-gesture",
+    "tag": "Ex-gesture4",
     "label": "ダブルピース",
     "category": "gesture",
     "prompt": "(double v)"
   },
   {
     "id": "Ex-gesture",
-    "tag": "Ex-gesture4",
+    "tag": "Ex-gesture5",
     "label": "投げキッス",
     "category": "gesture",
     "prompt": "(blowing kiss)"
   },
   {
     "id": "Ex-gesture",
-    "tag": "Ex-gesture5",
+    "tag": "Ex-gesture6",
     "label": "髪かき上げ",
     "category": "gesture",
     "prompt": "(hand adjusting hair)"
   },
   {
     "id": "Ex-gesture",
-    "tag": "Ex-gesture6",
+    "tag": "Ex-gesture7",
     "label": "腋見せ",
     "category": "gesture",
     "prompt": "(armpit)"
   },
   {
     "id": "Ex-gesture",
-    "tag": "Ex-gesture7",
+    "tag": "Ex-gesture8",
     "label": "指舐め",
     "category": "gesture",
     "prompt": "(licking own finger)"
   },
   {
     "id": "Ex-gesture",
-    "tag": "Ex-gesture8",
+    "tag": "Ex-gesture9",
     "label": "メロイックサイン",
     "category": "gesture",
     "prompt": "(metal hand gesture), (double m/)"
   },
   {
     "id": "Ex-gesture",
-    "tag": "Ex-gesture9",
+    "tag": "Ex-gesture10",
     "label": "中指",
     "category": "gesture",
     "prompt": "(middle finger)"
   },
   {
     "id": "Ex-gesture",
-    "tag": "Ex-gesture10",
+    "tag": "Ex-gesture11",
     "label": "ブーイング",
     "category": "gesture",
     "prompt": "(thumbs down)"
   },
   {
     "id": "Ex-gesture",
-    "tag": "Ex-gesture11",
+    "tag": "Ex-gesture12",
     "label": "しー",
     "category": "gesture",
     "prompt": "(shushing)"
   },
   {
     "id": "Ex-gesture",
-    "tag": "Ex-gesture12",
+    "tag": "Ex-gesture13",
     "label": "パンツ見せ",
     "category": "gesture",
     "prompt": "(hold up), (removed panties in hand), (presenting removed panties)"
   },
   {
     "id": "Ex-gesture",
-    "tag": "Ex-gesture13",
+    "tag": "Ex-gesture14",
     "label": "パンツ引っ掛かり",
     "category": "gesture",
     "prompt": "(removed panties around one leg)"
   },
   {
     "id": "Ex-gesture",
-    "tag": "Ex-gesture14",
+    "tag": "Ex-gesture15",
     "label": "パンツ嗅ぎ",
     "category": "gesture",
     "prompt": "(panties covering mouth), (holding panties), (smelling), (smelling panties), (steaming panties)"
