@@ -354,56 +354,56 @@
     "tag": "Ex-gesture1",
     "label": "猫ポーズ",
     "category": "gesture",
-    "prompt": "(paw pose)"
+    "prompt": "(paw pose:1.2)"
   },
   {
     "id": "Ex-gesture",
     "tag": "Ex-gesture2",
     "label": "ガオーポーズ",
     "category": "gesture",
-    "prompt": "(claw pose)"
+    "prompt": "(claw pose:1.2)"
   },
   {
     "id": "Ex-gesture",
     "tag": "Ex-gesture3",
     "label": "ピース",
     "category": "gesture",
-    "prompt": "(v)"
+    "prompt": "(v:1.2), (peace:1.2)"
   },
   {
     "id": "Ex-gesture",
     "tag": "Ex-gesture4",
     "label": "ダブルピース",
     "category": "gesture",
-    "prompt": "(double v)"
+    "prompt": "(double v:1.2)"
   },
   {
     "id": "Ex-gesture",
     "tag": "Ex-gesture5",
     "label": "投げキッス",
     "category": "gesture",
-    "prompt": "(blowing kiss)"
+    "prompt": "(blowing kiss:1.2)"
   },
   {
     "id": "Ex-gesture",
     "tag": "Ex-gesture6",
     "label": "髪かき上げ",
     "category": "gesture",
-    "prompt": "(hand adjusting hair)"
+    "prompt": "(hand adjusting hair:1.2)"
   },
   {
     "id": "Ex-gesture",
     "tag": "Ex-gesture7",
     "label": "腋見せ",
     "category": "gesture",
-    "prompt": "(armpit)"
+    "prompt": "(armpit:1.2)"
   },
   {
     "id": "Ex-gesture",
     "tag": "Ex-gesture8",
     "label": "指舐め",
     "category": "gesture",
-    "prompt": "(licking own finger)"
+    "prompt": "(licking own finger:1.2)"
   },
   {
     "id": "Ex-gesture",
@@ -417,21 +417,21 @@
     "tag": "Ex-gesture10",
     "label": "中指",
     "category": "gesture",
-    "prompt": "(middle finger)"
+    "prompt": "(middle finger:1.2)"
   },
   {
     "id": "Ex-gesture",
     "tag": "Ex-gesture11",
     "label": "ブーイング",
     "category": "gesture",
-    "prompt": "(thumbs down)"
+    "prompt": "(thumbs down:1.2)"
   },
   {
     "id": "Ex-gesture",
     "tag": "Ex-gesture12",
     "label": "しー",
     "category": "gesture",
-    "prompt": "(shushing)"
+    "prompt": "(shushing:1.2)"
   },
   {
     "id": "Ex-gesture",
