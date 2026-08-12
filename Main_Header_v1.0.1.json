@@ -2,25 +2,31 @@
   {
     "id": "head-1",
     "tag": "1",
-    "label": "cinematic lightning",
-    "prompt": " (cinematic lighting:1.2),"
+    "label": "-",
+    "prompt": " dslr, (3d), photorealistic,"
   },
   {
     "id": "head-2",
     "tag": "2",
-    "label": "soft lighting",
-    "prompt": " (soft lighting:1.2),"
+    "label": "cinematic lightning",
+    "prompt": " dslr, (3d), photorealistic, (cinematic lighting:1.2),"
   },
   {
     "id": "head-3",
     "tag": "3",
-    "label": "flat lighting",
-    "prompt": " (flat lighting:1.2),"
+    "label": "soft lighting",
+    "prompt": " dslr, (3d), photorealistic, (soft lighting:1.2),"
   },
   {
     "id": "head-4",
     "tag": "4",
+    "label": "flat lighting",
+    "prompt": " dslr, (3d), photorealistic, (flat lighting:1.2),"
+  },
+  {
+    "id": "head-5",
+    "tag": "5",
     "label": "no lightning",
-    "prompt": " (no lighting:1.2), (pitch black:1.2),"
+    "prompt": " dslr, (3d), photorealistic, (no lighting:1.2), (pitch black:1.2),"
   }
 ]
