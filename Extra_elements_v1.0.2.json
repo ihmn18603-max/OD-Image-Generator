@@ -436,21 +436,35 @@
   {
     "id": "Ex-gesture",
     "tag": "Ex-gesture13",
+    "label": "スカート持ち上げ",
+    "category": "gesture",
+    "prompt": "(cursty hold), (holding skirts:1.2)"
+  },
+  {
+    "id": "Ex-gesture",
+    "tag": "Ex-gesture14",
     "label": "パンツ見せ",
+    "category": "gesture",
+    "prompt": "(show panties:1.2), (open skirt:1.2), (hand lift up skirts:1.2)"
+  },
+  {
+    "id": "Ex-gesture",
+    "tag": "Ex-gesture15",
+    "label": "脱パンツ見せ",
     "category": "gesture",
     "prompt": "(hold up), (removed panties in hand), (presenting removed panties)"
   },
   {
     "id": "Ex-gesture",
-    "tag": "Ex-gesture14",
+    "tag": "Ex-gesture16",
     "label": "パンツ引っ掛かり",
     "category": "gesture",
     "prompt": "(removed panties around one leg)"
   },
   {
     "id": "Ex-gesture",
-    "tag": "Ex-gesture15",
-    "label": "パンツ嗅ぎ",
+    "tag": "Ex-gesture17",
+    "label": "脱パンツ嗅ぎ",
     "category": "gesture",
     "prompt": "(panties covering mouth), (holding panties), (smelling), (smelling panties), (steaming panties)"
   },
