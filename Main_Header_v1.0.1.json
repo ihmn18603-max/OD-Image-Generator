@@ -3,30 +3,30 @@
     "id": "head-1",
     "tag": "1",
     "label": "-",
-    "prompt": " dslr, (3d), photorealistic,"
+    "prompt": " dslr, (3d),"
   },
   {
     "id": "head-2",
     "tag": "2",
     "label": "cinematic lightning",
-    "prompt": " dslr, (3d), photorealistic, (cinematic lighting:1.2),"
+    "prompt": " dslr, (3d), (cinematic lighting:1.2),"
   },
   {
     "id": "head-3",
     "tag": "3",
     "label": "soft lighting",
-    "prompt": " dslr, (3d), photorealistic, (soft lighting:1.2),"
+    "prompt": " dslr, (3d), (soft lighting:1.2),"
   },
   {
     "id": "head-4",
     "tag": "4",
     "label": "flat lighting",
-    "prompt": " dslr, (3d), photorealistic, (flat lighting:1.2),"
+    "prompt": " dslr, (3d), (flat lighting:1.2),"
   },
   {
     "id": "head-5",
     "tag": "5",
     "label": "no lightning",
-    "prompt": " dslr, (3d), photorealistic, (no lighting:1.2), (pitch black:1.2),"
+    "prompt": " dslr, (3d), (no lighting:1.2), (pitch black:1.2),"
   }
 ]
