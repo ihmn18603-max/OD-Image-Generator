@@ -137,7 +137,7 @@
     "tag": "blindfolded",
     "label": "目隠し",
     "category": "face",
-    "prompt": "(blindfolded face)"
+    "prompt": "(blindfolded:1.2)"
   },
   {
     "id": "emo-face22",
