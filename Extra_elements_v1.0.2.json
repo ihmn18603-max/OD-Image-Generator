@@ -249,14 +249,14 @@
     "tag": "Ex-sweat1",
     "label": "顔汗少",
     "category": "sweat",
-    "prompt": "(face sweat:1.2)"
+    "prompt": "(sweat:1.2)"
   },
   {
     "id": "Ex-sweat",
     "tag": "Ex-sweat2",
     "label": "顔汗大量",
     "category": "sweat",
-    "prompt": "(drastic face sweat:1.2), (sweatdrops:1.2)"
+    "prompt": "(drastic sweat:1.2),"
   },
   {
     "id": "Ex-milk",
