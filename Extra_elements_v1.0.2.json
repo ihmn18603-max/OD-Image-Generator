@@ -135,69 +135,76 @@
   {
     "id": "Ex-mouth",
     "tag": "Ex-mouth3",
-    "label": "口開",
+    "label": "口開(小)",
+    "category": "mouth",
+    "prompt": "(:o mouth)"
+  },
+  {
+    "id": "Ex-mouth",
+    "tag": "Ex-mouth4",
+    "label": "口開(大)",
     "category": "mouth",
     "prompt": "(open mouth)"
   },
   {
     "id": "Ex-mouth",
-    "tag": "Ex-mouth4",
+    "tag": "Ex-mouth5",
     "label": "のどちんこ",
     "category": "mouth",
     "prompt": "(uvula)"
   },
   {
     "id": "Ex-mouth",
-    "tag": "Ex-mouth5",
+    "tag": "Ex-mouth6",
     "label": "わずかに開いた唇",
     "category": "mouth",
     "prompt": "(parted lips)"
   },
   {
     "id": "Ex-mouth",
-    "tag": "Ex-mouth6",
+    "tag": "Ex-mouth7",
     "label": "濡れた唇",
     "category": "mouth",
     "prompt": "(wet lips)"
   },
   {
     "id": "Ex-mouth",
-    "tag": "Ex-mouth7",
+    "tag": "Ex-mouth8",
     "label": "舌なめずり",
     "category": "mouth",
     "prompt": "(licking lips)"
   },
   {
     "id": "Ex-mouth",
-    "tag": "Ex-mouth8",
+    "tag": "Ex-mouth9",
     "label": "歯を食いしばる",
     "category": "mouth",
     "prompt": "(slenched teeth)"
   },
   {
     "id": "Ex-mouth",
-    "tag": "Ex-mouth9",
+    "tag": "Ex-mouth10",
     "label": "逆への字の口",
     "category": "mouth",
     "prompt": "(frown, closed mouth)"
   },
   {
     "id": "Ex-mouth",
-    "tag": "Ex-mouth10",
+    "tag": "Ex-mouth11",
     "label": "波口",
     "category": "mouth",
     "prompt": "(wavy mouth)"
   },
   {
     "id": "Ex-mouth",
-    "tag": "Ex-mouth11",
+    "tag": "Ex-mouth12",
     "label": "唇を噛む",
     "category": "mouth",
     "prompt": "(biting own lip)"
   },
   {
     "id": "Ex-mouth",
-    "tag": "Ex-mouth12",
+    "tag": "Ex-mouth13",
     "label": "キス口",
     "category": "mouth",
     "prompt": "(kissing mouth)"
@@ -485,36 +492,71 @@
   {
     "id": "Ex-string",
     "tag": "Ex-string1",
-    "label": "セルフ指糸引き",
+    "label": "マンコ糸引き",
     "category": "string",
-    "prompt": "(imminent pussy insertion:1.2), (fingering:1.2), (pussy juice string from finger:1.2) "
+    "prompt": "(imminent vaginal insertion:1.2), (fingering:1.2), (pussy juice string from finger:1.2) "
   },
   {
     "id": "Ex-string",
     "tag": "Ex-string2",
-    "label": "セルフディルド糸引き",
+    "label": "ディルド糸引き",
     "category": "string",
-    "prompt": "(imminent pussy insertion:1.2), (hand holding dildo:1.2), (pussy juice string from dildo:1.2) "
+    "prompt": "(imminent vaginal insertion:1.2), (hand holding dildo:1.2), (pussy juice string from dildo:1.2) "
   },
   {
     "id": "Ex-string",
     "tag": "Ex-string3",
     "label": "固定ディルド糸引き",
     "category": "string",
-    "prompt": "(imminent pussy insertion:1.2), (suctioncup dildo:1.2), (pussy juice string from dildo:1.2) "
+    "prompt": "(imminent vaginal insertion:1.2), (suctioncup dildo:1.2), (pussy juice string from dildo:1.2) "
   },
   {
     "id": "Ex-string",
     "tag": "Ex-string4",
     "label": "POV指糸引き",
     "category": "string",
-    "prompt": "(imminent pussy insertion:1.2),  (POV fingering:1.2), (pussy juice string from POV finger:1.2) "
+    "prompt": "(imminent vaginal insertion:1.2), (POV fingering:1.2), (pussy juice string from POV finger:1.2) "
   },
   {
     "id": "Ex-string",
     "tag": "Ex-string5",
     "label": "POVディルド糸引き",
     "category": "string",
-    "prompt": "(imminent pussy insertion:1.2),  (POV hand holding dildo:1.2), (pussy juice string from dildo:1.2) "
+    "prompt": "(imminent vaginal insertion:1.2), (POV hand holding dildo:1.2), (pussy juice string from dildo:1.2) "
+  },
+  {
+    "id": "Ex-string",
+    "tag": "Ex-string6",
+    "label": "アナル糸引き",
+    "category": "string",
+    "prompt": "(imminent anal insertion:1.2), (fingering:1.2), (ass juice string from finger:1.2) "
+  },
+  {
+    "id": "Ex-string",
+    "tag": "Ex-string7",
+    "label": "アナルディルド糸引き",
+    "category": "string",
+    "prompt": "(imminent anal insertion:1.2), (hand holding dildo:1.2), (ass juice string from dildo:1.2) "
+  },
+  {
+    "id": "Ex-string",
+    "tag": "Ex-string8",
+    "label": "アナル固定ディルド糸引き",
+    "category": "string",
+    "prompt": "(imminent anal insertion:1.2), (suctioncup dildo:1.2), (ass juice string from dildo:1.2) "
+  },
+  {
+    "id": "Ex-string",
+    "tag": "Ex-string9",
+    "label": "アナルPOV指糸引き",
+    "category": "string",
+    "prompt": "(imminent anal insertion:1.2), (POV fingering:1.2), (ass juice string from POV finger:1.2) "
+  },
+  {
+    "id": "Ex-string",
+    "tag": "Ex-string10",
+    "label": "アナルPOVディルド糸引き",
+    "category": "string",
+    "prompt": "(imminent anal insertion:1.2), (POV hand holding dildo:1.2), (ass juice string from dildo:1.2) "
   }
 ]
