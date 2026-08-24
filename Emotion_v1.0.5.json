@@ -4,168 +4,175 @@
     "tag": "serious",
     "label": "真剣な顔",
     "category": "face",
-    "prompt": "(serious face)"
+    "prompt": "(serious:1.2)"
   },
   {
     "id": "emo-face2",
     "tag": "breathless",
     "label": "息をのむ顔",
     "category": "face",
-    "prompt": "(breathless face)"
+    "prompt": "(breathless:1.2)"
   },
   {
     "id": "emo-face3",
     "tag": "naughty",
     "label": "イタズラな顔",
     "category": "face",
-    "prompt": "(naughty face)"
+    "prompt": "(naughty:1.2)"
   },
   {
     "id": "emo-face4",
     "tag": "smug",
     "label": "ドヤ顔",
     "category": "face",
-    "prompt": "(smug face)"
+    "prompt": "(smug:1.2)"
   },
   {
     "id": "emo-face5",
     "tag": ">:(",
     "label": "怒り顔",
     "category": "face",
-    "prompt": "(>:( face)"
+    "prompt": "(>:(:1.2)"
   },
   {
     "id": "emo-face6",
     "tag": "tranced",
     "label": "トランスした顔",
     "category": "face",
-    "prompt": "(tranced face)"
+    "prompt": "(tranced:1.2)"
   },
   {
     "id": "emo-face7",
     "tag": "enduring",
     "label": "耐えている顔",
     "category": "face",
-    "prompt": "(enduring face)"
+    "prompt": "(enduring:1.2)"
   },
   {
     "id": "emo-face8",
     "tag": "stoic",
     "label": "無表情で耐える顔",
     "category": "face",
-    "prompt": "(stoic face)"
+    "prompt": "(stoic:1.2)"
   },
   {
     "id": "emo-face9",
     "tag": "surprised",
     "label": "驚いた顔",
     "category": "face",
-    "prompt": "(a surprised face)"
+    "prompt": "(a surprised:1.2)"
   },
   {
     "id": "emo-face10",
     "tag": "bashful face",
     "label": "照れくさい顔",
     "category": "face",
-    "prompt": "(bashful face)"
+    "prompt": "(bashful:1.2)"
   },
   {
     "id": "emo-face11",
     "tag": "embarrassed",
     "label": "困り顔",
     "category": "face",
-    "prompt": "(embarrassed face)"
+    "prompt": "(embarrassed:1.2)"
   },
   {
     "id": "emo-face12",
     "tag": "shocked",
     "label": "ぎょっと驚いている顔",
     "category": "face",
-    "prompt": "(a shocked face)"
+    "prompt": "(a shocked:1.2)"
   },
   {
     "id": "emo-face14",
     "tag": "curious",
     "label": "きょとん顔",
     "category": "face",
-    "prompt": "(curious expression)"
+    "prompt": "(curious:1.2)"
   },
   {
     "id": "emo-face15",
     "tag": "confused ",
     "label": "困惑している顔",
     "category": "face",
-    "prompt": "(confused face)"
+    "prompt": "(confused:1.2)"
   },
   {
     "id": "emo-face16",
     "tag": "delighted",
     "label": "喜んでいる顔",
     "category": "face",
-    "prompt": "(delighted face)"
+    "prompt": "(delighted:1.2)"
   },
   {
     "id": "emo-face17",
     "tag": "aroused",
     "label": "興奮した顔",
     "category": "face",
-    "prompt": "(aroused face)"
+    "prompt": "(aroused:1.2)"
   },
   {
     "id": "emo-face18",
     "tag": "sensual",
     "label": "官能的な顔",
     "category": "face",
-    "prompt": "(sensual face)"
+    "prompt": "(sensual:1.2)"
   },
   {
     "id": "emo-face19",
     "tag": "moaning",
     "label": "喘ぎ顔",
     "category": "face",
-    "prompt": "(moaning face)"
+    "prompt": "(moaning:1.2)"
   },
   {
     "id": "emo-face20",
     "tag": "orgasm",
     "label": "絶頂の顔",
     "category": "face",
-    "prompt": "(orgasm face)"
+    "prompt": "(orgasm:1.2)"
   },
   {
     "id": "emo-face21",
+    "tag": "orgasm",
+    "label": "マゾ顔",
+    "category": "face",
+    "prompt": "(masochistic:1.2)"
+  },
+  {
+    "id": "emo-face22",
     "tag": "blindfolded",
     "label": "目隠し",
     "category": "face",
     "prompt": "(blindfolded:1.2)"
   },
   {
-    "id": "emo-face22",
+    "id": "emo-face23",
     "tag": "fucked silly face",
     "label": "んほぉ顔",
     "category": "face",
-    "prompt": "(fucked silly face)"
-  },
-  {
-    "id": "emo-face23",
-    "tag": "gesugao",
-    "label": "ゲス顔",
-    "category": "face",
-    "prompt": "(gesugao)"
+    "prompt": "(fucked silly:1.2)"
   },
   {
     "id": "emo-face24",
-    "tag": "torogao",
-    "label": "トロ顔",
+    "tag": "gesugao",
+    "label": "ゲス顔",
     "category": "face",
-    "prompt": "(torogao)"
+    "prompt": "(gesugao:1.2)"
   },
   {
     "id": "emo-face25",
+    "tag": "torogao",
+    "label": "トロ顔",
+    "category": "face",
+    "prompt": "(torogao:1.2)"
+  },
+  {
+    "id": "emo-face26",
     "tag": "ahegao",
     "label": "アヘ顔",
     "category": "face",
-    "prompt": "(ahegao)"
+    "prompt": "(ahegao:1.2)"
   },
   {
     "id": "emo-eyebrow1",
@@ -271,5 +278,12 @@
     "label": "マンコ痙攣",
     "category": "sp",
     "prompt": "(twitching pussy), (spasming), (convulsing)"
+  },
+  {
+    "id": "emo-sp6",
+    "tag": "twiching pussy",
+    "label": "マゾ",
+    "category": "sp",
+    "prompt": "(masochistic:1.2)"
   }
 ]
