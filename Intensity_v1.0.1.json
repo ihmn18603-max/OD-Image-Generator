@@ -80,19 +80,19 @@
     "1.level": "2"
   },
   {
-    "2.シチュエーション": "003_下脱衣全身",
+    "2.シチュエーション": "003_下脱衣しゃがみ",
     "3.姿勢": "-",
     "4.対象": "-",
-    "5.前状態": "透け",
+    "5.前状態": "-",
     "6.前挿入": "-",
     "7.後状態": "-",
     "8.後挿入": "-",
     "9.精液有無": "-",
     "id": "int-20006",
     "tag": "tag6",
-    "label": "003_下脱衣全身/-/-/透け/-/-/-/-",
+    "label": "003_下脱衣しゃがみ/-/-/-/-/-/-/-",
     "category": "intensity",
-    "prompt": " (bottomless), flexible body, (covered stiff erect nipples), (solo), (no frame), cowboy shot, zettai ryouiki, (dynamic pose), (dutch angle), wet clothes, wet body, wet hair, clinging hair, (drastic see-through clothes),",
+    "prompt": " (bottomless), flexible body, (covered stiff erect nipples), (solo), (no frame), cowboy shot, zettai ryouiki, (dynamic pose), (dutch angle), (crouching:1.2), (knees to chest:1.2), (knees together:1.2), (black sparse pubic hair), (labia), (clitoris), (fat mons),",
     "1.level": "2"
   },
   {
@@ -364,7 +364,7 @@
     "tag": "tag23",
     "label": "006_しゃがみパンチラ/-/-/-/-/-/-/-",
     "category": "intensity",
-    "prompt": " flexible body, (covered stiff erect nipples),  (solo), (no frame), cowboy shot, (straight-on), (low angle), pantyshot, (dynamic pose), (dutch angle), (crouching), (legs together), crotch peek,",
+    "prompt": " flexible body, (covered stiff erect nipples),  (solo), (no frame), cowboy shot, (straight-on), (low angle), pantyshot, (dynamic pose), (dutch angle), (crouching:1.2), (knees to chest:1.2), (knees together:1.2), crotch peek,",
     "1.level": "1"
   },
   {
