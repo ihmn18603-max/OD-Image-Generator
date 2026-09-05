@@ -18,105 +18,105 @@
     "tag": "Ex-eye3",
     "label": "見開いた目",
     "category": "eye",
-    "prompt": "(wide-eyed)"
+    "prompt": "(wide-eyed:1.2)"
   },
   {
     "id": "Ex-eye",
     "tag": "Ex-eye4",
     "label": "焦点の定まらない目",
     "category": "eye",
-    "prompt": "(unfocused eyes)"
+    "prompt": "(unfocused eyes:1.2)"
   },
   {
     "id": "Ex-eye",
     "tag": "Ex-eye5",
     "label": "ウインク",
     "category": "eye",
-    "prompt": "(winking eyes)"
+    "prompt": "(winking eyes:1.2)"
   },
   {
     "id": "Ex-eye",
     "tag": "Ex-eye6",
     "label": "ぼんやりした目",
     "category": "eye",
-    "prompt": "(glassy eyes)"
+    "prompt": "(glassy eyes:1.2)"
   },
   {
     "id": "Ex-eye",
     "tag": "Ex-eye7",
     "label": "うつろな目",
     "category": "eye",
-    "prompt": "(empty eyes)"
+    "prompt": "(empty eyes:1.2)"
   },
   {
     "id": "Ex-eye",
     "tag": "Ex-eye8",
     "label": "白目",
     "category": "eye",
-    "prompt": "(rolling eyes)"
+    "prompt": "(rolling eyes:1.2)"
   },
   {
     "id": "Ex-eye",
     "tag": "Ex-eye9",
     "label": "グルグル目",
     "category": "eye",
-    "prompt": "(@ @ eyes)"
+    "prompt": "(@ @ eyes:1.2)"
   },
   {
     "id": "Ex-eye",
     "tag": "Ex-eye10",
     "label": "ハート目",
     "category": "eye",
-    "prompt": "(heart shaped pupils)"
+    "prompt": "(heart shaped pupils:1.2)"
   },
   {
     "id": "Ex-eye",
     "tag": "Ex-eye11",
     "label": "遠くを見る",
     "category": "eye",
-    "prompt": "(staring into the distance)"
+    "prompt": "(staring into the distance:1.2)"
   },
   {
     "id": "Ex-eye",
     "tag": "Ex-eye12",
     "label": "視線横",
     "category": "eye",
-    "prompt": "(looking to the side)"
+    "prompt": "(looking to the side:1.2)"
   },
   {
     "id": "Ex-eye",
     "tag": "Ex-eye13",
     "label": "視線下",
     "category": "eye",
-    "prompt": "(looking down)"
+    "prompt": "(looking down:1.2)"
   },
   {
     "id": "Ex-eye",
     "tag": "Ex-eye14",
     "label": "目をそらす",
     "category": "eye",
-    "prompt": "(looking away)"
+    "prompt": "(looking away:1.2)"
   },
   {
     "id": "Ex-eye",
     "tag": "Ex-eye15",
     "label": "流し目",
     "category": "eye",
-    "prompt": "(sideways glance)"
+    "prompt": "(sideways glance:1.2)"
   },
   {
     "id": "Ex-eye",
     "tag": "Ex-eye16",
     "label": "横顔チラ見",
     "category": "eye",
-    "prompt": "(slightly profile face), (sideways glance)"
+    "prompt": "(slightly profile face:1.2), (sideways glance:1.2)"
   },
   {
     "id": "Ex-eye",
     "tag": "Ex-eye17",
     "label": "カメラ目線",
     "category": "eye",
-    "prompt": "(looking at viewer)"
+    "prompt": "(looking at viewer:1.2)"
   },
   {
     "id": "Ex-mouth",
